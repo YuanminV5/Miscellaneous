@@ -9,56 +9,99 @@ using namespace std;
 typedef unsigned char uint8;
 typedef unsigned long long int uint64;
 
-struct stall
+struct BathRoom
 {
-	uint64 N;
-	uint64 K;
+    uint64 N;
+    uint64 K;
 };
 
 struct result
 {
-	uint64 max;
-	uint64 min;
+    uint64 max;
+    uint64 min;
 };
 
-result* getResult(stall stall)
+struct LongestEmptyRange
 {
-	result t;
-	uint64 left = 0;
-	uint64 right = stall.N - 1;
+    uint64 startPos;
+    uint64 consecutiveSpaceCount;
+};
 
-	for (uint8 i = 1; i <= stall.K / 2; i++)
+LongestEmptyRange *getEmptyRange(const vector<uint64> &stalls)
+{
+    uint64 longestConsecutiveSpaceCount = 0;
+    uint64 longestConsecutiveStartPos = 0;
+
+    uint64 i = 0;
+
+    while (i < stalls.size())
+    {
+	if (stalls[i] == 0)
 	{
+	    uint64 pos = i;
+	    uint64 count = 1;
 
+	    uint64 j = i + 1;
+	    for (; j < stalls.size() && stalls[j] == 0; j++)
+	    {
+		count++;
+	    }
+
+	    if (count > longestConsecutiveSpaceCount)
+	    {
+		longestConsecutiveSpaceCount = count;
+		longestConsecutiveStartPos = i;
+	    }
+	    i = j;
+
+	    continue;
 	}
-	return nullptr;
+
+	i++;
+    }
+
+    return new LongestEmptyRange{
+	longestConsecutiveStartPos,
+	longestConsecutiveSpaceCount};
 }
 
+result *getResultBruteForce(BathRoom bathroom)
+{
+    vector<uint64> stalls(bathroom.N + bathroom.K);
+    stalls[0] = 1;
+    stalls[stalls.size() - 1] = 1;
 
+    while (uint64 k = 1; k <= bathroom.K; k++)
+    {
+	auto p =
+    }
+
+    return nullptr;
+}
+
+// pos =  (min + max)/2
 
 int main()
 {
-	int testCount = 0;
-	stall stalls[100];
+    int testCount = 0;
+    BathRoom bathrooms[100];
 
-	cin >> testCount;
-	for (int i = 0; i < testCount; i++)
-	{
-		cin >> stalls[i].N >> stalls[i].K;
-	}
+    cin >> testCount;
+    for (uint8 i = 0; i < testCount; i++)
+    {
+	cin >> bathrooms[i].N >> bathrooms[i].K;
+    }
 
-	for (int i = 0; i < testCount; i++)
-	{
-		cout << "Case #" << i + 1 << ": ";
-		auto t = getResult(stalls[i]);
+    for (uint8 i = 0; i < testCount; i++)
+    {
+	cout << "Case #" << i + 1 << ": ";
+	auto t = getResultBruteForce(bathrooms[i]);
 
-		cout << t->max << " " << t->min;
+	cout << t->max << " " << t->min;
 
-		cout << endl;
-		delete t;
-	}
+	cout << endl;
+	delete t;
+    }
 
-	return -1;
+    return -1;
 }
-
-
