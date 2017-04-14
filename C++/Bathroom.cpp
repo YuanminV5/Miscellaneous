@@ -11,97 +11,112 @@ typedef unsigned long long int uint64;
 
 struct BathRoom
 {
-    uint64 N;
-    uint64 K;
+	uint64 N;
+	uint64 K;
 };
 
-struct result
+struct Result
 {
-    uint64 max;
-    uint64 min;
+	uint64 max;
+	uint64 min;
 };
 
 struct LongestEmptyRange
 {
-    uint64 startPos;
-    uint64 consecutiveSpaceCount;
+	uint64 startPos;
+	uint64 consecutiveSpaceCount;
 };
 
 LongestEmptyRange *getEmptyRange(const vector<uint64> &stalls)
 {
-    uint64 longestConsecutiveSpaceCount = 0;
-    uint64 longestConsecutiveStartPos = 0;
+	uint64 longestConsecutiveSpaceCount = 0;
+	uint64 longestConsecutiveStartPos = 0;
 
-    uint64 i = 0;
+	uint64 i = 0;
 
-    while (i < stalls.size())
-    {
-	if (stalls[i] == 0)
+	while (i < stalls.size())
 	{
-	    uint64 pos = i;
-	    uint64 count = 1;
+		if (stalls[i] == 0)
+		{
+			uint64 pos = i;
+			uint64 count = 1;
 
-	    uint64 j = i + 1;
-	    for (; j < stalls.size() && stalls[j] == 0; j++)
-	    {
-		count++;
-	    }
+			uint64 j = i + 1;
+			for (; j < stalls.size() && stalls[j] == 0; j++)
+			{
+				count++;
+			}
 
-	    if (count > longestConsecutiveSpaceCount)
-	    {
-		longestConsecutiveSpaceCount = count;
-		longestConsecutiveStartPos = i;
-	    }
-	    i = j;
+			if (count > longestConsecutiveSpaceCount)
+			{
+				longestConsecutiveSpaceCount = count;
+				longestConsecutiveStartPos = i;
+			}
+			i = j;
 
-	    continue;
+			continue;
+		}
+
+		i++;
 	}
 
-	i++;
-    }
-
-    return new LongestEmptyRange{
-	longestConsecutiveStartPos,
-	longestConsecutiveSpaceCount};
+	return new LongestEmptyRange
+	{
+		longestConsecutiveStartPos,
+		longestConsecutiveSpaceCount
+	};
 }
 
-result *getResultBruteForce(BathRoom bathroom)
+Result *getResultBruteForce(BathRoom bathroom)
 {
-    vector<uint64> stalls(bathroom.N + bathroom.K);
-    stalls[0] = 1;
-    stalls[stalls.size() - 1] = 1;
+	vector<uint64> stalls(bathroom.N + 2);
+	stalls[0] = 1;
+	stalls[stalls.size() - 1] = 1;
 
-    while (uint64 k = 1; k <= bathroom.K; k++)
-    {
-	auto p =
-    }
+	for (uint64 k = 1; k < bathroom.K; k++)
+	{
+		auto p = getEmptyRange(stalls);
 
-    return nullptr;
+		auto pos = (p->startPos +(p->startPos + p->consecutiveSpaceCount - 1)) / 2 ;
+
+		stalls[pos] = 1;
+	}
+
+	auto p = getEmptyRange(stalls);
+
+	auto endPos = p->startPos + p->consecutiveSpaceCount - 1;
+	auto pos = (p->startPos + endPos) / 2;
+
+	uint64 ls = pos - p->startPos;
+	uint64 rs = endPos - pos;
+	return  new Result
+	{
+		ls < rs ? rs : ls,
+		ls < rs ? ls : rs
+	};
 }
-
-// pos =  (min + max)/2
 
 int main()
 {
-    int testCount = 0;
-    BathRoom bathrooms[100];
+	int testCount = 0;
+	BathRoom bathrooms[100];
 
-    cin >> testCount;
-    for (uint8 i = 0; i < testCount; i++)
-    {
-	cin >> bathrooms[i].N >> bathrooms[i].K;
-    }
+	cin >> testCount;
+	for (uint8 i = 0; i < testCount; i++)
+	{
+		cin >> bathrooms[i].N >> bathrooms[i].K;
+	}
 
-    for (uint8 i = 0; i < testCount; i++)
-    {
-	cout << "Case #" << i + 1 << ": ";
-	auto t = getResultBruteForce(bathrooms[i]);
+	for (uint8 i = 0; i < testCount; i++)
+	{
+		cout << "Case #" << i + 1 << ": ";
+		auto t = getResultBruteForce(bathrooms[i]);
 
-	cout << t->max << " " << t->min;
+		cout << t->max << " " << t->min;
 
-	cout << endl;
-	delete t;
-    }
+		cout << endl;
+		delete t;
+	}
 
-    return -1;
+	return -1;
 }
