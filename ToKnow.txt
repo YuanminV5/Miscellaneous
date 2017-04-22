@@ -1,0 +1,5 @@
+NP completeness
+Big O notation
+Graph/Tree structure
+Algorithms: Greedy strategy/Brute force/Recursive strategy
+Typical algorithms: prime number/
