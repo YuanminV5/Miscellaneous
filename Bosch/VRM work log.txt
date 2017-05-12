@@ -1,0 +1,22 @@
+Copy web folder from Gerald to overwrite local. Q: why?
+The simplest way to solve license issue in VRM is to install VRM via installer and then uninstall it.
+
+2017.02.07
+RCPP SDK updated, copy from Gerald share drive.
+
+2017.02.07
+1. Multiple call to get auth info, each call will create a authinfo object.
+2. when log off, get auth info is called.
+3. when log off, auth info is not destroyed.
+4. call sequence of usermanagement destroy and delete authInfo. DANGER.
+5. check for token empty.
+6. for empty password, can remain empty or not? now it is a placeholder text "_not_set_" 
+7. for four eye login, username has + while password doesn't have. How? 
+8. Permission check: currently only check for PlayBackVideo 
+9. Bosch Video Client could not log in: password string received in VRM is encrypted. 
+--> should not be forwarded to plugin if http
+
+
+checkpermission:
+getTrackListRCP invoke check for PlayBackVideo, line 93
+Expected live should also be checked

@@ -1,0 +1,38 @@
+#set(LIBRARY_OUTPUT_PATH ../lib)
+
+file(GLOB project_header_files *.h)
+file(GLOB project_source_files *.cpp)
+
+source_group("Header Files" FILES ${project_header_files})
+source_group("Source Files" FILES ${project_source_files})
+source_group("Code Under Test" FILES ${CUT_files})
+
+# -----------------------deprecated--------------------------
+# specify library directories, called before target
+# link_directories(${VCInstallDir}UnitTest/lib)
+# ------use find library and target_link_library instead-----
+
+add_library(${PROJECT_NAME} SHARED ${project_header_files} ${project_source_files} ${CUT_files})
+
+# add dependency library - implicitly specify build order
+if(MSVC)
+	# set visual studio path
+	set(VCInstallDir "C:/Program Files (x86)/Microsoft Visual Studio 14.0/VC/")
+
+	# include visual studio CppUnitTestFramework header
+	target_include_directories(${PROJECT_NAME} PUBLIC ${VCInstallDir}UnitTest/include)
+
+	find_library(CppUnitTestFrameworkLib Microsoft.VisualStudio.TestTools.CppUnitTestFramework ${VCInstallDir}UnitTest/lib)
+	target_link_libraries(${PROJECT_NAME} ${CppUnitTestFrameworkLib})
+endif(MSVC)
+
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../vrm_mock_lib/include)
+# include the following to redirect dependencies to mocks
+target_include_directories(${PROJECT_NAME} PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../vrm_mock_lib/include/vrmsrc)
+
+target_link_libraries(${PROJECT_NAME} ${GoogleTestLib})
+target_link_libraries(${PROJECT_NAME} ${VRMMockLib})
+
+add_definitions(-DGTEST_LINKED_AS_SHARED_LIBRARY=1)
+set_target_properties(${PROJECT_NAME} PROPERTIES COMPILE_OPTIONS "/wd4251;/wd4275")
+set_target_properties(${PROJECT_NAME} PROPERTIES DEBUG_OUTPUT_NAME ${PROJECT_NAME}_d)

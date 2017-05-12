@@ -1,0 +1,47 @@
+Wed Jul 06 11:19:25 2016 OpenVPN 2.3.8 i686-w64-mingw32 [SSL (OpenSSL)] [LZO] [IPv6] built on Jan 18 2016
+Wed Jul 06 11:19:25 2016 library versions: OpenSSL 1.0.1p 9 Jul 2015, LZO 2.09
+Enter Management Password:
+Wed Jul 06 11:19:25 2016 MANAGEMENT: TCP Socket listening on [AF_INET]127.0.0.1:25340
+Wed Jul 06 11:19:25 2016 Need hold release from management interface, waiting...
+Wed Jul 06 11:19:25 2016 MANAGEMENT: Client connected from [AF_INET]127.0.0.1:25340
+Wed Jul 06 11:19:25 2016 MANAGEMENT: CMD 'state on'
+Wed Jul 06 11:19:25 2016 MANAGEMENT: CMD 'log all on'
+Wed Jul 06 11:19:25 2016 MANAGEMENT: CMD 'hold off'
+Wed Jul 06 11:19:25 2016 MANAGEMENT: CMD 'hold release'
+Wed Jul 06 11:19:37 2016 MANAGEMENT: CMD 'username "Auth" "wey1sgp"'
+Wed Jul 06 11:19:37 2016 MANAGEMENT: CMD 'password [...]'
+Wed Jul 06 11:19:38 2016 Socket Buffers: R=[65536->65536] S=[64512->64512]
+Wed Jul 06 11:19:38 2016 Attempting to establish TCP connection with [AF_INET]115.42.184.162:443 [nonblock]
+Wed Jul 06 11:19:38 2016 MANAGEMENT: >STATE:1467775178,TCP_CONNECT,,,,,,
+Wed Jul 06 11:19:48 2016 TCP connection established with [AF_INET]115.42.184.162:443
+Wed Jul 06 11:19:48 2016 TCPv4_CLIENT link local: [undef]
+Wed Jul 06 11:19:48 2016 TCPv4_CLIENT link remote: [AF_INET]115.42.184.162:443
+Wed Jul 06 11:19:48 2016 MANAGEMENT: >STATE:1467775188,WAIT,,,,,,
+Wed Jul 06 11:19:48 2016 MANAGEMENT: >STATE:1467775188,AUTH,,,,,,
+Wed Jul 06 11:19:48 2016 TLS: Initial packet from [AF_INET]115.42.184.162:443, sid=9d337a89 4e35c573
+Wed Jul 06 11:19:48 2016 WARNING: this configuration may cache passwords in memory -- use the auth-nocache option to prevent this
+Wed Jul 06 11:19:48 2016 VERIFY OK: depth=1, C=sg, L=Singapore, O=Robert Bosch Security Solutions Pte Ltd, CN=Robert Bosch Security Solutions Pte Ltd VPN CA, emailAddress=st_ess_eng_developer_network_support@de.bosch.com
+Wed Jul 06 11:19:48 2016 VERIFY X509NAME OK: C=sg, L=Singapore, O=Robert Bosch Security Solutions Pte Ltd, CN=bosisec3.bosi-eng.global, emailAddress=st_ess_eng_developer_network_support@de.bosch.com
+Wed Jul 06 11:19:48 2016 VERIFY OK: depth=0, C=sg, L=Singapore, O=Robert Bosch Security Solutions Pte Ltd, CN=bosisec3.bosi-eng.global, emailAddress=st_ess_eng_developer_network_support@de.bosch.com
+Wed Jul 06 11:19:48 2016 Data Channel Encrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Wed Jul 06 11:19:48 2016 Data Channel Encrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Wed Jul 06 11:19:48 2016 Data Channel Decrypt: Cipher 'AES-256-CBC' initialized with 256 bit key
+Wed Jul 06 11:19:48 2016 Data Channel Decrypt: Using 256 bit message hash 'SHA256' for HMAC authentication
+Wed Jul 06 11:19:48 2016 Control Channel: TLSv1.2, cipher TLSv1/SSLv3 DHE-RSA-AES256-GCM-SHA384, 2048 bit RSA
+Wed Jul 06 11:19:48 2016 [bosisec3.bosi-eng.global] Peer Connection Initiated with [AF_INET]115.42.184.162:443
+Wed Jul 06 11:19:49 2016 MANAGEMENT: >STATE:1467775189,GET_CONFIG,,,,,,
+Wed Jul 06 11:19:50 2016 SENT CONTROL [bosisec3.bosi-eng.global]: 'PUSH_REQUEST' (status=1)
+Wed Jul 06 11:19:50 2016 PUSH: Received control message: 'PUSH_REPLY,route-gateway 10.242.2.1,route-gateway 10.242.2.1,topology subnet,ping 10,ping-restart 120,route 10.254.252.111 255.255.255.255,route 10.254.252.200 255.255.255.255,route 10.254.252.201 255.255.255.255,route 172.16.0.0 255.248.0.0,route 10.254.252.100 255.255.255.255,route 172.17.0.203 255.255.255.255,route 172.30.0.0 255.254.0.0,route 172.29.255.0 255.255.255.0,route 172.29.250.0 255.255.255.0,route 10.253.252.100 255.255.255.255,route 10.123.40.0 255.255.252.0,dhcp-option DNS 10.242.2.1,dhcp-option DNS 10.123.40.11,dhcp-option DOMAIN bosi-eng.global,ifconfig 10.242.2.3 255.255.255.0'
+Wed Jul 06 11:19:50 2016 OPTIONS IMPORT: timers and/or timeouts modified
+Wed Jul 06 11:19:50 2016 OPTIONS IMPORT: --ifconfig/up options modified
+Wed Jul 06 11:19:50 2016 OPTIONS IMPORT: route options modified
+Wed Jul 06 11:19:50 2016 OPTIONS IMPORT: route-related options modified
+Wed Jul 06 11:19:50 2016 OPTIONS IMPORT: --ip-win32 and/or --dhcp-option options modified
+Wed Jul 06 11:19:50 2016 ROUTE_GATEWAY 192.168.0.1/255.255.255.0 I=12 HWADDR=58:91:cf:a6:29:4e
+Wed Jul 06 11:19:50 2016 do_ifconfig, tt->ipv6=0, tt->did_ifconfig_ipv6_setup=0
+Wed Jul 06 11:19:50 2016 MANAGEMENT: >STATE:1467775190,ASSIGN_IP,,10.242.2.3,,,,
+Wed Jul 06 11:19:50 2016 open_tun, tt->ipv6=0
+Wed Jul 06 11:19:50 2016 CreateFile failed on TAP device: \\.\Global\{249E936A-CE66-46C9-891A-D9EC4E5540B5}.tap
+Wed Jul 06 11:19:50 2016 MANAGEMENT: Client disconnected
+Wed Jul 06 11:19:50 2016 All TAP-Windows adapters on this system are currently in use.
+Wed Jul 06 11:19:50 2016 Exiting due to fatal error

@@ -1,0 +1,98 @@
+2017.02.08
+Install Elastic Search: 
+1. install JAVA
+2. create JAVA_HOME environment variable
+3. run elasticsearch.bat and test with localhost:9200
+4. run kibana.bat and test with localhost:5601
+
+x-pack to enable security features.
+
+2017.02.12
+run logstath
+bin/logstash -e 'input { stdin { } } output { stdout {} }'
+
+2017.02.14
+Reload config file
+bin/logstash –f apache.config --config.reload.automatic
+
+To verify your configuration, run the following command:
+bin/logstash -f first-pipeline.conf --config.test_and_exit
+
+Use the drop filter to, well, drop events you don't want.
+
+if "_grokparsefailure" in [tags] {
+  drop { }
+}
+
+
+2017.02.15
+data types
+https://www.elastic.co/guide/en/logstash/current/configuration-file-structure.html#hash
+[,] list/array(no type checking), item separaed by comma
+{} hash, key/value separated by space
+
+
+User custom pattern
+filter {
+  grok {
+    patterns_dir => ["./patterns"]
+    match => { "message" => "%{SYSLOGBASE} %{POSTFIX_QUEUEID:queue_id}: %{GREEDYDATA:syslog_message}" }
+  }
+}
+
+get filename from path
+filter {
+  grok {
+    match => ["path","%{GREEDYDATA}/%{GREEDYDATA:filename}\.log"]
+  }
+}
+
+# You can also add multiple tags at once:
+filter {
+  grok {
+    add_tag => [ "foo_%{somefield}", "taggedy_tag"]
+  }
+}
+
+patterns
+C:\logstash-5.2.0\vendor\bundle\jruby\1.9\gems\logstash-patterns-core-4.0.2\patterns
+
+Environment variable ref:${}
+Grok syntax: %{S:S}
+Refer to a tag %{}
+Refer to a field [field] [] can be omitted if it is top level field
+String expansion "foo_%{somefield}"
+
+The @metadata field
+In Logstash 1.5 and later, there is a special field called @metadata. The contents of @metadata will not be part of any of your events at output time, which makes it great to use for conditionals, or extending and building event fields with field reference and sprintf formatting.
+
+input { stdin { } }
+
+filter {
+  mutate { add_field => { "show" => "This data will be in the output" } }
+  mutate { add_field => { "[@metadata][test]" => "Hello" } }
+  mutate { add_field => { "[@metadata][no_show]" => "This data will not be in the output" } }
+}
+
+output {
+  if [@metadata][test] == "Hello" {
+    stdout { codec => rubydebug }
+  }
+}
+
+The rubydebug codec allows you to reveal the contents of the @metadata field if you add a config flag, metadata => true:
+
+    stdout { codec => rubydebug { metadata => true } }
+
+
+2017.02.16
+for multiline codec
+# Grok pattern names are valid! :)
+
+2017.02.17
+Regular expression, any character other than.
+(?<=Endeavour.)[^\.]*
+
+
+
+

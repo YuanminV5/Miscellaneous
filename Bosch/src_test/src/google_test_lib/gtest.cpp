@@ -1,0 +1,15 @@
+#include "gtest.h"
+
+#include "src/gmock-cardinalities.cc"
+#include "src/gmock-internal-utils.cc"
+#include "src/gmock-matchers.cc"
+#include "src/gmock-spec-builders.cc"
+#include "src/gmock.cc"
+
+#include "src/gtest.cc"
+#include "src/gtest-death-test.cc"
+#include "src/gtest-filepath.cc"
+#include "src/gtest-port.cc"
+#include "src/gtest-printers.cc"
+#include "src/gtest-test-part.cc"
+#include "src/gtest-typed-test.cc"
