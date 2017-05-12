@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={40FAED7E-3DB2-46BD-A4F9-5FC1DDE95780}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={18413A5C-64F7-4961-8DE8-9C70014F9F6E}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="sinon" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="sinon" Comments="sinon" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_sin.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_lib_sin.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_lib_sin_uti.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_for.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_for_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sam.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sam_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sam_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_for_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_lol.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_lol_src.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_lol_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_uti.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_uti_NM_inh.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_uti_sup.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_uti_tes_bro.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_sin_NM_uti_tes_nod.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\sinon\SUB_DIR_ACE_DIR_NM_pkg.wxi?>
+    <ComponentGroupRef Id="sinon.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\sinon\msmProject.wxi?>
+</Wix>

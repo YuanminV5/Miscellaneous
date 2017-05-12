@@ -1,0 +1,14 @@
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\bin.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\chai.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\express.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\livedb-mongo.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\livedb.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\microevent.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\mocha.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\nconf.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\node-windows.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\share-js-stream.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\share.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\sinon.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\winston.wxs
+C:\Users\weiyu\Desktop\script\4_output_AfterFormatting\ws.wxs

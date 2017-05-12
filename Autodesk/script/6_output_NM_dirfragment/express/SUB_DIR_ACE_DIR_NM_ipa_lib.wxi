@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/express/SUB_DIR_ACE_DIR_NM_ipa.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_ipa">
+		<?ifndef ACE_DIR_NM_ipa_lib?>
+		<Directory Id="ACE_DIR_NM_ipa_lib" Name="lib" />
+		<?define ACE_DIR_NM_ipa_lib?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

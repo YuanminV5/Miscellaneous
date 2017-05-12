@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="sinon.wxs">
+			<Component Id="cmpF2CFFF8E97B1DD18884C9710D69D7870" Guid="{B4CCE31D-9005-4AE8-BA99-CE1475D88F5F}" Directory="ACE_DIR_NM_sin">
+				<File Id="filC529581A322CC3C75ED18048DA3CC506" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\.editorconfig"/>
+			</Component>
+			<Component Id="cmp1E1F5A7928203ED212839B2BE0158519" Guid="{DE14565B-35B7-48DC-8966-5844B4F5D825}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil680FADC172E78BE8671AD9234950DE00" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\.jscsrc"/>
+			</Component>
+			<Component Id="cmp9EC56FEC7AA758CF8D2C1B300DC28BB4" Guid="{661B3F14-3E5F-462C-B619-7C21178D8D42}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil9806B6215607BB7F713662E5713D00F4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\CONTRIBUTING.md"/>
+			</Component>
+			<Component Id="cmpD8738C0685792C53988B76BCBE346017" Guid="{7FF5EAE6-88B6-4B37-99AA-709DAFFA063C}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil9D0DE484DFDD4854754F9802AAC380B5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\GPATH"/>
+			</Component>
+			<Component Id="cmp6A6E1E3B6936F22A5BDCA991B7AFD1B8" Guid="{028313D8-B848-41DB-B113-B3F2FC65CAD6}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil150CBEA212B468EF2AD5B9111E9E6433" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\GRTAGS"/>
+			</Component>
+			<Component Id="cmp253F2F1EC5A2CAB8A3F8537195C3D0F8" Guid="{7AC75664-B39B-4833-928A-74C8872CAA37}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil72A5D48C149DC696F0153466B7180812" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\GSYMS"/>
+			</Component>
+			<Component Id="cmpB988E4418B09E3639C75E8136F7A7D05" Guid="{9D6C65E7-335F-4529-B5E1-59E8F7F0E597}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil619AE16FE8E2F13D8791345EBE1FD336" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\GTAGS"/>
+			</Component>
+			<Component Id="cmp45845709CB2E6F7D5119C5E7B6392E63" Guid="{1E36D2E9-BE3F-4073-B046-F027CDA7BEFA}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil6C77EAFAEAED90B6A5AADCC3DB3946FC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\LICENSE"/>
+			</Component>
+			<Component Id="cmp5ED67B0E67C9CE7C5EBD5C69462C4C8A" Guid="{BE7E4B6D-1A88-441E-8F0D-0A97F38F96EC}" Directory="ACE_DIR_NM_sin">
+				<File Id="fil15C0D856D28662CAFE639C6ACBBC7213" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\package.json"/>
+			</Component>
+			<Component Id="cmpB4A6DD986A0F671212E23C3F6D6D57CC" Guid="{9E75B4EB-218D-4FF2-9466-EB5D181397BD}" Directory="ACE_DIR_NM_sin">
+				<File Id="filCE2DA85D3D98CE90C38C89FDC8963133" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\README.md"/>
+			</Component>
+			<Component Id="cmpF78DE4104B97F5D4ED42D04ED07936AD" Guid="{280E9620-1D05-415A-BAAC-98010F9F6CDF}" Directory="ACE_DIR_NM_sin_lib">
+				<File Id="filA0330A3D90AEE336784E3A438ED3B9A1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon.js"/>
+			</Component>
+			<Component Id="cmp71BC34808A9D8951165E8FD45F2EDE41" Guid="{FB0C2AEE-4F83-49BD-8D36-62623741C4C2}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filB6604135C5EAECBDD94FFAE1AABBC05C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\assert.js"/>
+			</Component>
+			<Component Id="cmp1B8E7308EBD9F421A887C89152116522" Guid="{54F7A1AE-32C5-4CE5-B612-3B9232BF8EBC}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filD63E31B816E7C58EFF33FAC165506D5B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\behavior.js"/>
+			</Component>
+			<Component Id="cmp7F635E5771A126FA70F99654A8083612" Guid="{64D57A39-E5BB-4A9F-916F-FAE5884686E1}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filFF4A557E3C6EAF261F7433D7EED39B13" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\call.js"/>
+			</Component>
+			<Component Id="cmp91F2C307CDCE2D9436244A32721CBFA6" Guid="{90104869-C584-4416-A264-9D77936E8E87}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil3E6F020F3AF967EDE8C49DD62C91C474" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\collection.js"/>
+			</Component>
+			<Component Id="cmpB374D01EE5F8F4F3481CE7CBDF9943FB" Guid="{42688D51-4432-4F54-8502-75FFAA022129}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil4871626880EF362A8A3E68204D0D0D44" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\extend.js"/>
+			</Component>
+			<Component Id="cmpB9F49182B9E2B65B0805B33450E8AD1E" Guid="{59EA7175-6217-4EE3-8FED-0F2E30FC1111}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil67DE92D3175FE52120E321E7EB4D0297" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\format.js"/>
+			</Component>
+			<Component Id="cmp65152A7ABD3CCF4D0677125B15962075" Guid="{1CE805F3-E526-4008-90B4-E2E42DF5CC4E}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filD079B928EAA42DE117A992EFEBD7B4F0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\log_error.js"/>
+			</Component>
+			<Component Id="cmp84CC9AD40B5492A6BDE4CBA7425C4F13" Guid="{F1A9BEFA-ED33-4D88-A9BD-DA4039BA99C0}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil67BB08C10D932581472EE0E1C17EBD68" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\match.js"/>
+			</Component>
+			<Component Id="cmp64BC6589624073D1404A3AFE6EE659E0" Guid="{99AFF244-B20E-44C3-9140-AA46B3B41336}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filA7E26795064DCB15177BA48E80069A71" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\mock.js"/>
+			</Component>
+			<Component Id="cmp374EEAA4763FFE91DCE2107AAEA8EA0F" Guid="{5828537C-9FB9-4303-A851-E837C9D94775}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil5F8578B0D78FEEA51514D551C4DE64F9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\sandbox.js"/>
+			</Component>
+			<Component Id="cmp723383F43C309C00471C4BD986990506" Guid="{6866187E-1203-44EB-A529-E9B26702630B}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil526A8EF22771C02BDDAE9C61B63894FF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\spy.js"/>
+			</Component>
+			<Component Id="cmpECFDD669AC0DB2B4CBEF4CE136D306DC" Guid="{F3CE9385-0433-4308-95AC-F542D91B5470}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filE2C5E925866DF6A76B577138C6A26379" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\stub.js"/>
+			</Component>
+			<Component Id="cmp0444FCB630D5990114D9DE4DF1FB998E" Guid="{427D1137-E28A-46D4-890D-A33ED797E737}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filD017127BE9CA0909820E570FC2336A35" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\test.js"/>
+			</Component>
+			<Component Id="cmp005F39FED360930DE03C03CF6C3EB1F6" Guid="{C531D82C-AC69-4D27-A828-FE1612481FAF}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filDCDD81A63CA65B926B2CAF9633BF0ABE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\test_case.js"/>
+			</Component>
+			<Component Id="cmp6097605AA2C5466740366752FC31446B" Guid="{313C60F6-2E97-457D-851E-403395EAE97B}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="filF24ED27D67640C1B3E175C6479F824C7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\times_in_words.js"/>
+			</Component>
+			<Component Id="cmp9A60B89566EB6A4A31320E7B05B7B947" Guid="{86DB4C4C-5FB5-4DD9-A6F4-8D762E150904}" Directory="ACE_DIR_NM_sin_lib_sin">
+				<File Id="fil6C085D171D697B1F899302AAB879F560" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\typeOf.js"/>
+			</Component>
+			<Component Id="cmp8940A044CAE2210F7A9DC96A146741E8" Guid="{60103FCE-7A9A-4E2F-B567-6AF43856BED8}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="filE6FA4B9D80DCF012E0398F1D67523B52" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\core.js"/>
+			</Component>
+			<Component Id="cmp351CE3B5C33F0CC46013D8B176346A1A" Guid="{62076FBF-6C9E-4B8B-AED0-1EE90CBCDD92}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil806B90FEE19EEAADB86728B888828A4A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\event.js"/>
+			</Component>
+			<Component Id="cmp6CD3D8C388FCBC4397997BADA1F39E6B" Guid="{B8E13218-7E29-4B73-99E6-F58C1FF1FBAF}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil7B57EFF5861151D48250E0FCA5AF3922" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\fake_server.js"/>
+			</Component>
+			<Component Id="cmp9058A5C8CE74CBF14A531521A796B1C9" Guid="{FF992F19-815F-4671-A171-3100AD5F7463}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil232A42EFE61A8D6CE4641FBE1AC7F038" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\fake_server_with_clock.js"/>
+			</Component>
+			<Component Id="cmpEBFC085991EAB9F4C882D12B8F91CFFA" Guid="{235D77F4-F126-4F54-A351-3A799E749BFE}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil12669B197691B823E8DF32F1693D409A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\fake_timers.js"/>
+			</Component>
+			<Component Id="cmp09611C73949D623590C1442704804048" Guid="{630EBF87-CF7B-4F92-A955-FFA41855308F}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil9A228BBB4D5861D258DBF4B84CF6EE7F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\fake_xdomain_request.js"/>
+			</Component>
+			<Component Id="cmp7131EABF86393E10E9B9539238EE78AF" Guid="{C55037AB-8BCA-4910-BA95-E478B576899D}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil9AA48761248639981B1F67A39B3F87F9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\fake_xml_http_request.js"/>
+			</Component>
+			<Component Id="cmp22309062758BE686EAD883234FE38244" Guid="{CC1C36C5-B3D4-44BB-A14E-CC3DA0019DEC}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="filB0804FB31CA257F4A760D39F9C886C96" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\timers_ie.js"/>
+			</Component>
+			<Component Id="cmpB5F4357FFD7EE8962282869E0169DCC1" Guid="{27ABE1BB-1394-4649-95A7-DCEECDFEA3DD}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="fil4A69E5D9F75C0594B246F82DFFC438B3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\xdr_ie.js"/>
+			</Component>
+			<Component Id="cmpE93F670DDAEC211CC3E78A2A792AEDAA" Guid="{34212D1C-D98A-44A6-A0A0-7F3976683477}" Directory="ACE_DIR_NM_sin_lib_sin_uti">
+				<File Id="filD6CB3B464F2181879D9CD726B761D28C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\lib\sinon\util\xhr_ie.js"/>
+			</Component>
+			<Component Id="cmpBE873CBBA937B50868A415942A18F664" Guid="{615DA350-BB5E-40F8-AE17-52F9C400A160}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="filEDBB31F44827ABB3E610B41E9923D5C7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\.travis.yml"/>
+			</Component>
+			<Component Id="cmp6E503E91FA7B149B49085DE432BB69BE" Guid="{E4A1EC7C-83C1-4E05-ACF6-C6441FE382C6}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="fil67B1684A74A26F651E92BABF28317253" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\AUTHORS"/>
+			</Component>
+			<Component Id="cmp766AAE49FEBC3D972337B189744533F2" Guid="{107BFEBF-ABCB-4435-A9C5-5883C8E0E359}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="fil44E9D9CD4A550AA12C72D67B06196A3A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\autolint.js"/>
+			</Component>
+			<Component Id="cmp73851E20E8A43A5BE05C8E66E582E19C" Guid="{0B7B5EE4-E747-48B7-8EE5-176A4AF8E473}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="fil4442D856CD0DCE1BB70FD447072C170A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\buster.js"/>
+			</Component>
+			<Component Id="cmpDA5CEAAF417E28AFD6762DD15F85FCBD" Guid="{D6AC3EDF-210B-4081-868E-10C84A74BBBC}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="filAE1CEEEEE8B46A9EB57C9C4AE7F45734" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\LICENSE"/>
+			</Component>
+			<Component Id="cmp9478186AC0FD192ED1AB201F3768D09B" Guid="{7D340D0A-DB52-452A-B996-28100C34FA40}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="filB175AA2441EFA27000D71888718D6DB8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\package.json"/>
+			</Component>
+			<Component Id="cmp1C4DB10A3423DBC6FA054BE0C3635EDB" Guid="{721145CE-B40B-4810-8D82-6A4E93E8C9D4}" Directory="ACE_DIR_NM_sin_NM_for">
+				<File Id="fil97EF8D3C267F317485A88C6B5CFE1A95" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\Readme.md"/>
+			</Component>
+			<Component Id="cmpBD128682FB9CD9587C59E1A843DD5827" Guid="{A5AEAAC7-1700-4933-ADBD-723E362609BB}" Directory="ACE_DIR_NM_sin_NM_for_lib">
+				<File Id="fil1964DA5265C556545DF5CB90C6C67830" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\lib\formatio.js"/>
+			</Component>
+			<Component Id="cmpA3F5522F137894D28C9EF8C49092A871" Guid="{4DBD2C3B-5457-40F4-B74B-33F7F0DB04C7}" Directory="ACE_DIR_NM_sam">
+				<File Id="filF35E09CDB19633943A319AEB6B73786F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\.npmignore"/>
+			</Component>
+			<Component Id="cmp3F9B5AA8B1D65CBA2D3B9BBA514DD1B2" Guid="{5D5898F9-70AF-4ABD-AB05-BCE60638E25D}" Directory="ACE_DIR_NM_sam">
+				<File Id="filA3A0017607317E66CACC1601BAD45EF0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\.travis.yml"/>
+			</Component>
+			<Component Id="cmp1601BC642D7D83D0B5FB8DCAF3976C49" Guid="{DC8FD099-89F8-4C85-AA3C-39A7F44E7BA5}" Directory="ACE_DIR_NM_sam">
+				<File Id="fil446D05FE16E2EC6F40B967C76212FAA4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\AUTHORS"/>
+			</Component>
+			<Component Id="cmp1D6D5C7995DC6C79B422A92E0079D750" Guid="{BEA9AAF9-6B83-484F-964D-C6094FA1BDD3}" Directory="ACE_DIR_NM_sam">
+				<File Id="filD0CE3AD1BF9D669BD309D74E0CF55C09" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\autolint.js"/>
+			</Component>
+			<Component Id="cmp9DF150CBC2DE532F1F0A671575A261D5" Guid="{439AC35C-94F8-434D-94DC-56A1FD2C5531}" Directory="ACE_DIR_NM_sam">
+				<File Id="fil4F402B890732C1FCD221F023CF551CB0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\jsTestDriver.conf"/>
+			</Component>
+			<Component Id="cmpEB9353C1299C608C35AE6A6ECD480235" Guid="{4B023FE2-25E2-4730-81E5-C7D04E389544}" Directory="ACE_DIR_NM_sam">
+				<File Id="fil8E1F206A408AEE6C16E0C96A1E8C2137" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\LICENSE"/>
+			</Component>
+			<Component Id="cmp14EF7F35634ABBC46CE9FB161476FCEC" Guid="{A692EA70-44B7-49AB-B360-95E08B14BF85}" Directory="ACE_DIR_NM_sam">
+				<File Id="fil7C7CB04D34D39195D925282F6658D5C3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\package.json"/>
+			</Component>
+			<Component Id="cmp12670AE40ABE124D1CD2330C79285817" Guid="{BF530594-1651-4A23-B1AA-7CEED5A44CA5}" Directory="ACE_DIR_NM_sam">
+				<File Id="fil61B50B070D3F63921347FCE71F5902B0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\Readme.md"/>
+			</Component>
+			<Component Id="cmp0B978206016EED112C91FE6667327280" Guid="{20ACA864-8EA4-4927-9328-D982727633DA}" Directory="ACE_DIR_NM_sam_lib">
+				<File Id="filA9EB11A4E0A515A36BED7AC743A084C5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\lib\samsam.js"/>
+			</Component>
+			<Component Id="cmp865658C3F276A5DEFB21916E8C39AEA0" Guid="{D25762D4-6F8D-492E-BD35-7C954A30E6D9}" Directory="ACE_DIR_NM_sam_tes">
+				<File Id="fil1451B13AC73467ABB6B0FB4F4229DD1C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\node_modules\samsam\test\samsam-test.js"/>
+			</Component>
+			<Component Id="cmpAC641CFAC31E8B15B6E6BCB53CEA8E17" Guid="{56F6CBF0-9DA7-4399-B178-DDBD3BB4CC7E}" Directory="ACE_DIR_NM_sin_NM_for_tes">
+				<File Id="filB32DC8583FF9B0D658D0E316C6E1D03A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\formatio\test\formatio-test.js"/>
+			</Component>
+			<Component Id="cmpCBC81720EDF2AB4E543112AFD273EA5A" Guid="{E54B9FCE-8252-4688-AE5C-E7C835478C4C}" Directory="ACE_DIR_NM_lol">
+				<File Id="fil6FAD2340AB1F7D5F9222B45CD6FE9B50" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\.min-wd"/>
+			</Component>
+			<Component Id="cmpFB10D5A97235FA37B9FAB8FA6662E53B" Guid="{F053E403-1BE2-4947-A84F-31F6D68769DE}" Directory="ACE_DIR_NM_lol">
+				<File Id="fil9A6BCA13CFA846D9726CEF64A216426F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\.npmignore"/>
+			</Component>
+			<Component Id="cmpF09AADA5B21CF7A4AA502FBC2D67CB99" Guid="{7089C9FA-B56B-4E6F-BC5F-62416F9A5FEC}" Directory="ACE_DIR_NM_lol">
+				<File Id="fil1FC12561CA2D1AC2E0A7BA8FFE7018D5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\LICENSE"/>
+			</Component>
+			<Component Id="cmp798E7CE01941C9BF5241CF400B651778" Guid="{158B1EE3-EFAD-4044-B763-DF5C0725F487}" Directory="ACE_DIR_NM_lol">
+				<File Id="fil28703668F29E0331D946B320F74AAF9C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\lolex.js"/>
+			</Component>
+			<Component Id="cmp978FF27EAFF324CA623A765A32E4DBC1" Guid="{849F8A82-3C3E-47AE-8E17-59E0098285E1}" Directory="ACE_DIR_NM_lol">
+				<File Id="fil9F2F4163078DFABD2E182C2DFEA5D0CA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\package.json"/>
+			</Component>
+			<Component Id="cmpDCB9DC976B31DD109183A34B2A57B387" Guid="{B5BF001D-740D-45FA-92C3-AA3AB674C399}" Directory="ACE_DIR_NM_lol">
+				<File Id="fil2907434FEBED1E60F6427941D4A9B7DA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\Readme.md"/>
+			</Component>
+			<Component Id="cmp4E3A6F969287DF03D23168EE1C4EC36B" Guid="{AC61DB76-98DD-4D8B-A317-7CA7DD0D58B1}" Directory="ACE_DIR_NM_lol_src">
+				<File Id="fil614EB78C995F2BD82890AB0118FE31D1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\src\lolex.js"/>
+			</Component>
+			<Component Id="cmp2E1338C796930390E41B37BD1BFDDFE0" Guid="{B83C12BA-8697-4F3D-B226-5ECEEAE1CA15}" Directory="ACE_DIR_NM_lol_tes">
+				<File Id="fil333F4800D0265AF76255CC69CD6460DB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\lolex\test\lolex-test.js"/>
+			</Component>
+			<Component Id="cmpFB6595B50CBECA827378EBCB8A6A93B0" Guid="{69E82179-BCFC-482C-993B-4A24084786B8}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="filC38629A55D87901B0262FB872CFFAB83" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\.npmignore"/>
+			</Component>
+			<Component Id="cmp0C9B8887BDECF6C61FAB88C237E42320" Guid="{076FBF31-741B-4971-A96E-39B9F6653B58}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="filD8973A877D31DBF0F363ACF2144BAEBA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\.travis.yml"/>
+			</Component>
+			<Component Id="cmp5BD1C6C2DCC1097936A8BE18F7E7BD34" Guid="{3794499F-EAB8-403A-BC8D-121328FCDF31}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="fil0EBA8C59E128BC4585FF128E8B125498" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\.zuul.yml"/>
+			</Component>
+			<Component Id="cmpCEB8A37A6BCB1D14A28C5B94AE58B619" Guid="{9E4538C8-2C87-4331-9C42-9FE9136B2069}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="filC9638F50B3280827F0DCFE02AE44FBC7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\LICENSE"/>
+			</Component>
+			<Component Id="cmpD7F237750D235E4D6DFD840BBA04B70E" Guid="{8367BE98-84F6-47C1-A010-086F861916A5}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="filFF0CF81FD692AC276053E8B3550C814A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\package.json"/>
+			</Component>
+			<Component Id="cmp3181A06AFA2116D3E0A9C396D9627552" Guid="{14ACBC90-D75B-46CF-B6D8-80EFB2530CE0}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="filF7BEFD241A6025A324684DEB54E58676" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\README.md"/>
+			</Component>
+			<Component Id="cmpD200E692EE67E44B08F3F2EFFDD256E2" Guid="{40DF7CBE-37FA-47C2-B195-0F88EAEF668A}" Directory="ACE_DIR_NM_sin_NM_uti">
+				<File Id="filA27B72F14EC56E79C63D355DBAEB767B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\util.js"/>
+			</Component>
+			<Component Id="cmp263FD74FBD1DB1996D1DAB531E53E1C3" Guid="{1B35B8A1-C8E4-4476-8A33-45B6552D2A4C}" Directory="ACE_DIR_NM_sin_NM_uti_NM_inh">
+				<File Id="fil9C73804B678692BB4333C990F9CF2B60" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\node_modules\inherits\inherits.js"/>
+			</Component>
+			<Component Id="cmp534ADF8B2209C7586108570C4F2A3821" Guid="{AF77C04F-8DDA-46DB-BB05-F9CDC153A2C8}" Directory="ACE_DIR_NM_sin_NM_uti_NM_inh">
+				<File Id="filD218BAB24AA470C1C3DE8DCC11242D30" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\node_modules\inherits\inherits_browser.js"/>
+			</Component>
+			<Component Id="cmp934EB9CAAC43E57CB40B1897A3F9C8B8" Guid="{1A86179C-23AC-4F49-B760-84EEFF320881}" Directory="ACE_DIR_NM_sin_NM_uti_NM_inh">
+				<File Id="fil7C4F614C13F50D9ADE389F161B6F9E00" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\node_modules\inherits\LICENSE"/>
+			</Component>
+			<Component Id="cmpE3F5CF30958E940557DEA546BDAC6BF4" Guid="{5A133198-3DD1-426E-B877-057FEC31E9A0}" Directory="ACE_DIR_NM_sin_NM_uti_NM_inh">
+				<File Id="fil792D36A77531E1AD5DDFD004351483AD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\node_modules\inherits\package.json"/>
+			</Component>
+			<Component Id="cmpF2A72418A8306A2B7C3FCC11641A7973" Guid="{75668778-4C47-48EC-87E2-92386C59B054}" Directory="ACE_DIR_NM_sin_NM_uti_NM_inh">
+				<File Id="fil166EE925B6A174FBBCAE28B1C625C4A9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\node_modules\inherits\README.md"/>
+			</Component>
+			<Component Id="cmpD37F3602FBA2B453CCCBAB9579AE1847" Guid="{239B9C9B-9B69-4DFF-94B3-9E60D74D8D5B}" Directory="ACE_DIR_NM_sin_NM_uti_NM_inh">
+				<File Id="fil21CACACC3064D01CC6378E9EDC7097C6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\node_modules\inherits\test.js"/>
+			</Component>
+			<Component Id="cmp21CCC96249EF0034A07D469BE485219C" Guid="{1E5FCC81-3376-473F-803A-FE98574F103E}" Directory="ACE_DIR_NM_sin_NM_uti_sup">
+				<File Id="fil9014F88AA8CF345CD29CA44E18B119A9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\support\isBuffer.js"/>
+			</Component>
+			<Component Id="cmp29928F4EBEA5B417A13669A2C5330B71" Guid="{A97698B5-DA6B-491D-A4D2-BC3D9A3C7E2C}" Directory="ACE_DIR_NM_sin_NM_uti_sup">
+				<File Id="fil2052B3F34877B97727F663FD95C262CC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\support\isBufferBrowser.js"/>
+			</Component>
+			<Component Id="cmp75B465CBA1A35A2674B77127E65182B6" Guid="{519F9AD2-7906-4BD8-A95E-C8292FDD9217}" Directory="ACE_DIR_NM_sin_NM_uti_tes_bro">
+				<File Id="fil6EFA5FA3D99D76BA9A2F88B9990DE64A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\browser\inspect.js"/>
+			</Component>
+			<Component Id="cmp0B581C12DB32519DF60518B29F1B43DF" Guid="{E047A1A2-F411-47D9-8F6E-A1CFE84962DC}" Directory="ACE_DIR_NM_sin_NM_uti_tes_bro">
+				<File Id="filF55991CD841D8C898D4AA41E9B0DCDAD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\browser\is.js"/>
+			</Component>
+			<Component Id="cmp3ACA7F5493DFAC591D4604FB4753DFBA" Guid="{527B7B05-0014-4A66-8A3A-7CC489093024}" Directory="ACE_DIR_NM_sin_NM_uti_tes_nod">
+				<File Id="filD77A879F317ECB77C071EC2DE3048FC0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\node\debug.js"/>
+			</Component>
+			<Component Id="cmp0FD779B0D599E743BF0C56792B2998C9" Guid="{DAF9DC20-4ADA-4574-86D2-B5A877C770C2}" Directory="ACE_DIR_NM_sin_NM_uti_tes_nod">
+				<File Id="filE334D6F7EE9E06ED832333DE91424941" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\node\format.js"/>
+			</Component>
+			<Component Id="cmpA9F8237AA8452A78F18F18BB68675A63" Guid="{F099D4A4-F037-41B0-A350-66795C319688}" Directory="ACE_DIR_NM_sin_NM_uti_tes_nod">
+				<File Id="filC16CAB6D05AE116D93AB9DAF71439369" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\node\inspect.js"/>
+			</Component>
+			<Component Id="cmp059C563FE916BF2F4F6613EF9157D79A" Guid="{83EE586C-4BE7-45C9-8F74-7DD6CD0337CC}" Directory="ACE_DIR_NM_sin_NM_uti_tes_nod">
+				<File Id="fil292D87599A2DADEED854CA04AB3199ED" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\node\log.js"/>
+			</Component>
+			<Component Id="cmp7703F51EC62233C95BD5BE6A59A2A672" Guid="{402524E9-E8F4-47A5-B57F-71B718CE5438}" Directory="ACE_DIR_NM_sin_NM_uti_tes_nod">
+				<File Id="fil2305538EDA394DC507B42B1E565DA5D6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\node_modules\util\test\node\util.js"/>
+			</Component>
+			<Component Id="cmpC7C7B17FB2EEBD99D3387EA23D10F472" Guid="{1D139CA7-80D9-4F83-909A-39938B1C8229}" Directory="ACE_DIR_NM_pkg">
+				<File Id="fil47BDCD063695FC7570A7BCA09DDBD2C5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon-1.14.1.js"/>
+			</Component>
+			<Component Id="cmp104F000C074C099C689F2BB70A96060A" Guid="{396134EF-5AC4-406C-879D-C26948254125}" Directory="ACE_DIR_NM_pkg">
+				<File Id="fil071EAFE8B94E8F0AE4F18BC494820C2E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon-ie-1.14.1.js"/>
+			</Component>
+			<Component Id="cmp42CCC461A543DAABEE1B5432F7AAE30A" Guid="{1418D606-18B4-47F6-A275-F358226A3CD8}" Directory="ACE_DIR_NM_pkg">
+				<File Id="filEA595E60B093FFEF584414053805DE6A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon-ie.js"/>
+			</Component>
+			<Component Id="cmp2B65D5DD0595A2A19CAAE105666587A3" Guid="{1842351B-B138-4FDA-B8E7-B128230FC2B9}" Directory="ACE_DIR_NM_pkg">
+				<File Id="filAF0CEAADD26994F803D597BF21B2FDEF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon-server-1.14.1.js"/>
+			</Component>
+			<Component Id="cmpECC7892ECF8EE56B9E062691B80DE576" Guid="{560C81FF-CE4F-43AA-A5A9-5C65A907FBBB}" Directory="ACE_DIR_NM_pkg">
+				<File Id="fil3F004558AB1B247A02D0DCF1F8AAE85E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon-timers-1.14.1.js"/>
+			</Component>
+			<Component Id="cmp3F95991488943CFC3E1D39DF4DF52688" Guid="{8771C281-5034-4982-A612-9CFB1CC377FC}" Directory="ACE_DIR_NM_pkg">
+				<File Id="filF3D02F60E2EDAB25C256925B6BCB78F6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon-timers-ie-1.14.1.js"/>
+			</Component>
+			<Component Id="cmp2504A28D4892AC22C3C860B4111D91F3" Guid="{1D30F2AD-28B7-4364-8741-434B04E66715}" Directory="ACE_DIR_NM_pkg">
+				<File Id="filFE776B3A881B93CFEE7E48BF2A27F1B3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\sinon\pkg\sinon.js"/>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Include>

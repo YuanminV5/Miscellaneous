@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb/SUB_DIR_ACE_DIR_NM_red_lib.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_red_lib">
+		<?ifndef ACE_DIR_NM_red_lib_par?>
+		<Directory Id="ACE_DIR_NM_red_lib_par" Name="parser" />
+		<?define ACE_DIR_NM_red_lib_par?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

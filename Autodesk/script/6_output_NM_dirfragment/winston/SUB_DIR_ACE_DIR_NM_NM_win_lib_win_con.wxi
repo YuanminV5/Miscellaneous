@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_lib_win.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_lib_win">
+		<?ifndef ACE_DIR_NM_NM_win_lib_win_con?>
+		<Directory Id="ACE_DIR_NM_NM_win_lib_win_con" Name="config" />
+		<?define ACE_DIR_NM_NM_win_lib_win_con?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

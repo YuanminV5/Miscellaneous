@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="microevent.wxs">
+			<Component Id="cmpF23C976E82E5B30357E1AFB6BD22376D" Guid="{61F3191D-4C30-4BAF-A895-00144EC21CB3}" Directory="ACE_DIR_NM_mic">
+				<File Id="fil8E97419600638EB9D5ADEEBDBCF4F26F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\microevent-debug.js"/>
+			</Component>
+			<Component Id="cmpC60DB95261C05DF761B94ED2CAD6955F" Guid="{91A5340F-BBAF-43E5-9DE5-BD43E220336C}" Directory="ACE_DIR_NM_mic">
+				<File Id="fil2704EFB330831A4A334FA8D1DFCFA414" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\microevent.js"/>
+			</Component>
+			<Component Id="cmpC2E3775D9305F3D2DCF6A4AB0873E1CB" Guid="{8A3C7A52-D19C-4199-A868-66AF1EEF5C62}" Directory="ACE_DIR_NM_mic">
+				<File Id="fil98A287C80274ECFDAF27C8319262A40C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\MIT-LICENSE.txt"/>
+			</Component>
+			<Component Id="cmpD12F5477F260EB758EFA9A39F41342FA" Guid="{172190D3-564C-451F-8B7F-DC3F1E6B2A05}" Directory="ACE_DIR_NM_mic">
+				<File Id="fil60BC7538F77460B8CD72827D0A1C993A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\package.json"/>
+			</Component>
+			<Component Id="cmp7E788274130D2615B1FE0D7964474260" Guid="{48F776E8-1A05-4F24-B367-B90CA5282DB3}" Directory="ACE_DIR_NM_mic">
+				<File Id="filDF964BE55B81ADDDE2AB5C7D376AC8C5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\README.md"/>
+			</Component>
+			<Component Id="cmpBD46E9B9809A384F4773B70ECD8189A8" Guid="{9A5F05CF-7DB5-44F7-A428-F674B1D48213}" Directory="ACE_DIR_NM_mic_exa">
+				<File Id="fil7D9AFFA3A1F0D2B9471FA2FDC05CCF2F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\examples\example.html"/>
+			</Component>
+			<Component Id="cmpF4D4C8152F935430847F270B71453AD3" Guid="{45AF2A8B-1C9F-421D-B791-6B6F4D6794A9}" Directory="ACE_DIR_NM_mic_exa">
+				<File Id="fil59AF2A4EF587C74024B3F3104FFF8EDE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\examples\example.js"/>
+			</Component>
+			<Component Id="cmp167E34736FD20097556C03847AE3EAC7" Guid="{ADE3BD70-35C7-4A02-BC09-85F6BE058D90}" Directory="ACE_DIR_NM_mic_tes">
+				<File Id="filB67D6B6B6015E865461A20CFC9D163CC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\microevent\tests\bad.js"/>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Include>

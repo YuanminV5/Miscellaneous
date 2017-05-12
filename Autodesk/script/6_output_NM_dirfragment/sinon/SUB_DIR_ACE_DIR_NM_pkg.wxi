@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/SUB_DIR_ACE_DIR_NM_sin.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_sin">
+		<?ifndef ACE_DIR_NM_pkg?>
+		<Directory Id="ACE_DIR_NM_pkg" Name="pkg" />
+		<?define ACE_DIR_NM_pkg?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

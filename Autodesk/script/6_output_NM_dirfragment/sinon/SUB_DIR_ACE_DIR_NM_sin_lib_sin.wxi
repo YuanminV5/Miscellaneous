@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/sinon/SUB_DIR_ACE_DIR_NM_sin_lib.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_sin_lib">
+		<?ifndef ACE_DIR_NM_sin_lib_sin?>
+		<Directory Id="ACE_DIR_NM_sin_lib_sin" Name="sinon" />
+		<?define ACE_DIR_NM_sin_lib_sin?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

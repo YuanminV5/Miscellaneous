@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={68A6BD96-C510-48C0-9C24-2E616D3E9D96}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={B3F9C7EB-38CA-43FB-94AD-CE2B4EF8D03A}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="nconf" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="nconf" Comments="nconf" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_nco.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_doc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_doc_nco.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_sto.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_lib_nco.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_lib_nco_sto.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_NM_asy.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_NM_asy_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_ini.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_ini_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_fix.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_opt.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_opt_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_opt_NM_min.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_opt_NM_min_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_opt_NM_min_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_wor.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_wor_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_wor_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_opt_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM__.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_tes_fix.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_hie.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_tes_fix_mer.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_tes_fix_scr.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_tes_moc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\nconf\SUB_DIR_ACE_DIR_NM_nco_tes_sto.wxi?>
+    <ComponentGroupRef Id="nconf.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\nconf\msmProject.wxi?>
+</Wix>

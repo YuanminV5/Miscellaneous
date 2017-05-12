@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb_mongo/SUB_DIR_ACE_DIR_NM_mon_lib_mon.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_mon_lib_mon">
+		<?ifndef ACE_DIR_NM_mon_lib_mon_con?>
+		<Directory Id="ACE_DIR_NM_mon_lib_mon_con" Name="connection" />
+		<?define ACE_DIR_NM_mon_lib_mon_con?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

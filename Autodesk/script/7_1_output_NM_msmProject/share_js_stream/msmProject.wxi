@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="share_js_stream.msm">
+      <ComponentGroupRef Id="share_js_stream.wxs" />
+    </ComponentGroup>
+  </Fragment>
+  <?include $(env.WixFragmentsACADE)\ProjectCentric\node_modules\share-js-stream.wxs?>
+</Include>

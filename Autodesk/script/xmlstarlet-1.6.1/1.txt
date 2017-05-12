@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="bin.wix">
+      <Component Id="cmp7C9AC3042B26014B548BC3D90949F356" Guid="{BB3089E8-5666-48B3-9CF1-57EC4EF5935E}" Direcotry="ACE_DIR_bin">
+        <File Id="fil24947C0CFF0AAF15A497435C5BC93513" KeyPath="yes" Source="$(var.node_modules)\.bin\mocha"/>
+      </Component>
+      <Component Id="cmpF45F007C8D2C52A42C7BE17A3F89B55E" Guid="{CBAE43D6-3262-4EE1-955F-58AB2C691BE8}" Direcotry="ACE_DIR_bin">
+        <File Id="fil5BFFCEF475C123F83AF8F44EC96B2785" KeyPath="yes" Source="$(var.node_modules)\.bin\mocha.cmd"/>
+      </Component>
+      <Component Id="cmpA155683AA95CD395C0878215F4D28188" Guid="{E5628217-8120-4968-9BA5-4983D28D497A}" Direcotry="ACE_DIR_bin">
+        <File Id="fil490173491CC24BF9D8879F426108B2F8" KeyPath="yes" Source="$(var.node_modules)\.bin\_mocha"/>
+      </Component>
+      <Component Id="cmp3FC2379A57A4C56B5FAA68DD324BAE02" Guid="{A35A4CAB-306B-42D5-B51D-E17537B54DC3}" Direcotry="ACE_DIR_bin">
+        <File Id="fil48F4FF822324FF866B35AD27A425B013" KeyPath="yes" Source="$(var.node_modules)\.bin\_mocha.cmd"/>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>

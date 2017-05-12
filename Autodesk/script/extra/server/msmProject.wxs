@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+	<?if $(var.is64bit) = false?>
+	<?define PackageGuid={1D54DDFF-5E6E-4660-9435-334011220142}?>
+	<?define InstallerVersion=110?>
+	<?else ?>
+	<?define PackageGuid={1D041B27-FA37-4922-B41D-32D101CB5332}?>
+	<?define InstallerVersion=200?>
+	<?endif ?>
+	<Module Id="server" Language="0" Version="$(env.ACE_VERSION)">
+		<Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="server" Comments="server" />
+		<Directory Id="TARGETDIR" Name="SourceDir" />
+		<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\SUB_DIR_ACE_DIR_centric_public.wxi?>
+		<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\SUB_DIR_ACE_DIR_centric_config.wxi?>
+		<?include $(env.ACE_WixProjects)\_common\dirFragments\SUB_DIR_ACE_DIR_ProjectCentricServer.wxi?>
+		<ComponentGroupRef Id="server.msm" />
+	</Module>
+	<?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\server\msmProject.wxi?>
+</Wix>

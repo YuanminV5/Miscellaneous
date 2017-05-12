@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={A2087997-1151-48FC-91E1-EC683495FFF0}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={89C9B7D4-0266-46BC-8500-2D4DF81F970F}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="winston" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="winston" Comments="winston" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_NM_win.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_doc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_lib_win.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_lib_win_con.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_tra.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_asy.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_asy_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_asy_sup.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_col.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_col_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_col_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_cus.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_map.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_sys.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_col_scr.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_col_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_the.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_cyc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_eye.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_eye_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_eye_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_iss.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_pkg.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_pkg_doc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_pkg_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_sub.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_pkg_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_pkg_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_sta.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_NM_sta_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_tes_fix.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_key.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_tes_fix_log.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_tes_fix_scr.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_tes_str.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\winston\SUB_DIR_ACE_DIR_NM_NM_win_tes_tra.wxi?>
+    <ComponentGroupRef Id="winston.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\winston\msmProject.wxi?>
+</Wix>

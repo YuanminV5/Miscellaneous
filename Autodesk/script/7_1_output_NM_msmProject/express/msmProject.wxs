@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={CDE1CD56-FE49-4472-86EC-533E428D8A33}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={73E289C8-62E5-4AC5-9930-985EF9F24596}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="express" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="express" Comments="express" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_exp.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_mid.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_rou.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_acc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_mim.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_mim_NM_mim.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_neg.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_neg_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_con.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_NM_con.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_coo.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_NM_coo.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_deb.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_ms.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_dep.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_com.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_esc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_eta.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_crc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_crc_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_fin.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_fre.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_mer.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_met.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_onf.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_eef.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_par.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_pat.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_pro.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_for.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_ipa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_ipa_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_src.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_qs.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_qs_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_qs_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_ran.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_sen.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_sen_NM_bin.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_des.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_sen_NM_mim.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_bui.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_sen_NM_ms.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_ser.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_NM_typ.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_med.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_NM_typ_NM_mim.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_NM_typ_NM_mim_NM_mim.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_exp_NM_uti.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\express\SUB_DIR_ACE_DIR_NM_var.wxi?>
+    <ComponentGroupRef Id="express.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\express\msmProject.wxi?>
+</Wix>

@@ -1,0 +1,1062 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="dirF633F6214FB1EC043E09B69A8F9DAA66" Name="livedb-mongo">
+                <Component Id="cmp8831DC9B100156143691CC629CA6B3FF" Guid="{390D7129-07D0-43E3-9374-53CE011B0404}">
+                    <File Id="fil62EE4DF553AF18E3890138B972744B7A" KeyPath="yes" Source="SourceDir\.npmignore" />
+                </Component>
+                <Component Id="cmpED17BC762D5A1A9FC12494161CBAAF23" Guid="{FEAA91EC-8C05-4C72-BBE8-392B1353D4A4}">
+                    <File Id="filFDE6AAF5B687DD1ECDC5AA62B02B665F" KeyPath="yes" Source="SourceDir\.travis.yml" />
+                </Component>
+                <Component Id="cmp4DB6B4B4DADD04C5F17A58995D92BE73" Guid="{88FFA8C4-D05E-4ADE-A2DA-91563A8DF239}">
+                    <File Id="fil93C8D20C601AFB69C66087A2AD10D759" KeyPath="yes" Source="SourceDir\mongo.js" />
+                </Component>
+                <Component Id="cmp83281AC5B002F629912C5288E27D0B98" Guid="{4B2A31DD-385B-46A3-8FB8-45673385C303}">
+                    <File Id="fil12054587141E635AEAB684258FC0CE99" KeyPath="yes" Source="SourceDir\package.json" />
+                </Component>
+                <Component Id="cmpF4292E90C9B73CDB351FE31D7A7484AB" Guid="{E9C173CF-E5C7-4EAE-8324-F38225DF479B}">
+                    <File Id="fil88C616271A801EF8F3771AE9247E7072" KeyPath="yes" Source="SourceDir\README.md" />
+                </Component>
+                <Component Id="cmp412B97F93F6EA13D53A558DBB77BFD0D" Guid="{1A737A72-6744-4AB5-A3C2-E1D8DAEB3989}">
+                    <File Id="fil73A1A8E2795B2F742255AB7B98ED26C2" KeyPath="yes" Source="SourceDir\test.coffee" />
+                </Component>
+                <Directory Id="dirDA0E651B2FC9314DF4F9CB91974FFAF8" Name="node_modules">
+                    <Directory Id="dir94406FB79CE4DE489F8395AC4EB35D0D" Name="async">
+                        <Component Id="cmp9D6D9E00AAEF1663C6296DBAFB8A5486" Guid="{C6D52066-2031-4EBB-AAFC-8ECF88C8E493}">
+                            <File Id="filE406278B15B13A9AB25E8A6B616E771F" KeyPath="yes" Source="SourceDir\node_modules\async\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp36BFDB641B15A8E0E54F15ADD06C8C93" Guid="{D5A32388-CE09-45F4-8D97-6E0FD8D59160}">
+                            <File Id="fil0E12DF76AFB4D7B0C04DB9582F905F3D" KeyPath="yes" Source="SourceDir\node_modules\async\component.json" />
+                        </Component>
+                        <Component Id="cmp319B71B609563CD53D5231D8ACF1092A" Guid="{DBA42ED2-DD70-45AF-98AE-8454C1F6E450}">
+                            <File Id="filD7A1761421895C0FC406D69D8CB42DD2" KeyPath="yes" Source="SourceDir\node_modules\async\LICENSE" />
+                        </Component>
+                        <Component Id="cmp93D348CC4059776D0F13899F010A912B" Guid="{472A39EF-E725-4B74-99AC-DCBA74B0851D}">
+                            <File Id="fil89D85E37FDCEAACDEF9652439E027C12" KeyPath="yes" Source="SourceDir\node_modules\async\package.json" />
+                        </Component>
+                        <Component Id="cmpE0C05C46B8DC04427023A3D8B6999AF5" Guid="{871767BF-0393-4115-A400-C051FD67C087}">
+                            <File Id="fil0058FAFC1C36F120FFF711310BE1AFB3" KeyPath="yes" Source="SourceDir\node_modules\async\README.md" />
+                        </Component>
+                        <Directory Id="dir0D2EB0EDCC60316358A86A0B2F842654" Name="lib">
+                            <Component Id="cmpDA0A7E9C1CDE1D1250750F6453EA73EE" Guid="{44B11949-A891-44EE-9A1B-6E70478AFF3F}">
+                                <File Id="fil98E935F277FB7EE633B19D226785AAA5" KeyPath="yes" Source="SourceDir\node_modules\async\lib\async.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir2B555EBF90FA1B62B3916DCB08E5609C" Name="mongodb">
+                        <Component Id="cmpEA64061292435A6F7B18EC96797C8BA4" Guid="{CED205CD-3679-48F9-B35B-A4D869BA611E}">
+                            <File Id="fil6A3B6D617BAB234DB77918713D46DCB4" KeyPath="yes" Source="SourceDir\node_modules\mongodb\.gitmodules" />
+                        </Component>
+                        <Component Id="cmpA69CA74A3AE4BC7E89B8BDA3230CF076" Guid="{C461F9F2-0C5B-4966-BA71-D1DB89B371B2}">
+                            <File Id="fil275E14E95050DFCD3E6A0864158930FA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp2980146D98763BBBF90818A1A0BFAEA8" Guid="{FC063F72-CB53-4F4E-8D02-ED50B13FE210}">
+                            <File Id="filDFDFAFDFB08E7D95E1BE978D6D786082" KeyPath="yes" Source="SourceDir\node_modules\mongodb\CONTRIBUTING.md" />
+                        </Component>
+                        <Component Id="cmp3E72B83B4F58900F2F5BA9831C22240B" Guid="{42001DA4-1BD7-43EE-B25B-61139B59863B}">
+                            <File Id="fil4B9AECF7D4E8375FE174DB00E92A1497" KeyPath="yes" Source="SourceDir\node_modules\mongodb\index.js" />
+                        </Component>
+                        <Component Id="cmpFCE0A22973B5B3ACE88C8072B43B1CF9" Guid="{6F65FA3F-2A13-4A55-8621-48A13849EEC9}">
+                            <File Id="filE550E4C26157F40C64E7C18172B337CD" KeyPath="yes" Source="SourceDir\node_modules\mongodb\LICENSE" />
+                        </Component>
+                        <Component Id="cmp57F878618A4D53C72F400E2CDA11D036" Guid="{B6731D95-2339-4AA6-804F-7F899D8FBCE2}">
+                            <File Id="fil028E24FF30D7D6BF59AFDF8F727EF88C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\Makefile" />
+                        </Component>
+                        <Component Id="cmp1E697B38A21405C516973C2823AC9F5A" Guid="{4EAA1FFC-A466-4AE3-AFB8-126B765D7B39}">
+                            <File Id="filC617A657E1B56749B2FC882CA3513CEE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\package.json" />
+                        </Component>
+                        <Component Id="cmpECAFEA7358D687D39E30837394B8B6FD" Guid="{C6EA7E3B-0C14-4AE9-A1E6-30CF0D6AB4A1}">
+                            <File Id="filC71FC1B958FE47C1EB41441032BFEA73" KeyPath="yes" Source="SourceDir\node_modules\mongodb\Readme.md" />
+                        </Component>
+                        <Component Id="cmp11D864127D20A6FD945CA8F18C985901" Guid="{6E6F0637-5DA5-44D1-97F2-20DEA7FBFD5B}">
+                            <File Id="fil7E1ED52EECDB0953A5AD22F08A5E3084" KeyPath="yes" Source="SourceDir\node_modules\mongodb\wercker.yml" />
+                        </Component>
+                        <Directory Id="dir382BBAA724E8E1BB4F3C5BA76941DCCC" Name="lib">
+                            <Directory Id="dir970F9008750B0ECF925285F81714285B" Name="mongodb">
+                                <Component Id="cmpFDEB613A8404EDCF315463D39F0AB0A1" Guid="{F660271B-F672-47E4-9F31-5789BA7FF0A9}">
+                                    <File Id="filF24797DDC72BAA353D16120A32FBF854" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\admin.js" />
+                                </Component>
+                                <Component Id="cmpC2D6C90E210D11561355B75445B75C6E" Guid="{417D3A4C-E999-45EB-90D9-6D8768D55305}">
+                                    <File Id="filF43ED4700F9A639719DD5ED172A9E20A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\aggregation_cursor.js" />
+                                </Component>
+                                <Component Id="cmpBDF65B1E32D70B47909EA65ED28AAFB0" Guid="{B49354E1-6C97-4336-9B49-78BF1A6FA0CB}">
+                                    <File Id="fil1D1B3796739C6268D4F214D2615D4E9C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection.js" />
+                                </Component>
+                                <Component Id="cmp23525DD48997ECFCDD7F8F453523D9F7" Guid="{06956466-3FE3-47CB-A56F-D43418BD4348}">
+                                    <File Id="fil2DD7DABB709F6DFA5C046ACCAB144F73" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\command_cursor.js" />
+                                </Component>
+                                <Component Id="cmp941149E48674724899D3C4C038877FCB" Guid="{6A4C91A1-2C00-4E4E-9E86-3C8625C04FE6}">
+                                    <File Id="filD99921FFBE745E46D018105922E86F9C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\cursor.js" />
+                                </Component>
+                                <Component Id="cmpDDC9A2C2A098A49642141DC9BB25E414" Guid="{576A4656-BA7C-4402-8541-C7E3FBB7206E}">
+                                    <File Id="filE4AC6928FA5F7E22B65638B09A4495FE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\cursorstream.js" />
+                                </Component>
+                                <Component Id="cmpCB01A228C5196F68DBA9147BBFCB8B32" Guid="{3CF0C746-2604-467E-B1B3-FC8C46553270}">
+                                    <File Id="filDB2D685E63C3AA4769357C164CB74756" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\db.js" />
+                                </Component>
+                                <Component Id="cmp85E3A00841FBE430A91AED76CB2422A4" Guid="{AA343A24-06DF-4856-81FB-1850188C771D}">
+                                    <File Id="fil9DF653CE160F4986616F7CB0C068002A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\index.js" />
+                                </Component>
+                                <Component Id="cmp15962F842B3033B11C09D0BE2F7A2E46" Guid="{9855B4AA-6010-4A16-A333-AE94A8295E67}">
+                                    <File Id="filE67D93570CC078B9A16E22B9F6F1A982" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\mongo_client.js" />
+                                </Component>
+                                <Component Id="cmp97D5FEE8B4C4C972D1E916DD22555F0B" Guid="{4E895BB7-8E91-4965-94AA-EF16CBA711F6}">
+                                    <File Id="fil76C067C82D912E581A5AADD92EFBFBA2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\scope.js" />
+                                </Component>
+                                <Component Id="cmp2D032542DC1D14EB9A0BF8F6415A127B" Guid="{6ED6511C-0781-4CC8-983C-4FE43DF1A1CA}">
+                                    <File Id="fil792C1EE8D43FCDB43B21A8A0E6BD0C30" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\utils.js" />
+                                </Component>
+                                <Directory Id="dirE0B5B2FC61B70BCE2C3D2E9F4805E3AD" Name="auth">
+                                    <Component Id="cmpA891360EB2A748920DDD310129067120" Guid="{CB3CD9C3-08F2-4855-A740-7D560711AE39}">
+                                        <File Id="fil3BEBB1813938B4CAE8A7A0052E5F00C3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\auth\mongodb_cr.js" />
+                                    </Component>
+                                    <Component Id="cmp2E563FAE25B97E8674F08D6EF2AE5203" Guid="{883519DE-D553-4DD0-A1C0-7996BDA0EE45}">
+                                        <File Id="fil8B3D3694E9551D6ADCBDB1F02C42EF3F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\auth\mongodb_gssapi.js" />
+                                    </Component>
+                                    <Component Id="cmpAE0E16DE72143030EA8AB7C4EF339AB2" Guid="{FAB3B013-C382-4D44-BF2E-D7C01E49D64D}">
+                                        <File Id="filC48FF4C58B795B28AD85AF47806F7742" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\auth\mongodb_plain.js" />
+                                    </Component>
+                                    <Component Id="cmpD13FD6CC6A98E77395917FE227D8F92E" Guid="{BE0DFDE3-FF08-429F-AB33-3AD7D9164D98}">
+                                        <File Id="filD91EF038C5528602F7B5C92B20AE8B44" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\auth\mongodb_scram.js" />
+                                    </Component>
+                                    <Component Id="cmp61DA7B4B025B9AB2CAF00BFB2D948669" Guid="{37497F52-1A4F-4A73-A492-39696B08CB4B}">
+                                        <File Id="filECF39E3D0FE951646F61B55FFE59FD80" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\auth\mongodb_sspi.js" />
+                                    </Component>
+                                    <Component Id="cmpD16BF8A46A6231709336BDB6C67FC44E" Guid="{DF7825E2-178F-4E42-A9F7-4989D92841B2}">
+                                        <File Id="filF2CD5605966072290B912EA3ED527C16" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\auth\mongodb_x509.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirD8F74C2B9009DBCA08A6D680B32AB00A" Name="collection">
+                                    <Component Id="cmpFD4D17C9024FF9658DBFC20CB6D83DC6" Guid="{3B1106B1-0041-4D51-80D3-F36015B68BAC}">
+                                        <File Id="fil7299E137E2797A9993F8E1139768B6B4" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\aggregation.js" />
+                                    </Component>
+                                    <Component Id="cmp742F8EAF3C83699FF972EDBD5B46F0B7" Guid="{D2BDDD64-8AA0-4019-90F5-5E7FFFF32842}">
+                                        <File Id="filB82A39BB52F93B911D307233B83A840D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\commands.js" />
+                                    </Component>
+                                    <Component Id="cmp62EFDD7246EDF56BC5A781618C65B9D1" Guid="{20BBF523-0291-465F-A680-9B9527BD7BE2}">
+                                        <File Id="filF1C1DAA0F049327E37B8BCC9E6753151" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\core.js" />
+                                    </Component>
+                                    <Component Id="cmp6429DB5D5122E28E3EEDE5DA3B1DE18E" Guid="{F940F9F9-A5E3-45E5-8ADC-124B34EA097B}">
+                                        <File Id="fil63266213A41670E58C563D98954FA83F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\geo.js" />
+                                    </Component>
+                                    <Component Id="cmpFE538CE4F9D639C1DC5A85D378FB3342" Guid="{DA3DD620-406E-4086-8981-FB75ECD5371C}">
+                                        <File Id="fil0F7B3752C1EF7C0D803AC5FA76026B45" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\index.js" />
+                                    </Component>
+                                    <Component Id="cmp0A1BC1BF29662011BD71885845705E88" Guid="{B47D9B63-1F1E-442B-901D-D5126922EB23}">
+                                        <File Id="filA09FF099635613BEB5702AFF88DF67C7" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\query.js" />
+                                    </Component>
+                                    <Component Id="cmp91AF4DE7B60C224449FE72DE5B236685" Guid="{84834803-09D9-439E-A87C-2B8FA75A32CF}">
+                                        <File Id="fil6818D8810BE678BC2672680108D9D063" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\shared.js" />
+                                    </Component>
+                                    <Directory Id="dir9BCE4A690EB386D0C890E1429111F3BC" Name="batch">
+                                        <Component Id="cmp4445F250A743CFD993FA5A287F94B19F" Guid="{3169DF3D-D95B-4610-88EE-0082FC402CFC}">
+                                            <File Id="fil6E277BBDC7DF140D0CAE8A26FD177ED5" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\batch\common.js" />
+                                        </Component>
+                                        <Component Id="cmp2B86CFA0C64BED071A50EF78D5577437" Guid="{818A2C4E-DC53-49E3-AE5F-19EBC0E9546E}">
+                                            <File Id="filA79D3ADD504C073F36B3895179B7FC74" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\batch\ordered.js" />
+                                        </Component>
+                                        <Component Id="cmp227D430BE1EFF12A067ADC1FD4E225A8" Guid="{C3B275E8-A3D4-463E-B275-D6C30FD118FC}">
+                                            <File Id="fil3EE3B923CC093EC5977FB7C4A1551360" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\collection\batch\unordered.js" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dir78A8BA085A33B4C21451DB8F89B90331" Name="commands">
+                                    <Component Id="cmp1E6B06DAEAC9A2ACF114A72B3E9B235B" Guid="{D0B07B71-48D2-4C11-A82A-E3A6E0181CAB}">
+                                        <File Id="fil77EDD087EF1831139C4F4A0BCD125839" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\base_command.js" />
+                                    </Component>
+                                    <Component Id="cmpDB09111619480F75BC3D53DA07D90719" Guid="{EF130B03-E571-4A3C-B0E1-A1D46EEA3AC6}">
+                                        <File Id="fil1734F702406C53AB7616601C9AD9957B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\db_command.js" />
+                                    </Component>
+                                    <Component Id="cmpACBDF058317D1DE9FD09FC64A94F78DF" Guid="{55A79F99-5BFE-4C23-8878-69B61A142D70}">
+                                        <File Id="fil9CDA3D0B543E162C260AD415A8BF26F2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\delete_command.js" />
+                                    </Component>
+                                    <Component Id="cmpBC7550D114777546271AB6B2F80A9DBB" Guid="{B40F0118-8908-486A-B415-54A846D562B1}">
+                                        <File Id="fil45F2D48E0987E215ED41F3CA95CA1B7A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\get_more_command.js" />
+                                    </Component>
+                                    <Component Id="cmp319DF712F61658099F71FE70DE19215B" Guid="{2635E2C0-6B2A-450D-B639-0BEB7271D1A0}">
+                                        <File Id="fil8E18E084382728E8CE3E62C1F8C0EBFF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\insert_command.js" />
+                                    </Component>
+                                    <Component Id="cmp10C6A2C5BF0A64552B36241863934070" Guid="{B5732BD7-A0E4-46F1-9591-FB72A38155DC}">
+                                        <File Id="filC03E338823625C1D15285618FBF605A6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\kill_cursor_command.js" />
+                                    </Component>
+                                    <Component Id="cmp648D970E3FFECBF652F2C4C627CCAE5E" Guid="{6BB0E6D4-AFB8-47AA-A40A-540EDEA043C9}">
+                                        <File Id="fil3CF3CA70E42C6697F3EA29098D1BE5CE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\query_command.js" />
+                                    </Component>
+                                    <Component Id="cmpD98B0E877A733968C9105A9FFE620DE9" Guid="{38D94973-49A9-432A-A90D-3B152DD35703}">
+                                        <File Id="fil63516E3A52B2DCA90862D694AB552AF3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\commands\update_command.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dirC9243B7B8E15BB4EACEC85D019CD3FE0" Name="connection">
+                                    <Component Id="cmp158FFCD4526F6E1A5A1E0B98C1B594BA" Guid="{B908A471-28C6-46A0-B97C-D3FCF5C4A062}">
+                                        <File Id="fil328F78E69217316E87DFD605436F6104" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\base.js" />
+                                    </Component>
+                                    <Component Id="cmpEDD2888DF2FCD53B144547D10F76483B" Guid="{951E1893-815A-41FD-BDD6-390D97E78018}">
+                                        <File Id="fil912789CBF10851026D8DE7B6042C4050" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\connection.js" />
+                                    </Component>
+                                    <Component Id="cmp02AB596A987DCBCE5526281412A158C9" Guid="{E250F12C-A9D3-4CF7-87E9-C3F798171A77}">
+                                        <File Id="fil385716B48987CAC574CD889D50E7E909" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\connection_pool.js" />
+                                    </Component>
+                                    <Component Id="cmp8CD9120328B8378FB3B122D9FE3D68E8" Guid="{A8EB80DB-8137-49F1-8541-0FCD4FB0B997}">
+                                        <File Id="filD45E1128DB0A99693F3BA3DC59A90410" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\connection_utils.js" />
+                                    </Component>
+                                    <Component Id="cmp8EA15408590FE75AEB2DF8D6BFC532EC" Guid="{7FCFC635-46A6-4705-87C7-BFF8FA099F07}">
+                                        <File Id="filC2F2422302A5C3A75D3C51DE6492CBBD" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\mongos.js" />
+                                    </Component>
+                                    <Component Id="cmpB501836D2B1E6D299B034E8A19EBC56B" Guid="{B528858E-BB4D-472A-9352-B544FB6D33E2}">
+                                        <File Id="fil1D0024F4B0141BF117E9954736190818" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\read_preference.js" />
+                                    </Component>
+                                    <Component Id="cmpF8FD2160AA7D99788B8C9C1EAD1055EC" Guid="{19E5BAB2-B820-4147-867F-37DF0C143AC9}">
+                                        <File Id="fil2B8E20A029278C3979E3A2864D4CFD87" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\server.js" />
+                                    </Component>
+                                    <Component Id="cmpB8A465C11D5F7788690A9584C736615E" Guid="{8373016D-3588-4D3E-9E73-0BF85E4A4AD8}">
+                                        <File Id="filFB968DF2B8C11299B9403A4D5E63FE1E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\server_capabilities.js" />
+                                    </Component>
+                                    <Component Id="cmp625C941C927EC4E1B2D21ADD820270E0" Guid="{0F82B8C7-71D9-4286-9D15-A9BA267EEE3B}">
+                                        <File Id="filA3DAFCB64AB318499DE9BEBAF0CD538D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\url_parser.js" />
+                                    </Component>
+                                    <Directory Id="dir6895DB9185AC9135A8FA3F7471BF74B2" Name="repl_set">
+                                        <Component Id="cmp62DFB1D8BE9619BF85E13F43951D0274" Guid="{7E9796C9-A906-4887-BA72-823D362CEB13}">
+                                            <File Id="fil0DF049F88F0D4485567B64650CE81822" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\repl_set\ha.js" />
+                                        </Component>
+                                        <Component Id="cmpBCFE654C6653AF72995F619EB5EB48EF" Guid="{1041215F-10B3-496A-A23F-2CCCE18C4071}">
+                                            <File Id="filD2501F1366896A9CAF9F7843639B0701" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\repl_set\options.js" />
+                                        </Component>
+                                        <Component Id="cmpAA0A4D1CA6CA944A0100980D27ADCDDA" Guid="{13999659-9EFB-4FFD-A2B9-112A16801D9C}">
+                                            <File Id="filA1CF537C9AFA847AB4FD17B9D4118747" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\repl_set\repl_set.js" />
+                                        </Component>
+                                        <Component Id="cmpB2FFCD18C77289E24FAC186F7992D6D0" Guid="{1BE3EFA5-CAF8-49AC-B7BC-1485401988E9}">
+                                            <File Id="filB176F66008A604CED106CB0460CD6ACA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\repl_set\repl_set_state.js" />
+                                        </Component>
+                                        <Directory Id="dir5AB3E481A0D17C6DA00BFB0E4418331A" Name="strategies">
+                                            <Component Id="cmp6B47E89B754AA04CD2D510B68432F3A1" Guid="{24A1CD8A-698F-4257-952E-FD256F5BD832}">
+                                                <File Id="fil49C5B3DBC5C1F641E6DA27EA63272B3C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\repl_set\strategies\ping_strategy.js" />
+                                            </Component>
+                                            <Component Id="cmpC1A746F93F6EB2A533515C991E518C49" Guid="{D86EDD20-0881-48E1-9280-127B2EB7B545}">
+                                                <File Id="fil5DE83C92DC2D37E3542015D25200C60D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\connection\repl_set\strategies\statistics_strategy.js" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dir4047CFF91A87627368488E555BA21253" Name="gridfs">
+                                    <Component Id="cmp3C1E55C04250A5871B9843EC5D12E165" Guid="{740AD996-62D4-41F5-A8DC-1C9CDB261BB6}">
+                                        <File Id="filA610DCD36D4CBA092CFF9269C150770B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\gridfs\chunk.js" />
+                                    </Component>
+                                    <Component Id="cmpE0E15C7BCA2E6992E00CDB15DA807F24" Guid="{0D1F76AA-2D1E-4908-B7DB-7D8E4A8260E3}">
+                                        <File Id="fil060F98F8B6B6387F9F9B22F0A5CABEDC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\gridfs\grid.js" />
+                                    </Component>
+                                    <Component Id="cmp1F1460E2CAF95120BA4E22DEC6A97C53" Guid="{E115B723-ADE8-4000-A6DF-993F704947E0}">
+                                        <File Id="fil38EB9DE229BE74A6110152E8A0885383" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\gridfs\gridstore.js" />
+                                    </Component>
+                                    <Component Id="cmp89D56F9D4BDA432C4BCD576CD21BDB15" Guid="{8175DB13-4CF0-43C5-A33B-32E81AC173A3}">
+                                        <File Id="filA951DCD397119854B26675626085C467" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\gridfs\readstream.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir63B817E043C30688AC648BAF2003C687" Name="responses">
+                                    <Component Id="cmp881B52045EEF6EC430707B7DD43C154C" Guid="{7022F7A7-0C15-4A76-992A-F25F7375B969}">
+                                        <File Id="fil6380E8BAD2C5718AB23528BD75386DA1" KeyPath="yes" Source="SourceDir\node_modules\mongodb\lib\mongodb\responses\mongo_reply.js" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dirD691CFBF783771442E74AF0332DC23A4" Name="node_modules">
+                            <Directory Id="dirC8F64E9552A66250E444C30641762DFF" Name="bson">
+                                <Component Id="cmpA7B6CC4962392E90B700359FAA845073" Guid="{59DA3CE0-3669-4D5F-A70A-CBD5683500CE}">
+                                    <File Id="fil82B78B2246A54728A9321C7F474355DA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\.travis.yml" />
+                                </Component>
+                                <Component Id="cmp15901F5F6864C72AC835A6999BBBF77B" Guid="{39942EE1-AE21-4DC1-94F0-6C459828770E}">
+                                    <File Id="filB9CFEF716845CB912EAC9114F7022DB9" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\binding.gyp" />
+                                </Component>
+                                <Component Id="cmp11EFADD87C52F7B342872E1EE4B98E08" Guid="{BDE093A9-FECE-4AC7-9CAA-9F3FC28BF5E5}">
+                                    <File Id="filC7348BAD40B360ECE1B882006B0C2914" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\builderror.log" />
+                                </Component>
+                                <Component Id="cmp6F5A2F5B455FA41AEE8929169E3B4CA0" Guid="{D4352F5C-5442-47C0-97A6-E62991D7F2F9}">
+                                    <File Id="fil1D2294D705A99BEF85473D7523DF3C65" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build_browser.js" />
+                                </Component>
+                                <Component Id="cmp6FF12B26B0B60DD5E4E5B14DEFC9A592" Guid="{971C9BC2-002B-475C-940C-EA554F934804}">
+                                    <File Id="fil671BE8D43148D6B7699500DAB1D21255" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\HISTORY" />
+                                </Component>
+                                <Component Id="cmpD053DD91820F167921466F44223813CB" Guid="{E7B803EE-4297-40AC-B06A-9CB3DBC5E3A6}">
+                                    <File Id="fil4F938B4DE9C6EF5D71B259419E436D5F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\LICENSE" />
+                                </Component>
+                                <Component Id="cmpA45D3221592B1C4767998D6973D9AD11" Guid="{8DEB6F86-A31A-4A28-B342-DD3330402018}">
+                                    <File Id="filB0369F75A9F38192CF8BF7A2D378DF18" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\Makefile" />
+                                </Component>
+                                <Component Id="cmp715F502EB318459684108986C7119E8C" Guid="{D69EB68F-9EB7-47F4-9DBB-DA59694DD077}">
+                                    <File Id="fil409FF4EC099510E30A88D773E415297D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\package.json" />
+                                </Component>
+                                <Component Id="cmpE16E93F1D6D60293E84C9D855775D1B5" Guid="{B4FB0289-23E1-4B91-8D91-034992544D91}">
+                                    <File Id="fil171E98B2C393539133B2E638CC93580E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\README.md" />
+                                </Component>
+                                <Directory Id="dir062221019CFAA6ECD8C8DA7DB24AAA59" Name="browser_build">
+                                    <Component Id="cmp8E7301518FD555A7BD595D84A7D932C4" Guid="{47FFF472-0ECC-4839-BC35-0820D394875A}">
+                                        <File Id="fil6C5807857A7C21A8E6BDF6F320794264" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\browser_build\bson.js" />
+                                    </Component>
+                                    <Component Id="cmp82653C95FD8B8A803746DF678A69B695" Guid="{F8ECC8C7-02C2-4A2F-9315-E9E1F71B43E1}">
+                                        <File Id="fil5E6DAB6E702466B7A2C7672AC2925300" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\browser_build\package.json" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir52CE227CC5E826BD5D4BF49844A27D3A" Name="build">
+                                    <Component Id="cmpB8BC4C195250AAEF1BDB0A57F0BC28E1" Guid="{B7F0D4F6-7C8C-4D60-A57A-1BF0DCD0AE80}">
+                                        <File Id="fil7DE2E88D2A0264B7B9AD2955822283FF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\binding.sln" />
+                                    </Component>
+                                    <Component Id="cmp2517673B7D221B9CAFB1E529BFAA131C" Guid="{3C18653A-A29B-4035-B3C5-B381C2459D0F}">
+                                        <File Id="fil96A36B7B31F60D947314E38FD0DF0700" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\bson.vcxproj" />
+                                    </Component>
+                                    <Component Id="cmp2A57B4AE8725FF5CE13E9E3D4621F3A8" Guid="{0E2F9540-0353-48D6-97B9-24411387A4E4}">
+                                        <File Id="fil4EA4A83153078A956BB2A4B12347C5B0" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\bson.vcxproj.filters" />
+                                    </Component>
+                                    <Component Id="cmp400D5FC139C00D2C3CDC199F41342BEE" Guid="{4DF91C97-0963-48EB-A030-9122706ADAA8}">
+                                        <File Id="fil6FC31391227017F36E099586DC0EA330" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\config.gypi" />
+                                    </Component>
+                                    <Directory Id="dir4B60AB990D1B561625C87E7021DA94D0" Name="Release">
+                                        <Component Id="cmp3BACD37145D45B076EDB2CF0477F5673" Guid="{E82D59B4-B8B7-4669-9367-05FFB2BDEBFE}">
+                                            <File Id="fil606504A73FF7AFCC274B9C8D9BC20EE4" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\bson.exp" />
+                                        </Component>
+                                        <Component Id="cmpA7CD2851A58F2AC9361E06D1905E23B7" Guid="{3D7EDF13-3A8A-475D-AB65-AB7A6EEEFAA5}">
+                                            <File Id="fil1564B0CF36753D4E583C6144493C8C97" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\bson.lib" />
+                                        </Component>
+                                        <Component Id="cmp0CFD9C47FD3F198C152B1063BC1B4916" Guid="{DC2E465F-9C4D-4D74-AAD9-328324F9954A}">
+                                            <File Id="fil1A4B51CFC6BBFA207B2A1320C0BCD19F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\bson.node" />
+                                        </Component>
+                                        <Component Id="cmpF9F102FCB1FD0EFFE93BD1075CD91E22" Guid="{D07B5E30-45AF-4269-9EF3-53D26BF397C0}">
+                                            <File Id="filF4CB1852F12F4729822D87B6F196287F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\bson.pdb" />
+                                        </Component>
+                                        <Directory Id="dirCC58ADF803F0B0428A82A81A585F14A3" Name="obj">
+                                            <Directory Id="dir2D5A687BC14521157C6FEE759DF6B9D3" Name="bson">
+                                                <Component Id="cmpD6BD86B3BD4198A3CD1F8C8D44F97C39" Guid="{5C583CDF-4E1E-450F-9402-0D754A7D2D24}">
+                                                    <File Id="filFCA0148A5CFCF30A7AAD3190A7015A39" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\bson.lastbuildstate" />
+                                                </Component>
+                                                <Component Id="cmpD3AF56B942E0CB4ED4E55D0865DD2ABD" Guid="{12FEDC97-F0F9-4D40-BE5F-5E9B5AF13B6D}">
+                                                    <File Id="filDEDD95A0794898FFF2421B1274FA19EF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\bson.node.intermediate.manifest" />
+                                                </Component>
+                                                <Component Id="cmpE58AA34508AD4A133B5417F432E9A5A0" Guid="{63B74EDF-D9FC-4C1C-8A30-85D0896D6E42}">
+                                                    <File Id="fil2C5DB4267ECA36E8486ABFA2CC8C077B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\bson.obj" />
+                                                </Component>
+                                                <Component Id="cmp7B34D3E6CD38711C4F244D0402CB16B6" Guid="{D85E3351-3A95-4F98-B2A4-B8ED0E47721B}">
+                                                    <File Id="fil43EE3B976667EB0E74B196F4F18C1BFA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\bson.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp5F2ED0619E592C098C3A052F69B45908" Guid="{0B00E3FF-B455-4207-A029-AC17DA601726}">
+                                                    <File Id="fil4F817FE610744C1E47D28C13C1566898" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\cl.command.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpBD99877CD9752935636C79770DA67B9B" Guid="{D1D69142-F6A0-4DF0-9A10-303B5D782DA5}">
+                                                    <File Id="fil18684C14978070300539619D992165FF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\CL.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpA4929431A581D7F311F7F044EDE9B476" Guid="{B1FCB47D-D060-41F5-A429-CDCAA579B8F3}">
+                                                    <File Id="fil371EDE66E33144BA16AD3639C28FC08B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\CL.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp5C914A02FD960BC2BBF45B664025A3A4" Guid="{7260D804-A88D-4F24-8F26-2202E401200D}">
+                                                    <File Id="fil8F6686F9D12AD96B773F65DDF3D25F7C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\link.command.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpCA23DAD45D9D43506F9505B7CF8AD3DA" Guid="{C7583A39-0D94-4511-8D12-1A2E96A197B1}">
+                                                    <File Id="fil7330A8BBA5C87B43E6FBC7255BDD28D5" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\link.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpB36A916E19E0C69CD82ADBBE27BCC35F" Guid="{98B24635-5CC5-4DBC-84BD-D4033C57EACF}">
+                                                    <File Id="fil55AD76D4EA54073D884D266F78E3AE4B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\link.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp3BCC62DE6323C2CBE48018AF8B192C3E" Guid="{E9036231-88C9-4940-AA47-B6C72D09E9AA}">
+                                                    <File Id="filAC1F70D18A4B398E9389A9FD657A1241" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\mt.command.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpCC85AB3516C7AF6AE9E64FD74A7CCFE9" Guid="{C936FDA3-3402-4C95-854D-4F18181C6C35}">
+                                                    <File Id="filEA82F8856EDEFAE6CB39CD2F9B016FAA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\mt.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpF8AC665ED0A4A44CA793F586B5A7B07F" Guid="{CE1EE4AA-E211-49D1-96D0-280EF3C1859B}">
+                                                    <File Id="fil7D2DF3627D4CDFD473281F0C735396AA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\mt.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp9E0050602ED82338C4841BA52B6F7FA3" Guid="{E3F25A3F-4736-4E42-B151-743C47EAEBC9}">
+                                                    <File Id="fil4784453A654316F72BE40FE4165D0E4B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\build\Release\obj\bson\vc100.pdb" />
+                                                </Component>
+                                            </Directory>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dirD011AA7B687D9483AB87EDAB345486B5" Name="ext">
+                                    <Component Id="cmpEF81A64B99812857029F528E30EE5FEA" Guid="{D653B975-EF7C-4D98-8D58-284D2AD0E6E3}">
+                                        <File Id="fil8A87DD62E96AB4FFC8C009D76CCB4113" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\bson.cc" />
+                                    </Component>
+                                    <Component Id="cmp9897A4DEAC1F9890A51ED2092373D16F" Guid="{858F487E-E42E-4400-BA87-5BBCB1B235C6}">
+                                        <File Id="fil2C762888E21441B829762298B8621338" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\bson.h" />
+                                    </Component>
+                                    <Component Id="cmpDE66508011A769D54FC233C55FBBABCC" Guid="{3205018F-250A-473B-9D92-CA423446EA86}">
+                                        <File Id="fil6CB39F3C1682FE262CC9A8D9362BE3EF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\index.js" />
+                                    </Component>
+                                    <Component Id="cmp10EB3176704CAFD9AB5014968D05B671" Guid="{5842CC40-B87C-43B6-A62E-8F5FF380960A}">
+                                        <File Id="filD0F34AFC94B0D27B306AA590F3EF2E04" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\Makefile" />
+                                    </Component>
+                                    <Component Id="cmp1D573C52BF31999CA9B48DA54F7849BB" Guid="{8696610E-CE96-4CA8-8624-EF2E49AC4D92}">
+                                        <File Id="filE04B22438CF4E25B126B9C93D3BB1DC6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\wscript" />
+                                    </Component>
+                                    <Directory Id="dirA6FE8A0392A4FACB8441640092E63FC2" Name="win32">
+                                        <Directory Id="dir1C68CD3B3AED9B8330F8A9C8F6035FA9" Name="ia32">
+                                            <Component Id="cmp9933BD02836EC72FD338B33AE40A9EE0" Guid="{049F082F-8EBD-4CA0-AA1D-53808BF0A940}">
+                                                <File Id="fil424DE8E04849201B8CBB8DF30845B88C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\win32\ia32\bson.node" />
+                                            </Component>
+                                        </Directory>
+                                        <Directory Id="dir2A20C0B7B7BF80FC4193903801744259" Name="x64">
+                                            <Component Id="cmp4648C16B8C1E8BF3EB7DA3A62C8BC93C" Guid="{969A95D1-6360-42F8-AE2E-E0B17A16627E}">
+                                                <File Id="filB7EB14EEC2A058EC1947695BAC5B6DAC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\ext\win32\x64\bson.node" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dirB79068E68BB09CEF79A1F1AA32D524C6" Name="lib">
+                                    <Directory Id="dirFD88E9BDAEDCE4540C5550D0636400D4" Name="bson">
+                                        <Component Id="cmp34D88DD974F642B10CC73C75C694949F" Guid="{71BEF1E1-81C1-463A-A0A8-DFCEE4CE1B65}">
+                                            <File Id="fil50619E9D03491F7D6B224B8D96C2E673" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\binary.js" />
+                                        </Component>
+                                        <Component Id="cmp39F14AD6293A9B9A5FF99510DEEC365C" Guid="{7ECF4803-A5BF-456C-A564-FB1168BBAA8B}">
+                                            <File Id="fil434280EBDB4815299D411D8E71A8558E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\binary_parser.js" />
+                                        </Component>
+                                        <Component Id="cmp03CFDCD9932E4DF13030442E65C28A6E" Guid="{8B05737C-FEFC-41C3-91E1-D92BBBFC8D7E}">
+                                            <File Id="filBB005EDE191E1BE017ED93D23FB668F4" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\bson.js" />
+                                        </Component>
+                                        <Component Id="cmp33F600C94A1FAA12060E2206574A935D" Guid="{21B87662-19D2-496B-953D-554A263E9D44}">
+                                            <File Id="fil366B52A3E14A740A8E064748F6D2EE22" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\bson_new.js" />
+                                        </Component>
+                                        <Component Id="cmpB0A43F18468894E73EC5899FE8DABFA9" Guid="{7327BDA3-2890-4C13-AF97-2E40B149FD55}">
+                                            <File Id="fil4E795636F25EBC543A8B34F1664B5BCE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\code.js" />
+                                        </Component>
+                                        <Component Id="cmp72F725EDA53AB74F9D5C15ACD929CA7D" Guid="{653E963C-EE98-4636-AD17-A7BF1BDD27FF}">
+                                            <File Id="filA203AD20F4F364B8D4AAFFFFD216854F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\db_ref.js" />
+                                        </Component>
+                                        <Component Id="cmp09B19BB3B35D1B2CE24EF4D1D659443F" Guid="{2DF6788D-0712-43AF-A5CD-7E3C5F1F7D6E}">
+                                            <File Id="filF3FAC41F3326293F3F0737CF9DE1510B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\double.js" />
+                                        </Component>
+                                        <Component Id="cmp14138BFB681185F7AA1E41EAF2DD46EF" Guid="{2E670D79-D577-4369-A9D2-2BAB9249CF11}">
+                                            <File Id="fil56F35B6CB8CDEF670B23FE9B72815D80" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\float_parser.js" />
+                                        </Component>
+                                        <Component Id="cmpC689796C8C5C157439F8FAB66A74C506" Guid="{D3631E44-7D9C-4B47-B296-430F3902BBDD}">
+                                            <File Id="fil6178B44765A37015323F2940C8864EDC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\index.js" />
+                                        </Component>
+                                        <Component Id="cmpFC542CDA21B3B302718268EBE6C65320" Guid="{2EA6C5D0-684C-4AF9-BB3A-5433BD7CEFF4}">
+                                            <File Id="fil8F67DE5A1A5025EC230B0F4D7CBEDA05" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\long.js" />
+                                        </Component>
+                                        <Component Id="cmp2B192EF1239C2D617B054C02093C6BC7" Guid="{9D7A2E25-CD4C-408F-BFA3-253C9CA1EB01}">
+                                            <File Id="fil1847068AC328D1832C7A950FB412667B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\max_key.js" />
+                                        </Component>
+                                        <Component Id="cmp2474A904BCB23902654C15147F2F93CE" Guid="{27238DE6-711C-4C8B-8DB9-B8CC28D1F3EA}">
+                                            <File Id="filC1A5F2AAACDF83053AAD67B0296C0FF8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\min_key.js" />
+                                        </Component>
+                                        <Component Id="cmpF8D3D4701A2DBA443A3896BB89ED6C6D" Guid="{C65B87B0-2040-429B-AC43-CCAA5EEC6F82}">
+                                            <File Id="filC0EA2ABFA655FFE824470CC8715F36CF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\objectid.js" />
+                                        </Component>
+                                        <Component Id="cmpC5FD23E94FF67FE0240400E3FC3ED09E" Guid="{E43BF53C-6FD6-4928-BFF3-7084837475C2}">
+                                            <File Id="filA09185D6F3B05D3762D1811BF4FE30A7" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\symbol.js" />
+                                        </Component>
+                                        <Component Id="cmpF1D01B8E80423209D5E3AB2654ECC265" Guid="{73D6098A-2185-49A5-80C3-72F3A8A11CE4}">
+                                            <File Id="fil74D98880A0D251324F2646336637171E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\lib\bson\timestamp.js" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dirCA22A6FAF0D772445829EAC98019ECEE" Name="node_modules">
+                                    <Directory Id="dirB5FB212213F71ED5CCBDE0582FD6B716" Name="nan">
+                                        <Component Id="cmp3DBA75F99EC2315DC3B6744E24CFC9EF" Guid="{3F055574-E9B9-49EC-AD66-88FB9A6F1AF7}">
+                                            <File Id="fil36C8A8166D667C21CFDCB72A5E4D34A3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\.dntrc" />
+                                        </Component>
+                                        <Component Id="cmpAD762C5D5AF6FFBA3708ABC604016B05" Guid="{7A0BF60E-0532-4C31-A726-3D6A606803E4}">
+                                            <File Id="fil5D152324BDF575F59F62B732D48F1A61" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\appveyor.yml" />
+                                        </Component>
+                                        <Component Id="cmpCDC327031FB6110E089C463C1791AF53" Guid="{5ECBDB2D-F890-4DEE-BB0B-9035B4E35B47}">
+                                            <File Id="fil094F298CFB2D467ED7A5AF5E8B642EEA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\CHANGELOG.md" />
+                                        </Component>
+                                        <Component Id="cmp166B22402CCCBE25BB5B8D3F1CD91AA7" Guid="{15B24D0C-794F-42D3-BA85-FBE64275C3E3}">
+                                            <File Id="fil39705E5F1D8ADA82049B4A7444DFDF8A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\include_dirs.js" />
+                                        </Component>
+                                        <Component Id="cmpFA19F12A705B2278CCD3CA50CFD63C61" Guid="{7F136ECC-8F97-49EE-89B5-80C7227E62FD}">
+                                            <File Id="fil53A14BDB78D906706265D99A12B222E5" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\LICENSE.md" />
+                                        </Component>
+                                        <Component Id="cmp684F4F4F1103F64B3676C6F326A6E18C" Guid="{92BF5F21-CB3C-4948-BBD5-425CE8BCCFB5}">
+                                            <File Id="filB24B6268DCC07CEC0A180121408100E6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\nan.h" />
+                                        </Component>
+                                        <Component Id="cmp84549A231D37BB7ADA0CCECDCF2355DD" Guid="{C1FF8749-E322-464B-80BF-E515674D1E8C}">
+                                            <File Id="fil22C16A3CD4CDFFE036EC17F7E624B8AC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\nan_implementation_12_inl.h" />
+                                        </Component>
+                                        <Component Id="cmpB3925F807437858445579152ABED22E3" Guid="{F3DBD5EA-22A9-4844-8D9D-82BBE63F05BB}">
+                                            <File Id="fil2979AF3F0E4B7B1D1B94D5666C55C4D0" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\nan_implementation_pre_12_inl.h" />
+                                        </Component>
+                                        <Component Id="cmp32BAC03CA644C8881B51E480341ECD86" Guid="{6CF71714-6495-4625-B05E-B9FE7E8C4A89}">
+                                            <File Id="filB809E22943108611BDDD8195605C0217" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\nan_new.h" />
+                                        </Component>
+                                        <Component Id="cmpACAD5262D7AC6CA849A890B9EAE56C27" Guid="{5D5B6B5E-0A15-412A-9272-CA4C9C8958DB}">
+                                            <File Id="filB1492D9A1F4C2E4701DAA6C7CDAFFCA6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\nan_string_bytes.h" />
+                                        </Component>
+                                        <Component Id="cmpCA15D212BD14E73537DC4FCB063918E1" Guid="{C158FE74-EBBD-4142-8D6D-8C2288B5BFFA}">
+                                            <File Id="fil8E62A79371358DB131ADB755081AC0A6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\node_modules\nan\package.json" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dirE9706FF931783852B14D030EC338878C" Name="tools">
+                                    <Component Id="cmp2851359610BCE97CABC877C802C070A8" Guid="{04237DD4-BE42-47E7-9DAE-BD4F41701AE7}">
+                                        <File Id="filD964230334B7822D81636D1203D86B45" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\tools\gleak.js" />
+                                    </Component>
+                                    <Directory Id="dir694130DDDF65A1B9719CB934DFCF90EA" Name="jasmine-1.1.0">
+                                        <Component Id="cmp76E59AE8306F790E2A694D70312BC11A" Guid="{B783AA82-EDEE-48DE-8284-876FD89FB1F9}">
+                                            <File Id="fil34A9740E4F428E7755C8AADABDBB729A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine-html.js" />
+                                        </Component>
+                                        <Component Id="cmp354DE9D3BD20928FC3833EC67F45F1D5" Guid="{2119C0B2-7914-45C4-8ACB-4080F806C3F1}">
+                                            <File Id="filF43F6F3244A8ED91A48E3299B0B6DDA1" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine.css" />
+                                        </Component>
+                                        <Component Id="cmp121AC50A2A0CE15C8359453345AAA185" Guid="{CA565DD3-CE05-4BC8-8123-4FC4FAC3437F}">
+                                            <File Id="filE9E2CF6D8E6C02389176CD1CA5EE4036" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine.js" />
+                                        </Component>
+                                        <Component Id="cmp2BD244378FAA16F98EC089C1A4084645" Guid="{C2E4FB87-2057-49C1-BC7F-1A0B1C3F3D57}">
+                                            <File Id="filCA1806A6E595F5A99E0FD2FD7DE54464" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\jasmine_favicon.png" />
+                                        </Component>
+                                        <Component Id="cmp6CD16A3C30EE341D18016955FC363C12" Guid="{5EFAC0F7-8CF0-4872-A48C-F8D5E2668509}">
+                                            <File Id="filAD7BE8E072882E5363FFD3A16F7B07B8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\bson\tools\jasmine-1.1.0\MIT.LICENSE" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir4A4475DC3CA7564BF588A5ED214F5FF5" Name="kerberos">
+                                <Component Id="cmpFDED7AE87917B788E3A3651383B70138" Guid="{4346FF05-C6BD-4921-89C5-0F49B1273A33}">
+                                    <File Id="fil84EF3F7C85F028056D9AEFFEF49F7031" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\binding.gyp" />
+                                </Component>
+                                <Component Id="cmp08E7700C8438358045AE75C354EA90B3" Guid="{5C73B6DD-D442-4C0B-9252-E11D0CD6FC9B}">
+                                    <File Id="fil78B0A09D21851F70727E6FDEEC7F88BC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\builderror.log" />
+                                </Component>
+                                <Component Id="cmp14B26E887EE6D5DA8FBE825772453E83" Guid="{402A0390-3406-4416-8973-DA06A1958338}">
+                                    <File Id="fil6066D7D1F371619726D81FD61853C0DF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\index.js" />
+                                </Component>
+                                <Component Id="cmp677CB64C365BEEE685E3063257056F6C" Guid="{C4468CF5-51C7-4941-8DAF-911AFF12A2C3}">
+                                    <File Id="filCFD70D5FD389CFF8E17C31EBA25C834F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\LICENSE" />
+                                </Component>
+                                <Component Id="cmp6179E3A7C9A5D42E6C099166A914765E" Guid="{02EA92BF-3DAD-4C0F-BBDB-519E314B1AF4}">
+                                    <File Id="filAEA2173C8A3491C48F87F9E5A86BFFE0" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\package.json" />
+                                </Component>
+                                <Component Id="cmp6906C7E17F019F5393011CBAC3BCC68F" Guid="{97568678-ED6F-42A4-B040-4C25F234F3C7}">
+                                    <File Id="fil49AFD0CE01BE1EC18F667E5A17EC83A6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\README.md" />
+                                </Component>
+                                <Directory Id="dir8B5D4C0F45CD6D72E6E623323739460B" Name="build">
+                                    <Component Id="cmp21E222D22D6CB7D0DEF33B2EBD4E778C" Guid="{1F34C2E2-D576-4FFF-B9F3-7155F6A20ADD}">
+                                        <File Id="fil58D805B3D6503DDEF78C8147BD632665" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\binding.sln" />
+                                    </Component>
+                                    <Component Id="cmp79AA4F9505696665E1E4787EC81FD8B9" Guid="{D74BDC39-94AE-49D5-B961-22911C647DDE}">
+                                        <File Id="fil5663FF42204FB2895D554C69A8363BE1" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\config.gypi" />
+                                    </Component>
+                                    <Component Id="cmp4B7E26CB1B318513BA9850E9DE8D6CE2" Guid="{F1D5FCA4-05F9-44F4-BFAD-C5CF36FC5F21}">
+                                        <File Id="filC88EE92599653BFA7DC1DB297EF5D3C2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\kerberos.vcxproj" />
+                                    </Component>
+                                    <Component Id="cmp5B73A9A5002917FC9E0EDFBBB28CBC41" Guid="{02E8E100-04DE-4B63-A81E-A2CBE0D71E34}">
+                                        <File Id="fil5931B6F92162D5F80C6A9E15372C8C04" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\kerberos.vcxproj.filters" />
+                                    </Component>
+                                    <Directory Id="dirFFE6D8CB800B644528843875E913D97D" Name="Release">
+                                        <Component Id="cmp4F198F4A99B1C1617C3F7D09BBDFDC6B" Guid="{8F205B43-3BFB-4342-8B57-C6E507218574}">
+                                            <File Id="fil3A6E0C034D588896CCD44CA9B91E4992" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\kerberos.exp" />
+                                        </Component>
+                                        <Component Id="cmp97C111E696A315C5059F1837B6CC126E" Guid="{B3C53B93-F2A2-4A2F-8628-A128CE18AEC3}">
+                                            <File Id="fil168BAD2EEC1841CD95BC75E683AE82AA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\kerberos.lib" />
+                                        </Component>
+                                        <Component Id="cmp2A57556434614C94B1FAF456E2C7B856" Guid="{C9134CBB-FA2F-4912-9CB7-7AF11899CE84}">
+                                            <File Id="fil00ED181B8F94BA09503209A75051E5FB" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\kerberos.node" />
+                                        </Component>
+                                        <Component Id="cmp51DE56432CCBCB4CF0FAD22A11DA0D37" Guid="{B9066660-1732-4DA0-86B5-E2A83F634CEE}">
+                                            <File Id="fil317E8A806C41F598ABB44BDCBB492118" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\kerberos.pdb" />
+                                        </Component>
+                                        <Directory Id="dir33287C876EF4B1DF771CF1527A35EBCF" Name="obj">
+                                            <Directory Id="dirBE30479F8143730B0056BD2668FA0E73" Name="kerberos">
+                                                <Component Id="cmpC5675794D3D73F0D1ADAC80C3982E1F7" Guid="{A5FA74CE-93CF-4CDF-9B31-1E0419DB68A8}">
+                                                    <File Id="filA8A4C052F74B36A2FBEDD17077C2B9E3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\base64.obj" />
+                                                </Component>
+                                                <Component Id="cmp1A6F86379EA52EAC7A5B1B230E4D68F5" Guid="{FB0E1D39-DF2D-4CCB-A112-07C72CD77BB1}">
+                                                    <File Id="fil095BDE12639AF6906ED98E9166DBD2E8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.10752.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp7460A7C5DFF0A574BC2B8BC36BA90BDF" Guid="{8F9BE106-FDA5-425B-BA06-B0C42038AB4A}">
+                                                    <File Id="filF242E962DF2518B00963B458C509A613" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.10752.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpD98FC219B27CCC180ED1D9A517217882" Guid="{C8E7B341-BB5A-4645-8792-D721513341D8}">
+                                                    <File Id="fil492FF72266B1800E6F9073A6F93DCE38" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.11944.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp7C18830C7C933A7D8E8B02DD1B061CAC" Guid="{C7959C5A-A170-42FD-ABD9-9BB9FF2A0E3B}">
+                                                    <File Id="filA13ED244ABBC0A281C2A15327B845B2A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.11944.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp0D21DD2D90C817ABE7B761DF6C67166F" Guid="{A2F34357-A9AE-495E-8BFD-A43D358F140F}">
+                                                    <File Id="fil41863BEC7F555DD9979127955D1459AE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12360.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp8E86A9CB8B8227DD59A1E8FC1CD5FCFB" Guid="{4A339A14-96C7-481F-8EFB-97629F2827B6}">
+                                                    <File Id="fil674E300EE8F9DE9DDEE8CC0FA5AE4DCA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12360.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp1B560BE52C4ABD106DDA318353151111" Guid="{030E4EFF-129C-4E10-A31E-EDEBE4897EDD}">
+                                                    <File Id="filF871F313BB3E95A7B033AD822D424D59" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12372.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpD3E13C12E966F79CBD2050DB1B8A9CC6" Guid="{0416CE96-54F6-4D52-8A4A-5EA2540FC770}">
+                                                    <File Id="fil34B5B3E582AE8000708A56E03346A08C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12372.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp3D84DF9D55FFF720650D774FA0F5906D" Guid="{1FFB1966-8A31-404C-BF1C-82B446C2FE4E}">
+                                                    <File Id="filB1312C6B05594AB3F5E6906F88A9676E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12400.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpA5FD80F537F60CA00601576EA17DB16B" Guid="{9DAA991E-7BFB-4002-8E29-A7424D7F7947}">
+                                                    <File Id="fil76FD8A38600837301A6F8E7EC4F8453E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12400.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpFBDA182E71C046C3A7E40FA42C36DEF4" Guid="{241B0993-5379-4A58-85D5-221D8E58DCBB}">
+                                                    <File Id="filC3A7B8917D94333C10424315C6FD915E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12448.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpA0400156C4DFE1914F434A8630FD391D" Guid="{23FA8ABE-1308-4B79-9DB3-3E10CF0E626E}">
+                                                    <File Id="fil5216A1C060640D142CD1CB39F62333F3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12448.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp3E2A092E68FCAF7CC38F52900A3C4C95" Guid="{CDB095BE-DB66-49C0-885E-4A947E339A49}">
+                                                    <File Id="filF69881662E873C32ACB1A72A1AF0385A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12496.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpC020693451A755B9DAE3A1D0105E2FA3" Guid="{AC2E748F-E02A-4170-B293-A4173488F29F}">
+                                                    <File Id="fil8DD175E2EC260AF84F703C8C8FEEF02E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.12496.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp385E4DB6FD501C9F7E93CCEE2C66E234" Guid="{331F1B0B-2CE6-4843-95B2-A0DB37222FE3}">
+                                                    <File Id="filE38468171DA9AD59800A529C641B4CF7" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.13276.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpE8CF76A10FE7F7B8432174F505424116" Guid="{94D6330A-A782-4937-AF4D-05A615FD098B}">
+                                                    <File Id="fil148488D991F2E156CF389FFF3DD9B884" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.13276.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpC45B1CD600834CDE24B43145FB3B472D" Guid="{7701AAE8-3B26-4117-9249-0D501127A5CA}">
+                                                    <File Id="filDA711B47A0B1E9323EF6B9D281C97E12" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\cl.command.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp7A84C0055FCFD4DB2BD77E60BA619E19" Guid="{A9F1EB40-5256-4679-909E-6397535E677E}">
+                                                    <File Id="fil22471BB1008445B7FBAE8681ACF057E7" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\CL.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpFC13B4675AC91696AD14008747CEC36D" Guid="{D0DF5BB7-CA18-435A-A234-4B857ECA5C42}">
+                                                    <File Id="filA0002C5FBF0A9ABDF8C0650743933412" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\cl.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpB8E32C998954D6427AD8F5D596EF3B5E" Guid="{96F3DA9E-89E1-4E03-98C9-F2B66D262896}">
+                                                    <File Id="fil194CCD2DDD0B8F410BF205462B50DFDE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\kerberos.lastbuildstate" />
+                                                </Component>
+                                                <Component Id="cmpB808E57722D800DC791315C82F091355" Guid="{2BB6CAAA-58CA-4BE8-89B4-FB7CBA8E7EBF}">
+                                                    <File Id="fil851CB8BD9A20C6CB7CD512396B6604BD" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\kerberos.node.intermediate.manifest" />
+                                                </Component>
+                                                <Component Id="cmp42B0AC9A268E6779D6E7A0ACA8AFF4A7" Guid="{987DCC21-4191-4AE7-937E-5D98AEF0E8C0}">
+                                                    <File Id="filB93B93D282C06E1D5384FD1B76AA6AFA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\kerberos.obj" />
+                                                </Component>
+                                                <Component Id="cmpECA9875ABBE1AFD8FFC9CAD04A98C07B" Guid="{F56C32E3-8B47-47C3-B98B-412ED274738C}">
+                                                    <File Id="fil5EED5005199ED30AD1907F16D580F0E1" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\kerberos.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp306D0EBD57366A37831F79E7CC09B2BA" Guid="{6CE87F74-42C6-4798-87D7-0263DB4129DE}">
+                                                    <File Id="filA2442952DF49B9E1D187D832574E7692" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\kerberos_sspi.obj" />
+                                                </Component>
+                                                <Component Id="cmpF9559367FE488AF2C9040328191DCDC2" Guid="{16AA3BA3-3338-4DA1-B99E-773AC035D901}">
+                                                    <File Id="fil5A480182C4CAD5E06C3B3103E8D6699F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\link.command.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpD82A0DE4350D0A6B4846CEDF2059083E" Guid="{36CF1F54-CEE5-4703-AD78-3931877AC64E}">
+                                                    <File Id="fil85DD7EE10E2D796355FD30F8401D8D14" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\link.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp17A015C47D99C502F31A86299C891ED7" Guid="{E478BED1-B513-470D-8731-3AEE4CE1D117}">
+                                                    <File Id="fil496D0973F06C50D14F1BF82477BE826D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\link.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpBF6F65A6BC7E115A20D8CEEB94778ADE" Guid="{7F468725-5F4E-4F0F-B2A9-0B4B73EB5D65}">
+                                                    <File Id="fil775B9BDAF95467CC0EC338BA365938FA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\mt.command.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp0E9BD4CCEC881C4A1B4360DDA0124AB7" Guid="{C6E127FE-33C4-4ADA-AB4F-F32FF116BB2C}">
+                                                    <File Id="fil4A2A9DFCCBC41CA32C56B625B5105A6A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\mt.read.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmpC8A7D5B170311BBF1CEB489B4AAF63E1" Guid="{31605EE0-0191-4916-942B-1730274E819D}">
+                                                    <File Id="fil3FAC4759FA1A1311D05875CBBCAE0647" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\mt.write.1.tlog" />
+                                                </Component>
+                                                <Component Id="cmp8E610FD4AEF00045D00FDECAF50A2DBA" Guid="{00EAD44A-2AEE-468D-A01D-EE55DF886240}">
+                                                    <File Id="fil7E56603C1A09313DBE89C399175CC53C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\security_buffer.obj" />
+                                                </Component>
+                                                <Component Id="cmp592BC0579F84D466357BD8DB1A17B14F" Guid="{45A6A596-A0DE-4E9E-8AB4-5F56F3854C5B}">
+                                                    <File Id="fil51D184D13E48D0261E743B43005E6278" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\security_buffer_descriptor.obj" />
+                                                </Component>
+                                                <Component Id="cmpD49C9CA97E973E65016003967571E29D" Guid="{580CE622-14D1-48D5-9C11-CE0F6303E084}">
+                                                    <File Id="fil634C3AC5F3403716014B5A9CB476A0DF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\security_context.obj" />
+                                                </Component>
+                                                <Component Id="cmp509F206E284165342A25EF3E39AD8609" Guid="{07504471-4CFB-4509-8B7E-C557DA679694}">
+                                                    <File Id="fil5F4BE7469D59A8956106DE124C0BE8D2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\security_credentials.obj" />
+                                                </Component>
+                                                <Component Id="cmpA003241B5A8174CFFA5701B39EF03750" Guid="{FC892430-6749-4A20-91CC-B73268E2A8DD}">
+                                                    <File Id="fil70FD60FFD1096BA0FC7E5C9AAA7DF718" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\vc100.pdb" />
+                                                </Component>
+                                                <Component Id="cmp6A8A3439008CD943F4F4783990C876DB" Guid="{8D1C63DC-EC88-4FE0-8E53-76269BF1D0E7}">
+                                                    <File Id="filBED366217C5D8EF5BF3159734841E2ED" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\build\Release\obj\kerberos\worker.obj" />
+                                                </Component>
+                                            </Directory>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dir9FD30BF439367FE11AADAA6474E62928" Name="lib">
+                                    <Component Id="cmp5619794493DF4ED14A11DE4008892055" Guid="{7135EA07-8183-4D2A-9B0C-C0476062AB24}">
+                                        <File Id="fil47B9C9AE2FB8DB0B726658616766E6C9" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\base64.c" />
+                                    </Component>
+                                    <Component Id="cmp3F4902741279C99CF3539739370B1BB2" Guid="{415697DD-B827-42F4-B40A-5B2CF5BC0492}">
+                                        <File Id="fil824F6C7413FE6059704351810E93228B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\base64.h" />
+                                    </Component>
+                                    <Component Id="cmpADBAC73FA716403701331C3CB48BE30B" Guid="{E5239B6F-864D-4A13-BF7C-99BC019BD4EB}">
+                                        <File Id="filF356819749A1A39CF0321CF9A3193ABD" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberos.cc" />
+                                    </Component>
+                                    <Component Id="cmp588BA18D676C907C92FBBD7E0105FAD8" Guid="{C0AAA6A8-C3D7-4B17-9BEB-9AE5B2D5E421}">
+                                        <File Id="fil6331D4ACA9E26F27CEF380978AE3DBCC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberos.h" />
+                                    </Component>
+                                    <Component Id="cmpC7637C10228EA033497526E36B828B30" Guid="{EC7A9CF2-1F9F-4485-AFDF-BCE2413018D9}">
+                                        <File Id="fil1856AD3588B609DA086774BAB26B0EB5" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberos.js" />
+                                    </Component>
+                                    <Component Id="cmp36632565CFFA706A65DDC9367A8D3776" Guid="{F696D295-8A70-4BB1-88EB-D18BC03283AE}">
+                                        <File Id="fil415B590423FAD70A52CDEBE48A621B0C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberosgss.c" />
+                                    </Component>
+                                    <Component Id="cmpB9EFF1D8E9EB14505203F83BF3FB3C04" Guid="{2F50E6B6-B3B8-4796-AEA1-512F89F2F42B}">
+                                        <File Id="fil79A5BB4B4BAC954DC3AEA9D478626F8C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberosgss.h" />
+                                    </Component>
+                                    <Component Id="cmpED26F0FCC7B31E45D0152DE782286C8F" Guid="{53727C41-0501-4205-BBC4-ED12F7671D74}">
+                                        <File Id="filAFACDC9A73F90497DDB6BCD70572D477" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberos_context.cc" />
+                                    </Component>
+                                    <Component Id="cmpB7866C01EA14AAAB3A53C5E37C568B36" Guid="{4D9047C3-4C46-4E20-A5A9-915740D3BB9B}">
+                                        <File Id="fil46D78B4C7B318161E78866A793C8EB45" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\kerberos_context.h" />
+                                    </Component>
+                                    <Component Id="cmp8464364191C9ADBBEB21B2D85DCA16DA" Guid="{9EEF06E4-CE45-4A74-BE9C-A3FD7108307A}">
+                                        <File Id="filA00D90C2B6F84321EF99B567A3A63E4D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\sspi.js" />
+                                    </Component>
+                                    <Component Id="cmp295FCC532D12118E600DD7180A68038F" Guid="{04A394F1-2B63-4D92-9A4A-7D36D3E74634}">
+                                        <File Id="filB73CDEF15B586AFA8EFE4C538DCDCAD6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\worker.cc" />
+                                    </Component>
+                                    <Component Id="cmpA8A55F211E815CDFC3517B3D1A3447DC" Guid="{D320D102-FFBD-427A-B0C2-EA94B05222F5}">
+                                        <File Id="fil862FB872BBA4D01CF50518A47054D2A8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\worker.h" />
+                                    </Component>
+                                    <Directory Id="dirB7699CCE130CEAB94B027A113FA1F0D6" Name="auth_processes">
+                                        <Component Id="cmp0AC712730369AE6CE9E06E26D23202A8" Guid="{B1060F87-F51F-4404-8DC7-08CCCB903C85}">
+                                            <File Id="fil74D22D04ED44ADA263DBE148FC3122A9" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\auth_processes\mongodb.js" />
+                                        </Component>
+                                    </Directory>
+                                    <Directory Id="dir385A63F0BD7DB38BD8AC90BA4E68E883" Name="win32">
+                                        <Component Id="cmpB02F4A19B5467379D41BC52DFABFC2AE" Guid="{027C45B2-03DB-4A9D-9D8D-0739C772F711}">
+                                            <File Id="fil887DF28531249781E817AB835BF3E9A8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\base64.c" />
+                                        </Component>
+                                        <Component Id="cmpED4E48E1501F77CF67889DBB735F8FE6" Guid="{687F19F3-E3A4-43DD-880B-FF4DDE4CF188}">
+                                            <File Id="fil3BEC38124429D9E83E4CFBD5BBD2C887" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\base64.h" />
+                                        </Component>
+                                        <Component Id="cmp6F9F79748DDD868633F81C48659A14A7" Guid="{CA83BFCC-99E3-490A-820E-6992C5501773}">
+                                            <File Id="fil80DFE2CA128E3E33A85D2A83C5533FE2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos.cc" />
+                                        </Component>
+                                        <Component Id="cmpB8B9CFFBAB21B36668481ACFD9743BE0" Guid="{75ABFBED-D656-4F96-953A-25E996D86858}">
+                                            <File Id="filED41E87DA1B8CE507932342BA7BDCDC7" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos.h" />
+                                        </Component>
+                                        <Component Id="cmp1ED121B304DBD8C63D3A58EAF268A377" Guid="{9F9ABCBB-3594-4720-B251-3BD5FCB23BF6}">
+                                            <File Id="fil30BB3F75D01A9E38EBDC4FB7B00CEC50" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos_sspi.c" />
+                                        </Component>
+                                        <Component Id="cmp3DA167F7DCF17E3301E167CA522250BC" Guid="{FED26A75-200E-4CAA-8B40-35CA0FD42CA3}">
+                                            <File Id="fil38E454ED8075A27C0A7FCA60A54ABF4D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\kerberos_sspi.h" />
+                                        </Component>
+                                        <Component Id="cmp85A559240103880004A4693F6A71F3C4" Guid="{587E3C8C-116D-4BB2-8BDA-E9EA5DF9512D}">
+                                            <File Id="filA1E88CF4C35A67E4548B25C39CBF4BB0" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\worker.cc" />
+                                        </Component>
+                                        <Component Id="cmp0448E63C0FFBE603FAA9BCFBFC89EAF7" Guid="{E7D9C36F-2C26-4EB6-9BC2-9A8AB8AB5120}">
+                                            <File Id="filFDEC162ABF51D3DAB82642F4D8B385CC" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\worker.h" />
+                                        </Component>
+                                        <Directory Id="dir774D9A8BF4DC07F80DF6293454EE2C42" Name="wrappers">
+                                            <Component Id="cmp55C402C8B7C2D7D989D664A4917E0513" Guid="{4D36B1A3-C844-4C6A-947A-78257E1AEA76}">
+                                                <File Id="fil42E3B174B2256A15ED6AC43820CF353F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer.cc" />
+                                            </Component>
+                                            <Component Id="cmp423CC96BC74DA3F4E7D898DE491E0050" Guid="{8C72495F-1590-4773-A0C8-AA229ADC16B1}">
+                                                <File Id="filC6265766B0DAE00359ECEC0CC87DD98C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer.h" />
+                                            </Component>
+                                            <Component Id="cmpC687B34241D633FC9664759515F3933C" Guid="{3269ED42-F38F-490A-AFAC-6A594166A1A9}">
+                                                <File Id="fil0B3E4CF4E10AA1F56921845625515F75" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer.js" />
+                                            </Component>
+                                            <Component Id="cmp83355368D3857B933A8F1E0E298AFE10" Guid="{46577C4B-6D11-4FFE-AF71-EA35AE811200}">
+                                                <File Id="filA314DFB83C78D3D5CF8F9003090B6BD4" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer_descriptor.cc" />
+                                            </Component>
+                                            <Component Id="cmp68ED3F45C488E74EF1C5A0DD9A351414" Guid="{DF8AFDEE-F036-45CE-9878-2885D305C159}">
+                                                <File Id="filCDCB68FBDA2586E5104C2579BDBD8725" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer_descriptor.h" />
+                                            </Component>
+                                            <Component Id="cmp2007633B932B08214599415B0601C827" Guid="{2463883F-BF0A-4123-B64A-D043F6E65536}">
+                                                <File Id="filBAA9325AB9BC8BE21E6985FC2CB3A860" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_buffer_descriptor.js" />
+                                            </Component>
+                                            <Component Id="cmp1766BF8004C46F00A4F92D7C55BB9E5A" Guid="{43182056-7C33-466D-9865-9465EACE18E7}">
+                                                <File Id="fil43556A09F4AA0AAD61AA246BCCDBB600" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_context.cc" />
+                                            </Component>
+                                            <Component Id="cmp99CA9FA0FEE0858861F140B8BC7004EE" Guid="{26695353-3952-4B54-A25C-1A0696CB9691}">
+                                                <File Id="filA4C12FB82F5993204CA398C313691FC6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_context.h" />
+                                            </Component>
+                                            <Component Id="cmp1246BA4CE2A1F94064774E5FB808274F" Guid="{A421D5B3-9658-4B1D-9647-AE8441BBE066}">
+                                                <File Id="filEB5C5365873F169B2468D442816EED1E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_context.js" />
+                                            </Component>
+                                            <Component Id="cmpDC7ADCED80DB4FACB3B0C88B5ECB7823" Guid="{EA960187-0A5F-4EAA-B205-B87465EF971C}">
+                                                <File Id="fil230BE60831210A6872DBED70207CC823" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_credentials.cc" />
+                                            </Component>
+                                            <Component Id="cmp8CA2305DD16599812E5D7A647E955AD5" Guid="{DF9BF8AF-0F9A-4233-BC1B-6E721F46F758}">
+                                                <File Id="fil5D335D42DC06A448AE6C15C8AE0C3AA3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_credentials.h" />
+                                            </Component>
+                                            <Component Id="cmpC23B92EA856DB97CE1EB50B862ECBEFA" Guid="{C468248E-703B-473F-8B5A-54CED4E32A7B}">
+                                                <File Id="fil983F04B0FAE69C58156D5B5574E84CC0" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\lib\win32\wrappers\security_credentials.js" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dir95A68B34955342B71B1E6CE0F7105906" Name="node_modules">
+                                    <Directory Id="dir4EBB8B6C6D11F33B7D0997C550461FDF" Name="nan">
+                                        <Component Id="cmp06BA553569C57D728DA623833C1BB9E3" Guid="{07F42A24-CE0E-4871-B345-5346BDA7AF68}">
+                                            <File Id="fil9FDB6F368F7E95E9569C405E1C9076CF" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\.dntrc" />
+                                        </Component>
+                                        <Component Id="cmp393A2187A581DC345EB1676688FDA20A" Guid="{BE755F78-AD9D-407F-9DEC-388B507856DC}">
+                                            <File Id="fil7E511EF7BDEDBC67EBFB41B419B29C82" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\appveyor.yml" />
+                                        </Component>
+                                        <Component Id="cmp7FC0FF5D6AE6DA14A6B1A48B654811FF" Guid="{D8C29608-EAD5-4F46-9463-36297A0A79B2}">
+                                            <File Id="filD462D5CC2D2FED37AF68C34317DE2ABA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\CHANGELOG.md" />
+                                        </Component>
+                                        <Component Id="cmpFEA3C7BB519ACFF309CF6FD0AC0219F1" Guid="{8CF4A39E-260A-4E34-9E6B-F37FD176D6F3}">
+                                            <File Id="fil28B01D8853A776C1C99BCEAF1B36076B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\include_dirs.js" />
+                                        </Component>
+                                        <Component Id="cmp0C50CEC8C1609FDF23AAB7E6CFBE82D7" Guid="{30561F5E-2EE6-42BF-A57E-51C0570139FA}">
+                                            <File Id="filF27EC48F6CA4FCF96640F067390A7507" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\LICENSE.md" />
+                                        </Component>
+                                        <Component Id="cmpD5D7610DAE32511667940D8552997C6C" Guid="{847262BE-5654-4350-AFCC-FE3E685B7AFF}">
+                                            <File Id="filF8864C74C37CAFB9264D7BBD640DDE88" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\nan.h" />
+                                        </Component>
+                                        <Component Id="cmpD6C110880C21CB30A3642112FB5123B6" Guid="{AD37AFFC-65C6-44C7-8AE4-61A4B8FC5454}">
+                                            <File Id="filBBC291DBF517800D565581923A89EA14" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\nan_implementation_12_inl.h" />
+                                        </Component>
+                                        <Component Id="cmp441D988028488FC96140F2AD54EF7EF9" Guid="{81A98EF1-14C5-4ED2-9281-E29108CE2554}">
+                                            <File Id="fil9281DD1508A95E64FEF0BB8694237AEB" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\nan_implementation_pre_12_inl.h" />
+                                        </Component>
+                                        <Component Id="cmp06D83D18BC0DC9A8ED8014D693C9BC67" Guid="{8EBD9A21-3A7D-415C-8353-FE18DB841734}">
+                                            <File Id="fil163B68761786BF3DFA9CD79D4D8315F9" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\nan_new.h" />
+                                        </Component>
+                                        <Component Id="cmpD7336D9A5400C89C4EF070B3A4D7EE67" Guid="{2BA5093F-93EF-45E8-ADEF-7F352EAF5740}">
+                                            <File Id="fil49F058E8B37766F15F6510F4C18CB9AA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\nan_string_bytes.h" />
+                                        </Component>
+                                        <Component Id="cmpFF02C2DCDCDEADFBCBD804AC4578D176" Guid="{94C99752-5E6D-47FD-A782-4B8F70F1FEF3}">
+                                            <File Id="fil902BD74B157079EAC22B57E8CE4E6553" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\node_modules\nan\package.json" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                                <Directory Id="dirA0B546EBDBCB860E4AC97194A55938FE" Name="test">
+                                    <Component Id="cmpB323AB5A07D1EF76EF5EA074B0A4B555" Guid="{998CB3B8-C0FE-4A76-8C3B-776C50B3CFAD}">
+                                        <File Id="filE396049493D1151E2F05C25BB17A673D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\test\kerberos_tests.js" />
+                                    </Component>
+                                    <Component Id="cmpE4257A5897A5FB28805C01A37B59BB16" Guid="{A68946F3-A117-4307-835C-32A13A60B9F2}">
+                                        <File Id="filE3DB7E7CA0F7BD6F27EF89AF879560F2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\test\kerberos_win32_test.js" />
+                                    </Component>
+                                    <Directory Id="dir74C325D5C029AFF1708C0EDEA81E95D5" Name="win32">
+                                        <Component Id="cmp94322440DEDC57E80B9ABE1EA4B35C70" Guid="{B74038B5-6E2E-48D6-8240-3AEC58EF85BF}">
+                                            <File Id="filB4BBED8737B9A7861918C8712C3421B7" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\test\win32\security_buffer_descriptor_tests.js" />
+                                        </Component>
+                                        <Component Id="cmp7BADA624DFBD738E22524DD75C3E0A45" Guid="{2E386BC2-ED51-43C9-99A3-B0CD04CB78DC}">
+                                            <File Id="fil498661C1EF9920CA874F5420339C2B48" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\test\win32\security_buffer_tests.js" />
+                                        </Component>
+                                        <Component Id="cmp1766DC8E42E7E81992241C5501DAAEA0" Guid="{1B3157E5-AD94-4810-9CEA-4A60025791CB}">
+                                            <File Id="fil14F8A4E5326DE3F730E567D7958ABCDE" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\kerberos\test\win32\security_credentials_tests.js" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dir3568D74BD76339FDCB1DFFAA95B4F50F" Name="readable-stream">
+                                <Component Id="cmpB96D14A0C1CCBB77F81360972140EC03" Guid="{3EA85E80-3D32-4BB1-A26E-B0931A584AAE}">
+                                    <File Id="fil0920A474EE85F3F717CDEAB31537F132" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\.npmignore" />
+                                </Component>
+                                <Component Id="cmpD3D208DA49980CA473226A842E644F0E" Guid="{08D901F0-170E-4159-A7CF-26794CD2352A}">
+                                    <File Id="fil118484AF7388EC821FD1E69FACA10AE8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\duplex.js" />
+                                </Component>
+                                <Component Id="cmp516150540B6E92741230D16EAEA1C219" Guid="{FFF652F6-5C04-4C6C-BC24-064E1E842BE7}">
+                                    <File Id="fil8029C8D74F022C7C9B32F76697D7DB3D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\LICENSE" />
+                                </Component>
+                                <Component Id="cmp51D1B33DFD0E80BC3269C9F3D6818561" Guid="{D33B02AB-67A2-4034-9904-9B2E5B332D68}">
+                                    <File Id="fil977684439E72308EC862785AE0953852" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\package.json" />
+                                </Component>
+                                <Component Id="cmp9B59CB78E041880422CF0541B9C476C2" Guid="{5C9F1940-4274-4076-9D64-11C7C32288E1}">
+                                    <File Id="filAEAF01B84B01E7F9A2915232C91DA507" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\passthrough.js" />
+                                </Component>
+                                <Component Id="cmp8437461633CC5B4E82D830769E009BE8" Guid="{D4A4AB91-DFFD-4BF4-9E3C-EFFF24BC7D5E}">
+                                    <File Id="fil0A040D4D9183B056EF2307A2CAA53BF5" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\readable.js" />
+                                </Component>
+                                <Component Id="cmpAB491F906A4EC040A20C568C873BBAA0" Guid="{76B7E2A1-3A04-40A3-A49D-C5BA6882A88D}">
+                                    <File Id="fil385F2CB4D093BB100930C5F68E5EFAB8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\README.md" />
+                                </Component>
+                                <Component Id="cmpA2EEBC83714BFBE4F94047491FA04C47" Guid="{6E8D2502-BB43-4AA0-A935-1FD832A29959}">
+                                    <File Id="filE7C9270EAE9660572B012CB01BE4DC6F" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\transform.js" />
+                                </Component>
+                                <Component Id="cmp0344955DA3276CF38EDEA6B6CA7E70AE" Guid="{4160D40A-FCA8-460C-A606-DD1731181BA5}">
+                                    <File Id="filB1B54D8A00F95DF9F82725CBE52F2A5D" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\writable.js" />
+                                </Component>
+                                <Directory Id="dirCD247D33077CA38E85601455EF722B26" Name="lib">
+                                    <Component Id="cmp65769B05F0AAEA519967DB39539B81A0" Guid="{F3C0D923-747B-4666-99DE-F65B14052367}">
+                                        <File Id="filA25D515693A3C732614207F4C76CED6A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\lib\_stream_duplex.js" />
+                                    </Component>
+                                    <Component Id="cmpCEC01476B0190D97CFE4581BB7FBB94C" Guid="{75F7977B-BAFE-479D-A983-EC05E246C0BB}">
+                                        <File Id="fil9AF8D6E3368F1784D43BD70DB1977418" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\lib\_stream_passthrough.js" />
+                                    </Component>
+                                    <Component Id="cmp4BE90F7FCE120F67E93BEFCD5A8532DF" Guid="{2FF5C9EE-3FC3-41E4-9F2A-921F44D44243}">
+                                        <File Id="fil48041FFD5914BE96ACE5D1FB00EC87C6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\lib\_stream_readable.js" />
+                                    </Component>
+                                    <Component Id="cmpBE966625496463BD5AC492A5AE0367D3" Guid="{7904D6BF-0658-460E-9501-502EF31C4619}">
+                                        <File Id="filA8A86E3E8ED19077BFB982E2080E6229" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\lib\_stream_transform.js" />
+                                    </Component>
+                                    <Component Id="cmp8144D9E2C9FA6330FE3160B6A7B05C1A" Guid="{DCD0C1C2-8413-4A3F-9306-24E9F05DACC8}">
+                                        <File Id="filFBCE6FD7B6EB26EB89627DCDA70583C8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\lib\_stream_writable.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir29CD8EBD1F9958028AD0EEC3CDC5698B" Name="node_modules">
+                                    <Directory Id="dir78EDB1873A8FADDDDB98B65F639F05E9" Name="core-util-is">
+                                        <Component Id="cmp4E78227BA5D4C16EB08545E3005348EB" Guid="{E8820130-A8CD-4305-B04C-33919EE11BA4}">
+                                            <File Id="fil71A36509B3AD5B2F2BE4362CDF382CB6" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\float.patch" />
+                                        </Component>
+                                        <Component Id="cmp75C89BB28246FDD756EA30A979DEAC60" Guid="{99FA8693-6B42-46F4-8F6C-4EC734C6F701}">
+                                            <File Id="fil990C3F341AAF838ADA26AA63FBE7828B" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\package.json" />
+                                        </Component>
+                                        <Component Id="cmp0C14D6363857DE15F164747A77FC2C7F" Guid="{D70323A8-26C8-491F-8DA0-594DE01F13A2}">
+                                            <File Id="fil9A6DF7ACCA004E7B5006C1CE2B4FE5E8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\README.md" />
+                                        </Component>
+                                        <Component Id="cmp974E4FF870E9B97229BF1A3C791D328F" Guid="{26E9FF61-1F6C-4230-9593-D1CA5C3C4C55}">
+                                            <File Id="fil219DD7C8E3C011A52F76D191F2F0D419" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\util.js" />
+                                        </Component>
+                                        <Directory Id="dir750F51042D091E257AD501474218B296" Name="lib">
+                                            <Component Id="cmpA88F3C43B3550D0CE14B81E6D156E927" Guid="{94F56A1C-E368-4CE2-8498-848122D30C3A}">
+                                                <File Id="fil9D6CC008EC5EC45391A59B3027AB4427" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\core-util-is\lib\util.js" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                    <Directory Id="dirA15E951CA8980A3DD1CDD19C65986DCB" Name="inherits">
+                                        <Component Id="cmp3DFB3041F24448BF4B514A9066F0C917" Guid="{2F9E9C6E-3E3E-48D9-BE30-82D40D601D6C}">
+                                            <File Id="fil349CB7D9A55C020EE6BAC7BF3A47A7BA" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\inherits.js" />
+                                        </Component>
+                                        <Component Id="cmp171D822370AE430E17633A891096E167" Guid="{B86F1E94-94DB-4D20-BBF7-6DBB4B3CD80C}">
+                                            <File Id="fil38C140BC12B385108355F5A188A9AF8A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\inherits_browser.js" />
+                                        </Component>
+                                        <Component Id="cmp923307D9A0973ADAEA79606972CEA1A4" Guid="{59F77025-96E7-4FFB-AB80-E66572D4DCC6}">
+                                            <File Id="fil16A215BB804F7C0201C265A5955DC844" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\LICENSE" />
+                                        </Component>
+                                        <Component Id="cmpC60A6CF535F618999785B6C1598B4622" Guid="{D09EC1A3-DD27-44EC-9366-A0BA3B0E27D8}">
+                                            <File Id="fil9B18041B73271DA93BD5B0E0DE5F823E" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\package.json" />
+                                        </Component>
+                                        <Component Id="cmp74CEA6CFC533D20B6B45D1C7FD5D5699" Guid="{E9E340CA-2303-45BD-8C81-3CAC897CDA31}">
+                                            <File Id="filD2C5A7D3041B355E9AC6599B98F41EB1" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\README.md" />
+                                        </Component>
+                                        <Component Id="cmp4B6AA935CF16AF576D55705BCDFA9800" Guid="{D663FEC5-74D9-403F-AEBB-899C2C7800FE}">
+                                            <File Id="fil37B7C5BE1677D07A98E6015A1C978D71" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\inherits\test.js" />
+                                        </Component>
+                                    </Directory>
+                                    <Directory Id="dirECA73199BFC1D2CC6D040F22AAF67EB0" Name="isarray">
+                                        <Component Id="cmp23749C28217B85B1286705F0EBE00241" Guid="{EBB8F05B-0A66-42FD-AEBB-C834D7EF79BF}">
+                                            <File Id="fil5FFBDBFC22E307D8703AC18B895C41F8" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\component.json" />
+                                        </Component>
+                                        <Component Id="cmp2953494C738FC3B70CB86E8F6B42CDD5" Guid="{3D66DBB7-9984-4B60-B664-CDCD607AF8DD}">
+                                            <File Id="filC26713212E3098E544B9DE8C4A817CC3" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\index.js" />
+                                        </Component>
+                                        <Component Id="cmp7D8F748BF32264CE4D110059917E5D7D" Guid="{885BCE5A-A7B5-4D26-96AA-B68B509A338B}">
+                                            <File Id="fil62470907C043ED0699042B35E83EF8E1" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\package.json" />
+                                        </Component>
+                                        <Component Id="cmp257A221A199A4142E8205A50C85E35E6" Guid="{EEA76F08-4E3E-4809-AD2F-CFC2FF9B754D}">
+                                            <File Id="filB30A6E4275879D22ED5FBDC19CEA137C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\README.md" />
+                                        </Component>
+                                        <Directory Id="dirE9E1ED7CB73D6F0ED8C0BB96030409A4" Name="build">
+                                            <Component Id="cmp8330BECB6994C678F727EE0685A63C60" Guid="{DFAC8624-0A96-422D-B964-6B484B48F4CD}">
+                                                <File Id="fil1D145FFC4AB7D3B08508CFAE2EDB2C67" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\isarray\build\build.js" />
+                                            </Component>
+                                        </Directory>
+                                    </Directory>
+                                    <Directory Id="dirF1D5D200E2FB72EA99C2CBC621D721AD" Name="string_decoder">
+                                        <Component Id="cmpB9632987BBFDEA9ECAD76B3FAD7A9500" Guid="{BA067F2E-3AC0-4EB4-971F-88739D9E39A9}">
+                                            <File Id="fil9106E6D673B56CA357134DF32278365A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\.npmignore" />
+                                        </Component>
+                                        <Component Id="cmp2192A4B1A85017D9A73E50669F32CD37" Guid="{81ED8D9F-F7D3-4F3E-B87B-64B1E8B41DCC}">
+                                            <File Id="fil9B72535363403479FC76D170BF78862A" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\index.js" />
+                                        </Component>
+                                        <Component Id="cmpC70786AF3A5B6727B068D2E9A92E4E79" Guid="{05EC0738-891B-4C83-ABC6-FE2D54281DB8}">
+                                            <File Id="fil9974E2EB5BBF41C12B545B76EFEEA6B2" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\LICENSE" />
+                                        </Component>
+                                        <Component Id="cmpCCEE183AC9EAF9CBFA0870E32E5D2F0C" Guid="{EA6D9CDF-AA02-42A7-B41C-0717C90825A2}">
+                                            <File Id="fil459F2AB03F24979226EF9F313DC19C00" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\package.json" />
+                                        </Component>
+                                        <Component Id="cmp1825882C39F9B7AB76C8007001E6870D" Guid="{1FB33690-3B3F-40FA-8ECC-C378FF45793A}">
+                                            <File Id="filC862A6CD278FEEA82230D5D7A388C01C" KeyPath="yes" Source="SourceDir\node_modules\mongodb\node_modules\readable-stream\node_modules\string_decoder\README.md" />
+                                        </Component>
+                                    </Directory>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirAB60254121019C89A5781BDE01A8D625" Name="mongoskin">
+                        <Component Id="cmp7CE2665FA43869B62A0C8F4FD6CBC72C" Guid="{74B0D25E-E503-4D91-846B-6262B0630F74}">
+                            <File Id="fil10BDD45ABC75CAAA289CF1B4141C3B18" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\.jshintrc" />
+                        </Component>
+                        <Component Id="cmp9C73DD04BDD8003A8200D260AAB9951B" Guid="{1E220DC2-C98A-4D03-B74B-453A8B11C5A9}">
+                            <File Id="fil2DA5D83ED07D77D60825CB0CE808035B" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\.npmignore" />
+                        </Component>
+                        <Component Id="cmp4C20151AC40F341D6A1C4E1C61921A66" Guid="{C9395D70-6070-499E-8A2A-02C053DFC797}">
+                            <File Id="fil7092A59D907D0C3423C065B1D92BCDE2" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\.travis.yml" />
+                        </Component>
+                        <Component Id="cmpB99462FCE2D8017705CF97417D7D819A" Guid="{DF39D20C-8A20-47CA-B8C9-78E96842289D}">
+                            <File Id="fil7442A76BCAE97FE3FE1A2A6E7CE8A6AA" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\AUTHORS" />
+                        </Component>
+                        <Component Id="cmp6C8B027D652C1CC25883E45E0418C565" Guid="{E02ADC42-806E-4398-BCA9-70E2A61962D7}">
+                            <File Id="fil75288724BA8072DF548B524A257F2E31" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\History.md" />
+                        </Component>
+                        <Component Id="cmp099EF063E8C5B6E0D22C4AB6E2BA628B" Guid="{E64003DE-4FFD-44AF-987C-8EC1715B9196}">
+                            <File Id="fil9502C377FAE8A361B158E1FF243817A9" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\index.js" />
+                        </Component>
+                        <Component Id="cmp7070DB68A781A7CD56D3CA75F0639D48" Guid="{6C462D7B-D8B0-44AA-8460-7501BF2A1562}">
+                            <File Id="fil3FCA6846817768A6B84332FBFDF70649" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\LICENSE" />
+                        </Component>
+                        <Component Id="cmpA6FE420F86806C41811DD7562B30F92A" Guid="{16FA6C51-034F-46EC-8566-CA424D6B70BC}">
+                            <File Id="fil7DAF5D1FC011677163C9D601527E70BC" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\Makefile" />
+                        </Component>
+                        <Component Id="cmp07384389FD1AE95BF8753361FDF219A0" Guid="{BC3462A6-EBE7-4856-850D-F6E311393D7C}">
+                            <File Id="fil17029BD1787847E39BDD975023071425" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\package.json" />
+                        </Component>
+                        <Component Id="cmp6A30B963711CD44AFB6FC7DE4DBA672F" Guid="{D2C710AE-AB75-4DA0-88DE-B0F00F278709}">
+                            <File Id="fil868A7DA99247D43CADEDD37200440698" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\Readme.md" />
+                        </Component>
+                        <Directory Id="dir935E05919B706FC27F4C69104D564D89" Name="examples">
+                            <Component Id="cmp7F749E1A7E1BBE562E73A4132B85ED97" Guid="{A7270EFC-AD92-4367-B566-ED2380AA63CF}">
+                                <File Id="filC494C2C8809A6C238611FEEC4BD3F172" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\admin.js" />
+                            </Component>
+                            <Component Id="cmpAEF298BBDE54BFDF85BF8870F5E53A3A" Guid="{078528A7-0E5B-4AEC-BBDE-8FAE3DF8FF2B}">
+                                <File Id="fil27116C32F6CD12453EA382B8DE42A79D" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\close.js" />
+                            </Component>
+                            <Component Id="cmp81AFB7AD34CC94EE045D956B70AD6FEE" Guid="{E1D7853A-29FC-4453-81D0-0E84736DC0B6}">
+                                <File Id="fil159F9E84CCD3CC3E9212231C192CA599" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\config.js" />
+                            </Component>
+                            <Component Id="cmp6B1EF4D49FE89A9554C1C83F09E4CC09" Guid="{AB524A83-90CC-4D12-899C-2F55B1C645FE}">
+                                <File Id="fil5F4F77350BD0F18C916A6899F82C01F5" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\generateId.js" />
+                            </Component>
+                            <Component Id="cmpF171A4A7715AA4EE7D1A31EC99DA2B59" Guid="{3E22D105-A80F-44EE-961A-EFA069913017}">
+                                <File Id="fil3AC3632CDDC5EA8DF724DE13FB185CBF" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\gridfs.js" />
+                            </Component>
+                            <Component Id="cmpC73BC66A059E87F954A331491E5EBC07" Guid="{B8381A04-F68E-4162-96CD-DA4568837538}">
+                                <File Id="fil877DF3458019A7DB1823A1382E5F2645" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\insert.js" />
+                            </Component>
+                            <Component Id="cmp92A395C1E9C4DC78DF46F4BAE1C37AB4" Guid="{5410CE46-88EA-4419-894C-3D44C6937CBA}">
+                                <File Id="filD4BB61A2E95ACB49B52544B449ABAFC7" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\replset.js" />
+                            </Component>
+                            <Component Id="cmpCDD759B84197ED62B841CFDB7BAB0D40" Guid="{A47F61F4-7305-4739-AA55-790E1F6B5880}">
+                                <File Id="fil8E2C713CCBCCEDFC2DC05D4F2D3D8DBD" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\replSetBenchmark.js" />
+                            </Component>
+                            <Component Id="cmp1E4CDA1C720FFD527C16CAC3613A1D18" Guid="{CEDC5A2A-720D-4467-B156-253CA700E5AE}">
+                                <File Id="filC632F782BF6096C4CF6A1E8933FF3370" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\examples\update.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirDD04D8612AE7C7844267E484D84E2510" Name="lib">
+                            <Component Id="cmpD8C02A9296C6C75E0DC66720B4B04A3A" Guid="{A4A86E36-60A4-43A3-A4BC-43AD140414E4}">
+                                <File Id="fil7CF8BC14D920813808FC0209C4E45EBE" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\admin.js" />
+                            </Component>
+                            <Component Id="cmp1C2024C8035E24429FEABECCB8DB213D" Guid="{A00BFFA7-2EE2-466E-9411-1A3B812E731D}">
+                                <File Id="fil4CA1AB219540DA67287A361DDD7CBA60" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\collection.js" />
+                            </Component>
+                            <Component Id="cmp2271CE0176BACDC159EF1D1344168BEC" Guid="{ED1359E4-B253-4466-962B-04A5A35A56D1}">
+                                <File Id="filE8FBC547347A6750014161BF18A21D07" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\constant.js" />
+                            </Component>
+                            <Component Id="cmp54A1274ABD1A77754D291E45EFF31051" Guid="{A655CE73-388D-4892-9213-651A7BBEB895}">
+                                <File Id="fil90F6A44533526C0F11D83A65AFB6F73E" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\cursor.js" />
+                            </Component>
+                            <Component Id="cmp256BCDC74EABEB7D0B2AE39A98D97EA5" Guid="{9B528AC3-B40D-4481-83A2-7D5D1877CF53}">
+                                <File Id="fil98F2CE05E8792A8A6F5A503E78C68C22" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\db.js" />
+                            </Component>
+                            <Component Id="cmp3179E2CD06D7ECAD20243EFFADC70054" Guid="{CE31DF50-DD07-46F5-814F-555992D1D410}">
+                                <File Id="fil6EF9A697B48831C035814190BBA2B9FA" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\grid.js" />
+                            </Component>
+                            <Component Id="cmpA5A06EDC39DA4D8DBFB7A903922E35FE" Guid="{A0F5935F-B4F6-41E8-9E4F-04BDB3B5E9C1}">
+                                <File Id="filAE192DB094A5B07A3A21CB5BF1686308" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\grid_store.js" />
+                            </Component>
+                            <Component Id="cmpA90D12396B09F728E62BB1D3FE3C0A79" Guid="{01D5F54B-E5FE-4CD8-97CD-30E0768F96C2}">
+                                <File Id="fil9AE7521CC730D317FA5BB7159AFB976F" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\helper.js" />
+                            </Component>
+                            <Component Id="cmp6EBBE206E80265CE5EC001531AD7E8C5" Guid="{862BBCCD-42E1-4E09-9B2D-02CA2822DD45}">
+                                <File Id="fil7B5D6654FD07D2B976DCFB09F18E3F17" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\index.js" />
+                            </Component>
+                            <Component Id="cmpA6C86E1EB6D0CD6060629B96B36877B3" Guid="{77FC1010-0617-4876-8705-E1E9A801F9D1}">
+                                <File Id="filF12FCDAC49AC66DDBF5C077E7DD7D5A4" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\mongo_client.js" />
+                            </Component>
+                            <Component Id="cmpCC15E871A88E4CCCDDC45227B1B9715F" Guid="{72AF5C82-687C-4375-A360-90CA91D9F37E}">
+                                <File Id="filF239FD6203F9BDFBFC2970BD510E36C8" KeyPath="yes" Source="SourceDir\node_modules\mongoskin\lib\utils.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

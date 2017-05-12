@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_lib_win.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_lib_win">
+		<?ifndef ACE_DIR_NM_tra?>
+		<Directory Id="ACE_DIR_NM_tra" Name="transports" />
+		<?define ACE_DIR_NM_tra?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

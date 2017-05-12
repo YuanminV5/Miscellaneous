@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="ws" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="ws" Comments="ws" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_ws.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_bui.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_bui_Rel.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_buf.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_val.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_NM_nan.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_NM_opt.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_NM_opt_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ult.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_ws_src.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_wsc.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\ws\SUB_DIR_ACE_DIR_NM_wsc_bin.wxi?>
+    <ComponentGroupRef Id="ws.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\ws\msmProject.wxi?>
+</Wix>

@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/nconf/SUB_DIR_ACE_DIR_NM_nco_tes_fix.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_nco_tes_fix">
+		<?ifndef ACE_DIR_NM_nco_tes_fix_scr?>
+		<Directory Id="ACE_DIR_NM_nco_tes_fix_scr" Name="scripts" />
+		<?define ACE_DIR_NM_nco_tes_fix_scr?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

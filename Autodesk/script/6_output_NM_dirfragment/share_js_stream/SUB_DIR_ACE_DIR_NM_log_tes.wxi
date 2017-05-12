@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share_js_stream/SUB_DIR_ACE_DIR_NM_log.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_log">
+		<?ifndef ACE_DIR_NM_log_tes?>
+		<Directory Id="ACE_DIR_NM_log_tes" Name="test" />
+		<?define ACE_DIR_NM_log_tes?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+                <Component Id="cmp316FA620469DC6BE425C76CEFD1137BC" Guid="{64380DBD-1F38-45E3-9D45-9544C546E12F}">
+                    <File Id="fil75A2EE04C427C361A68E63A97426480D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\.npmignore" />
+                </Component>
+                <Component Id="cmpDBB1C0F3DF52C5E8E4F0945EA300C678" Guid="{81494F58-908D-4C01-BF60-06F25D7072D3}">
+                    <File Id="fil3A6C42341C51B9B634F96A07C8F87BCE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\CONTRIBUTING.md" />
+                </Component>
+                <Component Id="cmp884E34B41B8816AD8F6BD894E5C1BBD3" Guid="{A90496F8-DDFE-43B1-A287-3F095A6C68FB}">
+                    <File Id="filEEE90A7C7D245B043015F9F4CB60810E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\LICENSE" />
+                </Component>
+                <Component Id="cmp48B89966A0724B96717F8F37C6EAD833" Guid="{EA89DEFE-7DD0-4E20-9861-B05915308131}">
+                    <File Id="filA7E39F7E09E6F2E1397C8C55D329E2FE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\package.json" />
+                </Component>
+                <Component Id="cmp5B0885DE32A732AE95391679F994473F" Guid="{43AF3C32-7109-4CBE-A3EC-BA4E1A99E99D}">
+                    <File Id="fil34A8C0DB93B9E2E0AF3B49125DD3A0AE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\README.md" />
+                </Component>
+                <Component Id="cmp690F04139D1F49AF53FDC86EBE6B7F94" Guid="{C86BBEDE-8974-4691-9E67-1CEB5E081DB2}">
+                    <File Id="filFCB3C80B24D87F67DAACA6B33014A37D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\TESTS.md" />
+                </Component>
+                        <Component Id="cmpD459DC4BC34146D50A925F39CA7DBACA" Guid="{AD29EBB8-6D16-4193-9093-C0D82B910730}">
+                            <File Id="filA826CE4E1B213946F9A1C0F7CCDD472E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\elevate\elevate.cmd" />
+                        </Component>
+                        <Component Id="cmpE050476CE86C96382BAAD02D55EE3E73" Guid="{6CF50EA9-42CE-423D-AE4C-1740E02DC8FF}">
+                            <File Id="fil38DB9D78C93126A275C27B99F9A7108B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\elevate\elevate.vbs" />
+                        </Component>
+                        <Component Id="cmpDC13A0541BB2F5EFA8702D05DC07F4C7" Guid="{33E726C9-9C68-4534-9DA4-C77A6E0E06CB}">
+                            <File Id="filA1AC493EDD227B91FFA24E41B7DB5869" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\sudowin\LICENSE.txt" />
+                        </Component>
+                        <Component Id="cmp37967EDF4AB26A497366D9828BF5DA23" Guid="{2194725A-153B-4227-BBEA-0ED52D8CAF9B}">
+                            <File Id="fil14ACACCB57CD8850A7F6F43A08A266B5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\sudowin\sudo.exe" />
+                        </Component>
+                        <Component Id="cmp22C8CEC83CAA7351E16F60E3FA533DF3" Guid="{98F8B46A-D815-4359-9261-33C0B439D0B1}">
+                            <File Id="fil7D42889FC4ED3DFCA66FB72DB839AC51" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\sudowin\sudo.exe.config" />
+                        </Component>
+                        <Component Id="cmp1EE629D15C5B412EA99C564198547BB8" Guid="{6D7AAE2C-A396-4555-A70B-2F3BCB014ADD}">
+                            <File Id="fil744B6566D68467645259D6801127E3F0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\sudowin\Sudowin.Common.dll" />
+                        </Component>
+                            <Component Id="cmpB7299FA3EAECCCCFE30A8E58F046C672" Guid="{1C874055-AA9A-4E32-8E97-AD08E4C4B815}">
+                                <File Id="fil05F768E84489C18BE8C3EE68D82398CA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\winsw\x64\winsw.exe" />
+                            </Component>
+                            <Component Id="cmp62D836C3504013C526B2A6FCD748BB18" Guid="{7704A8EE-CC97-4DB3-A7B4-E9C15E1A916B}">
+                                <File Id="fil32B36C8F3469EAC32E105CF891748E70" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\bin\winsw\x86\winsw.exe" />
+                            </Component>
+                    <Component Id="cmpC9B4B989E63C57A5ADAEB515B71CB913" Guid="{58E7C724-AE15-427D-8DF4-4DE84CF551F5}">
+                        <File Id="fil20EA81B08029586D638CA5F1FE088AD8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\example\helloworld.js" />
+                    </Component>
+                    <Component Id="cmp7A31B74497E777E4858DBBB2AA49F8B4" Guid="{E1AC26E1-9C05-4FE6-BCF8-D839472CA1B8}">
+                        <File Id="fil839C954B8B40D30F660D8EDFACE2AD77" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\example\install.js" />
+                    </Component>
+                    <Component Id="cmp84B0544086E3BB6387853F90647C6C9F" Guid="{894945EA-E5D6-4C50-BB48-CE85A4D567D5}">
+                        <File Id="fil4AE1FDE3EC98E3CC9CDEE64C47200415" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\example\uninstall.js" />
+                    </Component>
+                    <Component Id="cmp91DBB16A851BFF75CA08671061E6BEF7" Guid="{833ADAB3-DA2F-42E3-BB06-0F1A8F2750F9}">
+                        <File Id="fil118E3B5BAFC8262FE8E80DDB85939696" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\binaries.js" />
+                    </Component>
+                    <Component Id="cmp98BD7CD7F01D413AF31FDD5996487B2E" Guid="{8A74AA6D-DE0C-46D0-A5CF-AD1531726E8C}">
+                        <File Id="fil82F7ABAFBB39CE1BA2E74757E7257E37" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\cmd.js" />
+                    </Component>
+                    <Component Id="cmpEF733B99F7E3600ED241BD1528312A88" Guid="{231F5285-4E3C-4532-A912-044DF145DBCF}">
+                        <File Id="filC100787244958184B62FF3A853B1363F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\daemon.js" />
+                    </Component>
+                    <Component Id="cmp104F715AE021E0E43365F6F806B70782" Guid="{0DEA0511-57D1-43CB-9EFA-75B4F2D4A0F5}">
+                        <File Id="fil4F67CEAC8620D9E2EC4CB90EFD840514" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\eventlog.js" />
+                    </Component>
+                    <Component Id="cmp56868DA5302B79EA6D8D39DB97F8BD5F" Guid="{1BD5F173-FB3F-4DFC-8A69-1677AF1361FD}">
+                        <File Id="filA5D5659892F37F2823806E0C383E2702" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\node-windows.js" />
+                    </Component>
+                    <Component Id="cmp39048EAE8E107ED4ABBDA9C395AFED4F" Guid="{7EFA3867-C537-4299-B817-8203016E9529}">
+                        <File Id="fil4737631B3B76D6D9FF95C6E93264B5B9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\winsw.js" />
+                    </Component>
+                    <Component Id="cmp908F0B69C38E2679A4158E0818A3E94C" Guid="{FEE2AAC2-D2F2-4D3B-9D7D-CEE5AE3E3617}">
+                        <File Id="fil3117CE61A7B2237762703F638E6AB25E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\lib\wrapper.js" />
+                    </Component>
+                        <Component Id="cmp96633BE1BCCE7412653BE999EA29D8B5" Guid="{C68FD787-0E17-4823-8B96-44672EF8F44F}">
+                            <File Id="fil43415007070F34D7A3E209CBDB3745E4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\.travis.yml" />
+                        </Component>
+                        <Component Id="cmpCAC8DFEA4A504EB734AB54AAEFCE817F" Guid="{FF2A4C07-FC11-4338-AEE8-47AD17A584CA}">
+                            <File Id="filCFE87A38D9237DE94EE714317A6CC754" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\index.js" />
+                        </Component>
+                        <Component Id="cmp8AA94BF95BA5DB3BE6CCEEDFD50AF05F" Guid="{750FBB3B-255C-4892-9170-4C9C34178EE8}">
+                            <File Id="filE312307F16754C28D1998030AA11E1B4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\LICENSE" />
+                        </Component>
+                        <Component Id="cmp8B14722268161103C8AC62F380861F2D" Guid="{418070A0-9146-4653-89CA-C8C5719D2B2F}">
+                            <File Id="filBD224EC6F5F950972D8C577B894F793E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\package.json" />
+                        </Component>
+                        <Component Id="cmpB3A127667F866F0791A68B0624DD93C4" Guid="{08A26CC7-6F5E-4D2E-A4E9-523EFF54CA03}">
+                            <File Id="fil44B3222C85362FB073857F7D03709121" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\readme.markdown" />
+                        </Component>
+                            <Component Id="cmp33A952CB19AAC6E582FC5215F55F6878" Guid="{A796A1EB-A1E0-406D-ACBD-2B7240E1F356}">
+                                <File Id="fil4BCE07BD564FF47749B4CC27BD851718" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\bool.js" />
+                            </Component>
+                            <Component Id="cmp3A269E15B7BA68C7F9F52F589FC54502" Guid="{F8379630-4117-48BE-8347-16B11CF6B2AD}">
+                                <File Id="fil1609BC0E2A202F04FE604B5386885505" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\boolean_double.js" />
+                            </Component>
+                            <Component Id="cmpBA3E969E90C6A5E3E011259C8FD9D6D4" Guid="{4CF70C38-223B-4659-A870-87FDC77ECE65}">
+                                <File Id="fil58BDBAB7F4F87922732DDE982778E51F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\boolean_single.js" />
+                            </Component>
+                            <Component Id="cmp3E2DEB7C3076A270D4B6296FA62DCF93" Guid="{937C382C-C7B5-438F-9F9C-5FD2A1CC2163}">
+                                <File Id="fil20DC238994969C5094FA7AA63CB682A0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\default_hash.js" />
+                            </Component>
+                            <Component Id="cmpEF94F0C1E6243D4F720092A9A7A8C988" Guid="{CE01188B-C2A0-438B-9FFC-7AC0A2364309}">
+                                <File Id="fil837A6A0FF6A625FC4E3F8F7418208818" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\default_singles.js" />
+                            </Component>
+                            <Component Id="cmpC129A2CFD43E91F3B5D6BE6FA31CFEE1" Guid="{21346E88-173B-4CD8-BE49-2C949D814F22}">
+                                <File Id="filD1BD2ED48651B9C7519BECAA38DD7085" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\divide.js" />
+                            </Component>
+                            <Component Id="cmp609ACF4689E718512ADC179D6C72D1F9" Guid="{F3055F77-F33E-4D00-892A-C78938F57199}">
+                                <File Id="filEF22C16EB6A186239915D968C3C6CB59" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\line_count.js" />
+                            </Component>
+                            <Component Id="cmp15DACE6780F89F0EDBD13CE588314EC1" Guid="{D73C455B-D923-485B-9DA5-9806337DDBE5}">
+                                <File Id="filDD579AD387680E1859080935501F703B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\line_count_options.js" />
+                            </Component>
+                            <Component Id="cmp19571E2EC1F97D336EDE435DCA7D79C0" Guid="{928CAB6B-A4A0-4822-A002-95FC83822BF6}">
+                                <File Id="filF418D7B4A1636EF54E010FF54756D7E8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\line_count_wrap.js" />
+                            </Component>
+                            <Component Id="cmpEAD21DA5EC1E2C9B51EEDEA2E017255D" Guid="{4FBA81B5-204C-4355-9EBC-EF682FC3D6F2}">
+                                <File Id="fil1FD4EBC7BDD67D6D2E71E66D5207389A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\nonopt.js" />
+                            </Component>
+                            <Component Id="cmp2EBA9E8D8425B206E8497506F87E70BB" Guid="{C8125194-CDE4-401F-93DD-06B3CBDE6801}">
+                                <File Id="fil589F4C9A380E56905E6C7E6618DC7824" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\reflect.js" />
+                            </Component>
+                            <Component Id="cmpFE9488E16E05E154886A0CF2BFDCF3DC" Guid="{319F3190-862F-454B-8AE5-CF16CBEB5CB6}">
+                                <File Id="filFEBEE26C2E10D616DF4069DBAFAF742F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\short.js" />
+                            </Component>
+                            <Component Id="cmp599DDB605BBE9A69072DD573049CDA77" Guid="{965CA866-755E-4D78-8445-A1DA3CBF04ED}">
+                                <File Id="fil0FFFFB00B9C3BC2F7730EAF38E19C7F3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\string.js" />
+                            </Component>
+                            <Component Id="cmp3722D2E1DBC82051EDE58AB6E6660526" Guid="{61218BDE-0851-485A-A81F-D90554C63CD2}">
+                                <File Id="filC053B66C7928F805E8AA6589B98AF637" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\usage-options.js" />
+                            </Component>
+                            <Component Id="cmp2CBA2CE1E284108730C25A248F2AC64C" Guid="{D7AFE6C2-61B8-41BC-8040-63E8ED303C49}">
+                                <File Id="filCB35E68C40963788C75676C73179DF4B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\example\xup.js" />
+                            </Component>
+                                <Component Id="cmpC63381AAF9132AE3F525D8C6377EEB13" Guid="{551935A0-9B2C-4CE6-829D-5F160753B36B}">
+                                    <File Id="filC4D5BEBFEEC8B7E2DDA31353284C722E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\.travis.yml" />
+                                </Component>
+                                <Component Id="cmpE0B09CC971C4A283218BFBFDD78FC237" Guid="{B4E4FCE3-4528-4ECD-A87A-9F62292A7700}">
+                                    <File Id="fil38323223BF2F9329024F6615E2358D32" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\index.js" />
+                                </Component>
+                                <Component Id="cmp8B9F4FECC91177F502B24750A553C069" Guid="{388BC51C-8B59-4CCB-BD8E-1732120FF69A}">
+                                    <File Id="fil4555FB7949F3B8B4BFD6E7AB25A6EF3D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\LICENSE" />
+                                </Component>
+                                <Component Id="cmp2C9BA8DE386BB4C5D180C4D0EA0C5A11" Guid="{F0D6E74D-86F4-4CDD-86B5-D73EF3A07DF1}">
+                                    <File Id="fil45AE0E87AF51A618BDA0C57BFCFCC0D3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\package.json" />
+                                </Component>
+                                <Component Id="cmpA135F27F4712EEB4C8577B57C0949861" Guid="{077F976C-2AFE-4156-BE92-6752193DD4F5}">
+                                    <File Id="filFB4BDCEB2F462AE4F43E08764CEE847C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\readme.markdown" />
+                                </Component>
+                                    <Component Id="cmp396427BB2E0829A232CB037F4551B030" Guid="{FABFA2FA-990F-44FC-B46D-FBFEE6F20C8B}">
+                                        <File Id="filE3FFEDB7F7A89C3486544242002459C6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\example\parse.js" />
+                                    </Component>
+                                    <Component Id="cmpA79C31D7A1E14767F5509338318638AA" Guid="{98D65175-80A5-405C-8FB0-386D5F8D320D}">
+                                        <File Id="filF9D7C52F115AD70FDD03D3B47D87E2ED" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\bool.js" />
+                                    </Component>
+                                    <Component Id="cmp57C887AF358DC6F84F2513ECB0D92E1A" Guid="{C73C706D-2FAC-455C-8454-38AC2118F752}">
+                                        <File Id="filFD0A279EBACDED5B16F629E77EE89B93" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\dash.js" />
+                                    </Component>
+                                    <Component Id="cmpF69388546B7AC06ECC1509E301C427D9" Guid="{94341C22-5FA6-405E-AAF9-22EA3BA653BE}">
+                                        <File Id="fil8387EE713316367F403176C6A61BB1A5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\default_bool.js" />
+                                    </Component>
+                                    <Component Id="cmp8B7BE9FCFD00A04EC93ED89FC4F44DF7" Guid="{57DC74AB-995A-432B-AD7C-B78390045E9A}">
+                                        <File Id="fil945E58A8104CF899E4ABBCA85AE5C564" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\dotted.js" />
+                                    </Component>
+                                    <Component Id="cmpF92CD06E4046AC463213E1BC56B4339E" Guid="{A1757BFA-4BE8-49A8-80FC-4FA776ADA5D1}">
+                                        <File Id="fil06F1BC9285B61308C605B0346EEA7ABF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\long.js" />
+                                    </Component>
+                                    <Component Id="cmp3E79DBB7767F53DE723DA1395AB060EA" Guid="{13B334BF-B33C-4BC4-91E5-20981E19A030}">
+                                        <File Id="filC9FACB34ADAFF11968A759C9A4EDABFD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\num.js" />
+                                    </Component>
+                                    <Component Id="cmp2E30B14B0490C76D180E4CD96DEBFFAE" Guid="{12D1B2A9-C15A-4776-B280-DE0398D5F951}">
+                                        <File Id="filCE5BB54D51B248018E660A4ABBDCE2E0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\parse.js" />
+                                    </Component>
+                                    <Component Id="cmp205584F10F262E94D92E3B39C7B65E5B" Guid="{1F424BDF-5996-4AB3-9F9D-389E02BE481F}">
+                                        <File Id="fil58E14AFB262AD40BCA8CAA677DE75CAC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\parse_modified.js" />
+                                    </Component>
+                                    <Component Id="cmp2F60A7588DB24BBA51CFC6C8C84AB0EB" Guid="{042A0802-1835-4D44-A8BD-EB1D25368D5D}">
+                                        <File Id="filD0AD563190DC1874B1BA0F9B429EF9ED" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\short.js" />
+                                    </Component>
+                                    <Component Id="cmp392C387404D8EA9DB24D2FF980DAF7A3" Guid="{ACF46167-552A-4116-9905-7AD6D0AD0B97}">
+                                        <File Id="filDB2DC23B892D64A23994C9CD33371774" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\minimist\test\whitespace.js" />
+                                    </Component>
+                                <Component Id="cmpEB38D3BB6E3CD71C47E4248F481C7C0C" Guid="{B5206EE7-8A53-4791-B6A7-AB49AC8F82A2}">
+                                    <File Id="filEF6B8766D91C3E11A7D2436DE9CE8E75" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\.npmignore" />
+                                </Component>
+                                <Component Id="cmp2F6F9964F0D66E53E24FC0B161471739" Guid="{44336518-6E8A-4376-8002-7BB95C3AA6DF}">
+                                    <File Id="fil662DE54793759165C38A1B004768770C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\index.js" />
+                                </Component>
+                                <Component Id="cmpE98057923B8F0D1D064A2A89FEC5F203" Guid="{D4DDE6DC-37F6-4C20-9F5F-963DC69EFECC}">
+                                    <File Id="fil41802467084E8FA1E6E22A2DC762BF38" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\package.json" />
+                                </Component>
+                                <Component Id="cmpFEC7646BF1DFD53805739A834223E07F" Guid="{9952B6F6-9C65-425C-9B03-543083EFE87B}">
+                                    <File Id="filF0EB5928B8F740711EEE072C3C1D370F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\README.markdown" />
+                                </Component>
+                                    <Component Id="cmp2C154C1407C0FAA3F705A3D8E6041D44" Guid="{48CC5158-A4CB-4E23-AA84-265C21FE4192}">
+                                        <File Id="filADC74310D532FB222E93052D8A6254A1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\example\center.js" />
+                                    </Component>
+                                    <Component Id="cmp4F99E923A9F5321380247EC5AD2FA76B" Guid="{BCD6582B-8EEB-4FF9-8A2E-31346484047E}">
+                                        <File Id="fil2094ADBC530BC2284E50C80EA0B3BF5F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\example\meat.js" />
+                                    </Component>
+                                    <Component Id="cmp60F618F872F3BEC22A2365CACA3C7C4B" Guid="{4B7987AF-7495-4286-833B-E2F1AF0C2B65}">
+                                        <File Id="fil0B7C47B17090BDDD9E5FCC7561232013" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\test\break.js" />
+                                    </Component>
+                                    <Component Id="cmp0514E0849A167E01F657688DE20C4229" Guid="{7C38A11B-CC8D-4C5D-BA52-93A9EB5D51F2}">
+                                        <File Id="filBE3395207C686666C65BD4B988E60BE7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\test\idleness.txt" />
+                                    </Component>
+                                    <Component Id="cmp25CC48AD79F6599C109E9DB13DFA43A0" Guid="{55A1956E-20F8-4294-B571-44763C1BA3B9}">
+                                        <File Id="fil77D2621A246C9BE2C66D092DBF38FBF9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\node_modules\wordwrap\test\wrap.js" />
+                                    </Component>
+                            <Component Id="cmp5CCAE06BFC03ABFEA013FE1E4EE29D44" Guid="{3D3D533A-E15A-4782-972B-8FC9F8210C19}">
+                                <File Id="filFD1DF85CAE98BCA69395E524D7ABF0EC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\dash.js" />
+                            </Component>
+                            <Component Id="cmp45074E50BA73BBB9D33D6417FBCE89D7" Guid="{59DB3F01-AD9B-41CF-A7C7-01B96FC9248D}">
+                                <File Id="filBA6CEACF2973D23A0EF049D65B79EEB5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\parse.js" />
+                            </Component>
+                            <Component Id="cmpC72D8443927DE1A0989DE3C591588BE1" Guid="{8AA2B840-9E94-478E-B6F5-7983A4EF7ADC}">
+                                <File Id="fil05BCFA244A640C706F475D02A1B260F0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\parse_modified.js" />
+                            </Component>
+                            <Component Id="cmp29CC2060657826C1F52F7F688E67671F" Guid="{111B7289-BC5A-4D06-9B01-F05B41E60F59}">
+                                <File Id="filA1074C12A96F7EBE2F88D675E38917B0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\short.js" />
+                            </Component>
+                            <Component Id="cmpE6A49D33B7A69EE4E3C059A26838A262" Guid="{E3775E17-B991-433E-A1BD-A503DFD65110}">
+                                <File Id="filF364A3EA0CB4F05B1EFCAB3DF57B8A86" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\usage.js" />
+                            </Component>
+                            <Component Id="cmp11540A4DD827EFB602CDCF032BBE0362" Guid="{5AD7586A-0D66-41C2-ADAB-94C0FF674141}">
+                                <File Id="fil4AABFB61475760D73CFAAF970A2E89DF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\whitespace.js" />
+                            </Component>
+                            <Component Id="cmpBAEFC8D85F5F67F6C28141E0C024276F" Guid="{AB18C68C-02F9-4E9C-A842-BE626BE5EDD9}">
+                                <File Id="fil72DB72266F3C7E9EAE136092E0A07CD2" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\_.js" />
+                            </Component>
+                                <Component Id="cmp733FC252FFCC9F6D07E3986782EED3A7" Guid="{99395405-6DF3-40DC-A475-B7D42F5CF055}">
+                                    <File Id="filA6B4024AB6C9D7CB0CC83D81FD1DCCA3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\_\argv.js" />
+                                </Component>
+                                <Component Id="cmp3797B7A22BD8CF1DAFD1201DF15BCF11" Guid="{77CD688D-EE98-4405-BA51-02F2C51F3034}">
+                                    <File Id="fil6290F39ABC30701B4B887962F2B62A05" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\node-windows\node_modules\optimist\test\_\bin.js" />
+                                </Component>
+    </Fragment>
+</Wix>

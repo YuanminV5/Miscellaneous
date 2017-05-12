@@ -1,0 +1,11 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/SUB_DIR_ACE_DIR_AutodeskForNode.wxi?>
+	<DirectoryRef Id="ACE_DIR_AutodeskForNode">
+		<?ifndef ACE_DIR_ProjectCentricServer ?>
+		<Directory Id="ACE_DIR_ProjectCentricServer" Name="ACEProjectCentricServer" SourceName="Root"/>
+		<?define ACE_DIR_ProjectCentricServer?>
+		<?endif?>
+	</DirectoryRef>
+  
+</Include>

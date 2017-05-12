@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+                <Component Id="cmpEEAB8FAD6847839A3DF4937C4AFE9641" Guid="{84137596-9F91-4BF9-86BA-7A83A0B04F3D}">
+                    <File Id="filE9B68E013D7E8F29606FE7D77D0E3A9C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\.jshintrc" />
+                </Component>
+                <Component Id="cmp0F410BF9B810F0F8644AABA95F8B4F67" Guid="{24D6B6D5-8315-47C6-820B-FD5AEDF2DBF6}">
+                    <File Id="fil597044672E8C9353FE5CC61212354851" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\.travis.yml" />
+                </Component>
+                <Component Id="cmp4EEFA0E6F2671819A4D5E4082DE2115E" Guid="{7472F72C-1EE9-4CC0-837A-2E9C9159E6B7}">
+                    <File Id="filA16950D4C957D106DC671E4073A42D4A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\index.js" />
+                </Component>
+                <Component Id="cmp31EC225BBCD4540AFD53AC37B0A2D155" Guid="{2E3E00EF-94EC-410E-926A-5FB758C5479C}">
+                    <File Id="filC3B8E7E67350EC4B6C81D47A612F302A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\LICENSE" />
+                </Component>
+                <Component Id="cmp685A4AC677118DB3E9FA1A3621258FD0" Guid="{F3921658-043B-4517-8345-127AD47D5B61}">
+                    <File Id="fil4E0C21183246CF88AC74D24838C44452" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\package.json" />
+                </Component>
+                <Component Id="cmp2EBC9150B31F8311C7DC12E8FD0F1209" Guid="{13FD3BD6-7FF0-48F2-ABE0-9385A502C633}">
+                    <File Id="filC3C0C72CD6C8E3872C5BA5B44261755A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\README.md" />
+                </Component>
+                        <Component Id="cmpB4456FAFDA60A869952B4970CEB6B5FF" Guid="{6EF32C0B-CC1A-4965-9191-0231446D54D3}">
+                            <File Id="fil0821C5A38FBFE2995B2333C55DC2C370" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\.bin\logfmt" />
+                        </Component>
+                        <Component Id="cmpF2C31750A487F3DB02B99BB15116ED66" Guid="{A1AF22E3-BA19-4C4E-9349-ABB489843828}">
+                            <File Id="fil3FCED3F533151C3794354B97F8DDFA4C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\.bin\logfmt.cmd" />
+                        </Component>
+                        <Component Id="cmp4669D864023B6CC8993C6738DD8A86CA" Guid="{EA614142-E0ED-4492-B913-1F5BF184BF4E}">
+                            <File Id="fil6FBB382F47C34962041340EEA62C88CC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\.npmignore" />
+                        </Component>
+                        <Component Id="cmp0B1D27AA25420955AE9B4B8C0C6A6E28" Guid="{7CC81F18-F93C-442A-96E4-1E551CA9E572}">
+                            <File Id="filCE372F5705B56BF8E92AF324559D2F6C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp5C38546FFB60F4E69BE67399A4251079" Guid="{FC6AAB25-4303-484B-8C7B-B5BF1E4EBAB9}">
+                            <File Id="fil653EA37294DBD618E958336021B77C1C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\logfmt.js" />
+                        </Component>
+                        <Component Id="cmp83808D9AF0F5240A3DBDC217C8634DC9" Guid="{82758CA9-AA4C-4E74-A4D4-8B5B7DF85304}">
+                            <File Id="filE4E37785CD88279822A221DB4780F471" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\package.json" />
+                        </Component>
+                        <Component Id="cmp9805E2063AF8BE115F16F1DB112ED47B" Guid="{C40B011F-5451-40BB-BFA1-825ACBD2FF71}">
+                            <File Id="filC646EADAA4C10A621F05E0DB02B66C43" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\README.md" />
+                        </Component>
+                            <Component Id="cmp58E7DA65C190183D4B3736B7EFBE3BAD" Guid="{5892A765-BC65-4361-A2D3-5F008589021E}">
+                                <File Id="fil6A35F8592AF94AD9AFB3E538EEB34FE6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\bin\logfmt" />
+                            </Component>
+                            <Component Id="cmp829C2013500E6D036ED4D612D45A02AC" Guid="{A44DB21E-9D10-48F4-AB73-4C040E03434F}">
+                                <File Id="filD5EBED0485351A9D0887B86818ABDEDD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\express_buffered.js" />
+                            </Component>
+                            <Component Id="cmp8E6F80149F9834BCE0E59956FDB7F310" Guid="{31030AF0-2260-4026-9E7F-0DE1E8E93902}">
+                                <File Id="fil51FEF34876F420388B20064F2AB75EF1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\express_mime.js" />
+                            </Component>
+                            <Component Id="cmp70E21CB1605C3C91F38DA8A6E8D72764" Guid="{D57C8F61-A2A1-4219-89C2-77B144C0C529}">
+                                <File Id="fil27A8D30E3112BB8B1E79D86BE167DEA0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\express_pipe.js" />
+                            </Component>
+                            <Component Id="cmpA595E2025587660D9634B5142F5A88F7" Guid="{A06B35B6-73B1-4416-8748-A835F4AA11B0}">
+                                <File Id="filA08376D6F281B963D58D2237158A9238" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\express_pipe_to_stdout.js" />
+                            </Component>
+                            <Component Id="cmpA287A3938BB12030E081251D3AF63ED2" Guid="{C0AA85D7-ECCA-453A-867B-8B39C6BA298A}">
+                                <File Id="fil4BC5F99D403B4A106F11A24D2DCD61CF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\express_readable.js" />
+                            </Component>
+                            <Component Id="cmp54A79A0026E0F32CE2ECAE88BA7E10C3" Guid="{4D236668-18D2-43F4-9A22-D4B0D40BFB76}">
+                                <File Id="fil7AEABAE6024CB793BBFF9202E08C80B0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\file" />
+                            </Component>
+                            <Component Id="cmp71D6DE75BA163445B1967BC6B217AB2D" Guid="{08CE9533-0EA2-4425-9203-CEDA45C92B21}">
+                                <File Id="filB58BC3AB93FFD94C5D8D224D4D6C5FE2" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\https.js" />
+                            </Component>
+                            <Component Id="cmpA6CB858C6DB54197393863910E6A2AAE" Guid="{FE8307EA-EAEA-4A57-92C9-6912FD29758F}">
+                                <File Id="fil124C75FAE4D628B488D259E9FD92BC78" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\post_form" />
+                            </Component>
+                            <Component Id="cmp00AF04C9FED8F0D53E65C1B3C5D37D2E" Guid="{0E85BEAE-EBEA-4EF1-BB11-EEA83BD4271B}">
+                                <File Id="filC7C828DFA9FB57F238A8453AD9909AE2" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\post_to_express.js" />
+                            </Component>
+                            <Component Id="cmp5D0DE1732DE14869A1DCF1B6D80BB6DC" Guid="{DDCBE1A7-2F27-4883-9CB4-9581C366645C}">
+                                <File Id="filB868FA21D70396C0B7DC6FDB9288FEB9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\post_via_curl" />
+                            </Component>
+                            <Component Id="cmpDB53A92034085359221033C469CABCB2" Guid="{B397183C-5F47-4F95-AD64-29998400430A}">
+                                <File Id="fil593CC249157DE63BF545A0CDA6935D63" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\quick.sh" />
+                            </Component>
+                            <Component Id="cmp510D7C9F40EB5CF83C682B017AFBA12B" Guid="{BD75B8E8-7152-4418-810A-5A2C0546C8E9}">
+                                <File Id="fil2FB250E16226EB409EB7F26B2F24DA8B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\r14.logfmt" />
+                            </Component>
+                            <Component Id="cmp736BBD711C9E5541809B04B740AF53A9" Guid="{37F9CD29-4BD4-4E40-8AEF-1E8430673D32}">
+                                <File Id="filEB601F3A350621EBF147EA5EE8E485E5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\restify_buffered.js" />
+                            </Component>
+                            <Component Id="cmp99D5FBDD1FBA645D71B205AB21A19DBA" Guid="{73B18448-3D2A-40D0-B4B4-81A993BD649C}">
+                                <File Id="filFE264253E59D5A3C20E8BD24CF3204AD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\restify_pipe_to_stdout.js" />
+                            </Component>
+                            <Component Id="cmp82490040F24E3E9970BAF6406441D72D" Guid="{4D6892FC-0B82-4982-9C0C-C0D4A6C6D416}">
+                                <File Id="filB248F33FDDF87FB61417C249FF5A60D7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\restify_pipe_to_stdout2.js" />
+                            </Component>
+                            <Component Id="cmpAA469D895203DB0B711417F987F355E9" Guid="{85575663-7295-440F-ABB7-A2E6B4654D1C}">
+                                <File Id="fil8A1F876AC71A807FB8DAEFCC9801E0A1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\simple_cmd.js" />
+                            </Component>
+                            <Component Id="cmp5C67D13CE56339C34D159E63CC64FA9A" Guid="{855D8C51-5FB6-4509-AD2C-DB69DB3B16B7}">
+                                <File Id="filB2260BCF640F28397AFF44689115633D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\speed.sh" />
+                            </Component>
+                            <Component Id="cmpE8C0F98F07282F2CB4F320486B6F9676" Guid="{DF7DA562-0959-444B-A9BF-2974F74F2C4E}">
+                                <File Id="fil12D9D1001A56C99FFFB3763724908061" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\test_cmd_line" />
+                            </Component>
+                            <Component Id="cmp339A27AD1772CB58E21DC5C59633CA30" Guid="{9648FF81-E742-470C-9236-DEE1AA1A173E}">
+                                <File Id="fil23E1F8E929068B0CD347DE52D157F440" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\test_express" />
+                            </Component>
+                            <Component Id="cmp95DE09B282C44143908CE0659F2969FB" Guid="{179E6A00-2BA2-44F4-8763-E881B41E2B2A}">
+                                <File Id="fil147FC278AED44B84B87316026D39FB57" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\test_express_readable" />
+                            </Component>
+                            <Component Id="cmp245E34E52814117980DDBE00D1B5C312" Guid="{243BE271-EA59-44B9-A7EB-B924850BF488}">
+                                <File Id="fil22F00797F55B6C44A6566CCE96AA45F4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\test_log" />
+                            </Component>
+                            <Component Id="cmp28EAECF53B4C5A5CE3D029C28E0F5F87" Guid="{CEE2424E-8827-4EA9-BE52-C390CA728B76}">
+                                <File Id="fil2745FEE432D50B8D599116D5331BAE41" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\through.js" />
+                            </Component>
+                            <Component Id="cmp91E22B8B83E3DABA31D872AF68CA86E8" Guid="{EAEBB8B7-9878-40B2-A7C0-F20537083783}">
+                                <File Id="fil4B0450D823DD30E8A8B9AEC45CC96D9F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\timed_log.js" />
+                            </Component>
+                            <Component Id="cmp11774F26BDD6D60A1DC0EF292693DA91" Guid="{254AE26B-F7E9-4C9C-AF71-786FD2C8C31A}">
+                                <File Id="filA871967BB6CD6976536132943414F615" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\two_streams.js" />
+                            </Component>
+                            <Component Id="cmpEE3D411C88EAE5DB4E16502F33784BCD" Guid="{BD1DC5E3-A7B2-4D1A-BED7-06762EF7176F}">
+                                <File Id="fil8D3375843830BEEDC1EC0FD7CFEFBC66" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\examples\vanilla_http.js" />
+                            </Component>
+                            <Component Id="cmp96CA514F85C5BE42690B75D70D54C31F" Guid="{E505A0BF-980D-4E66-800A-081699DDC5EC}">
+                                <File Id="fil2FBA998A3BDA3B5A6BE16449EDB35BCA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\body_parser.js" />
+                            </Component>
+                            <Component Id="cmpAEFAF1D23DE3CDD04A809A9C9C3AD743" Guid="{5F6B988A-9B75-44EB-A886-F3CE100AC290}">
+                                <File Id="filD88498B474EE54AE0C1AD180EECB9D92" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\body_parser_stream.js" />
+                            </Component>
+                            <Component Id="cmp27CD46FB8DF19EA6F609A0F43387E320" Guid="{7E43ACE7-EEE7-4BA7-BF89-D1573D58C0AC}">
+                                <File Id="fil2EB8C5FC536884539B53CDE65A9747DD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\logfmt_parser.js" />
+                            </Component>
+                            <Component Id="cmp5232E51C849E0F29E79DE43615813424" Guid="{3839702E-859C-4649-8128-13A53C7BFD5D}">
+                                <File Id="filBE8C2A4598D09904BC03CCAEC8852A79" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\logger.js" />
+                            </Component>
+                            <Component Id="cmp3997080CDBF7A2F45C49DCF5435B1387" Guid="{5D3ACF61-C84C-48AB-A53C-C800F5670634}">
+                                <File Id="fil4025E47A456AA096FA56E6F7A3DACC2B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\request_logger.js" />
+                            </Component>
+                            <Component Id="cmpFEEB9474FAB851339A4C134C499D2892" Guid="{898D3423-F388-41E6-B5E5-84F2AF7435E1}">
+                                <File Id="fil8C14B02F0821AC2EF1FC260D32BCAFF6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\streaming.js" />
+                            </Component>
+                            <Component Id="cmp8BD2902A7E24292FC1F79BEE1D1BAEFA" Guid="{7CFA4865-3B57-436B-AB62-56E149C57CD5}">
+                                <File Id="filFA78DCED80514F565B8EF9604A02E1F4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\lib\stringify.js" />
+                            </Component>
+                                <Component Id="cmpF838293C6A2F03859717DA6B3A42F57E" Guid="{014C186D-4D93-4B6B-823B-EE2B406D439B}">
+                                    <File Id="fil942EFDB7CF1501358D8F67083E50D2BA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\LICENSE.txt" />
+                                </Component>
+                                <Component Id="cmpEB1E39F08CDA708A537717B4AF49ACD6" Guid="{CDD9D4C6-E901-41D5-ADD1-2028D84C66B4}">
+                                    <File Id="filC91AB67F76E336B9959C9FE17736AC6B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\lodash.js" />
+                                </Component>
+                                <Component Id="cmp21798EC2AA2DA22EDE83CE0B5996AB74" Guid="{623F5C63-1783-4BB4-A21D-FB05C93E2EA3}">
+                                    <File Id="filBDFE6BB4884E456FAE99D7879364DD55" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\package.json" />
+                                </Component>
+                                <Component Id="cmp501167D726E4EC084245CE9E294A1897" Guid="{2B356EDA-B5E9-48E3-B843-614E533876DE}">
+                                    <File Id="filBED8F800B16C1B366F8EC39508F1C720" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\README.md" />
+                                </Component>
+                                    <Component Id="cmp950C06ACC3E53BA5912E417214268FA1" Guid="{1FF1FC9B-253C-47C2-B9D5-202C8C0EC81E}">
+                                        <File Id="filD1A706312D819FCCCF8B8B7BCAD1B956" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\dist\lodash.compat.js" />
+                                    </Component>
+                                    <Component Id="cmpD623E36149FE521EB6C8E4CD6255543B" Guid="{5F8655AD-C001-4618-8F1E-8BA50A6BE20E}">
+                                        <File Id="filF9B9FA7B9AC958EDF434EB07885668C6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\dist\lodash.compat.min.js" />
+                                    </Component>
+                                    <Component Id="cmpE7BA8DE21ED68A93DEF2699C3D5C4FB3" Guid="{8E02FD67-E1B9-4A3E-A59A-3138612247FB}">
+                                        <File Id="fil1847066BD6DA37F044923C3E3E54429D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\dist\lodash.js" />
+                                    </Component>
+                                    <Component Id="cmp2AC0BA562A3CE35760E6A41E3DD2BD9C" Guid="{655ED023-D286-4E10-93A7-C028C9F2DD85}">
+                                        <File Id="filFC2847364F0ADABA453C488B26CEE884" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\dist\lodash.min.js" />
+                                    </Component>
+                                    <Component Id="cmpE4D1E188C1C6D0583D47EBF7FAAF6396" Guid="{A219953E-EA95-49EF-92CE-6EFA7E3523F9}">
+                                        <File Id="filB551C533E3D5C15CBF47C8267894F095" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\dist\lodash.underscore.js" />
+                                    </Component>
+                                    <Component Id="cmp8594A610B9AFC98868652AFF84CCF886" Guid="{0C3CA0C6-17B6-4011-9D2B-CA3528106639}">
+                                        <File Id="filEAAAD0D1324223EFBA8957C9F4D63ECF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\lodash\dist\lodash.underscore.min.js" />
+                                    </Component>
+                                <Component Id="cmpA450D83B48D4098655F81CADC5CBED26" Guid="{DBE84FAE-D6D8-4CA8-81C7-855CECD53E4D}">
+                                    <File Id="filA5DADB342EBF087D57E14AD75582E57F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\.npmignore" />
+                                </Component>
+                                <Component Id="cmp1693DB84CBBE3650B960C4282A3E0C8E" Guid="{0543766C-1357-4D5D-8B0A-F33F8FC45626}">
+                                    <File Id="filBCE87891B52C84DE489BEA93694452CC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\.travis.yml" />
+                                </Component>
+                                <Component Id="cmpB4F5DDCCAF881916123066B80B40AA2B" Guid="{1C429E46-29D0-42F8-8013-F0F269236F1B}">
+                                    <File Id="fil6A8D94F1FACD9C3A3A432E5A7A962313" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\index.js" />
+                                </Component>
+                                <Component Id="cmpF542A6DF8AE1895BDC72E4C53980F975" Guid="{3A91F84C-B805-4F1A-BF10-17724CB6DBCE}">
+                                    <File Id="fil5929A8446C40BCB3C2501EECB4B61697" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\LICENCE" />
+                                </Component>
+                                <Component Id="cmpDB42847C6E9109A0E39B88B3AE11EBB0" Guid="{99E9FE74-EB52-4462-BE78-EBD99B96C2F7}">
+                                    <File Id="fil36708C7BBB0CF62490529D110210F730" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\package.json" />
+                                </Component>
+                                <Component Id="cmp50CC8DBC6C51E7990DAB2300C5E8BB70" Guid="{884B5C13-18C4-47E2-AF3E-FC3D96C11F84}">
+                                    <File Id="fil9980FA48B3FE39526663DA2D47C6E869" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\readme.markdown" />
+                                </Component>
+                                    <Component Id="cmpCD1C34D0EBA964C3E42A5512B19BCB11" Guid="{4AE63CDE-C0BC-4550-8B74-7E389179DD3E}">
+                                        <File Id="fil388C2F888E952A497F9B152CAE348276" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\examples\pretty.js" />
+                                    </Component>
+                                    <Component Id="cmp4E7DEEA3727176038E711714B79B0006" Guid="{C8E473AF-2C22-4EAE-88A0-5112F413E0BB}">
+                                        <File Id="filF1C9A40DA17F244647B519869C4C9F73" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\test\partitioned_unicode.js" />
+                                    </Component>
+                                    <Component Id="cmpC80FF4562F80D1534ED81EB711CF9789" Guid="{A44AB1E9-5F24-48AA-A419-619989AA6978}">
+                                        <File Id="fil07E42C2E8E132356BACDFDB4744714F5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\test\split.asynct.js" />
+                                    </Component>
+                                    <Component Id="cmpCC72698A4E6D35B53EB0F82FC62BDE5E" Guid="{2BF253CF-E423-44B5-B8B8-129B05095190}">
+                                        <File Id="filD990698FC6DDC8ABE77D01B0FAB7E6AE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\split\test\try_catch.asynct.js" />
+                                    </Component>
+                                <Component Id="cmp2A6D727E023E04576A139FABDBE0C8E9" Guid="{695325EB-8645-44A4-A728-107E68DD7072}">
+                                    <File Id="filAE0B89897BBA2D0F65CF3FD9D50C19EE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\.travis.yml" />
+                                </Component>
+                                <Component Id="cmp63421A48176473A9FE35CD373D5A3D85" Guid="{88474421-F391-4BF9-AC67-4D279755D1F1}">
+                                    <File Id="fil99A5686E6AE73A309CC9C2DA91B7A58A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\index.js" />
+                                </Component>
+                                <Component Id="cmpDDD65324220C3F59A310ABD98711C3E9" Guid="{160752EC-729D-4A6B-A043-7FB9FB471D03}">
+                                    <File Id="fil5EEA5B654DBE1D2BF49F9BD6BF2B8B40" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\LICENSE.APACHE2" />
+                                </Component>
+                                <Component Id="cmpAB02CB141EEB3D66713BCB2F8CDA32C0" Guid="{039F0DC9-F75A-48A8-A1AF-4EF8050156F0}">
+                                    <File Id="fil15D0673E8DC7AC4E4A862B192D9518A6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\LICENSE.MIT" />
+                                </Component>
+                                <Component Id="cmpC800CEFCE8BF4857537FD24AC49B043A" Guid="{0B73D6DA-927B-4903-8241-11CEF1FF57CB}">
+                                    <File Id="filC2F2AE82FB4C75CB557AE26F9A215521" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\package.json" />
+                                </Component>
+                                <Component Id="cmp9B8BCE31B7DCEA689C3875995BA71DCA" Guid="{601804B4-5762-4F76-BCC0-E43C6AEA5B16}">
+                                    <File Id="fil0C294AD456004EFF5A5029506D4FD696" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\readme.markdown" />
+                                </Component>
+                                    <Component Id="cmpF890FB75EBB9C3E828B02277D0A936E5" Guid="{B6A23E35-39A5-4F90-8E99-9E7B0382736D}">
+                                        <File Id="fil8D5EF118CEAA9F5029DD97FF3DB494AA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\test\async.js" />
+                                    </Component>
+                                    <Component Id="cmpD2A8222E7016C38AA48F1D68FF3D14B5" Guid="{23C6368D-58C4-47EB-BFB4-7D8A484E92D7}">
+                                        <File Id="fil576D5F7DBE9F770FB4531D97FAD847B4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\test\auto-destroy.js" />
+                                    </Component>
+                                    <Component Id="cmp6E6C064027DF7359FC30B16AA824997C" Guid="{A51A48D3-8BB4-4998-8DE7-44C7D1BEC1FB}">
+                                        <File Id="filB845B9AFE59E2E4148093C93EDAD5F31" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\test\buffering.js" />
+                                    </Component>
+                                    <Component Id="cmp7744BAD57E13476E90B18D57D34F3058" Guid="{AFE135E6-49C2-43B9-B05E-11F863974896}">
+                                        <File Id="fil398CEDCFB8F51AA2DF721370FBE08FF9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\test\end.js" />
+                                    </Component>
+                                    <Component Id="cmp9D6725CB58B430D8A7AE5BBF2D4D9689" Guid="{0A9CD790-602A-401A-91C5-20A1ECCCB73A}">
+                                        <File Id="fil7CA4BF267914123AD4C2166D4E9CD55C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\node_modules\through\test\index.js" />
+                                    </Component>
+                            <Component Id="cmp069D6E3AA1033E897BDED93A32580A02" Guid="{3D7A5A92-068C-4F68-8F15-BFF07DE770BB}">
+                                <File Id="fil3A2C342838C14A8A85F7BD816EA34DC7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\body_parser_stream_test.js" />
+                            </Component>
+                            <Component Id="cmp8417D7B1B5DC36EE5E84683FBE8A8C0A" Guid="{D9B9C14F-000D-4EC4-9B32-1B607E1D1D68}">
+                                <File Id="filC3BEC2B5C632C2CE158CA0EDD68F9E5D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\body_parser_test.js" />
+                            </Component>
+                            <Component Id="cmp0FF56EE29FDBF0FBA6A62F6A7CF97ABF" Guid="{69F3A2AB-B2D5-4173-9D25-B80DAEA62DBB}">
+                                <File Id="fil8387A8EC886CC0258EE42A3016874A40" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\error_tests.js" />
+                            </Component>
+                            <Component Id="cmp77BF0B3AEBA23A07AD243431F92EC285" Guid="{3E51FBD8-0780-436F-9AAF-3A76D4DF047E}">
+                                <File Id="fil078D9107FA66F607A1C367ECD6221A24" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\logging_tests.js" />
+                            </Component>
+                            <Component Id="cmpFD9A1945AA39E4E41E09817A9E9AC834" Guid="{968E9067-0AFF-4D38-A6B4-1086A310F1B9}">
+                                <File Id="fil6D3F396E633366ADE51FC1B71708BED8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\log_time.js" />
+                            </Component>
+                            <Component Id="cmp17C182DFEE98B3C9218627C59420217E" Guid="{61D4DF2C-CB0B-48D3-B5F0-D09A50E6D928}">
+                                <File Id="fil479399A2050646B0AB1475E9FEF2A438" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\mocha.opts" />
+                            </Component>
+                            <Component Id="cmpC1D4CCFF7ABEDC7E55F43A83F325DE86" Guid="{0A221E93-349D-4F25-8397-67C41E4F514B}">
+                                <File Id="filAB32405D22D87A48FCEF456190EA83B6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\namespace_test.js" />
+                            </Component>
+                            <Component Id="cmp605262B60DD09668A2201768BAD7D0D4" Guid="{C0829C57-4CF2-4CDC-B812-0489A130CC16}">
+                                <File Id="fil33686C8B1DE04A23355A23FE5544057E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\namespace_time.js" />
+                            </Component>
+                            <Component Id="cmpD6813E9AC7972D6819DF2F2BB63B44D1" Guid="{7BE58141-03B8-405F-A0A9-405750114FEF}">
+                                <File Id="filB9B0CB77C769FC943EF0807BE2AE19EE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\new_logfmt.js" />
+                            </Component>
+                            <Component Id="cmpAE4D35FD43BFBCBC9EBDC7A8CBD9AF6C" Guid="{3DA7D564-0F46-4167-968E-F82DA983040B}">
+                                <File Id="filE44072685A5C0FF94F6C802F911AD030" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\outstream.js" />
+                            </Component>
+                            <Component Id="cmp29207D42B73863960592D4F85CCB58AE" Guid="{F265C60F-1C2E-4E45-8D25-10A8B28CB4A0}">
+                                <File Id="fil205B0FB723E161D97623BF2D2EBF7B8A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\parser_tests.js" />
+                            </Component>
+                            <Component Id="cmp0AA6C460AC8E34A185D6D8CD049604ED" Guid="{2CEA284A-286B-42FA-B1D8-ABE76C0F8EFA}">
+                                <File Id="fil51DA1FEFA8302136C7A99FBBD1F3E7AD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\request_logger_test.js" />
+                            </Component>
+                            <Component Id="cmp4D35B4BEB4B1C827D508EAC25311E178" Guid="{FCEC1E40-3E54-48F8-A956-4047001CE806}">
+                                <File Id="fil33733EDB429E4A4AB813A9388CE61F86" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\roundtrip_tests.js" />
+                            </Component>
+                            <Component Id="cmpDF2BCEB1B55B370B47F4D893E5C1EF3A" Guid="{501A0301-0156-45D0-A0CF-006E72406C24}">
+                                <File Id="filDC833AADA36B21880A8466DF1D7FCACC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\singleton_test.js" />
+                            </Component>
+                            <Component Id="cmp74CCD84C621B059134148FEF673052E6" Guid="{113D7F59-1704-4699-AD96-C794EC36AFCD}">
+                                <File Id="filD30EE9D3BD53F1C915D2402D83DCA770" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\stream_parser_test.js" />
+                            </Component>
+                            <Component Id="cmp6D29A0A6C93FBA52574531068A6F7BFE" Guid="{F654CD22-8EC7-4718-98B7-1D583423EBAF}">
+                                <File Id="fil4AACC431AC2746EE83273ED043C7B5B1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\stream_stringify_test.js" />
+                            </Component>
+                            <Component Id="cmp7E6D8F6BC9751A49B856212E9B4A177D" Guid="{92CE06A3-E58A-4C15-8FD7-6916CBF7F2A3}">
+                                <File Id="fil64BC6937E0F6092652E59C7A6714CDFA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\stringify_test.js" />
+                            </Component>
+                            <Component Id="cmp29A3627308FCD3E6FD9EE365A59D9EC3" Guid="{BA552183-30E3-4B72-80F4-11A7F460DCAE}">
+                                <File Id="filFB321171F2DA56D8944C1BE1BB22E604" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\node_modules\logfmt\test\through_test.js" />
+                            </Component>
+                    <Component Id="cmp07DD3C13DBF6FE52CCD78FD51EE64425" Guid="{2B9BC8C7-96B8-46CC-8D2A-B3C387E83E61}">
+                        <File Id="fil390C8393469A0C182115CBE10771F4C6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\test\.jshintrc" />
+                    </Component>
+                    <Component Id="cmpFDA9EA8BAF2F63AE7C35031A7AD4505E" Guid="{C8331963-1952-44F4-B3A4-E89F20C790EC}">
+                        <File Id="fil61E6A170275A5521958025093EAD54A5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\test\share-js-stream-test.js" />
+                    </Component>
+                        <Component Id="cmp2F42C59B6E528C53795CB040AA2FA76A" Guid="{4806C8BE-BF66-40E9-9688-EFDF9367E886}">
+                            <File Id="fil542A03314DD4D49E5A649A3F4FE101FB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\test\sandbox\index.js" />
+                        </Component>
+                            <Component Id="cmp21BDCB3427F593F55B01CC50F33A338C" Guid="{BDB84A1B-177F-47F1-A474-395BCCB13013}">
+                                <File Id="filEF5984D8657BB13B1627A9AE25FE6A1D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\test\sandbox\public\app.js" />
+                            </Component>
+                            <Component Id="cmp5A6D896A9C3390BD7AA27613CCF530D9" Guid="{52EEC825-F93E-4BDF-B675-8A7FF02BA00F}">
+                                <File Id="fil756F5170671D910EA202C46D40ECDF01" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\test\sandbox\public\index.html" />
+                            </Component>
+                        <Component Id="cmpC539D89C280E013A65363AA3D710128E" Guid="{CAA357FA-F049-4E3A-BA72-3755D9E851FD}">
+                            <File Id="fil64019771D6256E4C840152EB18B0C51E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\share-js-stream\test\support\mock-ws.js" />
+                        </Component>
+    </Fragment>
+</Wix>

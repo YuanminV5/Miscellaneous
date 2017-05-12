@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/nconf/SUB_DIR_ACE_DIR_NM_opt_tes.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_opt_tes">
+		<?ifndef ACE_DIR_NM__?>
+		<Directory Id="ACE_DIR_NM__" Name="_" />
+		<?define ACE_DIR_NM__?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

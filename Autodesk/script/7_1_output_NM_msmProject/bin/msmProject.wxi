@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Fragment>
+    <ComponentGroup Id="bin.msm">
+      <ComponentGroupRef Id="bin.wxs" />
+    </ComponentGroup>
+  </Fragment>
+  <?include $(env.WixFragmentsACADE)\ProjectCentric\node_modules\bin.wxs?>
+</Include>

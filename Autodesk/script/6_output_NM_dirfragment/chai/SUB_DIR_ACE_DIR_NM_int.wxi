@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/chai/SUB_DIR_ACE_DIR_NM_lib_cha.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_lib_cha">
+		<?ifndef ACE_DIR_NM_int?>
+		<Directory Id="ACE_DIR_NM_int" Name="interface" />
+		<?define ACE_DIR_NM_int?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="dirFC6F0E6B3BE8FF821D8BD2E5D0F0D0B4" Name="nconf">
+                <Component Id="cmpAC9F496F10F9CAF34282CA36ABF8C4C2" Guid="{C8155108-B6BF-418C-B002-B6E889336519}">
+                    <File Id="fil0A7820A3264DC886A7E9DD3CA292C6A3" KeyPath="yes" Source="SourceDir\.npmignore" />
+                </Component>
+                <Component Id="cmp213C314483B0559CDF6912B0C7175195" Guid="{DE8B7AB3-379C-41C3-8693-08983971B47C}">
+                    <File Id="filD4F7BDF4EEB0EEB36B962CF1ADEAF9C9" KeyPath="yes" Source="SourceDir\.travis.yml" />
+                </Component>
+                <Component Id="cmpBC463D3D159D8ED99C6D96B4CF084D48" Guid="{DFD897B4-BCF8-4A0E-9855-F898ED4C0714}">
+                    <File Id="fil7B06318C1B34255FD627B0E3F511234E" KeyPath="yes" Source="SourceDir\CHANGELOG.md" />
+                </Component>
+                <Component Id="cmp9A84B84649F847A4A66345A2E2AE4D17" Guid="{6BCD55A3-4B34-4F61-A301-9A6A8E0F841F}">
+                    <File Id="fil64AED111A7B2E2A358EC1F5952C11781" KeyPath="yes" Source="SourceDir\LICENSE" />
+                </Component>
+                <Component Id="cmpBA15B31D064F9B1FEF83A9EE6552F24B" Guid="{7FF70269-8E80-42AE-84FE-708A1AFBC149}">
+                    <File Id="filCDC831448B1540363221F7FDEEE7399D" KeyPath="yes" Source="SourceDir\package.json" />
+                </Component>
+                <Component Id="cmp33A0552FFF7FB253C402855ADB4D808E" Guid="{A2AF45CB-0FA1-40E5-ACBD-7F7E2E2B31D9}">
+                    <File Id="filAB8D7902ED27CE219B9EBDB2B8C1BF56" KeyPath="yes" Source="SourceDir\README.md" />
+                </Component>
+                <Component Id="cmp8D2093585A6413E9E510D4FC49DE859B" Guid="{8D86358E-3D49-4E83-B745-EE5B3114D69C}">
+                    <File Id="filF006FA0C9E4EC447A6A3FBFD89CEBD45" KeyPath="yes" Source="SourceDir\usage.js" />
+                </Component>
+                <Directory Id="dir382BD6D7D4EB7CB63C29C43383CF7C44" Name="docs">
+                    <Component Id="cmp8688F96DB02533AE4DCDB46F13366155" Guid="{AB9214F8-F9D9-4F19-BA35-B8B82B5B3543}">
+                        <File Id="fil5B863CA4D1C72BE7C3F915D0FF647679" KeyPath="yes" Source="SourceDir\docs\docco.css" />
+                    </Component>
+                    <Component Id="cmp5D2F6C079254F64A8473760FD825D42B" Guid="{FE36CA41-105E-4153-8A09-B9D5AF3562C7}">
+                        <File Id="filF59B09FD1EFBC623F20B4424E7376943" KeyPath="yes" Source="SourceDir\docs\nconf.html" />
+                    </Component>
+                    <Directory Id="dirF9E22064267261F3B8E954345A54901E" Name="nconf">
+                        <Component Id="cmpDB8C558CB9B3F70F88876494CF9099EC" Guid="{2256D8C6-E1F4-4B47-BC01-647A0B11B52C}">
+                            <File Id="fil6DA96C7DA7EDE6781AB2DFD114587EED" KeyPath="yes" Source="SourceDir\docs\nconf\common.html" />
+                        </Component>
+                        <Component Id="cmpE3EC1260D5C554595864F8B7A6D98266" Guid="{3A3B6185-4950-4CFE-A575-BB7BC19A3806}">
+                            <File Id="filAFA318A63130B512DFED5204848934F3" KeyPath="yes" Source="SourceDir\docs\nconf\formats.html" />
+                        </Component>
+                        <Component Id="cmpE096CE463E80848EEFAA23677D11963B" Guid="{69CDFE4D-3656-40E4-86FD-9A12AD885983}">
+                            <File Id="filC34CCAD94243F45E8C4B225819277D64" KeyPath="yes" Source="SourceDir\docs\nconf\provider.html" />
+                        </Component>
+                        <Component Id="cmp15A6929512A0BE521B52C62EC97099F2" Guid="{59235F4A-D715-461C-9DB7-2203A0FEC62F}">
+                            <File Id="filD7C337C4A0C0A540AE41AC513A1477BC" KeyPath="yes" Source="SourceDir\docs\nconf\stores.html" />
+                        </Component>
+                        <Directory Id="dir765AA0BE9CDD79A9BDE7C1681B4EE80C" Name="stores">
+                            <Component Id="cmp7155126BEABF006176DEF819185496F3" Guid="{60D701FD-C0FC-416C-A7B2-C2CBE39F6773}">
+                                <File Id="filD8B657DB35B74FB6D3B311D2DB84D568" KeyPath="yes" Source="SourceDir\docs\nconf\stores\file.html" />
+                            </Component>
+                            <Component Id="cmpEE6960AF5952687FA30389134D642B19" Guid="{462535D4-0E98-4C3B-8B5B-0DF29E00A9BC}">
+                                <File Id="filF19069CF77CAFB0ABD2760FB88DD5D10" KeyPath="yes" Source="SourceDir\docs\nconf\stores\memory.html" />
+                            </Component>
+                            <Component Id="cmpDFAB2B685D234933A87E97412D5D8C4B" Guid="{67404BCF-1D00-4275-B706-6D23E2E4EE77}">
+                                <File Id="fil0706E591A3330525DA6CE11909F32B79" KeyPath="yes" Source="SourceDir\docs\nconf\stores\system.html" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir77CA24226071789C59D302CEC43CD3D4" Name="lib">
+                    <Component Id="cmpB554299D16B661FEDC0655D249F26083" Guid="{34138819-F1F6-4829-AB11-E58068ACC7E6}">
+                        <File Id="fil9F626FB3ABB20F6436FF2C7882232FDB" KeyPath="yes" Source="SourceDir\lib\nconf.js" />
+                    </Component>
+                    <Directory Id="dir031092898F717F0A7AC577B8B536BB39" Name="nconf">
+                        <Component Id="cmp370264C89173D9F97ABF4C92EF2CDB02" Guid="{3627E668-BF6D-45CF-9B90-B9CA0BFDB3AA}">
+                            <File Id="fil748CEA3CD221E1E7A65DB469ED0C68F8" KeyPath="yes" Source="SourceDir\lib\nconf\common.js" />
+                        </Component>
+                        <Component Id="cmp68FC78C57A1A27EDA184229602D872C4" Guid="{52A4E020-7F34-4368-9D40-B3FA1CDCA3F8}">
+                            <File Id="fil5C47FCAC04C92CF65D50661360587649" KeyPath="yes" Source="SourceDir\lib\nconf\formats.js" />
+                        </Component>
+                        <Component Id="cmpFE6C90EB3A33B3CB46D92E615D26827E" Guid="{F47FAD26-CF6F-49F9-B460-E4467E9147EE}">
+                            <File Id="fil2E868E4C49E252CB22856B83EDECC01F" KeyPath="yes" Source="SourceDir\lib\nconf\provider.js" />
+                        </Component>
+                        <Directory Id="dirAE33A96D840D4EEE81A2D4BF6373A9AA" Name="stores">
+                            <Component Id="cmpDD606191243218630E3F07E0515EB765" Guid="{BB1F52A7-B5BC-4BF6-887F-30A783B1BF7D}">
+                                <File Id="fil3816A5F2350FA2F8DD152540F1C5D8C0" KeyPath="yes" Source="SourceDir\lib\nconf\stores\argv.js" />
+                            </Component>
+                            <Component Id="cmp6DE810AABBEA42D955BD156F9F5E8A46" Guid="{919951EF-163C-4411-9F80-A61217989C0E}">
+                                <File Id="fil7524823952BC03FCBAFCD78E146124B4" KeyPath="yes" Source="SourceDir\lib\nconf\stores\env.js" />
+                            </Component>
+                            <Component Id="cmp9274115E828CFE91BE145481EDD4FE4F" Guid="{2B85990E-1DD0-417D-A2CF-ABCA22DF7D8B}">
+                                <File Id="fil265B02F6B58920368311AF3C15AC9F8E" KeyPath="yes" Source="SourceDir\lib\nconf\stores\file.js" />
+                            </Component>
+                            <Component Id="cmpAFC903A31A906881E732C580326063EE" Guid="{A8B25481-D270-4535-BEA1-D59431E37FBE}">
+                                <File Id="fil25DDD5214D3875847F24139212C5B406" KeyPath="yes" Source="SourceDir\lib\nconf\stores\literal.js" />
+                            </Component>
+                            <Component Id="cmpF5BC0063C5486230FF82F2AAD30A9D2B" Guid="{231FF661-673E-4CA6-A0C2-FB79687D3518}">
+                                <File Id="fil203386F5137EAA7473E98DFD9CB0BA70" KeyPath="yes" Source="SourceDir\lib\nconf\stores\memory.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dirBBB17060B7BC4350FD6D12CC916632DB" Name="node_modules">
+                    <Directory Id="dirD18DB9F787293E644CD5B12F44F6EF12" Name="async">
+                        <Component Id="cmpD94DE3B13757C3233FF9CE2A4E0C1AF8" Guid="{FB816591-D2CA-43FD-A774-BB98A13C83C8}">
+                            <File Id="filBCD3170721AC8EB77650B38AB4C1121D" KeyPath="yes" Source="SourceDir\node_modules\async\.travis.yml" />
+                        </Component>
+                        <Component Id="cmpAC74E5545CF02C6C79BF705B31391984" Guid="{C05BA9CE-6FA1-4D10-ACBE-045460FFB92D}">
+                            <File Id="filE6B75C8217EB8E5554B546CF7CE16685" KeyPath="yes" Source="SourceDir\node_modules\async\component.json" />
+                        </Component>
+                        <Component Id="cmp82C16638FD9DD57FEB8DCA8C0A3F9BF1" Guid="{559C69C2-F3C6-4C18-88B2-FC33B4EB4982}">
+                            <File Id="fil515A26CDA661DF23CECF873BE2A86F0F" KeyPath="yes" Source="SourceDir\node_modules\async\LICENSE" />
+                        </Component>
+                        <Component Id="cmp8C274AB413CD9C58EEA473E5D431DD83" Guid="{97AF6166-6D53-41FA-99F9-756BFE921288}">
+                            <File Id="fil2CAF029A6AF6C4D51D678B436DFEA75F" KeyPath="yes" Source="SourceDir\node_modules\async\package.json" />
+                        </Component>
+                        <Component Id="cmp2F05196C67338F7F69CF4CBEF0725A37" Guid="{A4DC6F49-4394-483E-85FD-DB303FA65C46}">
+                            <File Id="filA0E89546FD05C5F10380B67E63544953" KeyPath="yes" Source="SourceDir\node_modules\async\README.md" />
+                        </Component>
+                        <Directory Id="dir13E157F833CA75DC57715E16D70257BC" Name="lib">
+                            <Component Id="cmp38D7C932AE15237B9A1A925C71E28E59" Guid="{94147BF9-6E91-4ED0-97E5-98EE7C0DD9FE}">
+                                <File Id="filADDB8DFF1416A4A0C811B55E97276D54" KeyPath="yes" Source="SourceDir\node_modules\async\lib\async.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirF18433711989696698396AFDD132A5EF" Name="ini">
+                        <Component Id="cmp291461BB92AEC2F761AD12094AA6B8CC" Guid="{D781959A-323A-4B75-A053-0C424A85BCAF}">
+                            <File Id="filB3B83C971DF5229DB8D3B767E487097D" KeyPath="yes" Source="SourceDir\node_modules\ini\.npmignore" />
+                        </Component>
+                        <Component Id="cmp14D767BEEA22A430C99EE6BC02736B9E" Guid="{93BA8FD3-D357-49DC-AF2C-8B241DE5DCAD}">
+                            <File Id="fil80176C92ED20FEBC587B2D14223F5C91" KeyPath="yes" Source="SourceDir\node_modules\ini\ini.js" />
+                        </Component>
+                        <Component Id="cmp85B2BF9EDA5D0E59A330328D77C35645" Guid="{0DB95DE3-70D4-4849-A28A-F89B1D1B17DD}">
+                            <File Id="filD71348B6400520C205D76BCBA02E5E93" KeyPath="yes" Source="SourceDir\node_modules\ini\LICENSE" />
+                        </Component>
+                        <Component Id="cmpED84C4E7FD977276FA6FAE23DB509C35" Guid="{369FA33F-FF97-4D2C-9BB6-906A5CBEA16C}">
+                            <File Id="fil3AB6D3C802F4B510B063BB3BA51F20C0" KeyPath="yes" Source="SourceDir\node_modules\ini\package.json" />
+                        </Component>
+                        <Component Id="cmpE28D9EEB8A2E6182E41A150BC1505541" Guid="{817BD572-86B5-4B74-88FF-7FEBB6CA856C}">
+                            <File Id="filF493511AE6B439A7CAFE1CDA12E669EB" KeyPath="yes" Source="SourceDir\node_modules\ini\README.md" />
+                        </Component>
+                        <Directory Id="dir7A37367D07AE889A0965D8FCBA3E457D" Name="test">
+                            <Component Id="cmpCAE4B2F456687130DC0D3C235AB83ABD" Guid="{FE893C93-8FB9-4ABA-AD08-DB6839BB731C}">
+                                <File Id="fil74D31655E484D77F7439C2678CFBE55C" KeyPath="yes" Source="SourceDir\node_modules\ini\test\bar.js" />
+                            </Component>
+                            <Component Id="cmpF5AB9D22595F1EFB914CF2BCDB91C3DA" Guid="{DC853E31-25D6-427F-8633-2DD4E3188BCB}">
+                                <File Id="filC65B965030DA8C1A7AA53467E1290665" KeyPath="yes" Source="SourceDir\node_modules\ini\test\foo.js" />
+                            </Component>
+                            <Directory Id="dir4743B327467B02F8544F0027E0AC2BE4" Name="fixtures">
+                                <Component Id="cmp43BEE29A506D5609152A4B2924A50DF6" Guid="{4EDD006F-87C1-44F7-A751-1BA77D846D7A}">
+                                    <File Id="fil8C822DFE78C0D7C83ACD2F7D32851A88" KeyPath="yes" Source="SourceDir\node_modules\ini\test\fixtures\foo.ini" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirAF17E670C86B5A789FFA3500C394798C" Name="optimist">
+                        <Component Id="cmpF85218B0F39ACCCE8DD666658C2CBAAE" Guid="{E4DFF936-9F58-43DC-89FA-75CAC5B045FC}">
+                            <File Id="fil3DA7391FC101AA243B131DD51C86F30B" KeyPath="yes" Source="SourceDir\node_modules\optimist\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp1218E4E9FE0A0CDA232584A54EE6B361" Guid="{A077C114-4BB9-4D61-8A3B-F0C30BB121A0}">
+                            <File Id="fil5AA7F798A3CD1E728FC7292275D00834" KeyPath="yes" Source="SourceDir\node_modules\optimist\index.js" />
+                        </Component>
+                        <Component Id="cmpBDD7330E275A99FF3AFDB05FAB133862" Guid="{8D80B290-E7BE-4657-9346-3FE2148045E5}">
+                            <File Id="filA4C1D8419D86585055C8C0B32B3D4BCC" KeyPath="yes" Source="SourceDir\node_modules\optimist\LICENSE" />
+                        </Component>
+                        <Component Id="cmpD0D657C61D922C564D12EF13E1A18706" Guid="{F0C98981-7406-4B3D-AB10-8E79866E2BE8}">
+                            <File Id="filC28EE70D3068BFC5FBB546B314324E4F" KeyPath="yes" Source="SourceDir\node_modules\optimist\package.json" />
+                        </Component>
+                        <Component Id="cmpCE43E0F1CA96A891434F965BD2B66DC7" Guid="{60B4E910-937E-4B48-9C15-762F9CCEEFE4}">
+                            <File Id="fil4375F98FD2DA7E128509684662248995" KeyPath="yes" Source="SourceDir\node_modules\optimist\readme.markdown" />
+                        </Component>
+                        <Directory Id="dir0A3DE5DE9C3A92CAD3EA0C804DF5AD76" Name="example">
+                            <Component Id="cmp8E916C8896F71831FE87AA4BD176A76A" Guid="{6243FD8D-3910-4984-AE86-19A3EE07029C}">
+                                <File Id="filDA4183224A4AF282D79B103303663705" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\bool.js" />
+                            </Component>
+                            <Component Id="cmpAD1685E936522FFCF7581C833BED39DA" Guid="{EA53B30B-13E3-412F-8670-42212D4327C9}">
+                                <File Id="filD7DCCD5DC36F4F48B9FCBB23ADD887EF" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\boolean_double.js" />
+                            </Component>
+                            <Component Id="cmpF3F4614BE56EEBB09A813AC97A1FE564" Guid="{E950BF28-9B40-4342-8990-27F8478FF2E6}">
+                                <File Id="filA58AEA13D08C8F7918CFCF45C5BDD5C1" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\boolean_single.js" />
+                            </Component>
+                            <Component Id="cmp82E67E42A276CB310ACC229887F8B069" Guid="{B29D9069-93E1-4D24-A9FA-26D16D8670E6}">
+                                <File Id="filCE44DC9BDE68F76B4A003B372A7FB6A1" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\default_hash.js" />
+                            </Component>
+                            <Component Id="cmp1E098AF1D0D7DDEECC91361113C1E144" Guid="{B22DB209-5BDA-44A0-9341-3E29CED44CDD}">
+                                <File Id="fil49C1DD46DE537CBD2A7E0E4B74A3D8B2" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\default_singles.js" />
+                            </Component>
+                            <Component Id="cmp3BEA75DC6C91B6D77943D4FACBD8EEC6" Guid="{D993E6F2-66AA-4BCF-AD7C-53102A9A98A6}">
+                                <File Id="fil38AA344B7C7AA3800F6FCA2369090375" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\divide.js" />
+                            </Component>
+                            <Component Id="cmp935C471F22F0ECBACCE75870EC8518C5" Guid="{D84B3875-0498-4F62-9F25-56F231EB5121}">
+                                <File Id="fil652C9FCBC56371D0A9C927628DC02588" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\line_count.js" />
+                            </Component>
+                            <Component Id="cmp3282DE214E327A95BE35747ABDAB9354" Guid="{63F5476D-3210-4654-9AD8-5715677A072C}">
+                                <File Id="fil9AF5F9D02FF22BF7BD91362F0DBD2EFA" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\line_count_options.js" />
+                            </Component>
+                            <Component Id="cmp1C9BE2BAF9F2995510179CBA7200260C" Guid="{14B2228A-2DFB-47F3-91D4-67EC18DDB703}">
+                                <File Id="filE1B4F6B6A44CC3CB3CD07CB07B969A9C" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\line_count_wrap.js" />
+                            </Component>
+                            <Component Id="cmp158CDADEB76FC8D83BA5AD7317ABA070" Guid="{FD13D415-2AEC-4AD5-80E4-D93AFCABCBDD}">
+                                <File Id="filBAB024D3CCA3226B15ADBCB608A02C7A" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\nonopt.js" />
+                            </Component>
+                            <Component Id="cmp29D6843074C4E0F3CBB4F2EAFD337080" Guid="{50DB32BE-498F-4262-952C-15F5FA2491A5}">
+                                <File Id="filBE0AB394C502770B19A93D8FA3377307" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\reflect.js" />
+                            </Component>
+                            <Component Id="cmpC4B22900FFC7D94477EF731CE41B04A7" Guid="{4D9A4518-6CE9-421E-AB99-680E9A73DBBE}">
+                                <File Id="filB300502F09A8042158E80924D12B8828" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\short.js" />
+                            </Component>
+                            <Component Id="cmp38AC96B9AD656F5DB0CAA0270002A206" Guid="{9F2A62A5-71DB-464F-ACB6-1EF9C396D456}">
+                                <File Id="filDDF8E581C4D0044D5F225A9426A50776" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\string.js" />
+                            </Component>
+                            <Component Id="cmp5DA6BE608C49DFD56DEDE68B7364048C" Guid="{D8C960C9-1564-41E6-A02E-6D975C30A1FE}">
+                                <File Id="filA502AFDCA82F8B8781B3B84D99924D8B" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\usage-options.js" />
+                            </Component>
+                            <Component Id="cmpC835F3D651AC92A61A863A0A51AF7EF5" Guid="{A81A75A4-B48C-427D-8164-7510087AB463}">
+                                <File Id="fil6B918F0CAC7255D2F5FBD5A1DDFEB4C6" KeyPath="yes" Source="SourceDir\node_modules\optimist\example\xup.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir7860B9E70E15345891CCF38926F9A188" Name="node_modules">
+                            <Directory Id="dir0290D272DFD4920520794DB321CBDE6A" Name="minimist">
+                                <Component Id="cmpC720117D4C75548A54A55EBC0207EE9A" Guid="{CF3A007C-D7C7-4034-A949-B9EE36868B12}">
+                                    <File Id="filC3897CB4A3ABDE0D317333EEB5C9DA14" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\.travis.yml" />
+                                </Component>
+                                <Component Id="cmpA38EC9282A31ED69BA97A4DA89C6C138" Guid="{6ECB1CEF-823D-4EC3-8516-F5A43502CC5E}">
+                                    <File Id="fil7CCE6EE6EB8A50DDF345F948158B06BA" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\index.js" />
+                                </Component>
+                                <Component Id="cmp27F612C2614D6B5337B9B74F5625BA6F" Guid="{6BB9E04E-5DF4-4F99-A11B-E52C9188AB13}">
+                                    <File Id="fil9084FF471CA883EF016C66F06BB5F836" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\LICENSE" />
+                                </Component>
+                                <Component Id="cmp1F400AD6210099D75A6801EECE41C653" Guid="{DBF78CAA-CCC2-4358-A374-5FF0D9078054}">
+                                    <File Id="fil4B8941F40B57DC0347125F289F3376BA" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\package.json" />
+                                </Component>
+                                <Component Id="cmp2E6877ECFFFD127483E5CEB400F8BFD7" Guid="{7E9E722B-2737-4DC3-B063-ECE90F2E4DEF}">
+                                    <File Id="filB9BAF46A7299B624A97994A8705DD3E6" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\readme.markdown" />
+                                </Component>
+                                <Directory Id="dirCAEBF66AAC56EDE400F6CEC652A03DE5" Name="example">
+                                    <Component Id="cmpFCF7BB18B587D98B59328C372981C165" Guid="{5E06E5E1-599D-4F44-AC8F-4F84FEB49459}">
+                                        <File Id="filF391D7EC1E7B7D9AAE385E0F14C9DDD0" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\example\parse.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir6B82764AF6FE2DF44C3924C36F556BF6" Name="test">
+                                    <Component Id="cmpE32E26F351920273B46750C7A0A22D20" Guid="{CF61D841-CC0A-4A0D-BB2D-ADF9FB72028F}">
+                                        <File Id="fil1426EDAA70EB5F5FBB73647A69B55AE6" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\bool.js" />
+                                    </Component>
+                                    <Component Id="cmp039F3E0A5A8C76BF4B745D5FCECB6E01" Guid="{7D1BFAFB-A3FB-4E80-BA2B-2608AF2DC90F}">
+                                        <File Id="fil9712D09EFC09299310DFC2AADE3487EC" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\dash.js" />
+                                    </Component>
+                                    <Component Id="cmp78EC2640A853DEB1DE6B8F865DE68F67" Guid="{355D9AA5-4F49-41EA-80E0-FAD639B2CE17}">
+                                        <File Id="fil7AE47B1D70625074FA4FA52E6BA8C79F" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\default_bool.js" />
+                                    </Component>
+                                    <Component Id="cmp595E1AAA64AAE881EDFE2C1763FE8FF4" Guid="{3A25C23E-7E1D-4012-B348-08604F36D998}">
+                                        <File Id="filB41598384AADB681DB4BB483CF572FE9" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\dotted.js" />
+                                    </Component>
+                                    <Component Id="cmp2F689CABCD1AF7D202B9055AAEE0BBB3" Guid="{6A796999-7417-41B8-B4F1-E0A713AB56D5}">
+                                        <File Id="fil169F211698BFC5DB4A78CB780CC2BB53" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\long.js" />
+                                    </Component>
+                                    <Component Id="cmpDE72872B8D7070AC7A035D8ABBBDECE6" Guid="{5BF49B68-C995-4468-92AB-68F0CC22930F}">
+                                        <File Id="fil74F722B3DDF4F824A90D06FD84A574F7" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\num.js" />
+                                    </Component>
+                                    <Component Id="cmpB210CEE5AC7F628ECBAB650320992B3C" Guid="{8B24692F-DA69-4E58-B314-789AB7E2EC87}">
+                                        <File Id="fil9CB1B84FFA525FB81210F2EFA78179E7" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\parse.js" />
+                                    </Component>
+                                    <Component Id="cmpB7A2EAD82C665A85CBC25E13F771C0D9" Guid="{85D8D545-A957-495D-AB67-64D9BA2CF2C8}">
+                                        <File Id="filA1C9FA834615FF27D1D2B31758114055" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\parse_modified.js" />
+                                    </Component>
+                                    <Component Id="cmp9C1F784F0EE3992F89F95C49005F38C6" Guid="{DCB61F4A-B02D-4FBB-AB17-8178AF297739}">
+                                        <File Id="fil21A45BE0B717C0B06069E2A7F358E40A" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\short.js" />
+                                    </Component>
+                                    <Component Id="cmpDC639BAEDDE5C8131C92ACC5EC8F6535" Guid="{4538DD68-AF3D-4A57-8314-42F0094CB955}">
+                                        <File Id="fil0BD0E8A32AF3FC366AD02D2337D2DF68" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\minimist\test\whitespace.js" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                            <Directory Id="dirE648F48B77DAC98DA57E99B058AD4869" Name="wordwrap">
+                                <Component Id="cmpD63C99D6FB6F47E405B428D247107017" Guid="{F8C89EC8-090D-4930-8B1E-659A80A36E41}">
+                                    <File Id="filCB189E7EFC6226854886D4AE54AD7635" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\.npmignore" />
+                                </Component>
+                                <Component Id="cmpC3574C618A878271F83744E081E69BE5" Guid="{B3F32B96-B7E9-4860-BEF5-2800C4E74EDE}">
+                                    <File Id="filF590FADCDCD2621CF18C2416149ABA5C" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\index.js" />
+                                </Component>
+                                <Component Id="cmp8A5C8708AE8BC978BA4A020C776001C9" Guid="{E67F5013-8F0F-4935-9164-4F021C8179A4}">
+                                    <File Id="fil15977512C70684F92CBA19D1AE3E77AD" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\package.json" />
+                                </Component>
+                                <Component Id="cmp9D1791873D0D4E430EBD19F645E67902" Guid="{7CA87EC6-589C-4A21-B5A3-C6D68D3BD07D}">
+                                    <File Id="filCC8D216F7E72DBA0F9E0C089E048348B" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\README.markdown" />
+                                </Component>
+                                <Directory Id="dir48E563E75285BD4C323CBA5180A73616" Name="example">
+                                    <Component Id="cmp3436344E0BE92233215BE444CE76BD7D" Guid="{0C72B983-E59C-442E-9B0B-757F4143469A}">
+                                        <File Id="fil2324A55D1A0FE3C9257140DB0210D068" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\example\center.js" />
+                                    </Component>
+                                    <Component Id="cmp9DB61E0EF5DB499AA175BF99EE46FBB0" Guid="{48EEBA9F-D4CD-43E9-A148-EDDB67610FBA}">
+                                        <File Id="filFBDBD382DF5EC3A58786F004C5D83414" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\example\meat.js" />
+                                    </Component>
+                                </Directory>
+                                <Directory Id="dir1F60B9AFBEC3BC20A9B21AB3AC68E679" Name="test">
+                                    <Component Id="cmpCF62007FEAA5831E0B8295ED869D5F69" Guid="{6E3AB9B9-B5D5-4D0C-B8A6-42095D97AB5D}">
+                                        <File Id="filC4903C2E84329AD1E5AA50010C0430BF" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\test\break.js" />
+                                    </Component>
+                                    <Component Id="cmp178887FFDF408C9E904DE897507CC57A" Guid="{DCD4EA29-A7CA-40B8-89D2-129BBB2486F8}">
+                                        <File Id="fil41403C1E21D4B87E997886B0BDAD1187" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\test\idleness.txt" />
+                                    </Component>
+                                    <Component Id="cmpE2BA18E8F4533F5DF2E1C8B3B7F4C693" Guid="{30C8D7B5-F796-4D4F-A85B-374D331B2F4C}">
+                                        <File Id="filEFD3FE0F4EBB00B9D5E84DFD4BBE8BFB" KeyPath="yes" Source="SourceDir\node_modules\optimist\node_modules\wordwrap\test\wrap.js" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dir2352A8F696F9EF45EC192E771653DC70" Name="test">
+                            <Component Id="cmpFF7B736034D13D700B91A12D6AF804AA" Guid="{B1875E0E-6CC1-45F3-A96F-0FE4D7FAB0DD}">
+                                <File Id="fil95BAE53BFDBAC54C4BF75875B738061B" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\dash.js" />
+                            </Component>
+                            <Component Id="cmp00C0677B7F199FE00E4CFA07D5504A94" Guid="{0EAE2C7A-8CAB-4573-839C-5077AB97D001}">
+                                <File Id="filE0CF3096C1F6C90F2890B9B7DD894A83" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\parse.js" />
+                            </Component>
+                            <Component Id="cmpE5A0E7FC75E81AB96175698528D9EE54" Guid="{9A26146C-9577-4E6B-84BD-FD5B997C3754}">
+                                <File Id="filD0CB65B0F0D0068722D8D727FD51C8AF" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\parse_modified.js" />
+                            </Component>
+                            <Component Id="cmp99CF6EA37D2F2507E4B2722CE0754508" Guid="{B34F8B55-A2A8-4AE5-88EC-56283FA7079C}">
+                                <File Id="fil6E7CA808E86A4777D462F561950AD26D" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\short.js" />
+                            </Component>
+                            <Component Id="cmp0444C7E2F7C546C939387EB5601BD217" Guid="{BA6DD373-FC4A-47EA-99EA-63877E5E2D89}">
+                                <File Id="filF8004BA8137C7427C1E2350907228668" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\usage.js" />
+                            </Component>
+                            <Component Id="cmp41FFC995810605D6B56F2F9793847D96" Guid="{6FC3C75C-E0F7-4238-A395-A3143201AA31}">
+                                <File Id="fil6720ABA8190773655A9D10BDEAFB55BA" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\whitespace.js" />
+                            </Component>
+                            <Component Id="cmp6AC46118D36411998388E7F2DACE8878" Guid="{7396DC4B-42E9-48CB-9A77-C3CD9493A511}">
+                                <File Id="fil9EE3BDE32146305A789EBDE9ADFD5187" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\_.js" />
+                            </Component>
+                            <Directory Id="dir0729A2ED11DAAC390EF0F5355DF83ED8" Name="_">
+                                <Component Id="cmp4116BDF9655CCC78B20E61509F05FC19" Guid="{6A1FA9C7-FA6F-4E66-A1CC-5CDF5E2BBC74}">
+                                    <File Id="filB8A204C0FE3F896280A8DFCEADD7C3F1" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\_\argv.js" />
+                                </Component>
+                                <Component Id="cmp9CF6E51BD7A17BC2B8D8EC304DBAA4A8" Guid="{3DC6F47C-3360-440B-8A52-2B92390C7289}">
+                                    <File Id="filE8834188BC6F15FD1B69124F632018CF" KeyPath="yes" Source="SourceDir\node_modules\optimist\test\_\bin.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir9F01E9D061173944DF49116843A937AC" Name="test">
+                    <Component Id="cmpAF801015ABFD0446421941FA2C482B84" Guid="{E397D055-A827-4E3E-8E38-6B0539992AB5}">
+                        <File Id="filA9B8538EB58F8ABE764B6FC46F7B35BC" KeyPath="yes" Source="SourceDir\test\common-test.js" />
+                    </Component>
+                    <Component Id="cmpB95F3C7DDED7003A7BED5712AD5B0A93" Guid="{A4F22DC6-B91D-4C1F-A416-B2C48C820F8C}">
+                        <File Id="fil6BB9C64A56E80C6B6DC85B213FC43C78" KeyPath="yes" Source="SourceDir\test\complete-test.js" />
+                    </Component>
+                    <Component Id="cmp07EC1623802403C4218A5B46180A44FB" Guid="{BB18518A-5654-4D7E-AECB-B47E0504B37C}">
+                        <File Id="filDBA32EBBBA2F944D1CB73D9234E8E36D" KeyPath="yes" Source="SourceDir\test\helpers.js" />
+                    </Component>
+                    <Component Id="cmp6127AB6D28BB4E74915D6F1D785D6B98" Guid="{4D2B5AEF-A098-4434-8D89-DFB235E24558}">
+                        <File Id="fil36CC937512EDFD5D9C34581B45733FAC" KeyPath="yes" Source="SourceDir\test\hierarchy-test.js" />
+                    </Component>
+                    <Component Id="cmpD823BF0D66F212477BA0B2426B998A50" Guid="{79CDA76F-1C8C-4674-80FA-6A9A5CD433AD}">
+                        <File Id="fil000D5017B0892F8645CAB69F2AE8986A" KeyPath="yes" Source="SourceDir\test\nconf-test.js" />
+                    </Component>
+                    <Component Id="cmp1EBC2D903CF9AABA478F765B10E0216D" Guid="{25773324-F290-4319-9F0C-97FBF551BE15}">
+                        <File Id="fil2F2FD2649909201688A4D78C958865CE" KeyPath="yes" Source="SourceDir\test\provider-save-test.js" />
+                    </Component>
+                    <Component Id="cmpB15D039A8B765B877B768399C32B5093" Guid="{14F46581-76DC-4271-A5BF-A4FA2233F09A}">
+                        <File Id="fil06572FD6D44B9851ED38AAC93BE9FA02" KeyPath="yes" Source="SourceDir\test\provider-test.js" />
+                    </Component>
+                    <Directory Id="dirFD9543D62F0320D83EA1BB6430D0A5AF" Name="fixtures">
+                        <Component Id="cmp589A949C76568E898A15527549486C78" Guid="{231E9E57-A9E8-4697-A060-A9B827D5F711}">
+                            <File Id="fil07E5A904CEEE4BB63FDA82D221D63863" KeyPath="yes" Source="SourceDir\test\fixtures\bom.json" />
+                        </Component>
+                        <Component Id="cmp05175F30A714EC4647141A09BBEE7D15" Guid="{97904DB7-5E0C-4E68-9815-E37A1A6D8E95}">
+                            <File Id="fil698BDEC15D31657673AAE3E46703CC0B" KeyPath="yes" Source="SourceDir\test\fixtures\complete.json" />
+                        </Component>
+                        <Component Id="cmp43C28BDB3B077D36DDB66119D7598ADB" Guid="{76815FF3-90AE-4825-A42B-5FCB367961CB}">
+                            <File Id="fil94286856A3B34195D4B8C0493AE25CA5" KeyPath="yes" Source="SourceDir\test\fixtures\data.js" />
+                        </Component>
+                        <Component Id="cmpB908521B9614517F2E76E448095C95B3" Guid="{E1B37CE3-1DBB-49DE-968F-6ADB39BDDB33}">
+                            <File Id="filD6191F534728731354F53EC8FD7CD5CA" KeyPath="yes" Source="SourceDir\test\fixtures\malformed.json" />
+                        </Component>
+                        <Component Id="cmpA3CF093594BA9124D45649F77AD6D27C" Guid="{7B090AC6-6DD3-4753-B17A-D13F962ADD7A}">
+                            <File Id="filD3B46290AF80E64C6F1002418D770DCE" KeyPath="yes" Source="SourceDir\test\fixtures\no-bom.json" />
+                        </Component>
+                        <Directory Id="dirAF6372BB6478793937A101A6C5BB3377" Name="hierarchy">
+                            <Component Id="cmpDF7752DCF568FD05C3FE207C709E118B" Guid="{1BB9D1FA-A854-40F4-8CD2-9B4D9CC959BC}">
+                                <File Id="filB1564C3BF0BEC622802229A59E5D886A" KeyPath="yes" Source="SourceDir\test\fixtures\hierarchy\global.json" />
+                            </Component>
+                            <Component Id="cmp2B5095E421C1E3FDB64EB62DB90A7EB5" Guid="{E4245B45-EEE7-4674-A492-FAD2C83E0240}">
+                                <File Id="filFF8276410C860A3897DF9B7F41D15020" KeyPath="yes" Source="SourceDir\test\fixtures\hierarchy\hierarchical.json" />
+                            </Component>
+                            <Component Id="cmpFECC5497D369B2993261BA78168D44E9" Guid="{ABA7CC59-6778-40A5-8A54-4E8C3D4B43BB}">
+                                <File Id="fil30DD5DD937FB2ECCDDE13F89AF36DE1D" KeyPath="yes" Source="SourceDir\test\fixtures\hierarchy\user.json" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir9D4E1984393D6F70CFD33CC0C90C6C8C" Name="merge">
+                            <Component Id="cmp13507DA2DF7E0DF2930596469505C4FA" Guid="{F49461FC-2A86-4F0C-BE4D-300DA1D1A963}">
+                                <File Id="fil50A50C3476779E48D1243F81BF658F7E" KeyPath="yes" Source="SourceDir\test\fixtures\merge\file1.json" />
+                            </Component>
+                            <Component Id="cmp863654CC4C7337A7AEF8F70C51BE4EA4" Guid="{14F5A8A0-A2E9-49D0-97AD-EBD8BEE92D0B}">
+                                <File Id="filCBC30A3F40FD989CDCD4E551539C1500" KeyPath="yes" Source="SourceDir\test\fixtures\merge\file2.json" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir8A91F41907F5F29CC168EF3C98241A19" Name="scripts">
+                            <Component Id="cmp606352C3330093D7D0A8A862B352F831" Guid="{E9C24BB9-6B53-4F41-AED9-B48E10CF1F57}">
+                                <File Id="fil8C1D4A4CBDB9F202560E88FCECE1E9B1" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-argv.js" />
+                            </Component>
+                            <Component Id="cmp5D33D9714C524B43AE9CC9A913BA4346" Guid="{C9FA147D-CC94-4707-A7E4-14563F798048}">
+                                <File Id="fil7D9369A515DC674ED5C312E9605CBCDF" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-change-argv.js" />
+                            </Component>
+                            <Component Id="cmpF7107E522EBF53CC9363D5A8B0DE3F8B" Guid="{8BEDE3AA-91F9-4F08-BB49-962954A26BBA}">
+                                <File Id="fil09BAB8FE3329A4B7C4D88B1AD55993B4" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-env.js" />
+                            </Component>
+                            <Component Id="cmpC676FE754577FF1863D12D1A3B59AB2D" Guid="{0F3B6883-4FAE-4EB1-B144-47561A04CCEA}">
+                                <File Id="filEF58BF534FFCA020FBC1CBB4F46B3A6B" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-hierarchical-file-argv.js" />
+                            </Component>
+                            <Component Id="cmp725C5659050976C138107FF2F55D811A" Guid="{11532B51-4D06-4446-926D-539061769260}">
+                                <File Id="fil6B26243C441A19A914C3D6A25979F645" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-hierarchical-load-merge.js" />
+                            </Component>
+                            <Component Id="cmp8FA9E1C76E4804B59D8F007670322205" Guid="{11DBE833-FD74-441B-92DE-186DB364933D}">
+                                <File Id="fil673967102454E4CADB719ACB7A69883D" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-hierarchical-load-save.js" />
+                            </Component>
+                            <Component Id="cmpA0E7E80FEDBEE919C7A377E106B5F8F2" Guid="{A732AD9D-5948-40EB-957F-310A3FC3A8FE}">
+                                <File Id="filF1DAB9C5A0A88DC0B4E4822D59BF25F3" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\nconf-nested-env.js" />
+                            </Component>
+                            <Component Id="cmp8BB4ECED5B9432542A7E9908A41C4FA4" Guid="{0BEEF235-0AE3-4D7B-B2E0-AC4EAB08BF03}">
+                                <File Id="fil8DFA94EC60853EB4D787C29B69C03A48" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\provider-argv.js" />
+                            </Component>
+                            <Component Id="cmp9142F8A972020366BE51232152E44E43" Guid="{DCF74723-F742-4926-84BE-D93836AED736}">
+                                <File Id="filDFA0A32284F5A0E8643FDCE2B9CF94A2" KeyPath="yes" Source="SourceDir\test\fixtures\scripts\provider-env.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir0CF4E81267F3616CAFD8F675146F1AD4" Name="mocks">
+                        <Component Id="cmp2A86DB357F1ABB1F48A46C1A9FD03290" Guid="{60DD390A-283D-453E-95E2-A98C0E8C27C6}">
+                            <File Id="filBDCDD84FE66A0D84549033227CB965EA" KeyPath="yes" Source="SourceDir\test\mocks\mock-store.js" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir6CD43C0E10105EDE5DD91B76CBF84630" Name="stores">
+                        <Component Id="cmpEBB138276CC487FBE4BC21F8FB5E5D74" Guid="{3D401DD9-A259-4FF6-BECC-A8B03B7BB7BC}">
+                            <File Id="filEA8353172D773BB2695991FCEB4B25CB" KeyPath="yes" Source="SourceDir\test\stores\argv-test.js" />
+                        </Component>
+                        <Component Id="cmp2DAA1819464B7A78A5929A0D05CF37AA" Guid="{FFF15079-7CEC-41C0-82AB-51689BEBA004}">
+                            <File Id="fil591243FB2A7FC4F231910659884A5371" KeyPath="yes" Source="SourceDir\test\stores\env-test.js" />
+                        </Component>
+                        <Component Id="cmpAEA9677D1C67297E64FD37E7231DFCA5" Guid="{5F7A1C77-224C-42AA-9F3E-5F605DE7C91C}">
+                            <File Id="filE840C62CF2450C0121D49CB6D6BF93BE" KeyPath="yes" Source="SourceDir\test\stores\file-store-test.js" />
+                        </Component>
+                        <Component Id="cmpC05C952D75B2A8A7FD4EA6AD92C817A6" Guid="{FFE4945F-0482-4866-8505-60F55441FB6C}">
+                            <File Id="filC281142D053D4EDE1F490C95ACCF9D74" KeyPath="yes" Source="SourceDir\test\stores\literal-test.js" />
+                        </Component>
+                        <Component Id="cmpF42FC47569475C1969A0B0AD646FEE46" Guid="{8140914A-BC3D-4546-AF3B-151F2B1A3F20}">
+                            <File Id="fil1FA13F1A9DBF689BB7DDC7ACF7E09C49" KeyPath="yes" Source="SourceDir\test\stores\memory-store-test.js" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

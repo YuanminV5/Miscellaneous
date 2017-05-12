@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_NM">
+		<?ifndef ACE_DIR_NM_NM_win_NM_sta?>
+		<Directory Id="ACE_DIR_NM_NM_win_NM_sta" Name="stack-trace" />
+		<?define ACE_DIR_NM_NM_win_NM_sta?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

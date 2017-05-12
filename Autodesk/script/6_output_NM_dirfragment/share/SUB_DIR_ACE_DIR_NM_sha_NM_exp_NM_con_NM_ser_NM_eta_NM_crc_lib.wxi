@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_sha_NM_exp_NM_con_NM_ser_NM_eta_NM_crc.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_sha_NM_exp_NM_con_NM_ser_NM_eta_NM_crc">
+		<?ifndef ACE_DIR_NM_sha_NM_exp_NM_con_NM_ser_NM_eta_NM_crc_lib?>
+		<Directory Id="ACE_DIR_NM_sha_NM_exp_NM_con_NM_ser_NM_eta_NM_crc_lib" Name="lib" />
+		<?define ACE_DIR_NM_sha_NM_exp_NM_con_NM_ser_NM_eta_NM_crc_lib?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

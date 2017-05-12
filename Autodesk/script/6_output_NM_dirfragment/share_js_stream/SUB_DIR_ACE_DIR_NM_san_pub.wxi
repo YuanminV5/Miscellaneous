@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share_js_stream/SUB_DIR_ACE_DIR_NM_san.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_san">
+		<?ifndef ACE_DIR_NM_san_pub?>
+		<Directory Id="ACE_DIR_NM_san_pub" Name="public" />
+		<?define ACE_DIR_NM_san_pub?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

@@ -1,0 +1,454 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="dir8DB648B64B7680DCCBB93418996A3F79" Name="livedb">
+                <Component Id="cmp23FA4A365531701C61BB9C084ADD57E9" Guid="{8D7CE2A0-3797-4A7B-9225-7801FCD42BAF}">
+                    <File Id="fil0A0AC14504DFAD0EFDBB6E7C9FA1B26C" KeyPath="yes" Source="SourceDir\.npmignore" />
+                </Component>
+                <Component Id="cmp4AC681B6AFAC449EA4680C5D4B1B468F" Guid="{0C61B7CA-B736-4564-82F5-CBE84105348F}">
+                    <File Id="fil3AAE971873E5F48A96D20F8AB79CD6D2" KeyPath="yes" Source="SourceDir\.travis.yml" />
+                </Component>
+                <Component Id="cmp4B9D55EEA5C24AD34F06207408575D81" Guid="{223AD7D8-B137-4BDF-BB8D-A9BABDF929A0}">
+                    <File Id="filDF86632A75B75E1697DE104844CC3182" KeyPath="yes" Source="SourceDir\Changelog.md" />
+                </Component>
+                <Component Id="cmpBF31AA0D5ECAD8350430FF18FF41D3E5" Guid="{C0F9C751-4EE9-461B-B467-A41321640D19}">
+                    <File Id="fil6056084062C9E4B0FEE7480AA415F0CC" KeyPath="yes" Source="SourceDir\dirtyData.md" />
+                </Component>
+                <Component Id="cmpEFCF18BEB42DC3D28B1FB8DE3D7CA070" Guid="{C5DF7E44-4F11-4DD8-9091-1405AADE58FE}">
+                    <File Id="filD8C503A21307B175C2F678E90196FC50" KeyPath="yes" Source="SourceDir\example-backend.coffee" />
+                </Component>
+                <Component Id="cmp4FB9076C8B83A7A29358EEB9CD9095F3" Guid="{DA339C2F-8C87-477A-84DA-68BD6C08D7E2}">
+                    <File Id="fil5AE6EA1EC32582E8D78F5B3DB1A35257" KeyPath="yes" Source="SourceDir\LICENSE" />
+                </Component>
+                <Component Id="cmp530EC190776B7B19B887FB4EF0CBB581" Guid="{76768ADC-FDAC-45F2-84A4-AFB22DA6C392}">
+                    <File Id="fil55E62D748EF32D7C07CBE9EC54A6AE40" KeyPath="yes" Source="SourceDir\package.json" />
+                </Component>
+                <Component Id="cmp108F1166C1B6C2D1211654ADC773E1E0" Guid="{C5A1389A-7764-4566-855E-9BFAA6F33B26}">
+                    <File Id="fil477C0401CE25D80D28BB9B292FA61866" KeyPath="yes" Source="SourceDir\README.md" />
+                </Component>
+                <Directory Id="dir47395B363D3ABA5CED07180BDB019FFD" Name="lib">
+                    <Component Id="cmp9109CE134A087B76B0CE1AFEC80256FB" Guid="{C0BF76CB-FFEA-433E-9A36-1D2E208D6026}">
+                        <File Id="fil3C6D90C45970664B129B01DDD72BB13E" KeyPath="yes" Source="SourceDir\lib\bulksubscribe.js" />
+                    </Component>
+                    <Component Id="cmp7A4E2AA8D0754DE3D149D21E3AB6C991" Guid="{690E257E-AAC1-46C4-B80C-C861ADB50751}">
+                        <File Id="filB75B130CD1F5AE5BE37E7AFB95D295A2" KeyPath="yes" Source="SourceDir\lib\index.js" />
+                    </Component>
+                    <Component Id="cmp0FBA38973262BA062E22C956D69C649C" Guid="{1725C321-874C-4BFF-A0E4-97D6F7A09E82}">
+                        <File Id="fil441B204D88B4CD5205E9C5F03EFFD273" KeyPath="yes" Source="SourceDir\lib\inprocessdriver.js" />
+                    </Component>
+                    <Component Id="cmp148856649B0759AC4C76B33D9D72A279" Guid="{BE20BD99-6B1F-4A40-96B0-7589F5AB80C5}">
+                        <File Id="filF2D1D353BA262375E71191FE711F0B58" KeyPath="yes" Source="SourceDir\lib\memory.js" />
+                    </Component>
+                    <Component Id="cmpF266734D544F1CC14C966428FAB6852B" Guid="{83B3D974-1497-4EC5-B4F9-FD8B08F57020}">
+                        <File Id="filA6E3259424DFC54A65C639EF0BD0B104" KeyPath="yes" Source="SourceDir\lib\ot.js" />
+                    </Component>
+                    <Component Id="cmpDFFAF2340FE5A983F3C1292E2B966C63" Guid="{B3280B02-E3C8-427A-ACE7-C26CF2FA0FF3}">
+                        <File Id="filF194B61656016CE20F82B29DBDD59748" KeyPath="yes" Source="SourceDir\lib\presence.js" />
+                    </Component>
+                    <Component Id="cmpA82900E26794EC54A67DCE35735417B2" Guid="{C8A7C868-000F-4A79-B325-D593C33882EE}">
+                        <File Id="filD26A442C0855409E950592E8DDB025D5" KeyPath="yes" Source="SourceDir\lib\projections.js" />
+                    </Component>
+                    <Component Id="cmp7296E3E2FADD409B501C616A6D06D021" Guid="{7DCCBABF-95A4-4C6E-B05E-502E6E67838E}">
+                        <File Id="filE8EA51EACC1E0324DE8C9B403AEE15D6" KeyPath="yes" Source="SourceDir\lib\queries.js" />
+                    </Component>
+                    <Component Id="cmpA6DBD15FCEB967828FF7F2304BC597CC" Guid="{19B4D2B6-BD4A-48D5-B86E-1B52595C6E45}">
+                        <File Id="fil248163B86305DE5F776B839DE3941096" KeyPath="yes" Source="SourceDir\lib\ratelimit.js" />
+                    </Component>
+                    <Component Id="cmp98ACDCC17E6EE266491E5EAFB2D1280C" Guid="{5056F7B9-E1B1-4821-B0D3-6BDE56BB847D}">
+                        <File Id="fil7767579281465F0EE5E1A53FA5DF94BF" KeyPath="yes" Source="SourceDir\lib\redisdriver.js" />
+                    </Component>
+                    <Component Id="cmp0D086AE38CBFBF8D130CA70975D6A1A2" Guid="{FF5F5740-BDDE-4B31-AFE4-58CD0651E7DB}">
+                        <File Id="filB97C132328E092BDABF3E78A7DF28314" KeyPath="yes" Source="SourceDir\lib\util.js" />
+                    </Component>
+                    <Directory Id="dir593D13A552BEDD3C63565A16E31300D6" Name="scripts">
+                        <Component Id="cmp571D1EE73E612A7107F4DF32E636521A" Guid="{A40A023E-FE88-4766-8AC8-6F97F026FCB4}">
+                            <File Id="fil2A38EBB3A68416F1543C030DF29D2A51" KeyPath="yes" Source="SourceDir\lib\scripts\bulkGetOpsSince.lua" />
+                        </Component>
+                        <Component Id="cmp060ACF26DDE51AD38F31F9F1E5E5F513" Guid="{0E800B02-21F7-4B47-978A-A31A6891078E}">
+                            <File Id="fil3A6B82A434D01A60BE7B43B63CABBC40" KeyPath="yes" Source="SourceDir\lib\scripts\getOps.lua" />
+                        </Component>
+                        <Component Id="cmp3932A8AEACB169B169577ABD04C7E12D" Guid="{F9BD1BDC-EC5C-44A6-8E8D-D2E2C3880AFA}">
+                            <File Id="fil151F4DEF4F87080373ADDE75393C0309" KeyPath="yes" Source="SourceDir\lib\scripts\setExpire.lua" />
+                        </Component>
+                        <Component Id="cmpFA9D56F778952A99C67C238E1CC169CD" Guid="{B7A59AED-2E3D-414F-9D05-11A2F9857F9F}">
+                            <File Id="fil4EB69FA56B3233331210974D085BF82C" KeyPath="yes" Source="SourceDir\lib\scripts\submit.lua" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="dirF82952D2727413AE55684AEE38056FCA" Name="node_modules">
+                    <Directory Id="dir4194543153AA0EC780D0829E051364DA" Name="arraydiff">
+                        <Component Id="cmp867D56DD3CC3EDD04F9436B972383E0C" Guid="{13B52F91-B1DE-4E12-972D-4D964FF3337C}">
+                            <File Id="filB8E418161EEAE541FC4324CE5A6FBBCF" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\.npmignore" />
+                        </Component>
+                        <Component Id="cmp122CB8664A30CD98DF325DDD2BA8AE03" Guid="{0E6E08B5-02A5-4719-903A-96C3EFEC5B38}">
+                            <File Id="filD6FDDFFDF73F23DEAB8BF899AB8F2936" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp768C8398B69CAF32BE26B0903280989D" Guid="{B14EAC4A-C69D-4BC5-A475-D0336B6676BD}">
+                            <File Id="filC0EB0F080B562682AA3FE1A8AEF08FC9" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\Gruntfile.js" />
+                        </Component>
+                        <Component Id="cmpD4074EEB1B6A858825808E7476C3425A" Guid="{497D48EF-3988-46B1-853C-DC4F951D0E26}">
+                            <File Id="fil4FD2777750B673A89CB631836E9838F4" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\index.js" />
+                        </Component>
+                        <Component Id="cmpF3B1FEB1AC7DC8E8165CBEFBA949AB67" Guid="{47E0A60B-7ED0-4181-B37F-68351B4A922E}">
+                            <File Id="filB0473B866BB96D86A429F6AA2DAC8BE9" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\package.json" />
+                        </Component>
+                        <Component Id="cmp6EDDBBF7385D3B2547854B3EA71E98F2" Guid="{3D6EEA48-547C-4751-BC0D-DA3BB37D1DBB}">
+                            <File Id="fil232148EDA4A45E86DBE3F7F522EFF862" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\README.md" />
+                        </Component>
+                        <Directory Id="dir41B5F7ADCA9BF65292942FFFA9365D08" Name="example">
+                            <Component Id="cmp8015A065401DB8D0DD5E05892FA5108C" Guid="{AFCAB96D-E4E2-45C2-A75F-DEA08B3F4EF1}">
+                                <File Id="fil9772370D656CEFF94C484AC35A8355E8" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\example\example.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir45CDB158D854AD9BFEE9C9FFD4D2A4CB" Name="test">
+                            <Component Id="cmpEBC7843615242D2B65FBB1BAEC7C86E5" Guid="{8A186DF4-D4E6-42BF-AC77-D96F092177A8}">
+                                <File Id="filF67CE00D0D1729CA3E4DBC8E96BBD6B5" KeyPath="yes" Source="SourceDir\node_modules\arraydiff\test\test.mocha.coffee" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirD65380E471A47578BDBED7D85A9A9681" Name="async">
+                        <Component Id="cmp10D8D05BCA0D537313880477179F4FB3" Guid="{62ECBE6A-ACF3-4DFF-A393-3DD974698F26}">
+                            <File Id="filD8248B3BFFEFB9FAE99DCCD298C6D118" KeyPath="yes" Source="SourceDir\node_modules\async\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp4180540E151EA27C7E0982A405AC7A1B" Guid="{F833B370-3ECA-477C-AA24-A2813F8A2E55}">
+                            <File Id="fil38110D31C9D07BE7688249DC7A7CBF8B" KeyPath="yes" Source="SourceDir\node_modules\async\component.json" />
+                        </Component>
+                        <Component Id="cmpD195CDDFABF616638A1D39F9C48B944A" Guid="{061444A5-26F9-453F-87CD-1C622A88FEA9}">
+                            <File Id="filE53BC40B8F318F9C3778C63916726F58" KeyPath="yes" Source="SourceDir\node_modules\async\LICENSE" />
+                        </Component>
+                        <Component Id="cmpC43BC3C3AA97053A5D39171F1045348D" Guid="{4C345ED9-C861-463B-954C-B4E2BD963CEE}">
+                            <File Id="filC3460243C227E8B6F04D86FD7638828C" KeyPath="yes" Source="SourceDir\node_modules\async\package.json" />
+                        </Component>
+                        <Component Id="cmp588E911D198F62C8569CB9E3DB0CCF32" Guid="{0E86969C-2373-474A-9B3C-EB850BA363FB}">
+                            <File Id="fil75BE106E1B6C0F8F4018979F087C73A3" KeyPath="yes" Source="SourceDir\node_modules\async\README.md" />
+                        </Component>
+                        <Directory Id="dirD0CDF82068A5181B3DF8848389650ACE" Name="lib">
+                            <Component Id="cmp0854DFF175B640D365AD224762C298C2" Guid="{58292B90-AC6A-4AD5-A60D-E8B0CD245F7E}">
+                                <File Id="fil7D6FCD8E0E9A1F909C2CCB46463D77B3" KeyPath="yes" Source="SourceDir\node_modules\async\lib\async.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir7579FDA2B83C347C14F8482EC10F1285" Name="deep-is">
+                        <Component Id="cmp485D6615A828B0C89508A57D37AFDDC2" Guid="{89E78F22-6483-41FB-9572-4258E005E7EE}">
+                            <File Id="filFB7482A4867C3D459AE9B0BA929876B4" KeyPath="yes" Source="SourceDir\node_modules\deep-is\.npmignore" />
+                        </Component>
+                        <Component Id="cmpFFC4BFDDDAE3CA5AA4865B756A6D6C6D" Guid="{AFA5AA8E-2730-4375-8E6D-ABD5EB06237F}">
+                            <File Id="fil01F1A46BE93C47AF75703A90D097169C" KeyPath="yes" Source="SourceDir\node_modules\deep-is\.travis.yml" />
+                        </Component>
+                        <Component Id="cmpF9ECB7C288503516376571A22979F6DD" Guid="{6472A268-AFC0-4282-9C9C-E82C3A44101B}">
+                            <File Id="filCFDB75BB0C1ED7E8B50329FF8288D653" KeyPath="yes" Source="SourceDir\node_modules\deep-is\index.js" />
+                        </Component>
+                        <Component Id="cmpA91C1FABAA19E6E3808EAE5F25A048EF" Guid="{1EA5D500-8C4F-4F60-B842-5DDD8EBB92F0}">
+                            <File Id="fil1E2F170D133AC2266A6E84D706E5938A" KeyPath="yes" Source="SourceDir\node_modules\deep-is\LICENSE" />
+                        </Component>
+                        <Component Id="cmp6E3274B6C654C328FA6DA1FF62F7F6F4" Guid="{11EFF84B-D054-4A83-A655-695119243CFC}">
+                            <File Id="fil1FF23BA74104A5F51E55000DEDAFA73F" KeyPath="yes" Source="SourceDir\node_modules\deep-is\package.json" />
+                        </Component>
+                        <Component Id="cmp218B95FD803C4C8E4DFC168E09056FBA" Guid="{77C34190-40C2-4F89-8C35-3491B64CD77E}">
+                            <File Id="filB8F1EA5662ACB44CED8B782BF46D0699" KeyPath="yes" Source="SourceDir\node_modules\deep-is\README.markdown" />
+                        </Component>
+                        <Directory Id="dir6FA7CAAC55D87A49F25EC2A812031F4D" Name="example">
+                            <Component Id="cmp0BA1A89B02DA72BE88D0DAF949545F76" Guid="{D0253CFA-DB6C-4C41-8209-53068A7BC744}">
+                                <File Id="fil4D04C0438A50419D02FA2DA0861DF1C0" KeyPath="yes" Source="SourceDir\node_modules\deep-is\example\cmp.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirA83B8E1466CC6629B7510365A6A152BC" Name="test">
+                            <Component Id="cmpA09C91B638AA6C4D7358C7A28758AB99" Guid="{512E5716-A8D8-4461-A908-503AA44E4E60}">
+                                <File Id="fil727556CFF40979551C0F076D8000D126" KeyPath="yes" Source="SourceDir\node_modules\deep-is\test\cmp.js" />
+                            </Component>
+                            <Component Id="cmp485D627404878EF720BE777A0784D5A0" Guid="{AFFBD13B-BB85-4E6D-A962-8B17764315D0}">
+                                <File Id="fil112F75958F25D713639175AA74FE2F84" KeyPath="yes" Source="SourceDir\node_modules\deep-is\test\NaN.js" />
+                            </Component>
+                            <Component Id="cmp8863A98317DD440929E155D6F4F7BFBC" Guid="{3BAE6FF0-C36C-4D52-A1F8-C505D51B6615}">
+                                <File Id="fil94C899D5312703CE5FFB7E4CC90E7302" KeyPath="yes" Source="SourceDir\node_modules\deep-is\test\neg-vs-pos-0.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirA89369D6D962BA8963FB0DED72BC2BD4" Name="ot-json0">
+                        <Component Id="cmp210755A420DA0158BEB09924E2078251" Guid="{6424A70B-39EB-4195-BB31-734F8BE80CB4}">
+                            <File Id="fil942F5BDA4036ABA93FA06F36179A94C0" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\.npmignore" />
+                        </Component>
+                        <Component Id="cmp032E0D83896848DED4D5378E8D1C8F43" Guid="{6788FB0E-B0C6-4F84-BF4E-8446263EEEE5}">
+                            <File Id="fil9B23B781EDD737154A9612310D30E1AE" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp50D7BF3CDBE9B6AFED567B3FD8CB357C" Guid="{D7A9F08A-265F-4678-98BB-59863BC7C175}">
+                            <File Id="fil580650CD642A25C316BE2D33D2A79471" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\package.json" />
+                        </Component>
+                        <Component Id="cmp5EA805ECF02A6A7328DF63B11643402F" Guid="{8F567A6F-FF08-41D0-8FAE-FECE20285B4A}">
+                            <File Id="fil68B1E4A8A142AC6ECE5E61814E8FABEE" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\README.md" />
+                        </Component>
+                        <Directory Id="dirE33B337688B0DEA44156EC7F5ADA6E98" Name="lib">
+                            <Component Id="cmp59A6E46FEBDF018DE9AE040876BEBE3F" Guid="{057F16BF-897C-4F9C-90F3-34143320C685}">
+                                <File Id="filB8A5F21A62022B004ED32189C3576691" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\lib\bootstrapTransform.js" />
+                            </Component>
+                            <Component Id="cmp4E612D75DAFBEF3A044BCBEE2FD65C48" Guid="{51F551C3-C0A9-49FF-A76E-D374F4AC3B9F}">
+                                <File Id="filB7D444D7707635E99A3F1992FA2A6EB6" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\lib\index.js" />
+                            </Component>
+                            <Component Id="cmp4C5619714DD5101DE5DEA19A6F3C4BB1" Guid="{0BA09397-8E34-45C6-B829-34803A8FBCAF}">
+                                <File Id="filBA438CEFA333DB0478595988DF015FE5" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\lib\json0.js" />
+                            </Component>
+                            <Component Id="cmp2144E4A7B244A22A609A4501EA1AED60" Guid="{15A6BCE2-71E2-4C83-BD71-7EB44CFF6C30}">
+                                <File Id="filA69B05E3B032E231C1ABB394522C0D7A" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\lib\text0.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir336E87CA5D32C471132DEBD2E9B1AB0B" Name="test">
+                            <Component Id="cmp34EA28ABDDE8E88F5B3817DB3EB57E0D" Guid="{0326B53B-0607-49DC-A503-B3E1159ACB8F}">
+                                <File Id="fil1806C06B0E7CF56A74EACCA73CDD2653" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\test\json0-generator.coffee" />
+                            </Component>
+                            <Component Id="cmpA1A9F9F2769920688E0171864C740C5C" Guid="{F1A7772F-5E0E-4E6D-9E26-8C08F89EEDFD}">
+                                <File Id="fil90779BA682690EE01FA79B4BD9C36270" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\test\json0.coffee" />
+                            </Component>
+                            <Component Id="cmpFC30694F8F6BD74DEDB296F1F3E4ED07" Guid="{A19AD650-73B8-4246-AA35-76474B55739B}">
+                                <File Id="fil8BBADA910E74FE35757CA299FF3322E4" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\test\mocha.opts" />
+                            </Component>
+                            <Component Id="cmp15A196AF222FC606B3E06926483925F3" Guid="{474B526E-4B39-4C67-A069-D1D7549DD7E9}">
+                                <File Id="filAFDAC3C6A2462BED456066408217E229" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\test\text0-generator.coffee" />
+                            </Component>
+                            <Component Id="cmp10F3851A5C3D0F97DFD482CFCE8D4F41" Guid="{AA0F7CC6-A438-4191-AA9C-968D70D0191B}">
+                                <File Id="fil6D731D9227B2ECA68E21E3F977BCFB89" KeyPath="yes" Source="SourceDir\node_modules\ot-json0\test\text0.coffee" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir9750D5CF1003B99BEB68E9426503F03B" Name="ot-text">
+                        <Component Id="cmp2409C330D4CCCF8A61C5121DDC93720A" Guid="{F8BCB412-67B9-4067-8058-54DB384135EF}">
+                            <File Id="fil432047F2E3379FBA29983DEC2DD7120B" KeyPath="yes" Source="SourceDir\node_modules\ot-text\.npmignore" />
+                        </Component>
+                        <Component Id="cmp877A88BAA2B5DC2BE8BFE42C78B329A5" Guid="{C1AC486D-8F1A-4487-AE93-C2604DB70186}">
+                            <File Id="filD53845A9EF3DC1398EEF910707C61C7F" KeyPath="yes" Source="SourceDir\node_modules\ot-text\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp846CA460DF15E975835EEFE595C935ED" Guid="{146A9547-06A7-45B8-A43E-41ED83375058}">
+                            <File Id="filD1C9DCDB9540106F6AB4A66BD3E384CB" KeyPath="yes" Source="SourceDir\node_modules\ot-text\package.json" />
+                        </Component>
+                        <Component Id="cmp312CA941AA8F9B0F6F621B7309965A0C" Guid="{071CB625-E6DE-4970-AD1D-C219F1240DB3}">
+                            <File Id="fil304FCBB3FE8F727844EC93CB8DEF7A58" KeyPath="yes" Source="SourceDir\node_modules\ot-text\README.md" />
+                        </Component>
+                        <Component Id="cmpB9A2224F4D51488B7D73E6D761D366E5" Guid="{8D57BD95-0243-4291-83C7-5F0BEFFBDA11}">
+                            <File Id="fil745A7257755DAA81A30E2352752F3AE8" KeyPath="yes" Source="SourceDir\node_modules\ot-text\text.js" />
+                        </Component>
+                        <Directory Id="dirFDB08A34561446220B7A3A98F07293B3" Name="lib">
+                            <Component Id="cmp72E4B677123C4815D82D897222088FFA" Guid="{0EF7F633-BD42-4A44-A461-9EBF3A23925F}">
+                                <File Id="fil7A319C1C6992646309ACE3CD16D68593" KeyPath="yes" Source="SourceDir\node_modules\ot-text\lib\api.js" />
+                            </Component>
+                            <Component Id="cmpD42A2284E199498234B90F57419052BF" Guid="{7703431D-0056-406C-BA40-1503802940D0}">
+                                <File Id="fil47F20684B6676B7FD5D83D3A0320AEFA" KeyPath="yes" Source="SourceDir\node_modules\ot-text\lib\index.js" />
+                            </Component>
+                            <Component Id="cmp1BA7D44AEC32FED6F17A0C427F0E558C" Guid="{D597D858-3345-4BF9-BEA4-AE269E42DE54}">
+                                <File Id="filFA5FE82F475BDF9989BB52788B10CD1A" KeyPath="yes" Source="SourceDir\node_modules\ot-text\lib\text.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir89EA0FBE3105EE90819C1153F9DF7837" Name="test">
+                            <Component Id="cmpB159C308EC6CFF513F0D4A5BACB0BF7F" Guid="{9A552C28-DE94-4507-B939-061F93F64847}">
+                                <File Id="fil65AE616F9893C903768E8894CD044B85" KeyPath="yes" Source="SourceDir\node_modules\ot-text\test\api.coffee" />
+                            </Component>
+                            <Component Id="cmp7D9BA1AC57E268DE06E9A053DB6E1671" Guid="{AB9D018D-77B9-4596-BE7B-DFB7D40536BC}">
+                                <File Id="fil5B55B90F135A3A4C680957813A671285" KeyPath="yes" Source="SourceDir\node_modules\ot-text\test\genOp.coffee" />
+                            </Component>
+                            <Component Id="cmp6C8BE7DAB562A1332D205FE3CB6CBFAD" Guid="{94E4AEAC-F4FB-44A5-ADF3-9526D3EA49B5}">
+                                <File Id="filD4D7F483E175E6288E1CA85976CE02CE" KeyPath="yes" Source="SourceDir\node_modules\ot-text\test\mocha.opts" />
+                            </Component>
+                            <Component Id="cmp3EA10F1F98815002709A0A3052227E0C" Guid="{8E51A6B2-AF4B-4AB2-A31F-4B9080BBB053}">
+                                <File Id="filFD19963C6AFEF23E79A2FC435B7114F6" KeyPath="yes" Source="SourceDir\node_modules\ot-text\test\text-transform-tests.json" />
+                            </Component>
+                            <Component Id="cmpA85415B1773B33D9F6F69E187A0FDA2F" Guid="{5B844CBF-F074-41C7-BA5C-37B91387D901}">
+                                <File Id="fil27486AB4C54464E57F105C96CE42076B" KeyPath="yes" Source="SourceDir\node_modules\ot-text\test\text.coffee" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirDE0F88C865FDF6CA12DFFE77FED02F21" Name="ot-text-tp2">
+                        <Component Id="cmp5A90C36DFF423657C5CA7B1BEF9725A5" Guid="{A3CFCF6B-D6A9-4917-B074-D5A8EB956514}">
+                            <File Id="filE95C45735A6443B16C6A0DFACA32F6E4" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\.npmignore" />
+                        </Component>
+                        <Component Id="cmp004F90237C5493128884A08EB08B6510" Guid="{003B1723-71A1-49B9-9E80-D75A3C4296F3}">
+                            <File Id="filC74D1E8F4610EC0A1DF483508B56B23E" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\.travis.yml" />
+                        </Component>
+                        <Component Id="cmpA4444F61D299B297E4EB8DF1B206B6D2" Guid="{A6A360CE-EE4B-4C34-BEF8-AEC4BCDF42BC}">
+                            <File Id="filFEFD776DD80AA859373643C914EF5E61" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\package.json" />
+                        </Component>
+                        <Component Id="cmp062DA26A1EA43C7CC5615A8946E8AB11" Guid="{E8592A97-62F5-445C-80B1-25C3A9B2B990}">
+                            <File Id="fil2A96037CAF36BAF55585C0ABAA279178" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\README.md" />
+                        </Component>
+                        <Directory Id="dirD6D1F2A4E7ACCB3B9E73914AAF6CC44A" Name="lib">
+                            <Component Id="cmp5328031F6770EF79E5EDE8E264968EC6" Guid="{1AF9B1A0-9BFD-49FE-8437-4134C219884E}">
+                                <File Id="fil98302BDAC79EF12AA06CBD935A3AFB5E" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\lib\index.js" />
+                            </Component>
+                            <Component Id="cmp8D920D49AFDD0FBD45C6B48BFBAD282F" Guid="{7693E860-7DCD-4033-8FA2-5AFED2FA5013}">
+                                <File Id="filCAB6EE2E50FB2553643355208F14E9F1" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\lib\text-tp2.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir9F991B659D209248277320E55CF9355E" Name="test">
+                            <Component Id="cmpA9E9503700846DE82ECA28CAC5598A70" Guid="{2F172635-7F6C-4069-9F1C-AA458657C9C8}">
+                                <File Id="fil718E57F22CCBF313FDDA31757213359F" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\test\genOp.coffee" />
+                            </Component>
+                            <Component Id="cmp9BB4A87101A3EB70F59C08E6280B22A6" Guid="{0A63B1FE-3F13-4209-A3F9-5B0E2B7DF033}">
+                                <File Id="fil77DB01A2A67FD233CF478FFC256F1369" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\test\mocha.opts" />
+                            </Component>
+                            <Component Id="cmp1F4E9350EB55E9E8CBD901F18D03DDE0" Guid="{F745A0EC-1F4D-468E-A58D-1A117565FBAA}">
+                                <File Id="fil330C1CA1330FDA71D627C8B556D1478F" KeyPath="yes" Source="SourceDir\node_modules\ot-text-tp2\test\text-tp2.coffee" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir351588C7121CC5A60621D94149E418E2" Name="redis">
+                        <Component Id="cmpD7A8138031004B3070A26E1D4CFDDA3A" Guid="{D40E6C58-E5BF-4A15-BAB8-82D25B1C7D3E}">
+                            <File Id="filC6F5C5143736C1098BBBD48F0A15F3CE" KeyPath="yes" Source="SourceDir\node_modules\redis\.npmignore" />
+                        </Component>
+                        <Component Id="cmp656CB1DEEDE090FD05E9F35BE52812C1" Guid="{2972A24C-CA5A-4F74-8B94-3CFD6A4AA5D2}">
+                            <File Id="fil33019715FBCDE6EC704CA40D8797A5EA" KeyPath="yes" Source="SourceDir\node_modules\redis\connection_breaker.js" />
+                        </Component>
+                        <Component Id="cmpEEFE41411622933BFBA8142C88F1BF60" Guid="{F21C97B4-89BE-4FB9-8568-07618B8209CE}">
+                            <File Id="fil5B7E5C3825EE00BEF90DF3D80FBF6000" KeyPath="yes" Source="SourceDir\node_modules\redis\index.js" />
+                        </Component>
+                        <Component Id="cmpBA756F45B1F60FED197A9A869099D18C" Guid="{1E3F1CCD-3E41-49DF-AB2E-C1D546CAC29C}">
+                            <File Id="filC65C95FC3FD365956923101B44C786CA" KeyPath="yes" Source="SourceDir\node_modules\redis\package.json" />
+                        </Component>
+                        <Component Id="cmpBE49BC9482E2292ED6FA7044D1CF3F33" Guid="{4726EDA0-805F-4067-BC39-9923BEB65739}">
+                            <File Id="filA8615C4208D7221C7F5492EA1F27EA27" KeyPath="yes" Source="SourceDir\node_modules\redis\README.md" />
+                        </Component>
+                        <Directory Id="dirAE9FCF3A2753D10B814C552E44F555FE" Name="lib">
+                            <Component Id="cmp9C8E872A091C9491EA53CDD3FD154817" Guid="{FE624871-EDCB-4951-A410-4C3DE2021E3D}">
+                                <File Id="filD9E2851F1F6BB78601AD8F28E77A4BA3" KeyPath="yes" Source="SourceDir\node_modules\redis\lib\commands.js" />
+                            </Component>
+                            <Component Id="cmp7634498A67F6278C754CC3E7A77E0CC3" Guid="{AC4D8071-0B6B-40A5-B25B-996047AAF350}">
+                                <File Id="filF4CE3B6E103927C6C145D35BF080F23E" KeyPath="yes" Source="SourceDir\node_modules\redis\lib\queue.js" />
+                            </Component>
+                            <Component Id="cmp925ADC96951ACE946F3CAA271DBF426A" Guid="{44A250F1-4D16-4A5E-BB08-15A6BA970E5C}">
+                                <File Id="filAF53B973B406A9160A0B8A086CCD10F3" KeyPath="yes" Source="SourceDir\node_modules\redis\lib\to_array.js" />
+                            </Component>
+                            <Component Id="cmp494743F90581F971A8098279628314CC" Guid="{434C8713-F974-4F87-BD9D-21C600CC86AC}">
+                                <File Id="fil6A6DA3DE55191FB0E34F53C098C1389E" KeyPath="yes" Source="SourceDir\node_modules\redis\lib\util.js" />
+                            </Component>
+                            <Directory Id="dirA75ECC74617717A9D8EE402E0330B782" Name="parser">
+                                <Component Id="cmpC8535C907E0BDE75275D844C3FCC7715" Guid="{3258B567-FB76-4D90-B488-A2E866913763}">
+                                    <File Id="fil7D79C0738C500FA08110E09DB9370525" KeyPath="yes" Source="SourceDir\node_modules\redis\lib\parser\hiredis.js" />
+                                </Component>
+                                <Component Id="cmpC3DEDC28853E84366FEF83E680BC7552" Guid="{1EE5A4A7-FAEF-4675-9B16-7EB0F25B8F71}">
+                                    <File Id="fil24781530677478EC57AED85420264189" KeyPath="yes" Source="SourceDir\node_modules\redis\lib\parser\javascript.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dir74C62866988C053FA3C575E1C682D86C" Name="statsd-client">
+                        <Component Id="cmp4A1D02F13F2BD63F17CAD664EE702AF9" Guid="{6472335E-ECB9-4E4F-9ACA-EB3A870179D9}">
+                            <File Id="fil931908BE93958F8EC392406B1396D350" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\.npmignore" />
+                        </Component>
+                        <Component Id="cmp3840CB51A7DC9C862E9F8D575D2A2811" Guid="{35A02B0A-0BF8-4A0F-A243-2DB5A1DA6FFC}">
+                            <File Id="fil7502691B637427590EE959E0B337FE52" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\.travis.yml" />
+                        </Component>
+                        <Component Id="cmpB2AAA36ED6FE582BAB8F4243CFDB6202" Guid="{24BFF8EC-B6ED-4E98-B834-AEFDF0672513}">
+                            <File Id="fil635DC4A4803A8AA479A1867524C98CCE" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\LICENSE" />
+                        </Component>
+                        <Component Id="cmpA9FE4B9B342CD362F824E76B09F7AB75" Guid="{61B2CBA1-EB30-4FE1-96C9-30AC4961D115}">
+                            <File Id="filDDAD78D71CAAABCD5D1DBEF75DE39C24" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\Makefile" />
+                        </Component>
+                        <Component Id="cmp3BB466D92D35E22B3190C132616A2ECC" Guid="{A75D7AFD-E1FF-4A63-8B0E-D55B22C066A8}">
+                            <File Id="fil60DA2884A2B2BA69414B841C9144F55F" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\package.json" />
+                        </Component>
+                        <Component Id="cmp0ECC955CB3B012829241A114E576E0F2" Guid="{AF8B2B4D-BB89-43AB-85C6-C3B360D8D7E2}">
+                            <File Id="fil089A4505F1FF537EE4C3C957DD30ABA3" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\README.md" />
+                        </Component>
+                        <Component Id="cmp746CF8896CC654EAC476541FCAC6A873" Guid="{4DAB46AC-B607-4AC1-A4EC-2067CA1E5467}">
+                            <File Id="filAE7E86CC2E434042FFA85CCE45423CEF" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test.js" />
+                        </Component>
+                        <Directory Id="dirA9B3D51B5DEA01751D3948F018E66D41" Name="examples">
+                            <Component Id="cmp3E9D2AF80BE363C224261115CE89CFED" Guid="{0E09FB79-4A72-4D67-B49C-57BC45D1AC91}">
+                                <File Id="fil8E235F6F6AFFF04E1554E5DD96D50AF4" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\examples\stats-generator.js" />
+                            </Component>
+                            <Component Id="cmpA5DAB0D65A9AA8E907D67764C0AC564C" Guid="{694833FB-A0BB-4561-A2AF-8E4D06D12C02}">
+                                <File Id="fil2B17BFE9C7BACE7A3C7C54ADB5A790DB" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\examples\trivial-test.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir6C4E2075BC7C43437D44F08B136BAE89" Name="lib">
+                            <Component Id="cmp41AFAA30889CB512286C2C60039B4C61" Guid="{3E59741B-E6C0-4B35-B6BC-706E3BDF5C6A}">
+                                <File Id="filC2955417420D396DAD7A08F4F35DE628" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\lib\EphemeralSocket.js" />
+                            </Component>
+                            <Component Id="cmpE6347FAB6790ADD765D874C0C3E19B52" Guid="{BEABED8E-5CB7-4498-9EEB-E7D424F4484C}">
+                                <File Id="filA1A28F3E6C3854B81EE4FB163D47F29E" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\lib\HttpSocket.js" />
+                            </Component>
+                            <Component Id="cmp55DBDF5CA662CB195353E6A6E52AFD83" Guid="{969856A1-48A0-4A8D-BD6A-5D6C8565C520}">
+                                <File Id="fil13209A68A534EEA69866096D3485BB66" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\lib\statsd-client.js" />
+                            </Component>
+                            <Component Id="cmp79FFD949DE064B4D2B3B50A0344D0DA6" Guid="{4A135915-EF0F-4D72-9F5E-AB2A7C29D6A6}">
+                                <File Id="filF71257244C03C1DE2457715C2E2322EB" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\lib\TCPSocket.js" />
+                            </Component>
+                            <Directory Id="dir690B9C97D4F9396BAF1B379EF0EF1929" Name="helpers">
+                                <Component Id="cmpE16D7805AF280031AD8D28846362932F" Guid="{054C528A-73CF-4AC8-921D-ACBB2B34100B}">
+                                    <File Id="fil9F857C447E9DD6105C752C3ED6465AEC" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\lib\helpers\getExpressMiddleware.js" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="dirBB4BEE923D27E0CFB0F432527D826623" Name="test">
+                            <Component Id="cmpD188AEC723DA5FABDD527890F3D84C8A" Guid="{F8F8CBB3-89A6-425C-BD9E-ADDF3A1140F5}">
+                                <File Id="filA03954AAEA3098088B8772D0A5DF6EDB" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test\EphemeralSocket.js" />
+                            </Component>
+                            <Component Id="cmp093EC05A1C50BBA50AFE4CDA6DDEEE5D" Guid="{7B67D7CD-2DC5-48A5-83EE-196A18FA5DDE}">
+                                <File Id="filE6075BBF762295C29A877A215BB30727" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test\FakeServer.js" />
+                            </Component>
+                            <Component Id="cmpB068ADCFC02D2B5C5348E2B28E51D442" Guid="{6DE5E6E2-E021-47F8-98AF-F82AC89A06AB}">
+                                <File Id="fil948DD2B11047E70D5E5E91C1785B7C3A" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test\helpers.js" />
+                            </Component>
+                            <Component Id="cmp106E105029AF4ECE4C918AC7746CC547" Guid="{5643BD46-8ED5-4BC1-9E17-F7D127487CA4}">
+                                <File Id="fil0216EA334CDEC983C9D6C42ACF74E71C" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test\HttpSocket.js" />
+                            </Component>
+                            <Component Id="cmp86777BF96D3A56A2E83BB676BCBC6391" Guid="{38DC484D-A6EB-48E4-937F-BC60147A6BDB}">
+                                <File Id="filFC368C9B027D9BBCAE4530979D18E3D8" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test\messageCollector.js" />
+                            </Component>
+                            <Component Id="cmpB3DF1D8E95DF8A59ACCD538694F9AFF0" Guid="{4E5745E9-4725-40B6-866D-06E7096EF79E}">
+                                <File Id="filC46BEB7DAB37E6E4CB6A75A7423739FF" KeyPath="yes" Source="SourceDir\node_modules\statsd-client\test\StatsDClient.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dirE41620B8FB49977704317D4ABEE96221" Name="test">
+                    <Component Id="cmpBBC5BB0903F7F231C1CF1BF1CB84E0B1" Guid="{1A638647-DA08-4C28-A973-B36F4C254623}">
+                        <File Id="filD88EFE9DE60EB32534984B29157A2531" KeyPath="yes" Source="SourceDir\test\driver.coffee" />
+                    </Component>
+                    <Component Id="cmp6CEE670CDFD80D85A463ADD5FAF39779" Guid="{795E2A59-E060-4D6B-9B24-4073B351000D}">
+                        <File Id="filA0C7B80DDD772B3B829AE3019FC849C9" KeyPath="yes" Source="SourceDir\test\inprocessdriver.coffee" />
+                    </Component>
+                    <Component Id="cmp512BD9361A1BBB2B79152F936E68C085" Guid="{6F68EEA9-1AB1-42A9-944B-86BB5622F7BF}">
+                        <File Id="filDEEE9490D7E59B677767747309F6A78C" KeyPath="yes" Source="SourceDir\test\memory.coffee" />
+                    </Component>
+                    <Component Id="cmpABF1F7AD28D2BC266D7F9C70E05F9861" Guid="{3479431B-FC44-4478-ACD9-591D048578BE}">
+                        <File Id="fil57A491AFC7F2FB1CAEC7E506F0629532" KeyPath="yes" Source="SourceDir\test\mocha.opts" />
+                    </Component>
+                    <Component Id="cmp83E73F8B194E0B03D1EE3C6BB3D636C9" Guid="{1C4C82C9-FF5C-40C9-BB0F-2AC9026AEBFC}">
+                        <File Id="filA75C0E231506E78B9D5395C011F2C415" KeyPath="yes" Source="SourceDir\test\oplog.coffee" />
+                    </Component>
+                    <Component Id="cmp9B200A40F4666400600BDE164B95A457" Guid="{0B7776C6-9B8B-4378-B03E-CF6B4598CA5F}">
+                        <File Id="fil14E77FE407A5E5FA6B24E858CC1DB167" KeyPath="yes" Source="SourceDir\test\ot.coffee" />
+                    </Component>
+                    <Component Id="cmp87A3193C14759ED4FAA6396B202198CB" Guid="{6499812D-DA68-49DD-AC62-FBA091F2D2F2}">
+                        <File Id="fil03A919429ED5009E9AAA9F41667D0941" KeyPath="yes" Source="SourceDir\test\presence.coffee" />
+                    </Component>
+                    <Component Id="cmpA984FFD2C7B155D8D222CF28EA7038FD" Guid="{9DFBAE92-3FE1-4117-8820-F01482A99FEA}">
+                        <File Id="filDE7A183A083AE189A6E16B7D2D462F64" KeyPath="yes" Source="SourceDir\test\projections.coffee" />
+                    </Component>
+                    <Component Id="cmp3E981733B5A59A823D912A776E61E0AA" Guid="{067438DB-A56A-4827-A0A4-F1C85F0E5AA9}">
+                        <File Id="fil2947E1BE6EA95957A002A3DBB479DA03" KeyPath="yes" Source="SourceDir\test\propagation.coffee" />
+                    </Component>
+                    <Component Id="cmpADD78DCF0FD5C7D9127F9E0AFDCF44EB" Guid="{3A25435B-F369-4A5D-B52A-A9C82F57822D}">
+                        <File Id="filC795ABC92E9EEDD1409177A9EFDEFEFC" KeyPath="yes" Source="SourceDir\test\queries.coffee" />
+                    </Component>
+                    <Component Id="cmp1729592E6DD4F77B6990017DAB1FEB60" Guid="{FA1A9C2D-F192-4C4D-BA36-EE8E1A530616}">
+                        <File Id="fil50AF553AF467F68B95536B05FCABB53E" KeyPath="yes" Source="SourceDir\test\queue.coffee" />
+                    </Component>
+                    <Component Id="cmp22CEDFBF0135F0FBC5ACC773073446CB" Guid="{9A101081-94CE-4F99-BF87-844F2C9E9382}">
+                        <File Id="fil6273634958A3DDB5CA0E22EE3B03F810" KeyPath="yes" Source="SourceDir\test\redisdriver.coffee" />
+                    </Component>
+                    <Component Id="cmpAFD141C62A83846AE555F759413CB7DC" Guid="{2EA80478-FBE5-4461-BE44-72EDB6C17E74}">
+                        <File Id="filEB3F1D2F6562B04AED6DF0BC70EF7EB5" KeyPath="yes" Source="SourceDir\test\snapshotdb.coffee" />
+                    </Component>
+                    <Component Id="cmp6DA53F1E86E9CD3C3108BE1EA30794B5" Guid="{34C87675-380F-4A0E-BDBA-BEB5E060D4AC}">
+                        <File Id="filE38EB721F088BAD249594FB2267D1238" KeyPath="yes" Source="SourceDir\test\test.coffee" />
+                    </Component>
+                    <Component Id="cmp3A9E273D18ADE0945C69BA353571C14E" Guid="{3BE9E6DA-0452-4FE8-AEAA-C24DD209CD69}">
+                        <File Id="fil59440E127728C5ACD12A6593F5BDB24E" KeyPath="yes" Source="SourceDir\test\testdriver.coffee" />
+                    </Component>
+                    <Component Id="cmp2C601D7CCAD0CFE32291BE1A546CFFE1" Guid="{730556EC-2CBC-4990-B878-B6BD8DC05721}">
+                        <File Id="fil0096171DFECB907FAFDF479E2FD65702" KeyPath="yes" Source="SourceDir\test\util.coffee" />
+                    </Component>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

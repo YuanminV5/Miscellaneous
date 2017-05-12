@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={E54D9DCB-E708-4306-8FFA-B9E26FA28DBA}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={DA2B1A1B-2936-4222-BCA1-D20F179242B4}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="microevent" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="microevent" Comments="microevent" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_mic.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\microevent\SUB_DIR_ACE_DIR_NM_mic_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\microevent\SUB_DIR_ACE_DIR_NM_mic_tes.wxi?>
+    <ComponentGroupRef Id="microevent.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\microevent\msmProject.wxi?>
+</Wix>

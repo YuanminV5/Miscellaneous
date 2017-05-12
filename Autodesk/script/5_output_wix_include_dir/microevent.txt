@@ -1,0 +1,3 @@
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_mic.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\microevent\SUB_DIR_ACE_DIR_NM_mic_exa.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\microevent\SUB_DIR_ACE_DIR_NM_mic_tes.wxi?>

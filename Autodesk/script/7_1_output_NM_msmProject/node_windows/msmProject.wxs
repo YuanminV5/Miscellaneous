@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={839C88D2-BEF7-4DA3-B98A-29AD31E5D6A0}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={670DC37D-E17C-463C-8131-CDD28F19A981}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="node_windows" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="node_windows" Comments="node_windows" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_NM_nod.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_ele.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_sud.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_bin_win_x64.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_x86.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_NM_min.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_NM_min_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_NM_min_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_NM_wor.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_NM_wor_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_NM_wor_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\node_windows\SUB_DIR_ACE_DIR_NM_NM_nod_NM_opt_tes__.wxi?>
+    <ComponentGroupRef Id="node_windows.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\node_windows\msmProject.wxi?>
+</Wix>

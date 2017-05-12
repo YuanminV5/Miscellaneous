@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={GUID64}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={GUID32}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="module_id" Language="0" Version="$(env.ACE_PRODUCTVERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="module_id" Comments="module_id" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\SUB_DIR_ACE_DIR_dummy.wxi?>
+    <ComponentGroupRef Id="module_id.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)/wixMsmProjects/dummy_project/msmProject.wxi?>
+</Wix>

@@ -1,0 +1,14 @@
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\bin.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\chai.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\express.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\livedb-mongo.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\livedb.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\microevent.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\mocha.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\nconf.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\node-windows.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\share-js-stream.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\share.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\sinon.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\winston.wxs
+C:\Users\weiyu\Desktop\script\1_output_ResultWixFiles\ws.wxs

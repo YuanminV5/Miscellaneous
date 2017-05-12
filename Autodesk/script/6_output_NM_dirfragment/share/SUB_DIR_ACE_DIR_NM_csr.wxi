@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_csu_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_csu_NM">
+		<?ifndef ACE_DIR_NM_csr?>
+		<Directory Id="ACE_DIR_NM_csr" Name="csrf" />
+		<?define ACE_DIR_NM_csr?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

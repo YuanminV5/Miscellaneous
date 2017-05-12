@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_sha_NM_exp_NM_con_NM_com_NM_acc_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_sha_NM_exp_NM_con_NM_com_NM_acc_NM">
+		<?ifndef ACE_DIR_NM_sha_NM_exp_NM_con_NM_com_NM_acc_NM_mim?>
+		<Directory Id="ACE_DIR_NM_sha_NM_exp_NM_con_NM_com_NM_acc_NM_mim" Name="mime-types" />
+		<?define ACE_DIR_NM_sha_NM_exp_NM_con_NM_com_NM_acc_NM_mim?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

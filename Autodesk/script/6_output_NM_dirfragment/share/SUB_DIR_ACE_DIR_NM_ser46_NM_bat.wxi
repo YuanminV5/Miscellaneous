@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_ser46_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_ser46_NM">
+		<?ifndef ACE_DIR_NM_ser46_NM_bat?>
+		<Directory Id="ACE_DIR_NM_ser46_NM_bat" Name="batch" />
+		<?define ACE_DIR_NM_ser46_NM_bat?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

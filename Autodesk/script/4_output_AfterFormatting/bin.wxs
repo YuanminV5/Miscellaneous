@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="bin.wxs">
+			<Component Id="cmp7C9AC3042B26014B548BC3D90949F356" Guid="{36FEADF9-7520-4E39-9B5D-9B3CF158FAB4}" Directory="ACE_DIR_NM_bin">
+				<File Id="fil24947C0CFF0AAF15A497435C5BC93513" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\.bin\mocha"/>
+			</Component>
+			<Component Id="cmpF45F007C8D2C52A42C7BE17A3F89B55E" Guid="{E29E482A-DD54-45C9-94AA-964E9D3B4C60}" Directory="ACE_DIR_NM_bin">
+				<File Id="fil5BFFCEF475C123F83AF8F44EC96B2785" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\.bin\mocha.cmd"/>
+			</Component>
+			<Component Id="cmpA155683AA95CD395C0878215F4D28188" Guid="{63B82CD5-3049-413F-B309-AD21EDF63125}" Directory="ACE_DIR_NM_bin">
+				<File Id="fil490173491CC24BF9D8879F426108B2F8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\.bin\_mocha"/>
+			</Component>
+			<Component Id="cmp3FC2379A57A4C56B5FAA68DD324BAE02" Guid="{501E638A-994B-4C0A-833B-9F871D3D7A47}" Directory="ACE_DIR_NM_bin">
+				<File Id="fil48F4FF822324FF866B35AD27A425B013" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\.bin\_mocha.cmd"/>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Include>

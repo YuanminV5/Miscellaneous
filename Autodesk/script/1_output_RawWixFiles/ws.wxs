@@ -1,0 +1,301 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="dir9E2B73894BE38650C9ECFA4FB5666621" Name="ws">
+                <Component Id="cmp9A12969538D8085E4C6C5CF557D2F7AF" Guid="{B091AC8E-7E59-41EE-AE30-CD1136390A5B}">
+                    <File Id="fil19612D9A9280B32E07629FBEAACE3C84" KeyPath="yes" Source="SourceDir\.npmignore" />
+                </Component>
+                <Component Id="cmpD47CB811AE3F81736510130745169D22" Guid="{AADFFB7A-F813-47E6-8664-68B235905D7E}">
+                    <File Id="fil6DF1DAC89FA5187BC84D22592E24F6DF" KeyPath="yes" Source="SourceDir\.travis.yml" />
+                </Component>
+                <Component Id="cmp56234E6FCBC9672AC6AA3B352CA13D30" Guid="{A528C09C-CC62-46B0-9AB0-BFB725532091}">
+                    <File Id="filC361AB47AAC3DE5F254F2E97418F345A" KeyPath="yes" Source="SourceDir\binding.gyp" />
+                </Component>
+                <Component Id="cmp14CBF2C0D9D828F958762A4FB75F0150" Guid="{B8A6E7E7-827D-47B4-9DDF-C41444FF9A92}">
+                    <File Id="fil2B7A164F126543D1D4666AC4F70A8289" KeyPath="yes" Source="SourceDir\builderror.log" />
+                </Component>
+                <Component Id="cmp917D55B15DD6E3043D4EEF3CFDE0DFE8" Guid="{A6FF9F31-98C9-4D11-BD3E-F52BD75FC2D6}">
+                    <File Id="filB38A5D0589A87F2077EAB8F50DCB9838" KeyPath="yes" Source="SourceDir\History.md" />
+                </Component>
+                <Component Id="cmpD2CA12331D36B9D51CB912AC708070CF" Guid="{3B73ADC7-FAE1-4B80-B6A8-4548ED003A43}">
+                    <File Id="fil02F83787A0A19E1993A761F6C0355B61" KeyPath="yes" Source="SourceDir\index.js" />
+                </Component>
+                <Component Id="cmp873B0B61947C91B7859FFAD22B227954" Guid="{A87C51DA-D909-4CA2-9DD5-89B54A021BA9}">
+                    <File Id="filD4C5F1CED6DA6BA2D7C7D9B03FDCFA69" KeyPath="yes" Source="SourceDir\Makefile" />
+                </Component>
+                <Component Id="cmp2B0A69A9F7A2FEE5427850E9C07E16E2" Guid="{2B966F4D-FB3D-4ED4-A95A-8148B9F363DC}">
+                    <File Id="filDEEDA007ED03C7B38D273AB5B7EA5076" KeyPath="yes" Source="SourceDir\package.json" />
+                </Component>
+                <Component Id="cmp86D5A37052F9A9314C8F8A71AC64542E" Guid="{5760C50D-604B-47C6-903B-003EB08C6956}">
+                    <File Id="filEBED1FFD6237DFA7C8D798C3690E9EB4" KeyPath="yes" Source="SourceDir\README.md" />
+                </Component>
+                <Directory Id="dir3D2CF02441CE8F5389A66569B5DF7F27" Name="build">
+                    <Component Id="cmp8981EB433C2E22D4CEFEBE54800EBDD2" Guid="{E96BB1B1-8496-41DC-9E9B-4C7730B3B542}">
+                        <File Id="filC204F4594203F96A3E5AAB909D0A9691" KeyPath="yes" Source="SourceDir\build\binding.sln" />
+                    </Component>
+                    <Component Id="cmp4D2B4C1ED518376739C984BF7A2F216D" Guid="{2C330717-587C-472F-AF5E-1A422164127F}">
+                        <File Id="fil0AB01AB0ED16C11CA25239DBEA1017FA" KeyPath="yes" Source="SourceDir\build\bufferutil.vcxproj" />
+                    </Component>
+                    <Component Id="cmp3F0310CA873945AE1A76DDE9D974E50E" Guid="{C19F002A-E09A-48BE-8E52-11DA9F53680E}">
+                        <File Id="fil857853399E23E64014FDBF74E663A7A0" KeyPath="yes" Source="SourceDir\build\bufferutil.vcxproj.filters" />
+                    </Component>
+                    <Component Id="cmp53B5E3AE0AE5141552337F4389466301" Guid="{493AFFCF-EDA0-441C-9C8A-86D3CD3ECFCE}">
+                        <File Id="fil73BF81C9021C57A17B7F145E2D86229A" KeyPath="yes" Source="SourceDir\build\config.gypi" />
+                    </Component>
+                    <Component Id="cmpF7D25352A7F206C787E80A6308CABB9D" Guid="{64F829E3-560B-43D8-ACF2-F54D24E9C829}">
+                        <File Id="fil8C06120C1D85002342E8356E57AB7E6F" KeyPath="yes" Source="SourceDir\build\validation.vcxproj" />
+                    </Component>
+                    <Component Id="cmpECCFC76AF437EAF99D621F715B525B44" Guid="{C1B90A39-8226-452C-96EE-3D116D03AFEB}">
+                        <File Id="filDBD1860727DFE51B6F28DDC97228792D" KeyPath="yes" Source="SourceDir\build\validation.vcxproj.filters" />
+                    </Component>
+                    <Directory Id="dir202A1F981382B1A8F9E6A2989A467C97" Name="Release">
+                        <Component Id="cmpC8506967C37802E74A482B4143D78BE0" Guid="{BFD2CE8C-F638-48EB-9B8E-852B7F884CEA}">
+                            <File Id="fil25956FC919D07808D99C87650FC066C7" KeyPath="yes" Source="SourceDir\build\Release\bufferutil.exp" />
+                        </Component>
+                        <Component Id="cmp06160FB59B44AA2BB788BAA519556126" Guid="{C914F95A-9BCE-4DB8-ABED-8AF3E6773BB3}">
+                            <File Id="fil5600A846A24122EF239A3EC45FA82BDE" KeyPath="yes" Source="SourceDir\build\Release\bufferutil.lib" />
+                        </Component>
+                        <Component Id="cmp939D8F6E4FD785890BE799DD5D37602F" Guid="{DCDC59A2-99B5-4B8B-A1E0-30096D462A91}">
+                            <File Id="fil8F534E6D4D500E364938BA190FF81CC4" KeyPath="yes" Source="SourceDir\build\Release\bufferutil.node" />
+                        </Component>
+                        <Component Id="cmp6A782349193CAEE2E36911A4773F8E68" Guid="{49276B81-0C23-4B98-8C3C-4B32ED188980}">
+                            <File Id="fil5E632CA13C65A89941DD90B2650AD78D" KeyPath="yes" Source="SourceDir\build\Release\bufferutil.pdb" />
+                        </Component>
+                        <Component Id="cmp26F6BB607028DD6095D2D28749729A8C" Guid="{4E047C8F-283A-4914-B46F-CEC11D344587}">
+                            <File Id="fil0335B24B31FF7950AADFAD7C169B8047" KeyPath="yes" Source="SourceDir\build\Release\validation.exp" />
+                        </Component>
+                        <Component Id="cmp96F3244B7255F2ED3EB9EDE1A320E5B4" Guid="{C8EE5E29-9FF4-4306-AC3B-B8B43BC360D5}">
+                            <File Id="fil7FCCE9D76B3E9E4016DF62B28682C231" KeyPath="yes" Source="SourceDir\build\Release\validation.lib" />
+                        </Component>
+                        <Component Id="cmp4CCCF477C79D1634D2302E259D3706D0" Guid="{DABAB391-3654-47DC-9CC9-485E5E6139B7}">
+                            <File Id="filDA7E78EBC159685E53B6FAEAD5518F57" KeyPath="yes" Source="SourceDir\build\Release\validation.node" />
+                        </Component>
+                        <Component Id="cmp4C4FB915846A316F6440D81D469D42CC" Guid="{71AC90C6-0B5E-4F85-8349-42BA25515FA2}">
+                            <File Id="filE5F365A84EC39A0AF2C617A4E752BF1D" KeyPath="yes" Source="SourceDir\build\Release\validation.pdb" />
+                        </Component>
+                        <Directory Id="dirFF8393CB7E62D1D3038106A074675083" Name="obj">
+                            <Directory Id="dir232DE15538FDA9274075A94A1793FB19" Name="bufferutil">
+                                <Component Id="cmp3A83F9E4E7F921026E3A0166E24602AD" Guid="{34D30EE0-06F0-4719-949D-51CA61AC481A}">
+                                    <File Id="fil7F7ED40EC955AE333769406DAA757288" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\bufferutil.lastbuildstate" />
+                                </Component>
+                                <Component Id="cmpC4BDF1D67CB151D17C10904C965C9E11" Guid="{1D636271-0CC1-4362-A8CF-E17D9F694EF2}">
+                                    <File Id="filB12D9A500AA5A1505B9E35CB3360C559" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\bufferutil.node.intermediate.manifest" />
+                                </Component>
+                                <Component Id="cmpE807D4EFDF6127F3176927F0F8712B3D" Guid="{3A56BDF8-3A40-41AA-AEC1-5F6BB36DD892}">
+                                    <File Id="filEA60EA0032970DA9D14C6EA83699A33E" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\bufferutil.obj" />
+                                </Component>
+                                <Component Id="cmp1F063A2543B3F40F621CA422C9B0DC3A" Guid="{71168B42-1E00-45AB-B38B-8154B724F5CF}">
+                                    <File Id="fil9FB900E957E619842BBF7F77BD48A295" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\bufferutil.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmpEF9AE884D8D308B100E4663C28C7EE58" Guid="{AE170715-C3FF-44E4-A638-001CDF5AF5C9}">
+                                    <File Id="filDCA176400B64D921951512BB6065CE1A" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\cl.command.1.tlog" />
+                                </Component>
+                                <Component Id="cmp9665C8DCD9ED61D76E4F92C3C631CF45" Guid="{418B4DB0-3A7A-42EE-A2BF-F7B7E64575E8}">
+                                    <File Id="filA8CDDD6E812DBCB83A4FD0AFBE2EF676" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\CL.read.1.tlog" />
+                                </Component>
+                                <Component Id="cmp52BA61B2103E7111087E86336CE0A6BA" Guid="{F2CC50E2-113A-4300-973F-BD23F1F60D7E}">
+                                    <File Id="fil9400C4C8DF40488C5831F6BFB7BE6808" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\CL.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmp0D5D3553B7D1AFDFD3FF02C5DC06B2F1" Guid="{70315181-1CA9-4B45-A8A4-0BA346B2F34F}">
+                                    <File Id="fil1CFC12C8091D44520FBBC49DBA65D9CD" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\link.command.1.tlog" />
+                                </Component>
+                                <Component Id="cmp706278D5D5165D77FE796E730C0BD086" Guid="{E94F1E4E-6503-4707-BA0A-C08F5BFCA464}">
+                                    <File Id="filC5F080984903508B2067ED2D0E8EBA44" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\link.read.1.tlog" />
+                                </Component>
+                                <Component Id="cmpF58F9E9A5EB1B2593F45CF2CF7109750" Guid="{D9B8F764-0F55-4F50-A198-F512D50A56E2}">
+                                    <File Id="filE288277FD9B08540A0F0117BCDD32577" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\link.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmpBB596D3BFD42E91EAA3360D0D01391A6" Guid="{128C2FF0-B341-4F70-B2A9-FEF698758F04}">
+                                    <File Id="fil861C615BBD29BB5BE778B029D5E10DB4" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\mt.command.1.tlog" />
+                                </Component>
+                                <Component Id="cmpF892228BFA0ADCBADD38204C1F7F816F" Guid="{5A07F81A-6C40-42A8-A5FE-BF61F8C14F83}">
+                                    <File Id="fil853E5AF4E2EE66E5ED0D690E8BBC8BEF" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\mt.read.1.tlog" />
+                                </Component>
+                                <Component Id="cmpFB84F50C3C1B93A5765D22B15B44EC8E" Guid="{3280544A-88C3-445A-8096-32393DE18870}">
+                                    <File Id="fil8EF77075FB01A5E11A44544515CE49FF" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\mt.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmp842C0C329572B645E682210F291E0F88" Guid="{3C2546B3-2898-45BF-9DB7-2A6C30A4C695}">
+                                    <File Id="fil199AFF0510AAFC8CDC08575F22A43BAD" KeyPath="yes" Source="SourceDir\build\Release\obj\bufferutil\vc100.pdb" />
+                                </Component>
+                            </Directory>
+                            <Directory Id="dirC4F61E15DDCDBA0B9590642811F2AC86" Name="validation">
+                                <Component Id="cmp7ACABFBD03E06B10B28CC75B11E9D84B" Guid="{B00B3CFE-4368-45D4-BE60-D03B98022D76}">
+                                    <File Id="filF7465E93F4AF55AE79F7CF62973DE54F" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\cl.command.1.tlog" />
+                                </Component>
+                                <Component Id="cmp3B3078C81801200C9BB10377321A9C4F" Guid="{EB85DFEB-AC3E-433F-AA6D-3A74DE2133DC}">
+                                    <File Id="filC5DFF30E059AE72EDA332596DE01289E" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\CL.read.1.tlog" />
+                                </Component>
+                                <Component Id="cmp4EA403B3A67C4AD52EB1D61D725E369F" Guid="{B803C7F1-C6EF-4F82-BB78-78E5A82455F8}">
+                                    <File Id="fil198A88B548E9B6E1D0B19174F456CEDD" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\CL.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmpD486D6912C8468029F9EE4630C1A4A58" Guid="{F9C5272F-4037-4F92-BAD1-8E6DD6E85E1D}">
+                                    <File Id="fil516409D24F7FDBD6F89586C24C029592" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\link.command.1.tlog" />
+                                </Component>
+                                <Component Id="cmp0982C1F4F90623BA8279A89EAC980DCA" Guid="{C46EE423-9B23-4369-B071-66AC9437D190}">
+                                    <File Id="filE454DAEA8FBD1607EE6E63F99793A966" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\link.read.1.tlog" />
+                                </Component>
+                                <Component Id="cmp066B8EF204E76BDE654A56A0E45A33C9" Guid="{451B1B5A-E863-4E59-B27E-60183113E3C6}">
+                                    <File Id="fil578E65ECFF235A730B77837586688CEA" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\link.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmp371B42BD2622E8CBB71ADA2BDBE30481" Guid="{3D914B51-AF5D-4788-969A-D9732D14620A}">
+                                    <File Id="fil8BB76FD2ED4890EFC354C5EC67EF2854" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\mt.command.1.tlog" />
+                                </Component>
+                                <Component Id="cmpCD9D630D1EED9545F8055225C1052E93" Guid="{7B9156E7-3B3F-4920-86FF-6610AADBFA93}">
+                                    <File Id="filFC2D00E46FD826DC6F33E3E7690D8F93" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\mt.read.1.tlog" />
+                                </Component>
+                                <Component Id="cmpAE726237F5AD0679BC9F4045BEB3242E" Guid="{AD592840-05B1-40EE-A2EB-EB979AB1831F}">
+                                    <File Id="fil2A709E8BAC4B9ABF008520DE6C4B5A22" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\mt.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmp451F52C636ED507BC48BC62F8347B2A5" Guid="{50FB6370-D645-4EFB-80A4-4CEA078A300B}">
+                                    <File Id="fil943C4CF72CB9E1D26F068C3EA10797F1" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\validation.lastbuildstate" />
+                                </Component>
+                                <Component Id="cmpC293A31FCAFC1EDA42CBFA4DEDE67C19" Guid="{F5955B7E-8A07-4746-81EF-3A30EE0AE950}">
+                                    <File Id="fil1879767F87FB962F5C8780FC1C15C438" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\validation.node.intermediate.manifest" />
+                                </Component>
+                                <Component Id="cmpCD3B9C901CA4E4C70FC2A0201DF0F518" Guid="{8609A3C6-1484-4FB2-B43B-2884101D994C}">
+                                    <File Id="fil2CBA79B6B6FCF1717DE93C7AEE916CFB" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\validation.obj" />
+                                </Component>
+                                <Component Id="cmpF05F2BF3BEDD27C4352766AE864D7736" Guid="{7F899EE7-F8AE-48DE-B3C8-21E27CBF6E3D}">
+                                    <File Id="fil8C21AD54092851662614CD1EFD064236" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\validation.write.1.tlog" />
+                                </Component>
+                                <Component Id="cmp7727FB396D48E303750DFBAF7C8801B3" Guid="{A6E8E6E5-5AB9-4231-9274-BEFA06956877}">
+                                    <File Id="fil9403DC845F97D98922CBF9435DCC81AE" KeyPath="yes" Source="SourceDir\build\Release\obj\validation\vc100.pdb" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir15FC21CCE103E8096A5899380F730A33" Name="lib">
+                    <Component Id="cmp389D3D88F3ED8B0A8AF9FAF6426DDEB1" Guid="{9010A3DD-1A76-488F-A49D-5171B5EA37D2}">
+                        <File Id="fil2F3A26063D3C4F8546CADA987EAA5CE2" KeyPath="yes" Source="SourceDir\lib\browser.js" />
+                    </Component>
+                    <Component Id="cmp305248F54452D497B8579C574D14EEAF" Guid="{087BE2FB-2FC7-4476-A784-7A96C7B5C308}">
+                        <File Id="filE15F7B0E452598E51E2C90B8CF794D69" KeyPath="yes" Source="SourceDir\lib\BufferPool.js" />
+                    </Component>
+                    <Component Id="cmp01B223500DCF00FED2AB2124D0352EAB" Guid="{04882CBF-2D1F-4D01-B0D9-D5FC4A0FF850}">
+                        <File Id="fil3215F1FA2233422017EAA7132BB6E626" KeyPath="yes" Source="SourceDir\lib\BufferUtil.fallback.js" />
+                    </Component>
+                    <Component Id="cmp5635A417F928841CB287FAD342DD7B22" Guid="{A4700F5D-1A3D-4A8D-8D71-2F84CD96BE31}">
+                        <File Id="fil1BB203164533E71641804E446FF7109A" KeyPath="yes" Source="SourceDir\lib\BufferUtil.js" />
+                    </Component>
+                    <Component Id="cmpE1BEFE8C4C468ACD984FD29A702C4018" Guid="{9CE20468-749A-4BEA-8F13-C0576A23EBB3}">
+                        <File Id="filB594026F759E29E678DF2BDD58B10AB2" KeyPath="yes" Source="SourceDir\lib\ErrorCodes.js" />
+                    </Component>
+                    <Component Id="cmp4C4A8768A6364C3B50709523AA6D72EE" Guid="{5D3FD3C3-96A7-4799-8CD2-37B5F48BC858}">
+                        <File Id="filCF0B9970025601F4EBE00FD19100B252" KeyPath="yes" Source="SourceDir\lib\Receiver.hixie.js" />
+                    </Component>
+                    <Component Id="cmp636D477276BA4731BE05AB4C15E2CE70" Guid="{DCBA3C46-1837-44C3-A6D0-4FC17C1E21B4}">
+                        <File Id="filF161053ACED8C9D0A5219527D1E2FBA9" KeyPath="yes" Source="SourceDir\lib\Receiver.js" />
+                    </Component>
+                    <Component Id="cmp39B96D3D80D169D8F9AA33F17B91FA4D" Guid="{E43E25D5-2FAD-4F99-A3D4-766159DCF2CD}">
+                        <File Id="fil3259FC793FE37DF75DD44158DA30ED2F" KeyPath="yes" Source="SourceDir\lib\Sender.hixie.js" />
+                    </Component>
+                    <Component Id="cmp97F545C2F84F209FECAEF0274BF98C6F" Guid="{17367EDA-F239-41B1-AB72-A804FD4ACD7B}">
+                        <File Id="filA7DE7B770757B95A97E990D2A9FD9519" KeyPath="yes" Source="SourceDir\lib\Sender.js" />
+                    </Component>
+                    <Component Id="cmpBE2229E9358CF17EB5B206E56C731B6E" Guid="{FCC385C7-BEB1-407A-80A1-99BB97E42B51}">
+                        <File Id="filB26FEC7EE3EEC6CF1173413858BC9499" KeyPath="yes" Source="SourceDir\lib\Validation.fallback.js" />
+                    </Component>
+                    <Component Id="cmp8D490664B456D29CDF40BFEAA555208B" Guid="{1089BF4C-94D3-4F39-99A5-023AF41FAD24}">
+                        <File Id="filE0DFEAB93773837B47C01CFD439C1333" KeyPath="yes" Source="SourceDir\lib\Validation.js" />
+                    </Component>
+                    <Component Id="cmpAC4404D636673E44F8EE281F19DF34B1" Guid="{A05B5C39-A9FA-4FB7-8F93-FE84B0DDC359}">
+                        <File Id="fil6D9EFF1C184FFD6BC486B9BEDF2C0D32" KeyPath="yes" Source="SourceDir\lib\WebSocket.js" />
+                    </Component>
+                    <Component Id="cmpB4C8735673F287F2A0B0F2BE007F66C4" Guid="{E9C38340-99AB-449C-9DA3-20634C76296D}">
+                        <File Id="fil2CD375EDCFA8700DFCE585426155584C" KeyPath="yes" Source="SourceDir\lib\WebSocketServer.js" />
+                    </Component>
+                </Directory>
+                <Directory Id="dirA25982E939FE90F85364889CDAD9DA86" Name="node_modules">
+                    <Directory Id="dir446AC0E79EB4E671E767494CC56ACF38" Name="nan">
+                        <Component Id="cmp3C20112C5B61CA97838F999874D70F02" Guid="{6D75AFA5-EDD5-49E2-922E-FDA64C4E2795}">
+                            <File Id="filB7212CAD8873C3D0AFB06599D5BCA7C2" KeyPath="yes" Source="SourceDir\node_modules\nan\.dntrc" />
+                        </Component>
+                        <Component Id="cmpEC99535125232803B69A213A49F75563" Guid="{49FF41F2-6541-4133-B42F-1B0D65BBEA28}">
+                            <File Id="fil26AA8771652C547FF7D55B21E9A674D4" KeyPath="yes" Source="SourceDir\node_modules\nan\appveyor.yml" />
+                        </Component>
+                        <Component Id="cmpC28652520DA9FE8B50E1D47B7D1A8519" Guid="{6E226065-741F-4655-9FA6-91AF475898C6}">
+                            <File Id="fil812033442F2AF11C36D0F3CEF86264FA" KeyPath="yes" Source="SourceDir\node_modules\nan\CHANGELOG.md" />
+                        </Component>
+                        <Component Id="cmp53E66EA90C3A7B02372D1625AD9BE2D7" Guid="{59266779-4B01-4220-B8F9-06F2BF5FC75B}">
+                            <File Id="fil14F8137686C3D74777ED0393CBFDB12A" KeyPath="yes" Source="SourceDir\node_modules\nan\include_dirs.js" />
+                        </Component>
+                        <Component Id="cmp2CF37B59D2D6ECC1ADA823A234C9F36A" Guid="{64FA581E-E3AF-4E47-B907-B9920EB180FD}">
+                            <File Id="fil2A35766A8A87AC8D41C500E3A235234F" KeyPath="yes" Source="SourceDir\node_modules\nan\LICENSE.md" />
+                        </Component>
+                        <Component Id="cmpF569EE39236FC177364BBEF975165F5F" Guid="{6C46FD05-13C2-4340-B76C-F1D66E7E69AA}">
+                            <File Id="filBE211337084609B83CFCF2EB789C2A4D" KeyPath="yes" Source="SourceDir\node_modules\nan\nan.h" />
+                        </Component>
+                        <Component Id="cmp34E52DA2961AEB23FEBF4BE97EAC9279" Guid="{64F85DC5-8E2C-47CC-9082-8C10A6D688D4}">
+                            <File Id="fil37F094CC2EAE2AB4361C616B255A8412" KeyPath="yes" Source="SourceDir\node_modules\nan\package.json" />
+                        </Component>
+                        <Component Id="cmpAFC7F53B543972986C6491708FFD9601" Guid="{75E02519-38AC-4D9A-B80C-35D18B978F12}">
+                            <File Id="filF2920A03CE108B93C87532D9146B8A53" KeyPath="yes" Source="SourceDir\node_modules\nan\README.md" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir04D98BE34D2C4E56954DFE67BA5D8627" Name="options">
+                        <Component Id="cmp709DDB6066FEFB94B02402A9627A18A1" Guid="{EFB5EE67-BEE4-4699-85B5-2B38BAC9CAB9}">
+                            <File Id="fil64EC3832E26CEAC49FFB133C6CB13C74" KeyPath="yes" Source="SourceDir\node_modules\options\.npmignore" />
+                        </Component>
+                        <Component Id="cmpF2DE155742A5A9BC65F5681603D4D942" Guid="{D970ACD1-C9CD-4997-B7B2-B6420DE091A6}">
+                            <File Id="filAD8B6F54F7845FD4DCA8457BCDD27155" KeyPath="yes" Source="SourceDir\node_modules\options\Makefile" />
+                        </Component>
+                        <Component Id="cmp48B883CC8B6FF2CA3CAAE6192D80A194" Guid="{8D1586A9-08BC-408B-BD12-ADBD4CD7FC6E}">
+                            <File Id="fil4B6946F5ECFDB057561D0C38E42BFC8D" KeyPath="yes" Source="SourceDir\node_modules\options\package.json" />
+                        </Component>
+                        <Component Id="cmp0C78AE9C6ADC13501BAD32D09B70F70C" Guid="{47B25514-D783-48F8-9114-212930902FA9}">
+                            <File Id="fil9162E156DFDCA70987D0328F991AF14E" KeyPath="yes" Source="SourceDir\node_modules\options\README.md" />
+                        </Component>
+                        <Directory Id="dir2BA30862B7FAE32C73D109384CB26E17" Name="lib">
+                            <Component Id="cmpDF0BCEA9B92262205C4D4B032FB05545" Guid="{80BF7640-573A-4954-B2ED-7D2545F9FB6B}">
+                                <File Id="fil0F15606EDB64E20B7A61D84A761346C7" KeyPath="yes" Source="SourceDir\node_modules\options\lib\options.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="dirEC51757B1B90487FC934BA89B68919B0" Name="ultron">
+                        <Component Id="cmpAD3CF3F47AEA72F697AA46CDD719E7FC" Guid="{2866A08A-9E8A-4189-89FA-AE252B4A1FE6}">
+                            <File Id="fil81EEAF3E93FA24E12A626CEBB7007200" KeyPath="yes" Source="SourceDir\node_modules\ultron\.npmignore" />
+                        </Component>
+                        <Component Id="cmp93D0B32ADCFB08476FCF40FD817D582B" Guid="{9C871E55-557D-474D-82C5-053BD14625FF}">
+                            <File Id="fil584908B51535E42A4BEF80F477963BC0" KeyPath="yes" Source="SourceDir\node_modules\ultron\.travis.yml" />
+                        </Component>
+                        <Component Id="cmp180997394CA29B131FEF7400A9A695D2" Guid="{46B6C3C3-27B7-46D9-8B48-BAB478E45076}">
+                            <File Id="fil08C95D77133F86F4EC1AD54E5727E902" KeyPath="yes" Source="SourceDir\node_modules\ultron\index.js" />
+                        </Component>
+                        <Component Id="cmp6F8B07D4E775F7700E95DA5673489448" Guid="{96148EEE-53EA-4F15-A54E-A7AC47323EFF}">
+                            <File Id="filABF937773B745553577132852D9D630C" KeyPath="yes" Source="SourceDir\node_modules\ultron\package.json" />
+                        </Component>
+                        <Component Id="cmp506C90DB6C4AF85B198C78D0DFAF6302" Guid="{42F00676-3CB1-4A7D-99F0-E48EBD98B7E3}">
+                            <File Id="fil91129B343779A5C50B3B112300B0770A" KeyPath="yes" Source="SourceDir\node_modules\ultron\README.md" />
+                        </Component>
+                        <Component Id="cmpF980958FC39D0576695F16689A0C19FF" Guid="{0103660A-5C2B-4CBD-923A-183DF7DB654C}">
+                            <File Id="fil866AB61D20408F56B89064CE8C1648EC" KeyPath="yes" Source="SourceDir\node_modules\ultron\test.js" />
+                        </Component>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir5071F2F4E9A8A51AE6869447EEDD1ADF" Name="src">
+                    <Component Id="cmp30004E724C8E4AE8D6DEAF23B2CE80E9" Guid="{E58651EE-EC8D-44EE-AB20-A22165BEBE90}">
+                        <File Id="fil9E424FDFACB3849CF3ABD74605311F72" KeyPath="yes" Source="SourceDir\src\bufferutil.cc" />
+                    </Component>
+                    <Component Id="cmp85FEA57B2511544858702491E849316E" Guid="{B7BE501C-588D-496E-A062-B5493707BE7C}">
+                        <File Id="filDCC36487A82E870CC109E8CA3C235DFF" KeyPath="yes" Source="SourceDir\src\validation.cc" />
+                    </Component>
+                </Directory>
+                <Directory Id="dir685523FF3F8C31B04ED5D8E491550FA8" Name="wscat">
+                    <Component Id="cmp9B19704658CF6C14B08A9D82ED7EAE05" Guid="{2B2EB92D-D8EE-4D46-BE03-53B3B6E84071}">
+                        <File Id="filB941A6C97D0AFA188FB55067CF0153A7" KeyPath="yes" Source="SourceDir\wscat\package.json" />
+                    </Component>
+                    <Component Id="cmpFDFFDAFFB9A6B438F8FD50589BB0525E" Guid="{D4550386-30AE-4E8B-9F86-A81FD690E303}">
+                        <File Id="filCFD17FCC02C10CA6953E09F97161E972" KeyPath="yes" Source="SourceDir\wscat\README.md" />
+                    </Component>
+                    <Directory Id="dir6FE1422EB6A1F4133FF93558E82412A7" Name="bin">
+                        <Component Id="cmp1DDEB5E415A8FB2732C5F555F9ECB601" Guid="{3541980B-4F99-4E02-9001-EC0AB014EE7C}">
+                            <File Id="filEFD5B4069D5C19DB4E2DEA9B6ADA1E44" KeyPath="yes" Source="SourceDir\wscat\bin\wscat" />
+                        </Component>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

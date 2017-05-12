@@ -1,0 +1,14 @@
+bin
+chai
+express
+livedb-mongo
+livedb
+microevent
+mocha
+nconf
+node-windows
+share-js-stream
+share
+sinon
+winston
+ws

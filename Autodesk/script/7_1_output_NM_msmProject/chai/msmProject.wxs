@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={A10EC1CB-B5E4-4E1B-80A5-D0BB8CF067BA}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={1676B4FE-04F4-4368-A97B-CF11B35A2CA2}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="chai" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="chai" Comments="chai" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_cha.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_lib_cha.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_cor.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_int.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_uti.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_ass.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_dee.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_dee_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_typ.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_typ_lib.wxi?>
+    <ComponentGroupRef Id="chai.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\chai\msmProject.wxi?>
+</Wix>

@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="dir79D373297718A0E2F4DA811E2F6226EC" Name="chai">
+                <Component Id="cmpA3CEAB47CB5334094EF83C1B823C35A9" Guid="{7C31A997-D038-4A8D-A6FD-8EFF608F815F}">
+                    <File Id="filCE86BC643E9FB322FFF3B32130F18DAB" KeyPath="yes" Source="SourceDir\.npmignore" />
+                </Component>
+                <Component Id="cmp85C78E4AEA8C3B37918F93E26417E880" Guid="{AFAB88B3-534C-4EF0-98C6-8D4E6508FC6B}">
+                    <File Id="filC4BB33C076DD412243823651EBCB839F" KeyPath="yes" Source="SourceDir\bower.json" />
+                </Component>
+                <Component Id="cmpF616125C71C0E7D6C375853E3401B91C" Guid="{013C43D8-2AD2-48F5-9F3A-7C805EF6DFD4}">
+                    <File Id="filE30AF7B29B1884E95047ED791CF779D6" KeyPath="yes" Source="SourceDir\chai.js" />
+                </Component>
+                <Component Id="cmp9A2D288D5918166C7F7C1F00CF8DD2F3" Guid="{B11D3037-8ACD-41CD-A05D-9CBCDB6FCF6E}">
+                    <File Id="fil5A6179068ABD6ECFC983FBF96422D113" KeyPath="yes" Source="SourceDir\CONTRIBUTING.md" />
+                </Component>
+                <Component Id="cmp38F926CA79B00CB6C2304BE2F1BD0105" Guid="{7D4F4D7F-79DF-4EB3-A89A-AF4104F7A8E5}">
+                    <File Id="fil473552B2ED262EB51F6CCA05C9954B0F" KeyPath="yes" Source="SourceDir\History.md" />
+                </Component>
+                <Component Id="cmp632D51A0D067F16E0D0BB90EE94FB4BF" Guid="{B0300E29-B983-4A68-B58D-B6DB7514A2D4}">
+                    <File Id="filE10022D1B9F18E8C519493A6C0E1498E" KeyPath="yes" Source="SourceDir\index.js" />
+                </Component>
+                <Component Id="cmpEF77E96456CFDA5E243C147C92522EA0" Guid="{CE6A0A5C-687C-40FC-BD60-F636E214FC42}">
+                    <File Id="fil729C69ACAE7B0B640AB0E86644325C4D" KeyPath="yes" Source="SourceDir\karma.conf.js" />
+                </Component>
+                <Component Id="cmpBF380D74178F4F2DED7C56E8215F8BA0" Guid="{A96771DD-B793-4865-8579-1CB179C2D06E}">
+                    <File Id="fil6B5C18BE7BC3306A8421982D69ECCAF7" KeyPath="yes" Source="SourceDir\karma.sauce.js" />
+                </Component>
+                <Component Id="cmp25D1864C58A40C504E3C779065C788A1" Guid="{13FE5959-FFD9-4D4A-A305-F438BEF75E1B}">
+                    <File Id="fil960B5580B537159B591DAC7951E61D24" KeyPath="yes" Source="SourceDir\package.json" />
+                </Component>
+                <Component Id="cmp0FF354A7D7E8C8CD3471DFEDF77D2B1A" Guid="{6C632196-2CA3-4465-9DE1-FEF454387402}">
+                    <File Id="filB945776E7F35A4AD76437A54593CD055" KeyPath="yes" Source="SourceDir\README.md" />
+                </Component>
+                <Component Id="cmp6B89A4949162D4573721DB09E5855A09" Guid="{4278F121-FD39-4319-97B5-E43AFED81F96}">
+                    <File Id="fil70575D586DBF2506A70B8E4E830BC5DD" KeyPath="yes" Source="SourceDir\ReleaseNotes.md" />
+                </Component>
+                <Component Id="cmpDE616A0D439D420B44442EE0A1830A5F" Guid="{8E001E31-81D3-4389-A55F-1E593BD4C160}">
+                    <File Id="fil2D1D85620A131E9ACC86AB6B70D76F17" KeyPath="yes" Source="SourceDir\sauce.browsers.js" />
+                </Component>
+                <Directory Id="dir4088BC2BC410A70EDC1C2C93EF6CC9C7" Name="lib">
+                    <Component Id="cmp37CA12D68C158D6B5D6441E8C0F11F79" Guid="{6A765554-2165-4203-98F4-0F1DE7936A95}">
+                        <File Id="fil6287D53FD8E65F2CBF943B83D4728F72" KeyPath="yes" Source="SourceDir\lib\chai.js" />
+                    </Component>
+                    <Directory Id="dir958DD589CFB8D35D8709F05C9A8AEE2A" Name="chai">
+                        <Component Id="cmp09564B1E21EE82C58255D1337E31B7EA" Guid="{223AC3EB-A74D-487D-9B6C-79E1CDC2D92E}">
+                            <File Id="filB84731B345E8D743CECA5DBA7F62BF12" KeyPath="yes" Source="SourceDir\lib\chai\assertion.js" />
+                        </Component>
+                        <Component Id="cmpB72C865BAFF1D40D98F529264244102C" Guid="{A379F5E3-057C-4972-AE8C-2D3ACDBACC8A}">
+                            <File Id="filD44B7C813DD292809B0180B7F178FAEE" KeyPath="yes" Source="SourceDir\lib\chai\config.js" />
+                        </Component>
+                        <Directory Id="dir9C7279D3E95A689A6842D3BAFD340157" Name="core">
+                            <Component Id="cmp72ACACD766A5A50C3AD22512AB5C1C4B" Guid="{D0AE6133-24B7-4DC8-B281-97F1FBCFC76C}">
+                                <File Id="filDADD7EBC2C3FE489DFB6A2B2D747E0CC" KeyPath="yes" Source="SourceDir\lib\chai\core\assertions.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dirD8F5DE4721F79F00061A0D3E574B7A09" Name="interface">
+                            <Component Id="cmp57F1EFBC954EC92AEDA89550C0668228" Guid="{B65C13DB-FD37-4078-B667-3D41313EAD14}">
+                                <File Id="fil59CB8D4CC3E29F0C77C9FBBFFFB0600C" KeyPath="yes" Source="SourceDir\lib\chai\interface\assert.js" />
+                            </Component>
+                            <Component Id="cmp3AD402B286238BC27E798D76C96793BC" Guid="{058179B3-9DDD-4559-84D7-B0FC4CE56D78}">
+                                <File Id="filC26F56A49BC8314A92DAB70DB2AC5E82" KeyPath="yes" Source="SourceDir\lib\chai\interface\expect.js" />
+                            </Component>
+                            <Component Id="cmp8D1A60DB4ABACB50E5A0230AE83C8ABB" Guid="{91E47147-A18E-4156-8BAD-67DF49F3CB64}">
+                                <File Id="fil696E602C979F99A1CE7FEE5127F9BDA5" KeyPath="yes" Source="SourceDir\lib\chai\interface\should.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir8F34D87BB858250FBAB71517598B5C7A" Name="utils">
+                            <Component Id="cmpD941B2667A81A7AAA47E78B5D9AB5B60" Guid="{D1CE4A15-398F-41D5-9ECE-523245720EB3}">
+                                <File Id="fil01C8F6D37A9433D6DA74C427EBFC9EC6" KeyPath="yes" Source="SourceDir\lib\chai\utils\addChainableMethod.js" />
+                            </Component>
+                            <Component Id="cmpC6F5D7315C7E8BAD80D83B83A70A2B95" Guid="{C098F9CC-2C84-41D9-B391-A6344FC23E39}">
+                                <File Id="filBEF93732D2FF6E5587C5E49B13B7F4FF" KeyPath="yes" Source="SourceDir\lib\chai\utils\addMethod.js" />
+                            </Component>
+                            <Component Id="cmpCE5E2CFA546AB95C2DC7EF70E768FE89" Guid="{AB3D6B16-04B2-4EC1-A401-CA533466F943}">
+                                <File Id="fil1332351A147C1C3BC4933FCE3336F7A6" KeyPath="yes" Source="SourceDir\lib\chai\utils\addProperty.js" />
+                            </Component>
+                            <Component Id="cmp2FD82DD0C63A8023BCBFDBF7B1030B10" Guid="{7E8E67CE-F1C2-41AB-AD40-87C0EA7B2890}">
+                                <File Id="fil38C6E299F5B1AA60D876861980010F4F" KeyPath="yes" Source="SourceDir\lib\chai\utils\flag.js" />
+                            </Component>
+                            <Component Id="cmp60288CF30D1EE36D3092A449E44E930D" Guid="{55098CE3-B1D7-4F03-AF99-AFC7ED170342}">
+                                <File Id="filA7606877E98A486DCE962862B1D3838B" KeyPath="yes" Source="SourceDir\lib\chai\utils\getActual.js" />
+                            </Component>
+                            <Component Id="cmp4B71C80BBC72CF39DD8521E742BBDB1E" Guid="{CB2BC03F-875D-4256-A8FE-04FE466886A5}">
+                                <File Id="fil8EA67E411455133E62CBD4277138B255" KeyPath="yes" Source="SourceDir\lib\chai\utils\getEnumerableProperties.js" />
+                            </Component>
+                            <Component Id="cmp01FACD78379CC33D78F82F986A418F7A" Guid="{43DA5E14-F887-47FF-9942-FD535A6AA983}">
+                                <File Id="fil18233D6555642E975DAF13401C1A6B50" KeyPath="yes" Source="SourceDir\lib\chai\utils\getMessage.js" />
+                            </Component>
+                            <Component Id="cmpF8D34F6D2297DEDCE40F3CB076844F3C" Guid="{E2421BDC-1FA6-4F75-A76B-4BFC30727D14}">
+                                <File Id="filE2F1DA784EC93F64C8049D234A03AA48" KeyPath="yes" Source="SourceDir\lib\chai\utils\getName.js" />
+                            </Component>
+                            <Component Id="cmp9EE9C9019D30696E36263AC0C80EE8EB" Guid="{8099888C-EBB4-4449-951A-6F76ACC31442}">
+                                <File Id="fil649D79CE9AA0C3F30483AC11E6EB3CBC" KeyPath="yes" Source="SourceDir\lib\chai\utils\getPathValue.js" />
+                            </Component>
+                            <Component Id="cmpCF46025859D5457870012B4BF29FA1CC" Guid="{382E5EB4-3EDF-41AD-A690-2620A8C111C4}">
+                                <File Id="fil942AD8F93DDDA1C77B4983D9F7860877" KeyPath="yes" Source="SourceDir\lib\chai\utils\getProperties.js" />
+                            </Component>
+                            <Component Id="cmp43545C62EC4A3C9BED88ACEED863A29F" Guid="{8FCCA662-D1AE-406E-959C-32B21EC40A13}">
+                                <File Id="fil49C1BF65C8B5964C9045EDC091968460" KeyPath="yes" Source="SourceDir\lib\chai\utils\index.js" />
+                            </Component>
+                            <Component Id="cmpC9B84A87DDA6F7846E9BA7E9EE67BEE4" Guid="{F603BDA2-ED1D-432E-9E88-C65AD9EF9D64}">
+                                <File Id="fil1AE7A079149B4689B3FA87042F24ACA0" KeyPath="yes" Source="SourceDir\lib\chai\utils\inspect.js" />
+                            </Component>
+                            <Component Id="cmp6385829A275E109F745365076B3C49D3" Guid="{619EE0CC-2A84-4CA6-A1AE-F4A9FFF2005E}">
+                                <File Id="fil14419C4CFFEB4C5395E106B30BA63E3D" KeyPath="yes" Source="SourceDir\lib\chai\utils\objDisplay.js" />
+                            </Component>
+                            <Component Id="cmp8176C69584ACBE12F5740651EF554917" Guid="{9D8461D6-0FA0-4A1C-A091-0227A9EB48FA}">
+                                <File Id="filAE1D5D9DE1827926915CE6BC6FC81E3E" KeyPath="yes" Source="SourceDir\lib\chai\utils\overwriteChainableMethod.js" />
+                            </Component>
+                            <Component Id="cmp38F6F4EAD2774B80EBB621DA29A0F02E" Guid="{12A63BB7-3DE6-454B-975C-55879D656E80}">
+                                <File Id="fil2EA7B8B753F53E60E9831CF290BCBA3E" KeyPath="yes" Source="SourceDir\lib\chai\utils\overwriteMethod.js" />
+                            </Component>
+                            <Component Id="cmpCBD029E9625E17692F2BC9F3D80155D4" Guid="{80615EEC-C811-431F-9CC8-AFED6B98F841}">
+                                <File Id="fil31D55C5890E9A5A9A3A114FE8B33B881" KeyPath="yes" Source="SourceDir\lib\chai\utils\overwriteProperty.js" />
+                            </Component>
+                            <Component Id="cmpA4D7BE9253E007B0E865B5A02EE08836" Guid="{202B93C3-E9AA-4B2C-AA1F-E334F4C15E0A}">
+                                <File Id="filB02AE0D3792E1E32F7A6889B03F600FA" KeyPath="yes" Source="SourceDir\lib\chai\utils\test.js" />
+                            </Component>
+                            <Component Id="cmp0A12834E982B3A990D7D3E20D410A2BF" Guid="{8497F2D7-0F4A-4349-9806-1EF87FC237EA}">
+                                <File Id="filE0EEDE030D03FEDD22A9F38166CA2778" KeyPath="yes" Source="SourceDir\lib\chai\utils\transferFlags.js" />
+                            </Component>
+                            <Component Id="cmpAC27D6E346856CF80A0A853D467D68DF" Guid="{B9EBA6CF-059D-4237-AD94-EC6E87FDAA0F}">
+                                <File Id="filB1349E41478384E5929DF853EC70A983" KeyPath="yes" Source="SourceDir\lib\chai\utils\type.js" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                </Directory>
+                <Directory Id="dir2ED7239B55E5ACE843C463A6FC63C544" Name="node_modules">
+                    <Directory Id="dirE83371F11D52811AA54E6B4CAB3B1626" Name="assertion-error">
+                        <Component Id="cmp65AAC17CD8E364F9683218FBF7FD367E" Guid="{E2A7BE50-3DF7-4530-923C-48AB83AE39BC}">
+                            <File Id="filE0DDB1ABEEFAB9F190B6BEF33B6536DE" KeyPath="yes" Source="SourceDir\node_modules\assertion-error\.npmignore" />
+                        </Component>
+                        <Component Id="cmp6F1C1B3AAD8470070741BDA2FAE19042" Guid="{0D787061-9E62-4180-9032-3AF0F5E7C4D8}">
+                            <File Id="fil0F21BCEDDEC22882F7A908C64CEBA841" KeyPath="yes" Source="SourceDir\node_modules\assertion-error\History.md" />
+                        </Component>
+                        <Component Id="cmp20A5F4905BA468FE9B4B0EA1FE1E84B1" Guid="{2F55144C-C20A-413F-BEA1-C6A1786FF928}">
+                            <File Id="fil36635C7383553F4B5AB42386F24C062B" KeyPath="yes" Source="SourceDir\node_modules\assertion-error\index.js" />
+                        </Component>
+                        <Component Id="cmp31A5717BF27E8BA527B82CF7F61F1BC1" Guid="{01E03285-3D38-42DD-8265-AA6BCF579A30}">
+                            <File Id="fil13E2E91FCA57E9CFD82BE0AA02A8E08C" KeyPath="yes" Source="SourceDir\node_modules\assertion-error\package.json" />
+                        </Component>
+                        <Component Id="cmpF7960E73E55426E07F5B19C95DDDEEB7" Guid="{073994A0-4158-49DA-8DF3-B9F7159B70BA}">
+                            <File Id="fil818E4E6521AD8FC5955A02B309DECF01" KeyPath="yes" Source="SourceDir\node_modules\assertion-error\README.md" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="dir0154322686D7615C8C24D437BF9ADFFA" Name="deep-eql">
+                        <Component Id="cmpF45DF88FF1907D2D3B79EEBA50980DC8" Guid="{0FF76C16-40A2-47A5-A630-9606229B5BB9}">
+                            <File Id="fil16C6EF82ECE9CD8AEE4879C4C5E0F421" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\.npmignore" />
+                        </Component>
+                        <Component Id="cmp20FBCEAEF71066F0C713CA07B6275C29" Guid="{93EAC098-A5A9-451F-B779-33E1FCCBA3C0}">
+                            <File Id="filB4CCF5D78854E86280F116B35E6D49D2" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\History.md" />
+                        </Component>
+                        <Component Id="cmp4D04D312D0696AA7AD402FCB65678B81" Guid="{19DCBCE8-6D8D-4FB7-A292-28924F6AEA70}">
+                            <File Id="fil6C25D563FB85BF9D8D06615CE023DEFE" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\index.js" />
+                        </Component>
+                        <Component Id="cmp47659DAA7E02517449F3CBF40A76F4DE" Guid="{328568BF-0456-47A7-ABD6-25A9AB860F49}">
+                            <File Id="filCAC0CAAC27437DB84F8B6B2EDD83E9A7" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\karma.conf.js" />
+                        </Component>
+                        <Component Id="cmpBF5036696FC49ADC01E025B822C71017" Guid="{E12EF997-C9F3-495C-B7D9-F12C2EC3B906}">
+                            <File Id="fil1EB03B74B7A5C36E1DAEE093A6269C59" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\package.json" />
+                        </Component>
+                        <Component Id="cmp8ED5E012420287773D91B40DCDA2EEC8" Guid="{0E58B34E-6408-4F60-A770-97199EBF81AD}">
+                            <File Id="fil37D6194922B144F5CA8859F954D4B614" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\README.md" />
+                        </Component>
+                        <Directory Id="dir97F485B081758DD2FE372E69F9FAA1F4" Name="lib">
+                            <Component Id="cmpC1B921B6434C7E98F05CD828ADD62FF1" Guid="{A600A4C8-C1BC-4721-BF13-A1FB2A565AFC}">
+                                <File Id="filFC4E363E0B3585CE3DF31ACFB843F3C3" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\lib\eql.js" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="dir5B8EB5B0C3D96F86EA84FC739D3C289A" Name="node_modules">
+                            <Directory Id="dir6FDB8BA8869FEB2B8FFCB49E9C2DFC7C" Name="type-detect">
+                                <Component Id="cmp04B4F5CC209AE98E4F7D4139C41A939B" Guid="{35552753-8242-47D4-8AC1-3688E5DE2371}">
+                                    <File Id="filB679706E917CBD42E5AA1F7089C68944" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\node_modules\type-detect\.npmignore" />
+                                </Component>
+                                <Component Id="cmpCA736B25A085FBDB8F350189F9D11097" Guid="{598D70D5-5CDD-4D20-9BEB-DA28180CDF70}">
+                                    <File Id="fil85D4E2A22D64ACF16197BCE22C875BB4" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\node_modules\type-detect\History.md" />
+                                </Component>
+                                <Component Id="cmp775FEAFA70EE28BB29098FA6ACE9896B" Guid="{0F211502-36D2-4D80-8478-2A3E216477FC}">
+                                    <File Id="fil61336FF7874881F4F790AD6B358E1411" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\node_modules\type-detect\index.js" />
+                                </Component>
+                                <Component Id="cmpB5B139AE72BD4AFA5EBB9C7AD3B2A4C3" Guid="{4BAAE1AF-7415-476F-8F95-2FBF79541913}">
+                                    <File Id="fil25BEB0BD6FA8C4F00C8902DBD03F476C" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\node_modules\type-detect\package.json" />
+                                </Component>
+                                <Component Id="cmp84CEED6D43F471649CDE05232D14634C" Guid="{1EDD2E02-ABF2-4947-BE23-8821371AE9A0}">
+                                    <File Id="filC61648C4CBA98AB22F3E74500DC8A569" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\node_modules\type-detect\README.md" />
+                                </Component>
+                                <Directory Id="dir68BB9DBBAC7FF2A65AC846AB4DF7D94F" Name="lib">
+                                    <Component Id="cmp78E7022A4861279A1BF6F32B7B27863C" Guid="{13BC9B52-9259-452D-A68C-24EC3C0D7B4D}">
+                                        <File Id="fil7384DD57033AF3EDDC6DFA4984F8BB97" KeyPath="yes" Source="SourceDir\node_modules\deep-eql\node_modules\type-detect\lib\type.js" />
+                                    </Component>
+                                </Directory>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

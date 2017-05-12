@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_NM_col_lib.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_NM_col_lib">
+		<?ifndef ACE_DIR_NM_cus?>
+		<Directory Id="ACE_DIR_NM_cus" Name="custom" />
+		<?define ACE_DIR_NM_cus?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

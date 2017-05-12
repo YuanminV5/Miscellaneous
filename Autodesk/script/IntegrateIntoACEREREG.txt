@@ -1,0 +1,66 @@
+$(env.ACE_WixProjects) = $\ACE\E-Branches\B\AcadE\Install\installProjects
+
+1. Copy generated wix fragment source files to $\ACE\E-Branches\B\AcadE\Install\installFragments\Acade\ProjectCentric
+->ProjectCentric
+   server.wxs
+   ->node_modules
+       bin.wxs
+       chai.wxs
+
+2. Declare directory fragment in $\ACE\E-Branches\B\AcadE\Install\installProjects\_common\dirFragments\ProjectCentric
+	<DirectoryRef Id="ACE_DIR_ProjectCentricServer">
+	</Directory>
+
+3. Define target folder in $\ACE\E-Branches\B\AcadE\Install\installProjects\_common\dirFragments\DirectoryRoots.wxi
+
+	<?if $(var.isRereg)=true?>
+		<DirectoryRef Id="ProgramFiles64Folder">
+			<?ifndef ACE_DIR_AutodeskForNode ?>
+			<Directory Id="ACE_DIR_AutodeskForNode" Name="Autodesk"/>
+			<?endif?>
+		</DirectoryRef>
+		<?define DirParentDir=ACE_DIR_AutodeskForNode?>
+	<?else?>
+		<?define DirParentDir=TARGETDIR?>
+	<?endif?>
+	
+	<DirectoryRef Id="$(var.DirParentDir)">
+		<?ifndef ACE_DIR_ProjectCentricServer ?>
+		<Directory Id="ACE_DIR_ProjectCentricServer" Name="ACEProjectCentricServer" SourceName="Root"/>
+		<?endif?>
+	</DirectoryRef>
+
+4. Create wixMsmProject for each wxs source file at $\ACE\E-Branches\B\AcadE\Install\installProjects\wixMsmProjects\ProjectCentric
+->ProjectCentric
+   ->node_modules
+     ->bin
+         amake.bat
+         msmProject.wxi
+         msmProject.wxs
+     ->chai
+         amake.bat
+	 msmProject.wxi
+	 msmProject.wxs
+5. Call amake.bat to compile each wixMsmProject
+
+6. Integrate newly added wixMsmProjects into rereg project
+
+$\ACE\E-Branches\B\AcadE\Install\installProjects\wixMsiProjects\rereg\Modules.xml
+  <Modules PathPattern="$(env.ACE_WixProjects)/wixMsmProjects/node_modules/{0}/msmProject.wxi">
+    <Include File="$(env.ACE_WixProjects)/wixMsiProjects/_common/Feature.wxi"/>
+    <Module Name="bin" Feature="ProductFeature" ></Module>
+    <Module Name="chai" Feature="ProductFeature" ></Module>
+  </Modules>
+
+$\ACE\E-Branches\B\AcadE\Install\installProjects\wixMsiProjects\rereg\msiProject.wxs
+        <?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/SUB_DIR_ACEProjectCentric.wxi?>
+  
+        or
+
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/node_modules/SUB_DIR_ACE_DIR_NM_bin.wxi?>
+        <?include $(env.ACE_WixProjects)/_common/dirFragments/node_modules/SUB_DIR_ACE_DIR_NM_chai.wxi?>
+
+7. Call $\ACE\E-Branches\B\AcadE\Install\installProjects\wixMsiProjects\rereg\amake.bat to compile and build rereg project
+
+8. Run acerereg
+	

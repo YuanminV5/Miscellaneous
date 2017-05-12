@@ -1,0 +1,11 @@
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_cha.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_lib.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_lib_cha.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_cor.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_int.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_uti.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_ass.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_dee.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_dee_lib.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_typ.wxi?>
+<?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\chai\SUB_DIR_ACE_DIR_NM_typ_lib.wxi?>

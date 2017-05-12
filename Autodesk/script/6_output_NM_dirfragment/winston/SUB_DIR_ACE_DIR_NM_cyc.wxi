@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_NM">
+		<?ifndef ACE_DIR_NM_cyc?>
+		<Directory Id="ACE_DIR_NM_cyc" Name="cycle" />
+		<?define ACE_DIR_NM_cyc?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

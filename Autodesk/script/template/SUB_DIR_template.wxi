@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/ParentDirFragment.wxi?>
+	<DirectoryRef Id="ParentDir">
+		<?ifndef MyDirectoryID?>
+		<Directory Id="MyDirectoryID" Name="MyDirectoryName" />
+		<?define MyDirectoryID?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

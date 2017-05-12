@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={C433B95D-E4CA-47C5-87F6-80ADDC043351}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={2C77261A-D638-43F0-BAC8-8B93BD0BF026}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="livedb_mongo" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="livedb_mongo" Comments="livedb_mongo" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_NM_liv.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_NM_liv_NM_asy.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_NM_liv_NM_asy_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_mon.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_mon_lib_mon.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_aut.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_col.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_bat.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_mon_lib_mon_com.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_mon_lib_mon_con.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_rep.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_str.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_gri.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_res.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_bso.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_bro.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_bso_bui.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_Rel.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_obj_bso.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ext.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ia3.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_x64.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_bso_lib_bso.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_nan.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_too.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_jas.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_bui.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_bui_Rel.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_bui_Rel_obj_ker.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_lib_aut.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_lib_win.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_wra.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_NM_nan.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_ker_tes_win.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_rea.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_rea_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_rea_NM_cor.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_rea_NM_cor_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_inh.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_isa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_isa_bui.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_rea_NM_str.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_NM_liv_NM_mon.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_NM_liv_NM_mon_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb_mongo\SUB_DIR_ACE_DIR_NM_NM_liv_NM_mon_lib.wxi?>
+    <ComponentGroupRef Id="livedb_mongo.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\livedb_mongo\msmProject.wxi?>
+</Wix>

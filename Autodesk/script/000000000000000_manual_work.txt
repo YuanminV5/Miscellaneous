@@ -1,0 +1,8 @@
+1. copy content in %script_location%\4_output_AfterFormatting to $(env.WixFragmentsACADE)\ProjectCentric\node_modules
+   copy %script_location%\extra\server.wxs to $(env.WixFragmentsACADE)\ProjectCentric
+
+2. Copy content in %script_location%\extra\SUB_DIR_ACE_DIR_AutodeskForNode.wxi and %script_location%\extra\SUB_DIR_ACE_DIR_ProjectCentricServer.wxi to $(env.ACE_WixProjects)\_common\dirFragments\
+   Copy %script_location%\extra\SUB_DIR_ACE_DIR_centric_config.wxi and %script_location%\extra\SUB_DIR_ACE_DIR_centric_public.wxi to $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric
+   Copy content in %script_location%\6_output_NM_dirfragment to $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules
+
+3. Copy content in %script_location%\7_1_output_NM_msmProject to $(env.ACE_WixProjects)/wixMsmProjects/ProjectCentric/node_modules

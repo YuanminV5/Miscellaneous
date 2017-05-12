@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_sha_tes.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_sha_tes">
+		<?ifndef ACE_DIR_NM_sha_tes_hel?>
+		<Directory Id="ACE_DIR_NM_sha_tes_hel" Name="helpers" />
+		<?define ACE_DIR_NM_sha_tes_hel?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

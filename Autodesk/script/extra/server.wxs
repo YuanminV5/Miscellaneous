@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="server.wxs">
+			<Component Guid="{3106FB63-EB4C-445F-9432-0864F7EF9C58}" Id="centric_store_configuration" Directory="ACE_DIR_centric_config">
+				<File Id="ConcurrentDocumentStore_conf" Source="$(env.ACETOP)\src\AceProjectCentric\AdConcDocStore\config\Autodesk.ConcurrentDocumentStore.$(env.debrel).conf"/>
+			</Component>
+			<Component Guid="{6B743033-64C3-46D1-A650-3C6E24388531}" Id="centric_client_api" Directory="ACE_DIR_centric_public">
+				<File Id="AceProjectClientApi" Source="$(env.ACETOP)\src\AceProjectCentric\AdConcDocStore\public\AceProjectClientApi.html"/>
+			</Component>
+			<Component Guid="{70EA6519-8327-47F8-8906-FECF79E1F4A0}" Id="centric_document_store_client" Directory="ACE_DIR_ProjectCentricServer">
+				<File Id="ConcurrentDocumentStoreClient" Source="$(env.ACETOP)\src\AceProjectCentric\AdConcDocStore\Autodesk.ACE.ConcurrentDocumentStoreClient.js"/>
+			</Component>
+			<Component Guid="{42FA68BB-54AE-4BF5-88C0-F3B4107F9A79}" Id="centric_document_store" Directory="ACE_DIR_ProjectCentricServer">
+				<File Id="ConcurrentDocumentStore" Source="$(env.ACETOP)\src\AceProjectCentric\AdConcDocStore\Autodesk.ConcurrentDocumentStore.js"/>
+			</Component>
+			<Component Guid="{8A477620-E817-4CE0-8E03-F63B72E0764A}" Id="centric_document__install" Directory="ACE_DIR_ProjectCentricServer">
+				<File Id="ConcurrentDocumentInstall" Source="$(env.ACETOP)\src\AceProjectCentric\AdConcDocStore\installService.js"/>
+			</Component>
+			<Component Guid="{E286DBDA-A6BB-4293-8147-6E9A364E88C6}" Id="centric_document_uninstall" Directory="ACE_DIR_ProjectCentricServer">
+				<File Id="ConcurrentDocumentUninstall" Source="$(env.ACETOP)\src\AceProjectCentric\AdConcDocStore\uninstallService.js"/>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Include>

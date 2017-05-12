@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb_mongo/SUB_DIR_ACE_DIR_NM_too.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_too">
+		<?ifndef ACE_DIR_NM_jas?>
+		<Directory Id="ACE_DIR_NM_jas" Name="jasmine-1.1.0" />
+		<?define ACE_DIR_NM_jas?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

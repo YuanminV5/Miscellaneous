@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Fragment>
+		<ComponentGroup Id="winston.wxs">
+			<Component Id="cmp16EB58BCDDC9ABED101E42AE074BE522" Guid="{FA02DF61-1F34-48EC-99EF-5525459A1ABE}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="fil9E07725D31DCB3F2C4D91FE3B990CC89" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\.jshintrc"/>
+			</Component>
+			<Component Id="cmp1DD47367B3605A30E9EA7CE88FC10F0D" Guid="{C2D2A607-5A81-4E24-93BE-AAD446159E30}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="fil02F011E83424AE8B55BBFEA0621EB23D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\.npmignore"/>
+			</Component>
+			<Component Id="cmp8DE9A571D732B94708B138C3946AD3CB" Guid="{1353B1A9-19D4-49A7-A2A0-38C41EA84D3E}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="fil53094C2E762EF13358BECBD262AFDD61" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\.travis.yml"/>
+			</Component>
+			<Component Id="cmp34F3D0C59E6ED3B86A461A78A4E77E1C" Guid="{118F46CB-FAAE-45A1-930D-75C0E3C48309}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="fil7CF5E186A48F58D3705D9DBB3B9EF7BE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\CHANGELOG.md"/>
+			</Component>
+			<Component Id="cmp4CE7F184DD7F309263F7C8238D99055C" Guid="{1DF811F1-F535-4B5C-BBDE-FC9A9FEF83FA}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="fil36787C00E886302F48C23A93CE079273" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\LICENSE"/>
+			</Component>
+			<Component Id="cmpAF62D8348A815E7B459343845DEF148C" Guid="{41AD0B9C-7042-48DF-9E5F-A2B552E1B918}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="filABEE537C638397570A1A01D47383F162" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\package.json"/>
+			</Component>
+			<Component Id="cmp045445E763384067AAC30ADEF5E0E7EF" Guid="{56885AF9-3D61-4B74-A0ED-6CEF34B204F0}" Directory="ACE_DIR_NM_NM_win">
+				<File Id="fil3164C7BEC2CD01886B5DCC868BD73C59" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\README.md"/>
+			</Component>
+			<Component Id="cmp1AD968754DA3BA0F663ADE416CD5CD3D" Guid="{1C2CE579-A25C-47AA-BD0C-B5D777A312CD}" Directory="ACE_DIR_NM_NM_win_doc">
+				<File Id="fil4D6B9C202D7888C5BF3DE7F5B9353F0D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\docs\transports.md"/>
+			</Component>
+			<Component Id="cmp825B5A5E82CD975C57E78C61B804A42E" Guid="{A1DF64A3-C25A-4E87-94DD-B05B40B7E267}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="fil02D0E28DCD930F5C0295827A35596D2B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\color-message.js"/>
+			</Component>
+			<Component Id="cmp999782DF63A9FF1E42CCE1351B7A06E7" Guid="{D663C470-0D46-4B11-ABAA-468C4D908BAB}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="fil289DA76A58825F215B638CA6096042B9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\couchdb.js"/>
+			</Component>
+			<Component Id="cmp1A184586FF4073578B508F3CB5235B39" Guid="{1EBB2B8F-0386-480B-AD7C-A58800C7817F}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="filFA45BA7A171827B13DDC08C3180DA6C8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\create-file.js"/>
+			</Component>
+			<Component Id="cmpDABB92D4293C7094125DFFC63D6F25E8" Guid="{13BC64D8-F9C8-4219-A4D5-5C9188BDC643}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="fil5D8B690D93E0169E753AA51417E4F58A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\custom-levels.js"/>
+			</Component>
+			<Component Id="cmp3FCB49B09219FB6132141EC5B468D8B4" Guid="{77ED928A-BB55-41CF-AD39-2B0BBB67C222}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="fil8821ACCB363BD440228E19308DB0B5A5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\custom-pretty-print.js"/>
+			</Component>
+			<Component Id="cmp49D48B0CC2B6BD54A7E17263295ED071" Guid="{478D31E8-A88D-47A4-888F-371D987C99FF}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="filFEEC296F87AD897FF50C21EBFADA193E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\exception.js"/>
+			</Component>
+			<Component Id="cmpAB860EFCDB51730CF8EF51F01831C4A6" Guid="{3DC2EA8D-8340-42FE-AA20-1020BB43C95D}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="filBA780BCF103FD893D44C2DC6ABC9D005" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\raw-mode.js"/>
+			</Component>
+			<Component Id="cmp3EE3D054943E332E1E17819D29DC504C" Guid="{CC42BEFA-82DC-4C8F-B8A4-A673EA49E39E}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="filC8A38661044E8964071370FD856865DF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\regular-expressions.js"/>
+			</Component>
+			<Component Id="cmp38575FDA21D66A876893BB6F14D9650B" Guid="{9643BFC1-6C17-4949-BA48-1B1E2FDA7A9A}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="fil057F97DDA98D3746DDB9024D03A132C5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\silly-levels.js"/>
+			</Component>
+			<Component Id="cmpB343D0F93B3B668BB54F3BBB83241319" Guid="{37EB295B-8EDD-40D2-8FF7-C86BD58119DE}" Directory="ACE_DIR_NM_NM_win_exa">
+				<File Id="filFF886594BFE06FA73C39A9F2CF5C6EEE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\examples\webhook-post.js"/>
+			</Component>
+			<Component Id="cmp22669268F9765522E7E40E2EE967F4E4" Guid="{4D351650-8B03-4562-965E-0B072E8C4C73}" Directory="ACE_DIR_NM_NM_win_lib">
+				<File Id="filF384D0CD649BEC349AD502A738ABFA84" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston.js"/>
+			</Component>
+			<Component Id="cmp485506970769A638C3092AFED77FBE3E" Guid="{9C39E333-9E49-48F4-B9A3-FC970CBC9BC9}" Directory="ACE_DIR_NM_NM_win_lib_win">
+				<File Id="fil12FE43D7B02C38182C225523EB8623C0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\common.js"/>
+			</Component>
+			<Component Id="cmpD10460D7CFFD261547C62E61F49870C5" Guid="{B72D93E2-9F35-4965-B45B-88647DB6013E}" Directory="ACE_DIR_NM_NM_win_lib_win">
+				<File Id="filFC2DFC7BCEB3ECDB919452154D1A3CB3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\config.js"/>
+			</Component>
+			<Component Id="cmp3437D6E7DF1B980BAFAEE300F9AECACE" Guid="{5BE709F0-3D4B-4C6A-BFAA-0C89C48E913A}" Directory="ACE_DIR_NM_NM_win_lib_win">
+				<File Id="fil79988B315373B8C052532BEFFB122D2D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\container.js"/>
+			</Component>
+			<Component Id="cmp117336568137B548C64D2AA26490A526" Guid="{0E9E6369-AC70-4054-B60A-0B9731A82AF2}" Directory="ACE_DIR_NM_NM_win_lib_win">
+				<File Id="fil2F711659ACFDAD9FE47A6C6DEA8400D5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\exception.js"/>
+			</Component>
+			<Component Id="cmp0D3522266F7A2B313EAFF1C4C3098BDD" Guid="{4C7B03E5-8AF1-46CA-A7EE-E6DC3DC65BEF}" Directory="ACE_DIR_NM_NM_win_lib_win">
+				<File Id="fil9D14772FECF1A2FFCD762E8417F5320E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\logger.js"/>
+			</Component>
+			<Component Id="cmpFDF8847CAD4AE79BE955A506F3BE61FE" Guid="{3E067007-2587-47E3-9D8E-46D853DDC39B}" Directory="ACE_DIR_NM_NM_win_lib_win">
+				<File Id="filDE4CF1DC3764279DCBB14AFACDCDEB93" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports.js"/>
+			</Component>
+			<Component Id="cmp306BF4E91E5DB959A4441CAC6431204C" Guid="{BFF0D3C2-AEE2-4CD2-99AC-B8B54BED51CF}" Directory="ACE_DIR_NM_NM_win_lib_win_con">
+				<File Id="filEEB3103247115DA2E89BF479807FBEDC" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\config\cli-config.js"/>
+			</Component>
+			<Component Id="cmp493F853FECB0AA7E1CE7F59C5DFA4D27" Guid="{28C9DC75-F732-4E3C-8FB4-77B4929E7DB8}" Directory="ACE_DIR_NM_NM_win_lib_win_con">
+				<File Id="filD34CE1BDC6E9A3027ACF49966730BBE7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\config\npm-config.js"/>
+			</Component>
+			<Component Id="cmp38656727B56BF70E1F1692A3EFF31D3D" Guid="{C75F3021-0D2B-47C9-93AA-732D29A2B9CB}" Directory="ACE_DIR_NM_NM_win_lib_win_con">
+				<File Id="fil324FD83F6BE52A3B919A03BD5C4C71D0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\config\syslog-config.js"/>
+			</Component>
+			<Component Id="cmp87B6BB6350DD77389C365A136CF38372" Guid="{0255617E-13A0-4C6B-B39C-8759A5F839B5}" Directory="ACE_DIR_NM_tra">
+				<File Id="fil35A4DF54BC118A982DB1DBAE3C44980B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\console.js"/>
+			</Component>
+			<Component Id="cmp9A10AA2BF4DB87623ADEDA746EAF8D11" Guid="{D6C08D71-536B-4513-ABC2-66D54721D02B}" Directory="ACE_DIR_NM_tra">
+				<File Id="fil70422E9802233807141074E46413EBDF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\daily-rotate-file.js"/>
+			</Component>
+			<Component Id="cmpBBCD66D0D7036698B7ED102E2FE14E84" Guid="{37FD22EA-03FD-4F68-9792-C3DB31941565}" Directory="ACE_DIR_NM_tra">
+				<File Id="fil822B82616BB338AB084D7DF5F181D03F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\file.js"/>
+			</Component>
+			<Component Id="cmp618F0F358C86C1B7CB97790F26A26CB3" Guid="{4AFC790A-768F-4655-A0F3-EB3B930CA511}" Directory="ACE_DIR_NM_tra">
+				<File Id="filCE767A873F72AB8022A7EB9B2DA343BB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\http.js"/>
+			</Component>
+			<Component Id="cmp39F59E5410A5054446E93339ADA73FBF" Guid="{CB47C3B3-8E19-4255-8938-E10B6489D04A}" Directory="ACE_DIR_NM_tra">
+				<File Id="filBE2E40B5D3F7D5C4F2A4CF4C5A33F1BF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\memory.js"/>
+			</Component>
+			<Component Id="cmp0032E3B472DDF381F202BD9FB100794E" Guid="{1E431829-7ECB-49B1-93BC-2BA36C00A7BB}" Directory="ACE_DIR_NM_tra">
+				<File Id="filCF56199BB4E930A46D3038EE8D799E21" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\transport.js"/>
+			</Component>
+			<Component Id="cmp731B03CAEEEFD2BAD15A27818F2080D3" Guid="{F103A449-7760-4D84-8936-60BAC93CE7A0}" Directory="ACE_DIR_NM_tra">
+				<File Id="fil9E595FC32B0968175CE1A6F26AE42B8F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\lib\winston\transports\webhook.js"/>
+			</Component>
+			<Component Id="cmpD71148EDBD1C8AC3FCD318FFF6FD91A6" Guid="{B612DEDF-C61A-4E46-BC31-09422533441B}" Directory="ACE_DIR_NM_NM_win_NM_asy">
+				<File Id="fil9826C8A986EDC0C03188FECE4A1BBCD6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\.travis.yml"/>
+			</Component>
+			<Component Id="cmp587939BFE2B98F28828E1BAB40CC220E" Guid="{C9A13438-8355-4998-95BA-0508C3DCB391}" Directory="ACE_DIR_NM_NM_win_NM_asy">
+				<File Id="fil80FAFCC6C2EB3A1E918D860A0ADE45BB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\bower.json"/>
+			</Component>
+			<Component Id="cmpD41166CC7A5C3C6451B92E8716422DB5" Guid="{D24155FA-02E9-47D8-8972-3FA92B39625B}" Directory="ACE_DIR_NM_NM_win_NM_asy">
+				<File Id="fil7ABE9F0C53D85CFA72FDC638408FC63F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\component.json"/>
+			</Component>
+			<Component Id="cmp4B64F3B4F23F990A2E740D278F19A7C6" Guid="{CC6C325E-4D54-4BE8-92FA-EE80FE9AF4DE}" Directory="ACE_DIR_NM_NM_win_NM_asy">
+				<File Id="fil459525AA414E4B0116CAB6A166C454D7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\LICENSE"/>
+			</Component>
+			<Component Id="cmp9D8DB70C10FC69A5CA88D57FFF606EC2" Guid="{75EBDF23-D3DE-43D2-8E4D-3C898A87CC57}" Directory="ACE_DIR_NM_NM_win_NM_asy">
+				<File Id="filF4D56A3F49F798AC0910662C102FED74" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\package.json"/>
+			</Component>
+			<Component Id="cmp1C1E16FF2DE9AB2D4815E232503CBBB0" Guid="{64872E51-3E30-4238-BC50-5A7D40662111}" Directory="ACE_DIR_NM_NM_win_NM_asy">
+				<File Id="fil6E0B0F966DD9BD21CB99EA8966251D97" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\README.md"/>
+			</Component>
+			<Component Id="cmpC1B6A200DE3D325873A44122192C2798" Guid="{2E4A0E9C-6CAE-4D58-869D-FC1BC24E11AF}" Directory="ACE_DIR_NM_NM_win_NM_asy_lib">
+				<File Id="filCDD084B765486FFE15C03FFFC12D8FBB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\lib\async.js"/>
+			</Component>
+			<Component Id="cmpE62EB7F9D9FEF74F37D663A74F553C59" Guid="{FF629E25-7D6D-49DC-AA73-92C4B6EFF7A4}" Directory="ACE_DIR_NM_NM_win_NM_asy_sup">
+				<File Id="fil748E79472827E4E982787AAA8FCB2EF5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\async\support\sync-package-managers.js"/>
+			</Component>
+			<Component Id="cmp94E18084977771346476DF6A40119077" Guid="{8F6E6556-8A47-46FD-B9DE-1630BAFC5FB5}" Directory="ACE_DIR_NM_NM_win_NM_col">
+				<File Id="filF077A7EEFE8050A08F962F395392D15C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\.travis.yml"/>
+			</Component>
+			<Component Id="cmp3CC1E04683BCAB0DAA1AF1F12A47341C" Guid="{A31074E1-5D5B-481B-8A95-0EBE6F59220B}" Directory="ACE_DIR_NM_NM_win_NM_col">
+				<File Id="fil71D162CD2F759241E79E404025D2A925" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\MIT-LICENSE.txt"/>
+			</Component>
+			<Component Id="cmp4DD5EE30896DC0295F8B973A4DD58329" Guid="{30D5A2C1-7EBA-4200-983C-02CC3E8B1D26}" Directory="ACE_DIR_NM_NM_win_NM_col">
+				<File Id="fil3342E72CAC3ED6B730474A7DE6A0F432" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\package.json"/>
+			</Component>
+			<Component Id="cmp8B7180FB03FEA722F9C6FC38BB2095DD" Guid="{0B34AF66-E86E-4977-9512-77B079127CFF}" Directory="ACE_DIR_NM_NM_win_NM_col">
+				<File Id="filC75B6E1D1EB500169E7B52276BFF7807" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\ReadMe.md"/>
+			</Component>
+			<Component Id="cmpDA149492EE281F94BC06FFA272805782" Guid="{CAB757A4-87A3-4CE6-95AC-6B83A46F11F9}" Directory="ACE_DIR_NM_NM_win_NM_col">
+				<File Id="filD5877B0A62E72162720AC278F25A8B5C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\safe.js"/>
+			</Component>
+			<Component Id="cmp54CFF62A22C733FC095DD5B4CBB5686D" Guid="{58B5E21B-494D-49FB-B012-A931210C72A6}" Directory="ACE_DIR_NM_NM_win_NM_col_exa">
+				<File Id="filC0424415BC155BB83E88B65F5671DA93" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\examples\normal-usage.js"/>
+			</Component>
+			<Component Id="cmpC691F87B42E325D7AF333649CE6FF311" Guid="{2673CB5B-BB68-454C-8798-9E88B0D5A425}" Directory="ACE_DIR_NM_NM_win_NM_col_exa">
+				<File Id="fil16B3B778FB0AD58BC63E23ADFD55F47B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\examples\safe-string.js"/>
+			</Component>
+			<Component Id="cmp9B212BD55060A8FCD2C1573683C909D8" Guid="{008775AE-98B9-44A9-8AF0-3EF3C4721B60}" Directory="ACE_DIR_NM_NM_win_NM_col_lib">
+				<File Id="fil646E1E01057E700C1DA3275752F248BF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\colors.js"/>
+			</Component>
+			<Component Id="cmpE9079CCD0E1CC3ED1FE409F2CA10508A" Guid="{38073894-E55B-427D-9666-FEE341140931}" Directory="ACE_DIR_NM_NM_win_NM_col_lib">
+				<File Id="filE46124C876553B4B5792590C2ADC93A4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\extendStringPrototype.js"/>
+			</Component>
+			<Component Id="cmp22B6B9EB713E65EC6E428E82D0DA1D09" Guid="{901541A4-2418-472A-AFAC-785877E6325A}" Directory="ACE_DIR_NM_NM_win_NM_col_lib">
+				<File Id="filCBF01E8151E66B99348662E70A8C2C68" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\index.js"/>
+			</Component>
+			<Component Id="cmp305D31791ABE0F6D8ABB4861437449DB" Guid="{1776C73C-0EAE-4267-A038-0784EA94970F}" Directory="ACE_DIR_NM_NM_win_NM_col_lib">
+				<File Id="fil4009A5220939E2CA32548A834FC5F4DA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\styles.js"/>
+			</Component>
+			<Component Id="cmp459A41BDDFA89F25DD4493379C68DFF2" Guid="{D78E6132-E597-49F2-AD65-103FA986BB2D}" Directory="ACE_DIR_NM_cus">
+				<File Id="fil819C427B39BB3894C7E9AFAF45498DB0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\custom\trap.js"/>
+			</Component>
+			<Component Id="cmp5633CB5E4C4D580C17AF032D52672732" Guid="{20F83EDA-474C-45BC-AB85-A184EB00F761}" Directory="ACE_DIR_NM_cus">
+				<File Id="fil889BA8EB1AC687FC1AC8F02B06C33F19" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\custom\zalgo.js"/>
+			</Component>
+			<Component Id="cmp25B311AB8AB1C7C07AEEDD94BA92122C" Guid="{CC076224-E72A-457C-8CEC-71902A14DBDD}" Directory="ACE_DIR_NM_map">
+				<File Id="filC1703A8E56844F5F055DC6862DA3FF2E" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\maps\america.js"/>
+			</Component>
+			<Component Id="cmpD0D305D743D0CA3CFDBEE44DC26DFBCF" Guid="{3852D19B-479F-4319-BB60-BBDB713B3271}" Directory="ACE_DIR_NM_map">
+				<File Id="fil5AC7722828CDD93B05E07BEAE88A405A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\maps\rainbow.js"/>
+			</Component>
+			<Component Id="cmp0D2469C95348084A959287B6B802D2EF" Guid="{5A6CDE49-E730-4D78-B6C2-0944782AECE6}" Directory="ACE_DIR_NM_map">
+				<File Id="fil355F666C4C577DD1A77BD2AACAC2C717" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\maps\random.js"/>
+			</Component>
+			<Component Id="cmp3F8CC5B8E166072E2A964AE25E770C1D" Guid="{500DEE2B-60B1-4511-BCAC-82A09B4600C1}" Directory="ACE_DIR_NM_map">
+				<File Id="filC8F5FDB6E0FC15086B80BDA8F9C04A68" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\maps\zebra.js"/>
+			</Component>
+			<Component Id="cmp280B9A0C600692233E37E0C5D1BFE203" Guid="{52B15F1E-8133-4EE8-949A-A07E4E631199}" Directory="ACE_DIR_NM_sys">
+				<File Id="filF0ACA3D0DF080D88C2C8424E7F10E2F4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\lib\system\supports-colors.js"/>
+			</Component>
+			<Component Id="cmp83748A427665F7A845B51AFF6F21A34C" Guid="{0E0065DA-BCEB-4DE6-8265-02D6A6B35CEA}" Directory="ACE_DIR_NM_NM_win_NM_col_scr">
+				<File Id="fil7054BFCF9151B32A569A7778E0D6219A" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\screenshots\colors.png"/>
+			</Component>
+			<Component Id="cmp8FAFE9FCDDB4A03D0AF2D738ECD1158D" Guid="{C00DBD21-8D88-483C-9F98-2E904595F4FB}" Directory="ACE_DIR_NM_NM_win_NM_col_tes">
+				<File Id="filF5DCBB6F576F02C4DEAE606082E6B0B3" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\tests\basic-test.js"/>
+			</Component>
+			<Component Id="cmp39523C3E0D8BD614E0E092044EE8664E" Guid="{CBF42538-67D9-489A-B018-9F65889EB9AA}" Directory="ACE_DIR_NM_NM_win_NM_col_tes">
+				<File Id="fil98D752757ECCDF172AA9AE0DE68319A1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\tests\safe-test.js"/>
+			</Component>
+			<Component Id="cmpFD58C236599E17451C1CA2E2ED3BB8AA" Guid="{196F4825-EA9E-470C-AEB0-43A0CBE01757}" Directory="ACE_DIR_NM_the">
+				<File Id="filB743943D5AC4EB2571F4A5D3982CA789" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\colors\themes\generic-logging.js"/>
+			</Component>
+			<Component Id="cmpA8BDA0638E3E6644FD2FC4879B497038" Guid="{553ABB49-3427-487A-9BF7-E1307175C375}" Directory="ACE_DIR_NM_cyc">
+				<File Id="fil7B59931E0C391503436C54314353E956" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\cycle\cycle.js"/>
+			</Component>
+			<Component Id="cmp2DDD8BE6D8DA5AE8F299CB425BAE3486" Guid="{AED9473C-257F-4C16-A1C0-9529A9697852}" Directory="ACE_DIR_NM_cyc">
+				<File Id="fil170603B8190D0A95EFEA2790EE883CA0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\cycle\package.json"/>
+			</Component>
+			<Component Id="cmpBE347CADAA4B90E9350635AD89F2094F" Guid="{D19ACD7D-5128-4713-AF4F-A95250C36B58}" Directory="ACE_DIR_NM_cyc">
+				<File Id="filA4654A8CC4A2E1BBC6F197E787D033F9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\cycle\README.md"/>
+			</Component>
+			<Component Id="cmp2B7A4D4F9C418101E961CA88E5C12F90" Guid="{3134D289-D63E-42D2-B4D3-11ADEA2BAB5C}" Directory="ACE_DIR_NM_eye">
+				<File Id="fil635F29CEF45CCD6775F03FC1832A37ED" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\eyes\LICENSE"/>
+			</Component>
+			<Component Id="cmp054BC5675B5F7DF58FE9450727FB4FA2" Guid="{1069A309-5FC1-4941-9A3C-5051EE86BCDC}" Directory="ACE_DIR_NM_eye">
+				<File Id="fil3AED2960FC8B778D15D8D02583F96DAA" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\eyes\Makefile"/>
+			</Component>
+			<Component Id="cmpD2B510E0733CC0756BC8C7A8F384A87E" Guid="{70A83446-BD1A-4BEF-8DA7-221787FE48AE}" Directory="ACE_DIR_NM_eye">
+				<File Id="filD0EF9D1E924827F372E74BC350301FD8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\eyes\package.json"/>
+			</Component>
+			<Component Id="cmpE2D72849C0A6292885EB06CD0DA6B59E" Guid="{62510A05-8E99-4045-A5ED-D9A73C324EE6}" Directory="ACE_DIR_NM_eye">
+				<File Id="fil8143A294FFE186BDE3E255A3353E25ED" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\eyes\README.md"/>
+			</Component>
+			<Component Id="cmp1A22D7273D359D2BA90C67486247895B" Guid="{1315D699-BE42-40DF-8F8C-3BF71D54551E}" Directory="ACE_DIR_NM_eye_lib">
+				<File Id="filD7AFAECFE0AB22EC92468DC9A3ACD557" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\eyes\lib\eyes.js"/>
+			</Component>
+			<Component Id="cmp5542322BD1A74A922BAE53AAAA9425E9" Guid="{147CC961-0102-4D92-BA58-40B17D11FF2B}" Directory="ACE_DIR_NM_eye_tes">
+				<File Id="fil020BCAA9C4309FB1A27AF5130E86C259" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\eyes\test\eyes-test.js"/>
+			</Component>
+			<Component Id="cmp65C31D33329630DB23F4293A9B44BC55" Guid="{D3A10FEE-55BD-42FA-82F7-83AF0FCBFD02}" Directory="ACE_DIR_NM_iss">
+				<File Id="fil925ECD85E37B00A8C84C7DD33357F2E1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\.jshintrc"/>
+			</Component>
+			<Component Id="cmp5B80A1FB6ECE4DF82B067DF589ECB404" Guid="{E5991E2C-EFE8-48AF-B52D-3854A6BCCBCF}" Directory="ACE_DIR_NM_iss">
+				<File Id="filE498269465EF953680D5C249C76D49C1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\.npmignore"/>
+			</Component>
+			<Component Id="cmp3E34C4DBFE5AFADCC78F623C0A993430" Guid="{99416F95-EC3F-47DD-A873-9D7BEA79988A}" Directory="ACE_DIR_NM_iss">
+				<File Id="fil1D293FE9424B660BD8134680D5BC01FE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\.travis.yml"/>
+			</Component>
+			<Component Id="cmpDF889AC526EEE5DD5B00C70084F0C016" Guid="{04DA1028-5079-4774-B478-BBE487A6E0B7}" Directory="ACE_DIR_NM_iss">
+				<File Id="fil99B806BD277D525DF38B50742F0B3FEB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\isstream.js"/>
+			</Component>
+			<Component Id="cmp9B14765B4EE112DD8C6AC6A00C772848" Guid="{C47477D4-07CF-4A52-A3CF-4097FC2E4CBE}" Directory="ACE_DIR_NM_iss">
+				<File Id="filDBEA9917D4353053A3822C2FA39C7A76" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\LICENSE.md"/>
+			</Component>
+			<Component Id="cmp39C22F2048EABB3A44A5EC3F3D74414C" Guid="{3DFC5C61-D6C9-4987-9E48-CA7AA0D17741}" Directory="ACE_DIR_NM_iss">
+				<File Id="fil1F02CF0FB323340C19CD6F3157FA69DB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\package.json"/>
+			</Component>
+			<Component Id="cmp4D1D51EDE98C8E5B601BCBD52A6F35BE" Guid="{DA675482-6378-4F43-AD54-42BE132C4E63}" Directory="ACE_DIR_NM_iss">
+				<File Id="fil47DFA73BB90F318C92C70F5F955AA9CB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\README.md"/>
+			</Component>
+			<Component Id="cmp168F70C2CEC45E41BBD1743E9ED5C6D1" Guid="{702E34C1-C98C-4A29-90F2-BE490898B65D}" Directory="ACE_DIR_NM_iss">
+				<File Id="fil7FB552DF0D591A099CD79C7E51034B87" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\isstream\test.js"/>
+			</Component>
+			<Component Id="cmp0127E977F8E19D1DDFA3FF896172665B" Guid="{783881A7-4A5C-4913-9CD7-2DD21BE6D1AF}" Directory="ACE_DIR_NM_NM_win_NM_pkg">
+				<File Id="fil0511B142F083B4E9AFBA117D26824374" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\.npmignore"/>
+			</Component>
+			<Component Id="cmpFCECAF7AEFE043AC499805BE3AD0E145" Guid="{159A218C-5DF6-4F33-985F-A0BE4B8CA52E}" Directory="ACE_DIR_NM_NM_win_NM_pkg">
+				<File Id="fil7D5CDB14DCE98E8DE8E8D07CE4C9BCA2" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\LICENSE"/>
+			</Component>
+			<Component Id="cmp646FA51A4F1360EB195C1C0E54984738" Guid="{AC76B130-26B7-4967-B743-CBD888977D89}" Directory="ACE_DIR_NM_NM_win_NM_pkg">
+				<File Id="fil4F07D64E3CD591699B3CC8AFC8C687F1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\package.json"/>
+			</Component>
+			<Component Id="cmpA841A92C159CF9C840225B6EF03C4427" Guid="{5A67EC02-6398-4057-80E8-9782035E2820}" Directory="ACE_DIR_NM_NM_win_NM_pkg">
+				<File Id="fil2C3B7EFA5D0A2B6320C24D998DEAEEDF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\README.md"/>
+			</Component>
+			<Component Id="cmp270BF4F0519F7BE8282E0E3EF1702C46" Guid="{9A9549B0-48CB-416E-8825-4D90127746BC}" Directory="ACE_DIR_NM_NM_win_NM_pkg_doc">
+				<File Id="filAB075C549F5C73134FE3CDC792CE29C7" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\docs\docco.css"/>
+			</Component>
+			<Component Id="cmp4BBFE5DA581759781C079F2927F0E11B" Guid="{1CEF347E-0721-4486-9C85-FD22C6593C80}" Directory="ACE_DIR_NM_NM_win_NM_pkg_doc">
+				<File Id="fil78D11BE4C585468EB985AA9BE37FF6B1" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\docs\pkginfo.html"/>
+			</Component>
+			<Component Id="cmpF287B1CA114A77B7115351441063775B" Guid="{0A1F7BF1-C435-4422-B6C2-2489B90A80C6}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="fil6D37FDC0D49FB1F675370F508C1CB0D4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\all-properties.js"/>
+			</Component>
+			<Component Id="cmpF0398F430A935065C274C573A60A4E29" Guid="{094A891B-3932-4B90-9804-779AB346DBC6}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="fil71040620742A4068AF64B39119DCA2D4" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\array-argument.js"/>
+			</Component>
+			<Component Id="cmp532D65D89536F3D04A1C9EB1601E3BB8" Guid="{3D2AC409-88C3-4D5D-A825-DD141A31E817}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="fil6F75341B25C245E596CFBD2D75E2C04B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\multiple-properties.js"/>
+			</Component>
+			<Component Id="cmp0DABD8BA735B1659D4FE456B8DA7D7D5" Guid="{F0A45139-EB20-4E94-9F24-F7098AB8F111}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="fil72EBFCF2BEC1EC4D446DA29F25530571" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\object-argument.js"/>
+			</Component>
+			<Component Id="cmpA34006AD314B608CA5A70217E6E4F731" Guid="{6D65F579-1991-42BD-B76C-2BDB303678E5}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="fil0CDFC5475425E5F8D697568AF6B825BE" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\package.json"/>
+			</Component>
+			<Component Id="cmp0274E3F52211B2E9B616DEDB01041D32" Guid="{B0E4A2DC-24AD-45B0-8EEB-6D5BAE06A482}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="filAA59C9C08BF989A86EA4061736CC6414" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\single-property.js"/>
+			</Component>
+			<Component Id="cmpCD747A301D68635627C517349155984E" Guid="{4110D23B-8686-4E04-881F-B8C21DFFBF9E}" Directory="ACE_DIR_NM_NM_win_NM_pkg_exa">
+				<File Id="fil0841473A6A8FDEA6EB91BE4CCA751F81" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\target-dir.js"/>
+			</Component>
+			<Component Id="cmp5DC49DC9F211B7DC79C8D54B2374644C" Guid="{9C58775E-579B-4C1B-AA40-8DC380BB207C}" Directory="ACE_DIR_NM_sub">
+				<File Id="fil02204255AD640CE23EC5A49D5B6D8595" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\examples\subdir\package.json"/>
+			</Component>
+			<Component Id="cmp441FBA4EE3BB6E6604BA76F1380DB68B" Guid="{FFE22396-F83D-4D66-AAC9-6089DE960105}" Directory="ACE_DIR_NM_NM_win_NM_pkg_lib">
+				<File Id="filD9E22AB4EDC0C1C21E21ABC91A4BB2A6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\lib\pkginfo.js"/>
+			</Component>
+			<Component Id="cmpAB3B32702AA3EE3CE83CC3ECEEF1FF63" Guid="{A566922B-585C-4526-8D65-F2442F436EF5}" Directory="ACE_DIR_NM_NM_win_NM_pkg_tes">
+				<File Id="filADAC7F27A888CC51A2838C3264DF2B17" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\pkginfo\test\pkginfo-test.js"/>
+			</Component>
+			<Component Id="cmpF97FBAF89CEEBF3687E9C0C229A3C88D" Guid="{F993B4B4-F624-4115-A946-89A80728E38C}" Directory="ACE_DIR_NM_NM_win_NM_sta">
+				<File Id="fil24A52214F3A12AF523381B6445E7E7A8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\stack-trace\.npmignore"/>
+			</Component>
+			<Component Id="cmp7ADBB29748F53E636164807F23DDC421" Guid="{C36CAF9F-9735-48D8-A25D-6CFE5C525FA7}" Directory="ACE_DIR_NM_NM_win_NM_sta">
+				<File Id="filB62A22435EF241CDEBE8C79336955F84" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\stack-trace\License"/>
+			</Component>
+			<Component Id="cmp2917B440102AF8BB0FA032DD8E4A67A1" Guid="{AE0EB503-96DD-4BFE-8AC3-BF3606669F74}" Directory="ACE_DIR_NM_NM_win_NM_sta">
+				<File Id="fil6B862198226D2A1B49BC345CA94B5D80" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\stack-trace\Makefile"/>
+			</Component>
+			<Component Id="cmp4A6203C22DE6724E36690E6A8F45E787" Guid="{46E1AF57-F7BF-4BFB-8143-E5C5B7401F2D}" Directory="ACE_DIR_NM_NM_win_NM_sta">
+				<File Id="filDF3D42820DABEBE9994D0DCC51FAAF24" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\stack-trace\package.json"/>
+			</Component>
+			<Component Id="cmpDF83D55D8326F0222D11EB803CE81641" Guid="{18BE1F82-CC22-4FC1-BEAC-7DFE39637AE8}" Directory="ACE_DIR_NM_NM_win_NM_sta">
+				<File Id="fil10FBE59307BDFCE10A22AF1A839467A2" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\stack-trace\Readme.md"/>
+			</Component>
+			<Component Id="cmp75EE49DDB024B1E7F8AAC6ED64A4A103" Guid="{CDFDF4D1-8365-4D9B-9363-5759BB706204}" Directory="ACE_DIR_NM_NM_win_NM_sta_lib">
+				<File Id="fil69E28C802F240999C8D20B922777A66C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\node_modules\stack-trace\lib\stack-trace.js"/>
+			</Component>
+			<Component Id="cmpE57EA31ACD2F26B50A29784EFC0BBA1B" Guid="{CBF13BA8-1951-4387-BBF8-A9DDDC8D4430}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="filBC41598DAE120102865E7A55A376044B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\cli-test.js"/>
+			</Component>
+			<Component Id="cmp6236AADCF5078801FAED8801D5410425" Guid="{C49F97ED-848E-4FF1-8634-0A57DA97E238}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil832EF9A1D619A12ECB7925ADEE44C0AF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\container-test.js"/>
+			</Component>
+			<Component Id="cmp1BF18A6787D1974B5C04710E8585A07F" Guid="{9DE185DE-6321-4D3B-9651-525588EB10B1}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="filE16FD2EEDC991FC00841B628527553E5" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\custom-formatter-test.js"/>
+			</Component>
+			<Component Id="cmpA4D74E9FE7508569CDFC115BD83C6707" Guid="{4E736CBD-CE05-41EA-ABDD-A2A044E9D82D}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="filBD21B11B20D95F57112C7C970D8DF5E9" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\custom-pretty-print-test.js"/>
+			</Component>
+			<Component Id="cmp796F87A05F6B102C6604A5BE0694438B" Guid="{C2C9520C-C597-453D-8529-9286DB507A5C}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="filE65C41E4AD6E5681241438A269BF4F85" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\custom-timestamp-test.js"/>
+			</Component>
+			<Component Id="cmpE25E402FE59006BAE4C16B4BACA323BC" Guid="{C4764275-98AB-45B9-96A1-E4A6D861649F}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil49428CA47CD55CEC601410710E15AC1B" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\exception-test.js"/>
+			</Component>
+			<Component Id="cmpC0656E42FB73006098A5F2FA6E86CA5A" Guid="{4E5AA0EB-22D9-4A12-B2AA-1DB47B5787E2}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil92132263EE3FC29865E1C53D10CE2C19" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\helpers.js"/>
+			</Component>
+			<Component Id="cmp817C725682E5BB8CB00CD0CF610EB2D1" Guid="{136BDC4A-9EDB-4C87-BAE2-728D0AA1C64E}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil7727598649E8436D987CD232483ED93D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\humanReadableUnhandledException-test.js"/>
+			</Component>
+			<Component Id="cmp53DC62768D77AB56DE85A05BB0B56C08" Guid="{F21D12C8-6632-4ACC-A58B-615764880DCB}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil3F71B019E8BC0A5DC5BDEAA16F4C8625" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\log-exception-test.js"/>
+			</Component>
+			<Component Id="cmp63068988D39B835B256DAE6D07A62DB2" Guid="{92740D3A-4F8D-41AF-A381-39AEAD72D3F3}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="filE5BC1431440ED02B8708A982B1EB600D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\log-filter-test.js"/>
+			</Component>
+			<Component Id="cmp0DE575A64581CD371CB51AAB1AE5311D" Guid="{8D806E2F-A562-4D30-BC00-EFB09169199D}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil0F888C41CA8A8A8BE18ABB5B175B1C19" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\log-rewriter-test.js"/>
+			</Component>
+			<Component Id="cmp81292CB3A4909C0D272D69D91F0D5BCA" Guid="{D26614CD-D690-47C4-8AE5-F0B2006124F6}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="filF2B1A8A72D79E646EC16C79516E54508" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\logger-levels-test.js"/>
+			</Component>
+			<Component Id="cmp7F165DFA03134A9B8B82D5731304ADEB" Guid="{DCA32F49-B9B4-4BEB-A2BC-5E8CEF1D0075}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil3A863F5D8619196E4644D3164689DF29" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\logger-test.js"/>
+			</Component>
+			<Component Id="cmpFB3405B3B8D3FFC3621A0A02DC6DC328" Guid="{B01A32B8-C1EF-4455-880C-A6242DD8364A}" Directory="ACE_DIR_NM_NM_win_tes">
+				<File Id="fil5D29F679553FAF0D50FDCCDFD276E9E0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\winston-test.js"/>
+			</Component>
+			<Component Id="cmpD529A206A1B2130438D644321245D49A" Guid="{26DA83DA-42B5-4BCA-A46C-647B7FAEEDDD}" Directory="ACE_DIR_NM_NM_win_tes_fix">
+				<File Id="fil4266A6637B52956EB157273E4B08B28F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\.gitkeep"/>
+			</Component>
+			<Component Id="cmpF312D20F52BE06F16A0F04E2A797A100" Guid="{7E39D05E-9C0D-44BA-8A12-B60B7DB39A01}" Directory="ACE_DIR_NM_key">
+				<File Id="fil81031B3791A1634056CFFE2E7F7E1E04" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\keys\agent2-cert.pem"/>
+			</Component>
+			<Component Id="cmpA5DC44F294749ADF50CDE24755A2EABB" Guid="{FDD0C8ED-3D7E-4FA1-BAF5-C5F3A79D5B8B}" Directory="ACE_DIR_NM_key">
+				<File Id="fil474F9DC5C45BFE7EA3D69ED734517409" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\keys\agent2-key.pem"/>
+			</Component>
+			<Component Id="cmp8B57BF0A067CA0EC86DFF097B7FB0FAC" Guid="{A5F78F92-0290-48D5-93F1-02033FBFB1BB}" Directory="ACE_DIR_NM_NM_win_tes_fix_log">
+				<File Id="filD445511BF9BE1D8AC56934AE49559B1D" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\logs\.gitkeep"/>
+			</Component>
+			<Component Id="cmp8E2331C12DB2441207DB81BF8CDF54F3" Guid="{BF26C91B-1F5C-4DC4-90AF-CE665475C124}" Directory="ACE_DIR_NM_NM_win_tes_fix_scr">
+				<File Id="fil3A0E7916198E6165B43745CC5803AFD8" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\scripts\default-exceptions.js"/>
+			</Component>
+			<Component Id="cmpAF4614C8A795D3F5CD00A1A438F96BB3" Guid="{1AA45256-3EAE-430F-9086-6E5FC6AE5360}" Directory="ACE_DIR_NM_NM_win_tes_fix_scr">
+				<File Id="fil775CF4D721366BCFB3B10B06F55F94CF" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\scripts\exit-on-error.js"/>
+			</Component>
+			<Component Id="cmp53012D9E368887122F9F1822CEAB8AF2" Guid="{F9ED8C0B-A59C-4D34-8CE5-54482B9A0431}" Directory="ACE_DIR_NM_NM_win_tes_fix_scr">
+				<File Id="fil15892485BD3397233821C2524BE52C59" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\scripts\log-exceptions.js"/>
+			</Component>
+			<Component Id="cmp45E511D4241A451C265271B56C2CFCB1" Guid="{43871A52-9268-4372-90A5-B43E7093602F}" Directory="ACE_DIR_NM_NM_win_tes_fix_scr">
+				<File Id="fil03A4F9F1B2135F8BA486F4899DC39215" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\scripts\log-string-exception.js"/>
+			</Component>
+			<Component Id="cmp82F3D88096F3B4728564C87B7BA1BE95" Guid="{0365E716-09FC-4C9C-B68A-B0891D5DBE35}" Directory="ACE_DIR_NM_NM_win_tes_fix_scr">
+				<File Id="filC072505B4D5B6A20C9B0E9FE7B7D0618" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\fixtures\scripts\unhandle-exceptions.js"/>
+			</Component>
+			<Component Id="cmpF95FEE55B6ECFE9B28918CC2F0769FEB" Guid="{C400F7DB-FFE5-494C-9B5E-BCE1536770E1}" Directory="ACE_DIR_NM_NM_win_tes_str">
+				<File Id="fil5C8BB2FF08C83C4435878BCA651AB273" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\stress\http-server.js"/>
+			</Component>
+			<Component Id="cmp486D085B9541AFF95A9936E82FF73565" Guid="{0BFFF0E3-35DF-4CA1-AA82-FC4301438117}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil1B90534D4F58E415A2D3287E5D4ADD42" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\console-test.js"/>
+			</Component>
+			<Component Id="cmp6179236E27BA6E5EB82F40D24322C318" Guid="{AB24CCC3-0E25-42C7-88D5-ECC222636606}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="filCF74003E5B97818992FB71A785009018" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\daily-rotate-file-test.js"/>
+			</Component>
+			<Component Id="cmp2D8D608B651795DAB6959520026782FF" Guid="{95F957B2-7A88-43B8-9996-5FC5F88CFA9C}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil9A31640C73BEF80CCA7806E613C68413" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\file-maxfiles-test.js"/>
+			</Component>
+			<Component Id="cmpC647D95E1A1060E431C5CAF5C46394AA" Guid="{97E9CC48-B09D-44F4-B54B-3730F10C8A81}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="filC1F906083A17337FF303D5EBFA9A81BD" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\file-maxsize-test.js"/>
+			</Component>
+			<Component Id="cmpF143DF538148E798DE401328293529BA" Guid="{FB566350-5A09-47A6-9986-4EA7A5149AC9}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil62232D3B793A32AB89AC2FEC520B39E6" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\file-open-test.js"/>
+			</Component>
+			<Component Id="cmpC6A43C8CD066FFB9A155669802B42BC4" Guid="{31FEDE40-C6B6-4B64-8163-082782181A68}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="filA6EE7D3B4AE2A260D60CEFBD07AE66CB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\file-stress-test.js"/>
+			</Component>
+			<Component Id="cmp1B928B9FC34A62C7FB34C0F4E2624B6B" Guid="{EE15CD90-436A-4A6B-AE77-D9A536BA53A8}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil206DA73262E45BAAEE837DA2260CA6DB" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\file-tailrolling-test.js"/>
+			</Component>
+			<Component Id="cmp3862B2EA97CE68CC5550AD45A2A5179A" Guid="{0AF35D1D-D460-496E-8E75-944419D267F7}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil8096F3EED7FF8EA8BEC3E38355289237" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\file-test.js"/>
+			</Component>
+			<Component Id="cmp6393831A4672830A3E9B29FD4279E155" Guid="{546F46EA-DE1A-47B2-83C5-A63C99238D53}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil10387F5898817D98892F6606268E6B8F" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\http-test.js"/>
+			</Component>
+			<Component Id="cmpB1F3317BC7E0AC5AAD1EB580E0CC81E3" Guid="{4FB7B43D-4090-4DE2-AFA2-8F3D10450874}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="fil55B51D6752FE1659AC73167E71C129C0" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\memory-test.js"/>
+			</Component>
+			<Component Id="cmpF737F50B0CACED1C23159353C05C436E" Guid="{DF10E9AA-6B6C-42B5-9FDB-920522B68009}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="filD54FE3FD65A4089B37DB13E617F5E36C" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\transport.js"/>
+			</Component>
+			<Component Id="cmp5BC38B150A2752075B4CC6D1B15B3155" Guid="{F3425250-F62D-4F0D-9442-D3D2B06ED057}" Directory="ACE_DIR_NM_NM_win_tes_tra">
+				<File Id="filDACF7410418FC19077DAE14E329A3453" KeyPath="yes" Source="$(env.ACEROOT)\3rdParty\node_modules\winston\test\transports\webhook-test.js"/>
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Include>

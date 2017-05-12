@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_NM_col_lib.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_NM_col_lib">
+		<?ifndef ACE_DIR_NM_map?>
+		<Directory Id="ACE_DIR_NM_map" Name="maps" />
+		<?define ACE_DIR_NM_map?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

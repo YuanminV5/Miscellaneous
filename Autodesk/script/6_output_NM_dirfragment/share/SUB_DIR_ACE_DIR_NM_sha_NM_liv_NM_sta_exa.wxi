@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_sha_NM_liv_NM_sta.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_sha_NM_liv_NM_sta">
+		<?ifndef ACE_DIR_NM_sha_NM_liv_NM_sta_exa?>
+		<Directory Id="ACE_DIR_NM_sha_NM_liv_NM_sta_exa" Name="examples" />
+		<?define ACE_DIR_NM_sha_NM_liv_NM_sta_exa?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

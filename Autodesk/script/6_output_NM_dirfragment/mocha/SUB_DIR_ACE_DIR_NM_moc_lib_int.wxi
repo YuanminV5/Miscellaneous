@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/mocha/SUB_DIR_ACE_DIR_NM_moc_lib.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_moc_lib">
+		<?ifndef ACE_DIR_NM_moc_lib_int?>
+		<Directory Id="ACE_DIR_NM_moc_lib_int" Name="interfaces" />
+		<?define ACE_DIR_NM_moc_lib_int?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

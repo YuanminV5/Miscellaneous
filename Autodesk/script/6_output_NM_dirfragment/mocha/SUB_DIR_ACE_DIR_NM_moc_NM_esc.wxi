@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/mocha/SUB_DIR_ACE_DIR_NM_moc_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_moc_NM">
+		<?ifndef ACE_DIR_NM_moc_NM_esc?>
+		<Directory Id="ACE_DIR_NM_moc_NM_esc" Name="escape-string-regexp" />
+		<?define ACE_DIR_NM_moc_NM_esc?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb/SUB_DIR_ACE_DIR_NM_liv_NM_ott.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_liv_NM_ott">
+		<?ifndef ACE_DIR_NM_liv_NM_ott_lib?>
+		<Directory Id="ACE_DIR_NM_liv_NM_ott_lib" Name="lib" />
+		<?define ACE_DIR_NM_liv_NM_ott_lib?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

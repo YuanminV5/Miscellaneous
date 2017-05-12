@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/mocha/SUB_DIR_ACE_DIR_NM_lru.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_lru">
+		<?ifndef ACE_DIR_NM_lru_tes?>
+		<Directory Id="ACE_DIR_NM_lru_tes" Name="test" />
+		<?define ACE_DIR_NM_lru_tes?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

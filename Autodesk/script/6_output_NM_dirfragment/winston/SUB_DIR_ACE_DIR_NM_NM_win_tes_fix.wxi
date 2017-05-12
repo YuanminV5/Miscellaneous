@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_tes.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_tes">
+		<?ifndef ACE_DIR_NM_NM_win_tes_fix?>
+		<Directory Id="ACE_DIR_NM_NM_win_tes_fix" Name="fixtures" />
+		<?define ACE_DIR_NM_NM_win_tes_fix?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

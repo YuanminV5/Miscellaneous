@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/winston/SUB_DIR_ACE_DIR_NM_NM_win_tes_fix.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_win_tes_fix">
+		<?ifndef ACE_DIR_NM_NM_win_tes_fix_log?>
+		<Directory Id="ACE_DIR_NM_NM_win_tes_fix_log" Name="logs" />
+		<?define ACE_DIR_NM_NM_win_tes_fix_log?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

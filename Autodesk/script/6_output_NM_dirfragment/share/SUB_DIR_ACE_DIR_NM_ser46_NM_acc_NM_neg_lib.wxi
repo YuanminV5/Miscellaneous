@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share/SUB_DIR_ACE_DIR_NM_ser46_NM_acc_NM_neg.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_ser46_NM_acc_NM_neg">
+		<?ifndef ACE_DIR_NM_ser46_NM_acc_NM_neg_lib?>
+		<Directory Id="ACE_DIR_NM_ser46_NM_acc_NM_neg_lib" Name="lib" />
+		<?define ACE_DIR_NM_ser46_NM_acc_NM_neg_lib?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

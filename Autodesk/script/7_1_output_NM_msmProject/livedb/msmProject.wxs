@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={1C086C7A-5F6E-492E-97D7-AEC9B47C058B}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={BEF76D5A-2DDE-4D69-876C-B4C04D296E50}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="livedb" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="livedb" Comments="livedb" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_liv.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_scr.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_arr.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_arr_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_asy.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_asy_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_NM_dee.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_NM_dee_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_NM_dee_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_otj.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_otj_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_otj_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_ott.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_ott_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_ott_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_NM_ott.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_NM_ott_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_NM_ott_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_red.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_red_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_red_lib_par.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_sta.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_sta_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_sta_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_hel.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_sta_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\livedb\SUB_DIR_ACE_DIR_NM_liv_tes.wxi?>
+    <ComponentGroupRef Id="livedb.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\livedb\msmProject.wxi?>
+</Wix>

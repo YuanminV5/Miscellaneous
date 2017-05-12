@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb_mongo/SUB_DIR_ACE_DIR_NM_mon_lib_mon_con.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_mon_lib_mon_con">
+		<?ifndef ACE_DIR_NM_rep?>
+		<Directory Id="ACE_DIR_NM_rep" Name="repl_set" />
+		<?define ACE_DIR_NM_rep?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

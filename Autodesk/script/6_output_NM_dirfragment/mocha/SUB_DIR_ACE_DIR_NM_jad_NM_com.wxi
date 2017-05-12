@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/mocha/SUB_DIR_ACE_DIR_NM_jad_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_jad_NM">
+		<?ifndef ACE_DIR_NM_jad_NM_com?>
+		<Directory Id="ACE_DIR_NM_jad_NM_com" Name="commander" />
+		<?define ACE_DIR_NM_jad_NM_com?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

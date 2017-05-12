@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/mocha/SUB_DIR_ACE_DIR_NM_glo.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_glo">
+		<?ifndef ACE_DIR_NM_glo_exa?>
+		<Directory Id="ACE_DIR_NM_glo_exa" Name="examples" />
+		<?define ACE_DIR_NM_glo_exa?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

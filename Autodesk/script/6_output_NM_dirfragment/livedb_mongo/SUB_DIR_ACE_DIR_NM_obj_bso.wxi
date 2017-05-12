@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb_mongo/SUB_DIR_ACE_DIR_NM_obj.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_obj">
+		<?ifndef ACE_DIR_NM_obj_bso?>
+		<Directory Id="ACE_DIR_NM_obj_bso" Name="bson" />
+		<?define ACE_DIR_NM_obj_bso?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

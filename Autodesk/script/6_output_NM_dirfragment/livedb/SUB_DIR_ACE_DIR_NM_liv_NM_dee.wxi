@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb/SUB_DIR_ACE_DIR_NM_liv_NM.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_liv_NM">
+		<?ifndef ACE_DIR_NM_liv_NM_dee?>
+		<Directory Id="ACE_DIR_NM_liv_NM_dee" Name="deep-is" />
+		<?define ACE_DIR_NM_liv_NM_dee?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Wix xmlns:ac="http://schemas.autodesk.com/wix/AutocadExtension" xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <?include $(env.ACE_WixProjects)\_common\conditions.wxi?>
+  <?if $(var.is64bit) = false?>
+  <?define PackageGuid={6FEFF645-C561-44C7-BC13-ADD60A712647}?>
+  <?define InstallerVersion=110?>
+  <?else ?>
+  <?define PackageGuid={3866E62E-C753-40F8-B81D-05A1776B10CF}?>
+  <?define InstallerVersion=200?>
+  <?endif ?>
+  <Module Id="share_js_stream" Language="0" Version="$(env.ACE_VERSION)">
+    <Package Id="$(var.PackageGuid)" Manufacturer="Autodesk, Inc." InstallerVersion="$(var.InstallerVersion)" SummaryCodepage="0" Keywords="share_js_stream" Comments="share_js_stream" />
+    <Directory Id="TARGETDIR" Name="SourceDir" />
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\SUB_DIR_ACE_DIR_NM_NM_sha.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_NM_sha_NM_bin.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_log.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_log_bin.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_log_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_log_lib.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_lod.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_lod_dis.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_spl.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_spl_exa.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_spl_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_thr.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_thr_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_log_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_NM_sha_tes.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_san.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_san_pub.wxi?>
+    <?include $(env.ACE_WixProjects)\_common\dirFragments\ProjectCentric\node_modules\share_js_stream\SUB_DIR_ACE_DIR_NM_NM_sha_tes_sup.wxi?>
+    <ComponentGroupRef Id="share_js_stream.msm" />
+  </Module>
+  <?include $(env.ACE_WixProjects)\wixMsmProjects\ProjectCentric\node_modules\share_js_stream\msmProject.wxi?>
+</Wix>

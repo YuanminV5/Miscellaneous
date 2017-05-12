@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/share_js_stream/SUB_DIR_ACE_DIR_NM_NM_sha_tes.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_NM_sha_tes">
+		<?ifndef ACE_DIR_NM_san?>
+		<Directory Id="ACE_DIR_NM_san" Name="sandbox" />
+		<?define ACE_DIR_NM_san?>
+		<?endif?>
+	</DirectoryRef>
+</Include>

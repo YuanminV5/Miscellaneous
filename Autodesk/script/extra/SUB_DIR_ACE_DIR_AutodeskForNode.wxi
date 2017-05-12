@@ -1,0 +1,22 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+
+	<?if $(var.isRereg)=true?>
+		<DirectoryRef Id="TARGETDIR">
+			<?ifndef ProgramFilesFolderForNode?>
+			<Directory Id="ProgramFilesFolderForNode" Name="Program Files"/>
+			<?define ProgramFilesFolderForNode?>
+			<?endif?>
+		</DirectoryRef>
+		<?define DirParentDir=ProgramFilesFolderForNode?>
+	<?else?>
+		<?define DirParentDir=TARGETDIR?>
+	<?endif?>
+	
+	<DirectoryRef Id="$(var.DirParentDir)">
+		<?ifndef ACE_DIR_AutodeskForNode ?>
+		<Directory Id="ACE_DIR_AutodeskForNode" Name="Autodesk"/>
+		<?define ACE_DIR_AutodeskForNode?>
+		<?endif?>
+	</DirectoryRef>
+  
+</Include>

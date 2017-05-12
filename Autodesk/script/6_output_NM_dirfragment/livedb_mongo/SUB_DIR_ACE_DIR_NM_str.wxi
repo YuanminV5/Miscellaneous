@@ -1,0 +1,9 @@
+<Include xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<?include $(env.ACE_WixProjects)/_common/dirFragments/ProjectCentric/node_modules/livedb_mongo/SUB_DIR_ACE_DIR_NM_rep.wxi?>
+	<DirectoryRef Id="ACE_DIR_NM_rep">
+		<?ifndef ACE_DIR_NM_str?>
+		<Directory Id="ACE_DIR_NM_str" Name="strategies" />
+		<?define ACE_DIR_NM_str?>
+		<?endif?>
+	</DirectoryRef>
+</Include>
