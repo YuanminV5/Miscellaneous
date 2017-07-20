@@ -1,0 +1,51 @@
+This is a quirk of the C++ syntax. The line
+
+CTest t1;
+declares a local variable of type CTest named t1. It implicitly calls the default constructor. On the other hand, the line
+
+CTest t2();
+Is not a variable declaration, but a local prototype of a function called t2 that takes no arguments and returns a CTest. The reason that the constructor isn't called for t2 is because there's no object being created here.
+
+If you want to declare a local variable of object type and use the default constructor, you should omit the parentheses.
+
+In C++11, you can alternatively say
+
+CTest t2{};
+Which does actually call the default constructor.
+
+
+...........................
+
+
+Let's get pedantic, because there are differences that can actually affect your code's behavior. Much of the following is taken from comments made to an "Old New Thing" article.
+
+Sometimes the memory returned by the new operator will be initialized, and sometimes it won't depending on whether the type you're newing up is a POD (plain old data), or if it's a class that contains POD members and is using a compiler-generated default constructor.
+
+In C++1998 there are 2 types of initialization: zero and default
+In C++2003 a 3rd type of initialization, value initialization was added.
+Assume:
+
+struct A { int m; }; // POD
+struct B { ~B(); int m; }; // non-POD, compiler generated default ctor
+struct C { C() : m() {}; ~C(); int m; }; // non-POD, default-initialising m
+In a C++98 compiler, the following should occur:
+
+new A - indeterminate value
+new A() - zero-initialize
+new B - default construct (B::m is uninitialized)
+new B() - default construct (B::m is uninitialized)
+new C - default construct (C::m is zero-initialized)
+new C() - default construct (C::m is zero-initialized)
+In a C++03 conformant compiler, things should work like so:
+
+new A - indeterminate value
+new A() - value-initialize A, which is zero-initialization since it's a POD.
+new B - default-initializes (leaves B::m uninitialized)
+new B() - value-initializes B which zero-initializes all fields since its default ctor is compiler generated as opposed to user-defined.
+new C - default-initializes C, which calls the default ctor.
+new C() - value-initializes C, which calls the default ctor.
+So in all versions of C++ there's a difference between "new A" and "new A()" because A is a POD.
+
+And there's a difference in behavior between C++98 and C++03 for the case "new B()".
+
+This is one of the dusty corners of C++ that can drive you crazy. When constructing an object, sometimes you want/need the parens, sometimes you absolutely cannot have them, and sometimes it doesn't matter.
