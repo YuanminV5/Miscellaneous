@@ -28,16 +28,16 @@ Assume:
 struct A { int m; }; // POD
 struct B { ~B(); int m; }; // non-POD, compiler generated default ctor
 struct C { C() : m() {}; ~C(); int m; }; // non-POD, default-initialising m
-In a C++98 compiler, the following should occur:
 
+In a C++98 compiler, the following should occur:
 new A - indeterminate value
 new A() - zero-initialize
 new B - default construct (B::m is uninitialized)
 new B() - default construct (B::m is uninitialized)
 new C - default construct (C::m is zero-initialized)
 new C() - default construct (C::m is zero-initialized)
-In a C++03 conformant compiler, things should work like so:
 
+In a C++03 conformant compiler, things should work like so:
 new A - indeterminate value
 new A() - value-initialize A, which is zero-initialization since it's a POD.
 new B - default-initializes (leaves B::m uninitialized)
@@ -49,3 +49,6 @@ So in all versions of C++ there's a difference between "new A" and "new A()" bec
 And there's a difference in behavior between C++98 and C++03 for the case "new B()".
 
 This is one of the dusty corners of C++ that can drive you crazy. When constructing an object, sometimes you want/need the parens, sometimes you absolutely cannot have them, and sometimes it doesn't matter.
+
+----------------------------
+explicit specifier/direct initialization/value initializatoin/zero initialization/default initialization
